@@ -16,7 +16,7 @@ jobs:
       ACLED_USERNAME: ${{ secrets.ACLED_USERNAME }}
       ACLED_PASSWORD: ${{ secrets.ACLED_PASSWORD }}
       RELIEFWEB_APPNAME: ${{ secrets.RELIEFWEB_APPNAME }}
-      LOOKBACK_DAYS: '180'
+      LOOKBACK_DAYS: '30'
       MIN_DAYS_DELAY: '1'
 
     steps:
