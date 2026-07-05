@@ -3,75 +3,123 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Mali Conflict Monitor</title>
+
   <link rel="preconnect" href="https://unpkg.com">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    crossorigin=""
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <aside class="sidebar">
-    <div class="brand">OSINT · MALI</div>
-    <h1>Mali Conflict Monitor</h1>
-    <p class="subtitle">Carte analytique non opérationnelle, basée sur sources ouvertes. Les zones sont volontairement approximatives.</p>
+  <div class="app-shell">
 
-    <section class="panel status-panel">
-      <h2>Situation résumée</h2>
-      <div id="statusCards" class="status-cards"></div>
-    </section>
+    <aside class="sidebar">
+      <div class="brand">OSINT · MALI</div>
 
-    <section class="panel">
-      <h2>Filtres</h2>
-      <label>Afficher</label>
-      <select id="layerFilter">
-        <option value="all">Tout</option>
-        <option value="zone">Zones d'influence</option>
-        <option value="point">Villes / positions générales</option>
-        <option value="event">Événements récents</option>
-      </select>
+      <h1>Mali Conflict Monitor</h1>
 
-      <label>Acteur / statut</label>
-      <select id="actorFilter">
-        <option value="all">Tous</option>
-        <option value="FAMa / État malien">FAMa / État malien</option>
-        <option value="FLA / Azawad">FLA / Azawad</option>
-        <option value="JNIM / GSIM">JNIM / GSIM</option>
-        <option value="Contesté">Contesté</option>
-        <option value="À vérifier">À vérifier</option>
-      </select>
+      <p class="subtitle">
+        Carte analytique non opérationnelle, basée sur sources ouvertes.
+        Les zones sont volontairement approximatives.
+      </p>
 
-      <label>Recherche</label>
-      <input id="searchInput" type="search" placeholder="Kidal, Gao, JNIM, FLA..." />
+      <section class="panel status-panel">
+        <h2>Situation résumée</h2>
+        <div id="statusCards" class="status-cards"></div>
+      </section>
 
-      <button id="resetBtn">Réinitialiser</button>
-    </section>
+      <section class="panel">
+        <h2>Filtres</h2>
 
-    <section class="panel legend">
-      <h2>Légende</h2>
-      <div><span class="dot gov"></span> FAMa / État malien</div>
-      <div><span class="dot fla"></span> FLA / Azawad</div>
-      <div><span class="dot jnim"></span> JNIM / GSIM</div>
-      <div><span class="dot contested"></span> Zone contestée / revendication</div>
-      <div><span class="dot event"></span> Événement récent</div>
-    </section>
+        <label for="layerFilter">Afficher</label>
+        <select id="layerFilter">
+          <option value="all">Tout</option>
+          <option value="zone">Zones d'influence</option>
+          <option value="point">Villes / positions générales</option>
+          <option value="event">Événements récents</option>
+        </select>
 
-    <section class="panel">
-      <h2>Éléments affichés</h2>
-      <div id="itemCount" class="item-count">Chargement...</div>
-      <div id="itemList" class="item-list"></div>
-    </section>
-  </aside>
+        <label for="actorFilter">Acteur / statut</label>
+        <select id="actorFilter">
+          <option value="all">Tous</option>
+          <option value="FAMa / État malien">FAMa / État malien</option>
+          <option value="FLA / Azawad">FLA / Azawad</option>
+          <option value="JNIM / GSIM">JNIM / GSIM</option>
+          <option value="Contesté">Contesté</option>
+          <option value="À vérifier">À vérifier</option>
+        </select>
 
-  <main class="map-wrap">
-    <div class="topbar">
-      <strong>Dernière mise à jour :</strong>
-      <span id="lastUpdated">chargement...</span>
-      <span class="sep">•</span>
-      <span>Situation synthétique · sources ouvertes</span>
-    </div>
-    <div id="map"></div>
-  </main>
+        <label for="searchInput">Recherche</label>
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Kidal, Gao, JNIM, FLA..."
+        />
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+        <button id="resetBtn" type="button">Réinitialiser</button>
+      </section>
+
+      <section class="panel legend">
+        <h2>Légende</h2>
+
+        <div>
+          <span class="dot gov"></span>
+          FAMa / État malien
+        </div>
+
+        <div>
+          <span class="dot fla"></span>
+          FLA / Azawad
+        </div>
+
+        <div>
+          <span class="dot jnim"></span>
+          JNIM / GSIM
+        </div>
+
+        <div>
+          <span class="dot contested"></span>
+          Zone contestée / revendication
+        </div>
+
+        <div>
+          <span class="dot event"></span>
+          Événement récent
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Éléments affichés</h2>
+        <div id="itemCount" class="item-count">Chargement...</div>
+        <div id="itemList" class="item-list"></div>
+      </section>
+    </aside>
+
+    <main class="map-wrap">
+      <div class="topbar">
+        <strong>Dernière mise à jour :</strong>
+        <span id="lastUpdated">chargement...</span>
+        <span class="sep">•</span>
+        <span>Situation synthétique · sources ouvertes</span>
+      </div>
+
+      <div id="map"></div>
+    </main>
+
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    crossorigin="">
+  </script>
+
   <script src="script.js"></script>
 </body>
 </html>
