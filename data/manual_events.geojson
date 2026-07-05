@@ -1,0 +1,8 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "title": "Événements manuels",
+    "note": "Ajoute ici des événements que tu veux conserver même quand l'automatisation régénère data/events.geojson."
+  },
+  "features": []
+}

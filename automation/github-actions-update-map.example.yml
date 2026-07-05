@@ -1,0 +1,36 @@
+# Exemple d'automatisation GitHub Actions.
+# À placer dans .github/workflows/update-map.yml uniquement quand ton Google Sheet est prêt.
+# Objectif : télécharger un CSV public, le convertir en GeoJSON, puis committer la mise à jour.
+
+name: Update Mali map data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 7 * * *' # Tous les jours à 07:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download public Google Sheet CSV
+        run: |
+          curl -L "$SHEET_CSV_URL" -o data/events.csv
+        env:
+          SHEET_CSV_URL: ${{ secrets.SHEET_CSV_URL }}
+      - name: Convert CSV to GeoJSON
+        run: python tools/convert_csv_to_geojson.py
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/events.csv data/events.geojson
+          git commit -m "Update map data" || echo "No changes"
+          git push

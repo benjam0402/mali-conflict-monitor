@@ -1,0 +1,8 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "title": "Zones approximatives",
+    "warning": "Les zones d'influence doivent être dessinées manuellement et présentées comme approximatives."
+  },
+  "features": []
+}

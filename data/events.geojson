@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "title": "Mali Conflict Monitor",
+    "last_updated": "2026-07-05T12:41:43+00:00",
+    "event_count": 0,
+    "source_summary": {
+      "window_start": "2026-06-25",
+      "window_end": "2026-07-04",
+      "min_days_delay": 1,
+      "coord_decimals": 3,
+      "acled_events": 0,
+      "manual_events": 0,
+      "gdelt_candidates": 0,
+      "reliefweb_candidates": 0,
+      "published_events": 0,
+      "generated_at_utc": "2026-07-05T12:41:43+00:00",
+      "duration_seconds": 5.01
+    },
+    "warning": "Carte analytique basée sur sources ouvertes. Ne pas publier de positions tactiques en temps réel, de mouvements non publics ou de données personnelles."
+  },
+  "features": []
+}

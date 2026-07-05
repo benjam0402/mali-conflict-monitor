@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "title": "Exemples fictifs — ne pas publier",
+    "last_updated": "2026-07-05",
+    "warning": "Données fictives uniquement pour tester l'affichage. Remplacer par des événements sourcés."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-3.9962, 17.5707] },
+      "properties": {
+        "id": "EX-001",
+        "date": "2026-07-05",
+        "title": "EXEMPLE FICTIF — incident à vérifier",
+        "location": "Point de test",
+        "region": "Mali",
+        "type": "attaque",
+        "actors": "Acteurs à renseigner",
+        "reliability": "a-verifier",
+        "precision": "approximation",
+        "summary": "Ceci est un faux événement uniquement destiné à tester la carte.",
+        "source": "Source à renseigner",
+        "url": ""
+      }
+    }
+  ]
+}
