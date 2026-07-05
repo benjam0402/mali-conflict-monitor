@@ -1,1 +1,42 @@
+name: Update Mali Conflict Monitor
 
+on:
+  schedule:
+    - cron: '37 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-map:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    env:
+      ACLED_USERNAME: ${{ secrets.ACLED_USERNAME }}
+      ACLED_PASSWORD: ${{ secrets.ACLED_PASSWORD }}
+      RELIEFWEB_APPNAME: ${{ secrets.RELIEFWEB_APPNAME }}
+      MIN_DAYS_DELAY: '1'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run daily update
+        run: python tools/update_daily.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "mali-map-bot"
+          git config user.email "actions@github.com"
+          git add data/events.geojson data/events.csv data/review_candidates.csv data/source_log.json
+          git commit -m "Update Mali conflict map data" || echo "No changes to commit"
+          git push
