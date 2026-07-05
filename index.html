@@ -4,92 +4,74 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mali Conflict Monitor</title>
-
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQdPuEXA3+3y3pUTNU+E8PkD8F5tLQ8=" crossorigin="" />
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <aside class="sidebar">
-    <header class="brand">
-      <p class="eyebrow">OSINT · Mali</p>
-      <h1>Mali Conflict Monitor</h1>
-      <p class="subtitle">Carte analytique basée sur sources ouvertes. Les points sont à vérifier et ne doivent pas être utilisés comme information opérationnelle.</p>
-    </header>
+    <div class="brand">OSINT · MALI</div>
+    <h1>Mali Conflict Monitor</h1>
+    <p class="subtitle">Carte analytique non opérationnelle, basée sur sources ouvertes. Les zones sont volontairement approximatives.</p>
+
+    <section class="panel status-panel">
+      <h2>Situation résumée</h2>
+      <div id="statusCards" class="status-cards"></div>
+    </section>
 
     <section class="panel">
       <h2>Filtres</h2>
-      <label>
-        Type d’événement
-        <select id="typeFilter">
-          <option value="all">Tous</option>
-          <option value="attaque">Attaque</option>
-          <option value="combat">Combat</option>
-          <option value="revendication">Revendication</option>
-          <option value="humanitaire">Humanitaire</option>
-          <option value="route">Axe routier / accès</option>
-          <option value="politique">Politique / institutionnel</option>
-          <option value="autre">Autre</option>
-        </select>
-      </label>
+      <label>Afficher</label>
+      <select id="layerFilter">
+        <option value="all">Tout</option>
+        <option value="zone">Zones d'influence</option>
+        <option value="point">Villes / positions générales</option>
+        <option value="event">Événements récents</option>
+      </select>
 
-      <label>
-        Fiabilité
-        <select id="reliabilityFilter">
-          <option value="all">Toutes</option>
-          <option value="confirme">Confirmé</option>
-          <option value="probable">Probable</option>
-          <option value="revendique">Revendiqué seulement</option>
-          <option value="conteste">Contesté</option>
-          <option value="a-verifier">À vérifier</option>
-        </select>
-      </label>
+      <label>Acteur / statut</label>
+      <select id="actorFilter">
+        <option value="all">Tous</option>
+        <option value="FAMa / État malien">FAMa / État malien</option>
+        <option value="FLA / Azawad">FLA / Azawad</option>
+        <option value="JNIM / GSIM">JNIM / GSIM</option>
+        <option value="Contesté">Contesté</option>
+        <option value="À vérifier">À vérifier</option>
+      </select>
 
-      <div class="date-grid">
-        <label>
-          Depuis
-          <input type="date" id="startDate" />
-        </label>
-        <label>
-          Jusqu’à
-          <input type="date" id="endDate" />
-        </label>
-      </div>
+      <label>Recherche</label>
+      <input id="searchInput" type="search" placeholder="Kidal, Gao, JNIM, FLA..." />
 
-      <label>
-        Recherche
-        <input type="search" id="searchInput" placeholder="Lieu, acteur, résumé…" />
-      </label>
-
-      <button id="resetFilters" type="button">Réinitialiser</button>
+      <button id="resetBtn">Réinitialiser</button>
     </section>
 
     <section class="panel legend">
       <h2>Légende</h2>
-      <div><span class="dot red"></span> Attaque / violence armée</div>
-      <div><span class="dot orange"></span> Combat / affrontement</div>
-      <div><span class="dot purple"></span> Revendication</div>
-      <div><span class="dot blue"></span> Humanitaire / accès</div>
-      <div><span class="dot gray"></span> Information à vérifier</div>
+      <div><span class="dot gov"></span> FAMa / État malien</div>
+      <div><span class="dot fla"></span> FLA / Azawad</div>
+      <div><span class="dot jnim"></span> JNIM / GSIM</div>
+      <div><span class="dot contested"></span> Zone contestée / revendication</div>
+      <div><span class="dot event"></span> Événement récent</div>
     </section>
 
-    <section class="panel events-panel">
-      <div class="panel-title-row">
-        <h2>Événements</h2>
-        <span id="eventCount">0</span>
-      </div>
-      <div id="eventList" class="event-list"></div>
+    <section class="panel">
+      <h2>Éléments affichés</h2>
+      <div id="itemCount" class="item-count">Chargement...</div>
+      <div id="itemList" class="item-list"></div>
     </section>
   </aside>
 
   <main class="map-wrap">
     <div class="topbar">
-      <strong>Dernière mise à jour :</strong> <span id="lastUpdated">—</span>
-      <span class="safety-note">Carte non opérationnelle · sources ouvertes uniquement</span>
+      <strong>Dernière mise à jour :</strong>
+      <span id="lastUpdated">chargement...</span>
+      <span class="sep">•</span>
+      <span>Situation synthétique · sources ouvertes</span>
     </div>
     <div id="map"></div>
   </main>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script src="script.js"></script>
 </body>
 </html>

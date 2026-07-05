@@ -1,0 +1,301 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "last_updated": "2026-07-05",
+    "title": "Mali Conflict Monitor — base situation actuelle",
+    "disclaimer": "Carte analytique non opérationnelle. Les zones sont approximatives et décrivent une influence ou une contestation, pas des positions tactiques."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "zone-gov-south",
+        "layer": "zone",
+        "layer_label": "Zone d'influence",
+        "title": "Sud malien — contrôle étatique principal",
+        "actor": "FAMa / État malien",
+        "status": "Contrôle gouvernemental principal",
+        "category": "situation",
+        "confidence": "moyenne",
+        "region": "Bamako, Koulikoro, Sikasso, Ségou",
+        "as_of": "2026-07-05",
+        "summary": "Zone large indiquant le cœur de contrôle gouvernemental autour de Bamako, Kati, Sikasso et Ségou. Les attaques ponctuelles ou infiltrations ne sont pas exclues.",
+        "source": "Wikipédia — 2026 Mali offensives ; Reuters",
+        "source_url": "https://en.wikipedia.org/wiki/2026_Mali_offensives"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-9.80, 12.00], [-8.60, 13.40], [-6.50, 13.80], [-4.30, 13.20], [-3.60, 12.20], [-4.20, 10.60], [-6.50, 10.10], [-8.80, 10.70], [-9.80, 12.00]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "zone-fla-kidal",
+        "layer": "zone",
+        "layer_label": "Zone d'influence",
+        "title": "Kidal — influence FLA / Azawad",
+        "actor": "FLA / Azawad",
+        "status": "Contrôle / influence revendiquée",
+        "category": "situation",
+        "confidence": "moyenne",
+        "region": "Kidal",
+        "as_of": "2026-07-05",
+        "summary": "La synthèse Wikipédia des offensives de 2026 indique Kidal sous contrôle FLA. La zone dessinée reste volontairement approximative.",
+        "source": "Wikipédia — 2026 Mali offensives",
+        "source_url": "https://en.wikipedia.org/wiki/2026_Mali_offensives"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [0.00, 17.30], [1.80, 17.60], [3.20, 18.70], [2.80, 20.00], [0.80, 20.20], [-0.60, 19.00], [0.00, 17.30]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "zone-jnim-tessit-menaka",
+        "layer": "zone",
+        "layer_label": "Zone d'influence",
+        "title": "Tessit / Est malien — influence JNIM signalée",
+        "actor": "JNIM / GSIM",
+        "status": "Contrôle / influence signalée",
+        "category": "situation",
+        "confidence": "faible à moyenne",
+        "region": "Gao / Ménaka",
+        "as_of": "2026-07-05",
+        "summary": "Wikipédia indique Tessit sous contrôle JNIM dans le cadre des offensives de 2026. La zone est une approximation régionale, pas une ligne de front.",
+        "source": "Wikipédia — 2026 Mali offensives ; Territory of JNIM",
+        "source_url": "https://en.wikipedia.org/wiki/Territory_of_Jama%27at_Nusrat_al-Islam_wal-Muslimin"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-0.80, 14.70], [1.20, 14.20], [2.90, 15.20], [3.10, 16.60], [1.80, 17.20], [-0.20, 16.70], [-0.80, 14.70]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "zone-contested-gao-mopti",
+        "layer": "zone",
+        "layer_label": "Zone contestée",
+        "title": "Axe Gao — Mopti — Sévaré contesté / revendiqué",
+        "actor": "Contesté",
+        "status": "Contesté",
+        "category": "situation",
+        "confidence": "faible",
+        "region": "Gao, Mopti, Sévaré",
+        "as_of": "2026-07-05",
+        "summary": "JNIM a revendiqué un contrôle partiel ou total sur Gao, Mopti et Sévaré selon Wikipédia, mais ces revendications sont à traiter comme contestées et non confirmées pleinement.",
+        "source": "Wikipédia — 2026 Mali offensives ; Reuters",
+        "source_url": "https://en.wikipedia.org/wiki/2026_Mali_offensives"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-4.90, 13.80], [-3.40, 14.90], [-1.80, 15.70], [-0.20, 16.50], [0.90, 16.10], [-0.40, 15.00], [-2.40, 14.10], [-4.20, 13.50], [-4.90, 13.80]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "zone-central-mali-activity",
+        "layer": "zone",
+        "layer_label": "Zone d'activité",
+        "title": "Centre du Mali — activité jihadiste et pression sécuritaire",
+        "actor": "JNIM / GSIM",
+        "status": "Activité signalée",
+        "category": "situation",
+        "confidence": "moyenne",
+        "region": "Mopti, Douentza, Bandiagara, Ségou oriental",
+        "as_of": "2026-07-05",
+        "summary": "Zone analytique large indiquant la pression jihadiste dans le centre malien. Elle ne signifie pas contrôle continu du territoire.",
+        "source": "Wikipédia — Mali War ; Territory of JNIM",
+        "source_url": "https://en.wikipedia.org/wiki/Mali_War"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-6.00, 13.00], [-4.60, 14.20], [-2.30, 15.10], [-1.00, 14.60], [-2.20, 13.60], [-4.40, 12.70], [-5.70, 12.50], [-6.00, 13.00]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bamako",
+        "layer": "point",
+        "layer_label": "Ville clé",
+        "title": "Bamako",
+        "actor": "FAMa / État malien",
+        "status": "Contrôle gouvernemental",
+        "category": "ville",
+        "confidence": "élevée",
+        "region": "Bamako",
+        "as_of": "2026-07-05",
+        "summary": "Capitale et centre politique du Mali. Indiquée comme sous contrôle malien dans la synthèse des offensives 2026, malgré des attaques signalées en avril 2026.",
+        "source": "Wikipédia — 2026 Mali offensives",
+        "source_url": "https://en.wikipedia.org/wiki/2026_Mali_offensives"
+      },
+      "geometry": { "type": "Point", "coordinates": [-7.9922, 12.6392] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kati",
+        "layer": "point",
+        "layer_label": "Ville clé",
+        "title": "Kati",
+        "actor": "FAMa / État malien",
+        "status": "Contrôle gouvernemental",
+        "category": "ville",
+        "confidence": "élevée",
+        "region": "Koulikoro",
+        "as_of": "2026-07-05",
+        "summary": "Ville garnison proche de Bamako. La synthèse Wikipédia indique Kati sous contrôle malien.",
+        "source": "Wikipédia — 2026 Mali offensives",
+        "source_url": "https://en.wikipedia.org/wiki/2026_Mali_offensives"
+      },
+      "geometry": { "type": "Point", "coordinates": [-8.0726, 12.7441] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kidal",
+        "layer": "point",
+        "layer_label": "Ville clé",
+        "title": "Kidal",
+        "actor": "FLA / Azawad",
+        "status": "Contrôle FLA indiqué",
+        "category": "ville",
+        "confidence": "moyenne",
+        "region": "Kidal",
+        "as_of": "2026-07-05",
+        "summary": "Kidal est indiquée comme sous contrôle FLA dans la synthèse Wikipédia des offensives de 2026.",
+        "source": "Wikipédia — 2026 Mali offensives",
+        "source_url": "https://en.wikipedia.org/wiki/2026_Mali_offensives"
+      },
+      "geometry": { "type": "Point", "coordinates": [1.4078, 18.4411] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tessit",
+        "layer": "point",
+        "layer_label": "Ville / secteur",
+        "title": "Tessit",
+        "actor": "JNIM / GSIM",
+        "status": "Contrôle JNIM indiqué",
+        "category": "ville",
+        "confidence": "moyenne",
+        "region": "Gao",
+        "as_of": "2026-07-05",
+        "summary": "Tessit est indiquée comme sous contrôle JNIM dans la synthèse Wikipédia des offensives de 2026.",
+        "source": "Wikipédia — 2026 Mali offensives",
+        "source_url": "https://en.wikipedia.org/wiki/2026_Mali_offensives"
+      },
+      "geometry": { "type": "Point", "coordinates": [0.9910, 15.2110] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "gao",
+        "layer": "point",
+        "layer_label": "Ville contestée / revendiquée",
+        "title": "Gao",
+        "actor": "Contesté",
+        "status": "Revendication JNIM / contesté",
+        "category": "ville",
+        "confidence": "faible",
+        "region": "Gao",
+        "as_of": "2026-07-05",
+        "summary": "JNIM a revendiqué un contrôle partiel ou total de Gao selon Wikipédia, et Gao apparaît aussi dans les attaques coordonnées rapportées par Reuters. À afficher comme contesté, pas comme contrôle confirmé.",
+        "source": "Wikipédia — 2026 Mali offensives ; Reuters",
+        "source_url": "https://en.wikipedia.org/wiki/2026_Mali_offensives"
+      },
+      "geometry": { "type": "Point", "coordinates": [-0.0447, 16.2717] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mopti",
+        "layer": "point",
+        "layer_label": "Ville contestée / revendiquée",
+        "title": "Mopti",
+        "actor": "Contesté",
+        "status": "Revendication JNIM / contesté",
+        "category": "ville",
+        "confidence": "faible",
+        "region": "Mopti",
+        "as_of": "2026-07-05",
+        "summary": "Mopti est mentionnée dans les revendications de contrôle partiel ou total attribuées à JNIM dans la synthèse Wikipédia. Information affichée comme contestée.",
+        "source": "Wikipédia — 2026 Mali offensives",
+        "source_url": "https://en.wikipedia.org/wiki/2026_Mali_offensives"
+      },
+      "geometry": { "type": "Point", "coordinates": [-4.1790, 14.4843] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sevare",
+        "layer": "point",
+        "layer_label": "Ville contestée / revendiquée",
+        "title": "Sévaré",
+        "actor": "Contesté",
+        "status": "Revendication / attaques signalées",
+        "category": "ville",
+        "confidence": "faible",
+        "region": "Mopti",
+        "as_of": "2026-07-05",
+        "summary": "Sévaré est mentionnée dans les offensives de 2026 et dans les attaques coordonnées rapportées début juillet. À afficher comme contesté / à vérifier.",
+        "source": "Wikipédia — 2026 Mali offensives ; Reuters",
+        "source_url": "https://en.wikipedia.org/wiki/2026_Mali_offensives"
+      },
+      "geometry": { "type": "Point", "coordinates": [-4.1000, 14.5333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "event-april-2026-offensives",
+        "layer": "event",
+        "layer_label": "Événement récent",
+        "title": "Offensives coordonnées d'avril 2026",
+        "actor": "À vérifier",
+        "status": "Événement documenté",
+        "category": "attaque coordonnée",
+        "confidence": "moyenne",
+        "region": "Bamako, Kati, Mopti, Sévaré, Gao, Bourem, Kidal",
+        "as_of": "2026-04-25",
+        "summary": "Série d'attaques coordonnées contre plusieurs villes et positions, attribuées à JNIM / GSIM et au FLA selon les pages Wikipédia consacrées aux offensives de 2026.",
+        "source": "Wikipédia — 2026 Mali offensives ; Attaques d'avril 2026 au Mali",
+        "source_url": "https://fr.wikipedia.org/wiki/Attaques_d%27avril_2026_au_Mali"
+      },
+      "geometry": { "type": "Point", "coordinates": [-2.1000, 15.6000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "event-july-2026-coordinated-attacks",
+        "layer": "event",
+        "layer_label": "Événement récent",
+        "title": "Attaques coordonnées signalées en juillet 2026",
+        "actor": "À vérifier",
+        "status": "Revendications non entièrement vérifiées",
+        "category": "attaque coordonnée",
+        "confidence": "faible à moyenne",
+        "region": "Anefis, Aguelhoc, Gao, Sévaré, Kenioroba",
+        "as_of": "2026-07-04",
+        "summary": "Reuters rapporte des attaques coordonnées visant plusieurs positions ou localités, avec des revendications de groupes armés que Reuters dit ne pas pouvoir vérifier indépendamment.",
+        "source": "Reuters — July 2026 coordinated attacks",
+        "source_url": "https://www.reuters.com/world/africa/insurgents-attack-multiple-towns-northern-central-mali-sources-say-2026-07-04/"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.4000, 16.2000] }
+    }
+  ]
+}
