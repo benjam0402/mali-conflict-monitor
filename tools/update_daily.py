@@ -1,27 +1,3 @@
-#!/usr/bin/env python3
-"""
-Mise à jour quotidienne du Mali Conflict Monitor.
-
-Sources :
-- ACLED : source principale pour les événements géolocalisés de conflit.
-- GDELT + ReliefWeb : signaux presse/humanitaire exportés en candidats à relire.
-
-Le script génère :
-- data/events.geojson : événements publiés sur la carte.
-- data/events.csv : version tableur des événements publiés.
-- data/review_candidates.csv : articles/signaux à relire manuellement.
-- data/source_log.json : résumé de la dernière exécution.
-
-Variables d'environnement utiles :
-- ACLED_USERNAME / ACLED_PASSWORD : compte myACLED pour l'API ACLED.
-- ACLED_ACCESS_TOKEN : optionnel, si tu disposes d'un jeton Bearer.
-- LOOKBACK_DAYS : nombre de jours à reprendre à chaque exécution, défaut 10.
-- MIN_DAYS_DELAY : délai de sécurité avant publication, défaut 1 = pas d'événement du jour même.
-- COORD_DECIMALS : arrondi des coordonnées, défaut 3.
-- RELIEFWEB_APPNAME : nom d'app ReliefWeb, défaut mali-conflict-monitor.
-- FETCH_GDELT : true/false, défaut true.
-- FETCH_RELIEFWEB : true/false, défaut true.
-"""
 from __future__ import annotations
 
 import csv
@@ -48,7 +24,7 @@ REVIEW_CANDIDATES_CSV = DATA_DIR / "review_candidates.csv"
 SOURCE_LOG = DATA_DIR / "source_log.json"
 MALI_PLACES_CSV = ROOT / "tools" / "mali_places.csv"
 
-ACLED_LOGIN_URL = "https://acleddata.com/user/login?_format=json"
+ACLED_TOKEN_URL = "https://acleddata.com/oauth/token"
 ACLED_READ_URL = "https://acleddata.com/api/acled/read"
 RELIEFWEB_REPORTS_URL = "https://api.reliefweb.int/v2/reports"
 GDELT_DOC_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
@@ -266,21 +242,43 @@ def acled_session() -> requests.Session:
     session = requests.Session()
     token = os.getenv("ACLED_ACCESS_TOKEN")
     if token:
-        session.headers.update({"Authorization": f"Bearer {token}"})
+        session.headers.update({
+            "Authorization": f"Bearer {token}",
+            "Accept": "application/json",
+        })
         return session
 
     username = os.getenv("ACLED_USERNAME")
     password = os.getenv("ACLED_PASSWORD")
+    client_id = os.getenv("ACLED_CLIENT_ID", "acled")
     if not username or not password:
         raise RuntimeError("ACLED_USERNAME/ACLED_PASSWORD absents : ACLED ignoré.")
 
+    # ACLED utilise désormais OAuth : le token se demande en formulaire
+    # application/x-www-form-urlencoded, pas en JSON sur /user/login.
     response = session.post(
-        ACLED_LOGIN_URL,
-        json={"name": username, "pass": password},
+        ACLED_TOKEN_URL,
+        data={
+            "username": username,
+            "password": password,
+            "grant_type": "password",
+            "client_id": client_id,
+        },
         timeout=30,
-        headers={"Content-Type": "application/json"},
+        headers={
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Accept": "application/json",
+        },
     )
     response.raise_for_status()
+    payload = response.json()
+    access_token = payload.get("access_token")
+    if not access_token:
+        raise RuntimeError("ACLED n'a pas renvoyé d'access_token.")
+    session.headers.update({
+        "Authorization": f"Bearer {access_token}",
+        "Accept": "application/json",
+    })
     return session
 
 
