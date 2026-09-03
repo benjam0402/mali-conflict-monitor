@@ -157,6 +157,64 @@ button:hover {
   margin-bottom: 5px;
 }
 
+.panel-note {
+  margin: -3px 0 12px;
+  color: var(--muted-2);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.social-targets {
+  display: grid;
+  gap: 9px;
+}
+
+.social-target {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 5px 10px;
+  align-items: center;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 12px;
+  padding: 10px;
+  background: #0b1220;
+}
+
+.social-target strong,
+.social-target span {
+  display: block;
+}
+
+.social-target span {
+  margin-top: 2px;
+  color: var(--muted-2);
+  font-size: 0.78rem;
+}
+
+.social-target a {
+  grid-column: 1 / -1;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.social-target a:hover {
+  text-decoration: underline;
+}
+
+.social-feed-status {
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 999px;
+  padding: 3px 7px;
+  white-space: nowrap;
+}
+
+.social-feed-status.is-active {
+  border-color: rgba(34, 197, 94, 0.5);
+  color: #86efac;
+}
+
 /* Légende */
 .legend div {
   display: flex;
@@ -206,24 +264,67 @@ button:hover {
   gap: 10px;
 }
 
-.item-card,
-.item-list > div {
+.item-list .item {
   background: #0b1220;
   border: 1px solid rgba(148, 163, 184, 0.15);
   border-radius: 12px;
   padding: 11px;
   color: var(--muted);
-  cursor: pointer;
 }
 
-.item-card:hover,
-.item-list > div:hover {
+.item-list .item:hover {
   border-color: var(--accent);
 }
 
-.item-card strong,
-.item-list strong {
+.item-title {
   color: var(--text);
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.item-meta {
+  margin-top: 5px;
+  color: var(--muted-2);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.item-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+button.item-action,
+.item-action {
+  width: auto;
+  margin: 0;
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  border-radius: 8px;
+  padding: 7px 9px;
+  background: transparent;
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 750;
+  line-height: 1;
+  text-decoration: none;
+}
+
+button.item-action:hover,
+.item-action:hover {
+  background: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+  transform: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 3px solid rgba(245, 158, 11, 0.5);
+  outline-offset: 2px;
 }
 
 /* Zone carte */
@@ -292,6 +393,43 @@ button:hover {
 
 .leaflet-popup-content a {
   color: var(--accent);
+}
+
+.popup-title {
+  margin-bottom: 8px;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.popup-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 999px;
+  padding: 2px 7px;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.popup-meta {
+  color: var(--muted-2);
+  font-size: 0.78rem;
+}
+
+.popup-summary {
+  margin-top: 9px;
+}
+
+.popup-source {
+  margin-top: 10px;
+  font-weight: 750;
 }
 
 /* Scrollbar propre */

@@ -3,6 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Carte analytique de signaux médiatiques publics sur le conflit au Mali." />
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: blob: https://unpkg.com https://*.tile.openstreetmap.org; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; upgrade-insecure-requests"
+  />
 
   <title>Mali Conflict Monitor</title>
 
@@ -11,6 +16,7 @@
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIINfQ3ynHTMSSRCpDibBWP/FyM+sOHu6KE="
     crossorigin=""
   />
 
@@ -20,19 +26,27 @@
 <body>
   <div class="app-shell">
 
-    <aside class="sidebar">
+    <aside class="sidebar" aria-label="Informations et filtres">
       <div class="brand">OSINT · MALI</div>
 
       <h1>Mali Conflict Monitor</h1>
 
       <p class="subtitle">
-        Carte analytique non opérationnelle, basée sur sources ouvertes.
-        Les zones sont volontairement approximatives.
+        Carte analytique non opérationnelle, alimentée par des médias et flux publics.
+        Chaque article reste un signal à vérifier et les zones sont approximatives.
       </p>
 
       <section class="panel status-panel">
         <h2>Situation résumée</h2>
         <div id="statusCards" class="status-cards"></div>
+      </section>
+
+      <section class="panel social-panel">
+        <h2>Veille X publique</h2>
+        <p class="panel-note">
+          Comptes de médias locaux à consulter. L'ingestion automatique n'est activée que lorsqu'un flux RSS public est disponible.
+        </p>
+        <div id="socialTargets" class="social-targets" aria-label="Comptes X publics suivis"></div>
       </section>
 
       <section class="panel">
@@ -52,6 +66,8 @@
           <option value="FAMa / État malien">FAMa / État malien</option>
           <option value="FLA / Azawad">FLA / Azawad</option>
           <option value="JNIM / GSIM">JNIM / GSIM</option>
+          <option value="État islamique au Sahel">État islamique au Sahel</option>
+          <option value="Plusieurs acteurs">Plusieurs acteurs</option>
           <option value="Contesté">Contesté</option>
           <option value="À vérifier">À vérifier</option>
         </select>
@@ -91,35 +107,37 @@
 
         <div>
           <span class="dot event"></span>
-          Événement récent
+          Signal médiatique à vérifier
         </div>
       </section>
 
       <section class="panel">
         <h2>Éléments affichés</h2>
-        <div id="itemCount" class="item-count">Chargement...</div>
-        <div id="itemList" class="item-list"></div>
+        <div id="itemCount" class="item-count" role="status" aria-live="polite">Chargement...</div>
+        <div id="itemList" class="item-list" aria-label="Liste des éléments affichés"></div>
       </section>
     </aside>
 
     <main class="map-wrap">
       <div class="topbar">
         <strong>Dernière mise à jour :</strong>
-        <span id="lastUpdated">chargement...</span>
+        <span id="lastUpdated" role="status" aria-live="polite">chargement...</span>
         <span class="sep">•</span>
-        <span>Situation synthétique · sources ouvertes</span>
+        <span>Médias publics · vérification requise</span>
       </div>
 
-      <div id="map"></div>
+      <div id="map" role="region" aria-label="Carte des zones de référence et des signaux médiatiques au Mali"></div>
     </main>
 
   </div>
 
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin="">
   </script>
 
   <script src="script.js"></script>
+  <noscript>JavaScript est nécessaire pour afficher la carte et les signaux médiatiques.</noscript>
 </body>
 </html>

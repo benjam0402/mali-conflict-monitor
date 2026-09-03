@@ -1,13 +1,105 @@
 {
-  "window_start": "2026-06-25",
-  "window_end": "2026-07-24",
-  "min_days_delay": 1,
-  "coord_decimals": 3,
-  "acled_events": 0,
+  "window_start": "2026-07-20",
+  "publication_cutoff": "2026-09-01",
+  "lookback_days": 14,
+  "retention_days": 45,
+  "min_days_delay": 2,
+  "coord_decimals": 2,
+  "sources_configured": 13,
+  "sources_attempted": 13,
+  "successful_sources": 12,
+  "failed_sources": 1,
+  "local_media_sources": 6,
+  "social_targets": 3,
+  "social_feeds_active": 0,
+  "source_results": [
+    {
+      "name": "GDELT DOC 2.0",
+      "kind": "gdelt",
+      "status": "error",
+      "articles": 0,
+      "error": "Échec HTTP après 1 essais : HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Google Actualités — Mali",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 61
+    },
+    {
+      "name": "RFI Afrique",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 23
+    },
+    {
+      "name": "France 24 Afrique",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 30
+    },
+    {
+      "name": "ONU Info Afrique",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 30
+    },
+    {
+      "name": "DW Afrique",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 10
+    },
+    {
+      "name": "Studio Tamani",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 10
+    },
+    {
+      "name": "Journal du Mali",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 10
+    },
+    {
+      "name": "Le Monde Afrique",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 20
+    },
+    {
+      "name": "Maliweb — Actualités",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 500
+    },
+    {
+      "name": "Malijet",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 50
+    },
+    {
+      "name": "MaliActu",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 15
+    },
+    {
+      "name": "Bamada",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 44
+    }
+  ],
+  "articles_fetched": 803,
+  "unique_articles": 787,
+  "fresh_signals": 46,
+  "retained_signals": 48,
   "manual_events": 0,
-  "gdelt_candidates": 75,
-  "reliefweb_candidates": 0,
-  "published_events": 0,
-  "generated_at_utc": "2026-07-25T08:34:47+00:00",
-  "duration_seconds": 11.37
+  "published_events": 48,
+  "mapped_events": 18,
+  "generated_at_utc": "2026-09-03T21:01:14+00:00",
+  "duration_seconds": 75.07
 }

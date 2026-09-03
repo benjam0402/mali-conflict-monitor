@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "generated_at": "2026-09-03T21:01:14+00:00",
+    "target_count": 3,
+    "active_feed_count": 0,
+    "warning": "Les profils X sont une liste de veille publique. Un post social n'est collecté automatiquement que si un flux RSS public est configuré, puis il reste soumis au filtrage et au recoupement."
+  },
+  "targets": [
+    {
+      "name": "Studio Tamani",
+      "platform": "X",
+      "handle": "StudioTamani",
+      "profile_url": "https://x.com/StudioTamani",
+      "feed_active": false
+    },
+    {
+      "name": "Malijet",
+      "platform": "X",
+      "handle": "Malijetactu",
+      "profile_url": "https://x.com/Malijetactu",
+      "feed_active": false
+    },
+    {
+      "name": "MaliActu",
+      "platform": "X",
+      "handle": "maliactu",
+      "profile_url": "https://x.com/maliactu",
+      "feed_active": false
+    }
+  ]
+}

@@ -1,23 +1,1379 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "title": "Mali Conflict Monitor",
-    "last_updated": "2026-07-25T08:34:47+00:00",
-    "event_count": 0,
+    "title": "Mali Conflict Monitor — signaux médiatiques publics",
+    "last_updated": "2026-09-03T21:01:14+00:00",
+    "generated_at": "2026-09-03T21:01:14+00:00",
+    "latest_signal_date": "2026-09-01",
+    "event_count": 48,
+    "mapped_event_count": 18,
     "source_summary": {
-      "window_start": "2026-06-25",
-      "window_end": "2026-07-24",
-      "min_days_delay": 1,
-      "coord_decimals": 3,
-      "acled_events": 0,
+      "window_start": "2026-07-20",
+      "publication_cutoff": "2026-09-01",
+      "lookback_days": 14,
+      "retention_days": 45,
+      "min_days_delay": 2,
+      "coord_decimals": 2,
+      "sources_configured": 13,
+      "sources_attempted": 13,
+      "successful_sources": 12,
+      "failed_sources": 1,
+      "local_media_sources": 6,
+      "social_targets": 3,
+      "social_feeds_active": 0,
+      "source_results": [
+        {
+          "name": "GDELT DOC 2.0",
+          "kind": "gdelt",
+          "status": "error",
+          "articles": 0,
+          "error": "Échec HTTP après 1 essais : HTTP Error 429: Too Many Requests"
+        },
+        {
+          "name": "Google Actualités — Mali",
+          "kind": "rss",
+          "status": "ok",
+          "articles": 61
+        },
+        {
+          "name": "RFI Afrique",
+          "kind": "rss",
+          "status": "ok",
+          "articles": 23
+        },
+        {
+          "name": "France 24 Afrique",
+          "kind": "rss",
+          "status": "ok",
+          "articles": 30
+        },
+        {
+          "name": "ONU Info Afrique",
+          "kind": "rss",
+          "status": "ok",
+          "articles": 30
+        },
+        {
+          "name": "DW Afrique",
+          "kind": "rss",
+          "status": "ok",
+          "articles": 10
+        },
+        {
+          "name": "Studio Tamani",
+          "kind": "rss",
+          "status": "ok",
+          "articles": 10
+        },
+        {
+          "name": "Journal du Mali",
+          "kind": "rss",
+          "status": "ok",
+          "articles": 10
+        },
+        {
+          "name": "Le Monde Afrique",
+          "kind": "rss",
+          "status": "ok",
+          "articles": 20
+        },
+        {
+          "name": "Maliweb — Actualités",
+          "kind": "rss",
+          "status": "ok",
+          "articles": 500
+        },
+        {
+          "name": "Malijet",
+          "kind": "rss",
+          "status": "ok",
+          "articles": 50
+        },
+        {
+          "name": "MaliActu",
+          "kind": "rss",
+          "status": "ok",
+          "articles": 15
+        },
+        {
+          "name": "Bamada",
+          "kind": "rss",
+          "status": "ok",
+          "articles": 44
+        }
+      ],
+      "articles_fetched": 803,
+      "unique_articles": 787,
+      "fresh_signals": 46,
+      "retained_signals": 48,
       "manual_events": 0,
-      "gdelt_candidates": 75,
-      "reliefweb_candidates": 0,
-      "published_events": 0,
-      "generated_at_utc": "2026-07-25T08:34:47+00:00",
-      "duration_seconds": 11.37
+      "published_events": 48,
+      "mapped_events": 18,
+      "generated_at_utc": "2026-09-03T21:01:14+00:00",
+      "duration_seconds": 75.07
     },
-    "warning": "Carte analytique basée sur sources ouvertes. Ne pas publier de positions tactiques en temps réel, de mouvements non publics ou de données personnelles."
+    "warning": "Ces points sont des signaux issus de médias publics, pas des faits indépendamment confirmés. Les coordonnées représentent au mieux le centre approximatif d'une localité citée."
   },
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_52c394d44317be0a",
+        "date": "2026-09-01",
+        "title": "Mali: les jihadistes du Jnim lèvent leur blocus sur la ville de Léré",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "JNIM / GSIM",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali: les jihadistes du Jnim lèvent leur blocus sur la ville de Léré RFI",
+        "source": "RFI",
+        "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUE5QUjY1aGR5azJvNFZXVnBVcGlsLTZDM2Q4N2VhRnlCdThfRkJROWo1b0g5RUQtOUhDSWtEZXNYZzI1THZmRHRiVW9YUnZ2czdVNzc5cTByZ1Z5QURqQ1NHVUZnTUFrbHJyZmhmRlhpeWN0b3ZQWkloYWJJMWM3cm83MXdFZmVaeTZMUUJ2WXVuU0tKazhuUkhDWXQ4dDZqNkk3c2VrTlpLNXlVTzEwbmZrWGdRV05uaHpHam13?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-09-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_a23d7084c4fde45d",
+        "date": "2026-09-01",
+        "title": "Mali : Une attaque contre un commissariat repoussée dans le sud du pays",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali : Une attaque contre un commissariat repoussée dans le sud du pays koaci.com",
+        "source": "koaci.com",
+        "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdmEyTFR5Zkw1NU02YnVNdjFWLUhJbGpIVlVvSlVEeTJfVlZQUWtuemtlNEJQZWtJYl9YMGJpTDNGZzkyUVhhd0hWNGtVellIX1JiVkRPNVNEUVUyRm9NTFBTRmthVmpiQ1ctWmVpTlRDTDRiWlgyQVJlSVl4WFFnRkhlUDlUZG1VMXJrWWl4ak1OVUlsdlVWd0ZwUWwwMk9BSXgzTFk5UVZudldORkRZV25sLXlRNVZ5MXg0czRjUlBlXy1OMlN2QjI3Sks1czFJNnZpSTRCQQ?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-09-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.99,
+          14.25
+        ]
+      },
+      "properties": {
+        "id": "media_4111d066bdc3356c",
+        "date": "2026-09-01",
+        "title": "MALI : PLUSIEURS POSITIONS TERRORISTES DÉTRUITES À AGUELHOC, KIGNAN ET NIONO",
+        "location": "Niono",
+        "region": "Ségou",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "MALI : PLUSIEURS POSITIONS TERRORISTES DÉTRUITES À AGUELHOC, KIGNAN ET NIONO Mali 24",
+        "source": "Mali 24",
+        "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUkt3NmRGWmFvYmFUaEdKSnRHN3VjR3c4ZFpsb1JubjRUN3BXZDFxeF82aHRKa2pOVmRrbzF6SkY2dTJDTTBMaGpIeU05ZlIxRng4c2F1dS10aEktOUZDRDNFNzNuSWtBbEh3bmFWSTVQbS1ubkU0aUlDVHk4Z0Z1Z0d6dmhIN0ZwcjJrbU9UWTZ3Zlp5VHcxV2F3?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-09-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4,
+          15.92
+        ]
+      },
+      "properties": {
+        "id": "media_fd61c670a3bc18c7",
+        "date": "2026-09-01",
+        "title": "Aguelhoc et Ménaka : Des positions terroristes ciblées et frappées",
+        "location": "Ménaka",
+        "region": "Ménaka",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Dans le cadre de l’opération Dougoukoloko, l'état-major général des Armées a annoncé ce mardi de nouvelles frappes de précision menées par les Forces armées maliennes (FAMa) et leurs partenaires le lundi 31 août 2026, neutralisant des points de regroupement terroristes à Aguelhoc et Ménaka.",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/insecurite/aguelhoc-et-menaka-des-positions-terroristes-ciblees-et-frappees-3119589.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-09-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.99,
+          14.25
+        ]
+      },
+      "properties": {
+        "id": "media_ba555b0d3529ca9a",
+        "date": "2026-08-31",
+        "title": "Traque des terroristes au Mali : Aguelhoc, Kignan et Niono ciblés par d’importantes frappes des FAMa",
+        "location": "Niono",
+        "region": "Ségou",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Traque des terroristes au Mali : Aguelhoc, Kignan et Niono ciblés par d’importantes frappes des FAMa Bamada.net",
+        "source": "Bamada.net",
+        "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRHl0MFpmS1F3NUVyRVRNaVV6RFlTcnhFN3l6ZTUxSGx1NGd5QTNoTHZsa2J4RmI4MnRHQkZrUS0xS3BZcXNYUmU0RUgyaGNGUTFPb1g3Vy1VSS1FcnRPQlVRLWlPOW9pdjBOdGtoRU40OGhRYm5nM0dsZDlPX0ViQWtTcDNBUUw4ek9mQm5zYXJKbUdaY05vYVZBVVM2Uk9DNDhjNE04b05lWU5MaDVsWmNHVEJ2Zw?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-31"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.99,
+          14.25
+        ]
+      },
+      "properties": {
+        "id": "media_4f515a6bb9a771d1",
+        "date": "2026-08-31",
+        "title": "Opération Dougoukoloko : Neutralisation de positions terroristes par les FAMa à Aguelhoc et Niono",
+        "location": "Niono",
+        "region": "Ségou",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "moyenne",
+        "precision": "centre de localité approximatif",
+        "summary": "Dans le cadre de l'opération Dougoukoloko, l’état-major général des Armées a annoncé ce lundi à travers un communiqué que le dimanche 30 août 2026, l'exploitation de renseignements précis a permis de détecter plusieurs points de regroupement de groupes armés terroristes à l'ouest de la ville d'Aguelhoc. La hiérarchie militaire précise que les posi…",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/insecurite/operation-dougoukoloko-neutralisation-de-positions-terroristes-par-les-fama-a-aguelhoc-et-niono-3119568.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-31"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_8388dd5ef908af3b",
+        "date": "2026-08-31",
+        "title": "Mali : l’armée affirme avoir repoussé une attaque contre un commissariat",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali : l’armée affirme avoir repoussé une attaque contre un commissariat lecourrier.vn",
+        "source": "lecourrier.vn",
+        "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYWtRbXBBWUkwM2ZSUHBBLV9GQWRGd0lGOE9vREp2c2RjbmR5WW9rY0FlMm9BY1JaMDN5WVFyTUNUY3ZvU1RMZzI5SHQ1Qmd2REVjbmxDSjBrbVdVVmhydGxLakJQM1B6ZmFHMVdCS2g2cjVXNTBGV0d2Ny13T3NUNW5CcGtLd2M4NXoycGlqTklfWVpWWk04RFMzMXJkLUgzbVJ1bnpCYw?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-31"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_d86350ac001b625b",
+        "date": "2026-08-31",
+        "title": "Attaque au Mali : lun des trois ressortissants chinois évacués à Dakar succombe à ses blessures",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Attaque au Mali : lun des trois ressortissants chinois évacués à Dakar succombe à ses blessures",
+        "source": "pressafrik.com",
+        "source_url": "https://www.pressafrik.com/Attaque-au-Mali-l-un-des-trois-ressortissants-chinois-evacues-a-Dakar-succombe-a-ses-blessures_a310779.html",
+        "source_system": "GDELT DOC 2.0",
+        "language": "French",
+        "as_of": "2026-08-31"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -11.23,
+          12.85
+        ]
+      },
+      "properties": {
+        "id": "media_c0803cedbae35e79",
+        "date": "2026-08-31",
+        "title": "Attaque armée près de Kéniéba : évacué jusqu à Dakar après plus de 13 heures de route , Peilin Li meurt à lHôpital Principal",
+        "location": "Kéniéba",
+        "region": "Kayes",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Attaque armée près de Kéniéba : évacué jusqu à Dakar après plus de 13 heures de route , Peilin Li meurt à lHôpital Principal",
+        "source": "dakaractu.com",
+        "source_url": "https://www.dakaractu.com/Attaque-armee-pres-de-Kenieba-evacue-jusqu-a-Dakar-apres-plus-de-13-heures-de-route-Peilin-Li-meurt-a-l-Hopital_a275505.html",
+        "source_system": "GDELT DOC 2.0",
+        "language": "French",
+        "as_of": "2026-08-31"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_3f14a2a4acd09a30",
+        "date": "2026-08-31",
+        "title": "Attaque armée au Mali : l’un des trois ressortissants chinois évacués à Dakar succombe à ses blessures",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Attaque armée au Mali : l’un des trois ressortissants chinois évacués à Dakar succombe à ses blessures Kewoulo",
+        "source": "Kewoulo",
+        "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPb0pWNjNxa2MtalZzd01UdlNHVkVHN0JPemZVaHNZS0hINW1RQThjNFpxLUJqTlNqcUoyN2MyQk1jNUpuaGQ4b0FZNG02WkJtTTNCaE9JaU1rZmZYaVV5VWhlMURwcEJuTUQxc1Ffdzg3QncxTzIwR2FiQnpsaG5UVjdMbS1jY1o3YlM2YS1tbU1JVFV0Slc5RGw3NWNCc3VUUU9EODhsWTV1Ry1kM3lnOTdOc0JYWXJUUlJvZURR?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-31"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_a137b6a6a4acb119",
+        "date": "2026-08-30",
+        "title": "Ukraine : Kyiv résiste à une attaque massive de 211 drones russes en plein jour",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Ukraine : Kyiv résiste à une attaque massive de 211 drones russes en plein jour Mali Actu",
+        "source": "Mali Actu",
+        "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQM3J3dFBFQU9IRnd3MlZiOGxTNmVCNTJEdVNPLUF6MUZRQmlRUzBCLVNMLVlvaXJHNlJMMWpCSkhtOV9RYm5XcFNZa0xQc05nRHlxZjB3VFJnYkQ3M09IbVhBWUpqcDcwNUxxVTVKRFNSa2ZtVWZ6N203QWhTbGdybzgzQVp5OFM2VUswUm9oMGtoM2loYnJ30gGXAUFVX3lxTFAzcnd0UEVBT0hGd3cyVmI4bFM2ZUI1MkR1U08tQXoxRlFCaVFTMEItU0wtWW9pckc2UkwxakJKSG05X1FibldwU1lrTFBzTmdEeXFmMHdUUmdiRDczT0htWEFZSmpwNzA1THFVNUpEU1JrZm1VZno3bTdBaFNsZ3JvODNBWnk4UzZVSzBSb2gwa2gzaWhicnc?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.01,
+          20.2
+        ]
+      },
+      "properties": {
+        "id": "media_6520d24c3f401819",
+        "date": "2026-08-30",
+        "title": "Les forces armées maliennes et l’Africa Corps ont frappé les terroristes dans les régions de Kidal et Sikasso",
+        "location": "Tessalit",
+        "region": "Kidal",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "moyenne",
+        "precision": "centre de localité approximatif",
+        "summary": "L’armée malienne (FAMa) et les forces de l’Africa Corps du ministère russe de la Défense ont mené des frappes contre des rassemblements de terroristes et leurs équipements aux abords de la ville de Tessalit, dans la région de Kidal, ainsi que près de Koutiala, dans la région de Sikasso, dans le cadre de l’opération Dougoukoloko, rapporte un corres…",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/insecurite/les-forces-armees-maliennes-et-lafrica-corps-ont-frappe-les-terroristes-dans-les-regions-de-kidal-et-sikasso-3119554.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_9e0a97b756a81002",
+        "date": "2026-08-29",
+        "title": "Mali: nouvelle libération de soldats maliens détenus par les rebelles touaregs du FLA",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "FLA / Azawad",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali: nouvelle libération de soldats maliens détenus par les rebelles touaregs du FLA RFI",
+        "source": "RFI",
+        "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMm9FWnlDUE9oSFZzWUtjUVZrZzIxQUpvWkdTNy0zWW8wOWJPejUzTEgwMUlCcmNDcVdad05sbDJmcG5IVUlfUGtJQmVLdGdUYjQtRXZSYU1xRkFzTlhVeHRQNzhLZzdRUUJycVNPV2xHMHBBbjN2bVloZllRc21SVHIxVmE5REVvbW9jcWtPOTNnX0RacWpJNkk3ZEtCUDVyeFpRTG9jV3BQUHlTTGtacmtEdWQ3RkRaZU5HaWtPMnJ4VWdyTWRQMk1yVGFSQQ?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_6d6a677ec7472472",
+        "date": "2026-08-29",
+        "title": "Mali : des frappes des FAMa visent des regroupements terroristes",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali : des frappes des FAMa visent des regroupements terroristes Anadolu Ajansı",
+        "source": "Anadolu Ajansı",
+        "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxObzZpVk5zXzJrRFJoVHZFQVhQQ1dPcElJazVlOFRDX1hxLUhMamhzUW9oMzVkUm5saUFtQmtFRG8waGhNSTdjRzQxeERYYXhPQ2pSMElaSWpsb1U0UFNOMlpORTlEaExGOVlhYmxqclJObVdSemdaTERBdXFBdXhUVWEzLWVPdlIwQWpnY2x6SzR4VW8xSTRsRmNRN1pIaEpjOXhwTjdn?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_c5f98b70a2ca7144",
+        "date": "2026-08-29",
+        "title": "GOONGA TAN : Mali : Oui, la paix est possible… sans auto satisfaction ni pessimisme",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Depuis plus d'une décennie, le Mali vit au rythme des attaques terroristes, des crises politiques, des transitions institutionnelles et des bouleversements diplomatiques",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/politique/chroniques/goonga-tan-mali-oui-la-paix-est-possible-sans-auto-satisfaction-ni-pessimisme-3119503.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_bb68aba165d25ad0",
+        "date": "2026-08-29",
+        "title": "FAMa : l’État-Major général des Armées appelle les militaires en situation irrégulière à rejoindre leurs unités avant le 6 septembre",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "FAMa : l’État-Major général des Armées appelle les militaires en situation irrégulière à rejoindre leurs unités avant le 6 septembre Bamada.net",
+        "source": "Bamada.net",
+        "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOUjkyeTVSeDZtbW1QVjA5QXNla0JWbU5YVXhzWWtoak5NTS1NZVlrQjlyZjF4NkRRREVNTDJqeF9vc0YxV2lxbFlNSWR6cVNxQmkyaHRVeVJyV3lpcjh1c1pSTlR6Zk02TTlzNzJkSXNRSTBvTEJLMUtwYnYzYk5wNnBfTDRabkUwTDUwbkFYNXZxTXNhM2ZzdExWZzFIajRSc25xWFVvQVhjNUNLaDZfQXVMak1KdUlqVFRPUXdEdW9XbFc4aUFkRzZXZGpUWlJRVUZoVmJDN2RMOHJpaDBpWjNB?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_06b43dbae3cbc385",
+        "date": "2026-08-29",
+        "title": "Dégel entre le Mali et l'Algérie : un tournant pour la sécurité aux frontières ?",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Dégel entre le Mali et l'Algérie : un tournant pour la sécurité aux frontières ? BBC",
+        "source": "BBC",
+        "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1nV3Zady01eDBBMkVvSDNzUU53V1RROWlzdGxtdkdqcnJ5NE5kTVZ3YUloalRBNUVKd011MzRJYVpFR1RadVZkdWFuNXg0V1hlemIzalBpNVV3eEtGaGfSAWNBVV95cUxObnV3SnhMRTdERGdlYmhDTzZhMC1GdlBYN24tdDlhaU9EendBenVCdV9TMkdSSHpJNXMwd3Q5Yi1BYWFwRmd5aGxFWVAtNi1GVFVMd0MxWHVZZ3ZHaGktWmppaWs?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_b88a0990a3b9f771",
+        "date": "2026-08-29",
+        "title": "Arabie Saoudite et terrorisme au Mali : Nous ripostons aux allégations",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Face aux accusations relayées sur les réseaux sociaux mettant en cause le Royaume d'Arabie saoudite dans le financement du terrorisme au Mali et au Sahel, le Collectif des associations musulmanes du Mali entend apporter des éclaircissements et rappeler les positions de Riyad",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/contributions/arabie-saoudite-et-terrorisme-au-mali-nous-ripostons-aux-allegations-3119516.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_76396fd2db731448",
+        "date": "2026-08-28",
+        "title": "Sahel : La médiation nigérienne aboutit à un échange de prisonniers entre le Mali et le FLA",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FLA / Azawad",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Sahel : La médiation nigérienne aboutit à un échange de prisonniers entre le Mali et le FLA linfodrome.com",
+        "source": "linfodrome.com",
+        "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNV3NVUThZX3Rqc25VZ0xSZFRwMUtld1Ezc2RBNEtpQ3N0a29BalpSazRzb2M2SXRKQWk2Sk91VzJWelZLZGFMWkhjdGJFdkF0WXlGa2JqZFpYU1Q3NWRhWks2VWJpRFZaNk9PVnN2QkxzQjdDcWlLUHg0RFdObHhRdnZZbUJDeXhvWnQ2ZGlDb0psRHZReU5QVnBWNTJDanBYQ2gwRWM1UmFXMnVuelp5ZmRSXzhnbTU4Q0tULU9vY0ZmS0ZoNWVFendhYXlXS00zZlVV?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_a0fd10c768bfc38e",
+        "date": "2026-08-28",
+        "title": "Mali-Niger : 62 militaires maliens libérés grâce à une médiation diplomatique",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Soixante-deux militaires des Forces armées maliennes (FAMa), détenus dans le cadre des affrontements ayant opposé les forces maliennes aux groupes armés, ont été libérés à la faveur d’une médiation diplomatique menée au Niger. Cette opération a également abouti à la libération d’Iknane Ag Attaher, détenu par les Forces armées nigériennes (FAN)",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/armee/mali-niger-62-militaires-maliens-liberes-grace-a-une-mediation-diplomatique-3119540.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_e844e9b74ab6542b",
+        "date": "2026-08-28",
+        "title": "Mali : Modibo Koné, le chef de la sécurité malienne réapparaît à Alger, 4 mois l’attaque du 25 avril",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali : Modibo Koné, le chef de la sécurité malienne réapparaît à Alger, 4 mois l’attaque du 25 avril 7info.ci",
+        "source": "7info.ci",
+        "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQ29ZQ3paUm5sZ255MmkzelV4OXhUekI3R1VSb3NVSTdvWkhxcnNoMmdRMXhGU1VlZ2NTbXJDX3JRR3JFaXV6VVdJRkRQQ1hqamFJOGcwUmUzOVV1U0hyVTg5bVJrNlYzZHljaFk4VXdLZUZNT2FpR2EwcW4ybkVoQU5nZFZIVUNTTl8tTUpRRE5mc0VhNDNncENZTHZneVYxR0FRN3g5Qm1xN25PcHFWWXAyS3RiVjI0QmplZQ?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_2e4c8eed3052b463",
+        "date": "2026-08-28",
+        "title": "Les médiateurs dans le conflit avec l’Iran se concentrent sur la réouverture du détroit d’Ormuz",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Les médiateurs dans le conflit avec l’Iran se concentrent sur la réouverture du détroit d’Ormuz Mali Actu",
+        "source": "Mali Actu",
+        "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRGFEcm9BTjNNeThoeS1KU3hoVTMxY0xFQ3N1WFd2VzdnMkVzUXFLMXI1QkZ3YWZuU0x3UnE1LW9sTDJwS1o3R2tvejFVcjdncUNJZzF5SkotR2dvYVBvZVFpZFE2WnZLV2l6c2MyMmRFWld1aW5Cd1NpRUtkcG1hNnRWZkNtQ3BSVW1xdmZaODhaa3l5eGVQNEhpTGR2RjQ0N21oMjRZTjhCTkstT250T0hIWm94d9IBvgFBVV95cUxQZjlfS0Nndm1VMnVuMk5ueHp1WjNCUWFHeWVfaDd6Q2thLTBiUHIzLUFQMktadEZnUTFRZ2YydFlXWU56UTlCRmlKNVhQcGdSbmxYTV9DTHFHVVJvTzh3NDRTVUVuWTFWeWNHQ0JiamdqdEhENXNKVGV5QmV3T2llM3RWcFYwRDNuellOS0NEUDlfT0VCYkhUdC1pSHJ0eUFyaVdqaEgtTk5yU0pxY1hoakNxcmdaazZTdTlWNXNR?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0,
+          16.77
+        ]
+      },
+      "properties": {
+        "id": "media_e3c03a178f726f30",
+        "date": "2026-08-27",
+        "title": "Mali : Tombouctou : Une cérémonie d’adieu des FAMA-Barkhane autour d’un plan",
+        "location": "Tombouctou",
+        "region": "Tombouctou",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Mali : Tombouctou : Une cérémonie d’adieu des FAMA-Barkhane autour d’un plan Mali Actu",
+        "source": "Mali Actu",
+        "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQb05MSF9CazU3SVRaeGRvbjZNVDdoYWtrUy1vb2FzWjYwdVFKdjRRTGFTMHJqdGY3NE5MSVVfQTdwQkZJaExjZjRXTWNVTzVEZWwyVUpiRzNueTNETVRrZUJXQllRLV91RzVTNVBMMGZKY3FxWkZUeHplQzdsX0RKajRLbUozM2VNTGNGcjE4VTIxTndodFpzOWJVR09YZHBuOGw1MENMWDF6d2dXV1hvdEZLODM5UGYweVHSAboBQVVfeXFMUG9OTEhfQms1N0lUWnhkb242TVQ3aGFra1Mtb29hc1o2MHVRSnY0UUxhUzByanRmNzROTElVX0E3cEJGSWhMY2Y0V01jVU81RGVsMlVKYkczbnkzRE1Ua2VCV0JZUS1fdUc1UzVQTDBmSmNxcVpGVHh6ZUM3bF9ESmo0S21KMzNlTUxjRnIxOFUyMU53aHRaczliVUdPWGRwbjhsNTBDTFgxendnV1dYb3RGSzgzOVBmMHlR?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1,
+          14.53
+        ]
+      },
+      "properties": {
+        "id": "media_b2bdaad21290d941",
+        "date": "2026-08-26",
+        "title": "Mali : les vecteurs aériens frappent plusieurs positions de groupes armés à Abéïbara et à Sévaré",
+        "location": "Sévaré",
+        "region": "Mopti",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "moyenne",
+        "precision": "centre de localité approximatif",
+        "summary": "Les Forces armées maliennes (FAMa), appuyées par leurs partenaires russes, annoncent avoir frappé à nouveau des positions de groupes armés terroristes dans les régions de Kidal et de Mopti.",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/armee/mali-les-vecteurs-aeriens-frappent-plusieurs-positions-de-groupes-armes-a-abeibara-et-a-sevare-3119449.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-26"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4,
+          15.92
+        ]
+      },
+      "properties": {
+        "id": "media_9fafc20cf32e2288",
+        "date": "2026-08-26",
+        "title": "Mali : Mali : trois combattants du Gatia tués à Ménaka",
+        "location": "Ménaka",
+        "region": "Ménaka",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Mali : Mali : trois combattants du Gatia tués à Ménaka Mali Actu",
+        "source": "Mali Actu",
+        "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdE1yWDJmeFl1cjJDVGtWUGNrdUJISE8yLWxNTjEwVHZMRUVDYmhNM1ZJZldNRUY5bnE2MDU5NjJzZFREaGlmXzVhTC0xSmc3Y01jSVVSemFNbTg4NEJDeUdKZ1dsOVN1SGIzMmNoOTI1cHRVbDZiWG96WDh1Q05TYl9KWFYwalZ1NFV0YXQ1NDYzeHVfcUHSAZYBQVVfeXFMTnRNclgyZnhZdXIyQ1RrVlBja3VCSEhPMi1sTU4xMFR2TEVFQ2JoTTNWSWZXTUVGOW5xNjA1OTYyc2RURGhpZl81YUwtMUpnN2NNY0lVUnphTW04ODRCQ3lHSmdXbDlTdUhiMzJjaDkyNXB0VWw2Ylhvelg4dUNOU2JfSlhWMGpWdTRVdGF0NTQ2M3h1X3FB?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-26"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_bf5c5c543919f3c3",
+        "date": "2026-08-25",
+        "title": "Libération des mercenaires de Wagner au Mali : le clan Haftar, nouvel interlocuteur privilégié du FLA",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FLA / Azawad",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Libération des mercenaires de Wagner au Mali : le clan Haftar, nouvel interlocuteur privilégié du FLA jeuneafrique.com",
+        "source": "jeuneafrique.com",
+        "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNkdPZ0xZTmozUEVRX0dQQk9hSmFpVjhCeFdOWkpYREZ0MUxKQVV5MUQyRXFNMjFCbUVqcGpMUEwxbWV0dTBXbVA0SzJpUlB6bFdfbDZxZ1RKaFd5Rk1YZnFhT2dzcm9HWjlMMkpsX3JrT2xLUzJJWmxUeFozdEJiLXhwUGNRU0FPRk04TmtYa1NEY2VocktVRDRCTV9EX0ZkMEZkNUJwSmZnQ3ZCNmdJR3dIY013TWE1ODY5RVZuZVRrWnJTNVdpdVQwR0laa1BXWS1CZlIzS3FXdFhpWUhn?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.9,
+          13.3
+        ]
+      },
+      "properties": {
+        "id": "media_c440892b7225f57b",
+        "date": "2026-08-25",
+        "title": "Guwerneer diiwal San yamirii uddere jemma e gure ngal diiwal fuɗɗaade e ñalawma hanki",
+        "location": "San",
+        "region": "Ségou",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Guwerneer diiwal San yamirii uddere jemma e gure ngal diiwal fuɗɗaade e ñalawma hanki RFI",
+        "source": "RFI",
+        "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPRVphcHk4SnZ2UjlSRzFwYllHNzFxVWllU0M5VTdfRlRxN2l4NXlLV1VmcXczWEs2aUkxRlNRdllELXRHU1RFOU5lUFByazlRUEdZOXBOX0xEdWZZcmhSSHVoWGFaejlzNHJEcHhlbEg2cXhWbC1UVUxXcG9BTUF3b2JVT05naXg0aUl1bHNEYWRSeFRnSEhyWkt6eHFXallJOXVIT0Vka0NRN3RhZlJaQmdHOE5qaXlhYXBlbWRmcGs0X055Nk5JNlZEbGI0cmFJcXNN?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_0889aaf6780ca75b",
+        "date": "2026-08-24",
+        "title": "Mali : 22 militaires libérés par le FLA lors d'un échange de prisonniers",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FLA / Azawad",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali : 22 militaires libérés par le FLA lors d'un échange de prisonniers koaci.com",
+        "source": "koaci.com",
+        "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNRUhaUDNiczdaeVlNckYwZVhxSzE4T0s2WDBqcWlaNDdCd3ZEbkx5MldBejJNZm5QcVhCVkhQeXE2UExhT2pXbHkwSTNoRlhndGltUjN0LVJmTHI1bFA2SzgxbnVDOUE0UjRzUHdWVHFkU0tSYXAzSXd2MmdBQWNCa1B3cTVvbVBtRzU4M0h5eFBVak1sVUJKXzlhT05UTDl3V1dzNHNvb0hXYXRJbWRBY09pSGljQ0JuQ1B5MVN2X1VLOGtSbzlyVGs5SThEclBnOWtTOHQ1TQ?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.22,
+          13.43
+        ]
+      },
+      "properties": {
+        "id": "media_bd1ff20eac522ac9",
+        "date": "2026-08-24",
+        "title": "Les FAMa et l’Africa Corps éliminent des terroristes dans la région de Ségou",
+        "location": "Ségou",
+        "region": "Ségou",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Les Forces Armées Maliennes (FAMa) et l’Africa Corps du ministère de la Défense de la Fédération de Russie ont mené des frappes contre les terroristes dans la ville de San, dans la région de Ségou, dans le cadre de l’opération Dougoukoloko, rapporte un correspondant de l’African Initiative. « Plusieurs bastions de groupes terroristes ont été décou…",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/insecurite/les-fama-et-lafrica-corps-eliminent-des-terroristes-dans-la-region-de-segou-3119416.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.07,
+          12.74
+        ]
+      },
+      "properties": {
+        "id": "media_5d41b132479af6c4",
+        "date": "2026-08-24",
+        "title": "Camp Militaire de Kati : Stationnement et arrêt des véhicules formellement interdits",
+        "location": "Kati",
+        "region": "Koulikoro",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Camp Militaire de Kati : Stationnement et arrêt des véhicules formellement interdits Mali 24",
+        "source": "Mali 24",
+        "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOTQycXcwdFNtcGVlSjVFbkFGNzBfS1VoanpyOVh4NGtfQUczZ1dMakJ2UUxnREtIT3E5eGFVckQ2ek1DY0w2WURHQTdxSXBIUlVqMUxMdGRDQmVMbF9JcVBFMGVVNlZOZ1B5eW4zMmgxaFpacGRCWWJud2drYmljQy14U0FZUzM2MFlmWTIwRGZzQk16OUZtZzhfLTJUUzM0M0djU19B?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_9eb811131c52098b",
+        "date": "2026-08-23",
+        "title": "​Mali: libération de deux ex-paramilitaires du groupe Wagner détenus par des jihadistes et des rebelles touaregs",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "​Mali: libération de deux ex-paramilitaires du groupe Wagner détenus par des jihadistes et des rebelles touaregs pressafrik.com",
+        "source": "pressafrik.com",
+        "source_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxONE1FeUxmZUYwaUR3akhEaTVhb0J3LXFSV3BWS1FpSE5OUmZ0OXV5eTVwZFhSZVl0dXluTFlEMkZXd25HazVyU3lMaDhkM2xoSEVOVTA1ZzBjblR2YWJsbDBSdDlkbVBvdDBzWEN4N0Y1NXRmai1FV1pSNmpXYUo0V2tIMjR0RklWLXFsMTVISGNlWW9pWHN3R3hRdHpRTW5KejNRalhMak5raWRmQldWQTR0ZjNpLW5JOVUwNUdGTDlnaGlKM0cybW9ldHlHOVBaMkJPaV9KN212aTZBTnlhSDlkTmpMNWltT1M2cWJKWHA?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.95,
+          15.0
+        ]
+      },
+      "properties": {
+        "id": "media_5d88c7afe27fc63b",
+        "date": "2026-08-23",
+        "title": "Opération Dougoukoloko : les FAMa ciblent plusieurs regroupements terroristes à Kidal, Douentza et Macina",
+        "location": "Douentza",
+        "region": "Douentza",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Les Forces armées maliennes (FAMa), appuyées par leurs partenaires, ont mené plusieurs frappes contre des regroupements de groupes armés terroristes dans différentes zones du pays. Les opérations, conduites les 22 et 23 août 2026 dans le cadre de l’opération Dougoukoloko, ont notamment ciblé des positions dans les régions de Kidal, Douentza et Mac…",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/insecurite/operation-dougoukoloko-les-fama-ciblent-plusieurs-regroupements-terroristes-a-kidal-douentza-et-macina-3119386.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_a0bde99cca0eb6ce",
+        "date": "2026-08-23",
+        "title": "Mali : une vingtaine de soldats libérés lors d’un échange avec le FLA",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "FLA / Azawad",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali : une vingtaine de soldats libérés lors d’un échange avec le FLA Benin Web TV",
+        "source": "Benin Web TV",
+        "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPX05ya2pwOThON0ZRY25aWkVKSkhYY3R5WUt5djVWU0pYV3hxNGNPNDNlSlk3UmU4ZmQ2dC1RTUNVTzYzeHZiZVJXMlZ0SGtKQm0zZ1VFd3owVFM2NERBX0dSQkd3RDVHSjM1Sm5KV0IteENpSEx1ZjI5SUxHSWZRWmZHYm1pT041MU41OUNTbmtFQzg?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_e31104f6be888361",
+        "date": "2026-08-23",
+        "title": "Mali : libération d'une vingtaine de soldats détenus par les rebelles touareg",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali : libération d'une vingtaine de soldats détenus par les rebelles touareg La Libre.be",
+        "source": "La Libre.be",
+        "source_url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNRk15TzBDM2xabEcwdnRLVmVkN0VmVU8tUFJNQml0bU15Q25ZeGJuX2tCWk5WM2NHX2ZSRlBnSVdiMGp6YUtMbzRqd0ctb1Z4VzhsWU5BU0dmYzF6UFJGbkJLZEs0aUxNZWE5empGRU1wRUpIQ3pPeV9oa3c4d1lKdzkwTUtGVUQybGNSSU93bHFURmVjUmhFYVk5WW02eks5WXNTc2RsbDNGVVk2OS1NakNBdkJqYUFCeG5jTzl5NTZHR1ZjNUZ1TG9LRG10T3QzMjQtbmx5bVN0cWlBcHNWQkhxZE5QLVR4bU5V?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_241e18fb993ad73a",
+        "date": "2026-08-23",
+        "title": "Mali : 22 soldats libérés par les rebelles touareg, après plusieurs jours de libérations de militaires",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali : 22 soldats libérés par les rebelles touareg, après plusieurs jours de libérations de militaires africaradio.com",
+        "source": "africaradio.com",
+        "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPdDdtN2ZsaW02dzg1TjRZWmtSeF9sd3ZQUHhLMWZ0enZYd1FBajAwN2JibTZKU1EtSmt4Q3AxZWI4OERNdGpHUUU5WTdhV0VLaTcwRU9VZkxwS3U3U0ZKa0YtYnAzajJnZHE1ZEVkS0hjdUxtcE5qZy1GbWVmSXZOeXE4MWJTNGxQRmFFNDJIZ29sN1AzMjFhcGZoMElDNTlORk5OcXpwb1ZESWZaV0FTcVlDXzhuNjM2WmVzR2ZBVk1Qdzd4ei1EclJrazcwRmZOSUNnanBob2F3RXFs?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_5334bf4c3e2c0a78",
+        "date": "2026-08-23",
+        "title": "Mali : 22 soldats libérés par les rebelles du FLA",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "FLA / Azawad",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali : 22 soldats libérés par les rebelles du FLA lematindalgerie.com",
+        "source": "lematindalgerie.com",
+        "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOdmpDR0FXVDdsZGoyUG1oU2FKdll1RnJhdC1qekFIY0E5MG1Fai1vTzNUd1M4eGUxczhBQW9leURsQi1ZVUhVVkdiTGJ3YjlJX2FMNzd4ZDU4SzlBQThkTWV6cW8xcE9HV1g2aGV5WVh5cVRsekotUnZjX1ZWTzBMYkRB0gGKAUFVX3lxTFBoTkhFZWRLMnRDLUJHbzVrZF9KZGhMSjhIXzN2Z1dMSDlBMkM2UTJYMGN4Q0ptLUxKcUlpcWowejh4NWhkWDhJbWNDa0RpUTVhQ3NRQ2Zrb1cyVlB3ZXh2eXhKbTBEZS1BM1ZEMGQtMFNEWGp1V2Z1SnBlbHRGZGtPaVJOci1fOXM1UQ?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_4c048d7287ed3775",
+        "date": "2026-08-23",
+        "title": "Mali : 22 militaires retrouvent la liberté dans un échange inédit avec le FLA",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FLA / Azawad",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali : 22 militaires retrouvent la liberté dans un échange inédit avec le FLA Afrik",
+        "source": "Afrik",
+        "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOamkzOVhReDJwWDZtcUw3WVozVlZiNXhhc252NE1PQzZ1WUhqMDA4bDNnN0lLTFlvRmVSazBWR3AxaklSN056ZUt6ZEljQVM1QVFLQWpIbi1DVWRGQ1cta3AwMlItOFhHcDM3aHZ6T2NXbUhxSG11bUlzdmVaWjVVN01Hc29uNzNBOThjckVPLWJZV1VNb2Nac3pKYV9sZw?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_fc55cade0486acc4",
+        "date": "2026-08-23",
+        "title": "Mali : 22 militaires libérés contre 9 combattants du FLA",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "Plusieurs acteurs",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Selon plusieurs sources concordantes, les autorités maliennes ont procédé, ce dimanche 23 août 2026, à la libération de neuf combattants appartenant au Front pour la libération de l’Azawad. En contrepartie, le mouvement armé a libéré de 22 militaires des forces armées maliennes",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/armee/mali-22-militaires-liberes-contre-9-combattants-du-fla-3119384.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_79b18138cd5cb9bf",
+        "date": "2026-08-23",
+        "title": "Luxeuil-les-Bains. Hommage à Kévin Clément, tombé au combat au Mali",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Luxeuil-les-Bains. Hommage à Kévin Clément, tombé au combat au Mali L'Est Républicain",
+        "source": "L'Est Républicain",
+        "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdDRWbnYxQ2dqN251V0lqU1BKd3dRWmFqa2RlSXNsWXh6Q3RCS2Joa0JxOUoyLVJOYlBnVkJoNTZmU1RGbVhocE53UThPTGoyUDV1VEtIdzZpOWxDQmh2N3BSdzFsVUVpWGNjMFJwbjBnUzJVeUxjVmlCdnU1cC1MbTUxMm5yRFFNQ3VBTElWc3FWWDg3SFBiUEluQ2ltaUczMThwYjl0VjA0NERQdk40cQ?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.61,
+          14.35
+        ]
+      },
+      "properties": {
+        "id": "media_b09b77f6b2fbfc7b",
+        "date": "2026-08-22",
+        "title": "MALI: Sivili 8 ɲɔgɔn nin tora binaknni dɔ la Dogani ni Sirou, Bandiagara mara la",
+        "location": "Bandiagara",
+        "region": "Bandiagara",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "MALI: Sivili 8 ɲɔgɔn nin tora binaknni dɔ la Dogani ni Sirou, Bandiagara mara la RFI",
+        "source": "RFI",
+        "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQanNfZFVES0xlMm1EYlF3SDlndmRIb1NycVpZMGphd2JzQUxiTmt2VlRwY0FQOTRRWVZ1TWZfQ1RzZmlYaWxjMkdVOF9nZUNySGt3SU5LS0pHcnFCVWVoQi1pM0pnYWp1VU1uQ3dXaDNaaHJlM2xhWExaOGNnZkFrdWdtRGVNUzJOZk00c1hkSGRMWWV1TEkzUWhGYW9IcHBIdEVxeVpYUUp4d29XZDhLTG51VG9jVjBUeGpNNUNRNklRRk93WkxvSC1aT1Vma1ItaDV2TEZn?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.56,
+          12.86
+        ]
+      },
+      "properties": {
+        "id": "media_e3ffb392dd63cb7d",
+        "date": "2026-08-22",
+        "title": "Les FAMa et l’Africa Corps neutralisent des groupes armés dans les régions de Mopti et de Koulikoro",
+        "location": "Koulikoro",
+        "region": "Koulikoro",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Les Forces armées maliennes (FAMa) et l’Africa Corps du ministère russe de la Défense ont mené des frappes contre des militants dans les régions de Mopti et de Koulikoro dans le cadre de l’opération Dougoukoloko, rapporte un correspondant de l’African Initiative.",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/insecurite/les-fama-et-lafrica-corps-neutralisent-des-groupes-armes-dans-les-regions-de-mopti-et-de-koulikoro-3119367.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0,
+          12.64
+        ]
+      },
+      "properties": {
+        "id": "media_9d247b4f09e7fe3f",
+        "date": "2026-08-22",
+        "title": "Bamako : Arrivée record de 900 camions-citernes sous escorte des FAMa",
+        "location": "Bamako",
+        "region": "Bamako",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Bamako : Arrivée record de 900 camions-citernes sous escorte des FAMa Bamada.net",
+        "source": "Bamada.net",
+        "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeEZDSWM2Wm1BdVNOMG84bXc1RWg5LU96OHJBS0JFbTUwX1JueWE4ZXd6aXp2TWtNSXZaUXQ0TmN3OW51WG5iVVZLeVVyYUNRSGNtQ1JFaUtGRXJjVGxscDRqTmFXaTFHRVA4Wk9XVU1ldVF6M2NNQ0xCRVhfUmlqbDZuNE9kclhzdFJobVZDMA?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_1c06b46992c611a2",
+        "date": "2026-08-21",
+        "title": "Mali : l’armée affirme avoir frappé un regroupement d’au moins 200 terroristes, dont des chefs",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali : l’armée affirme avoir frappé un regroupement d’au moins 200 terroristes, dont des chefs pressafrik.com",
+        "source": "pressafrik.com",
+        "source_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVWQyOTVLV2RoSUZMMTh6WXZHVUdmNEZjcHJ4V3hCSkhFMmZVTmI4MG5XYk9QQUFwWHpRbTZaMHlCdG9SS3l5TTBGOHVPQ01wZWI5QWNGdVFkS0h5SGdHakpWLWowdVlpeUFaeXM3bHJmMDFVSWhNbWx5N1U5US14OVljanRDdmctajBuTTV4a3FCemVhM1B1a3RYSl90X0VRSzhLNmpiTklaLTNkV1k1ZzRQcEZCLWMzc1pBRlpzbHotcmxtejkzQWdNMA?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_bf946cf03006c177",
+        "date": "2026-08-21",
+        "title": "Mali : l’armée affirme avoir frappé au moins 200 terroristes",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali : l’armée affirme avoir frappé au moins 200 terroristes Afrique sur 7",
+        "source": "Afrique sur 7",
+        "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNR2t2Q2pGX0EzVmxocmhlNG5sR1lhUWNSQ2hub0VEalRVWDdXNnAxc3RXSjFvR19SRTVoRGdidzZ1anhNMjF0eFV1SDQyaENQY1hjMTZwd3dib1ZXcE9ReVJyeGI0dVZubEMxVjRhYmpGeHZoM1pLNWhjZEMwMGM2SjMtcGRvT0FkT1dGWFh3?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-08-21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.61,
+          14.35
+        ]
+      },
+      "properties": {
+        "id": "media_7843a2e329bef75d",
+        "date": "2026-08-20",
+        "title": "Opération Dougoukoloko : les FAMa neutralisent une vingtaine de terroristes et détruisent plusieurs équipements",
+        "location": "Bandiagara",
+        "region": "Bandiagara",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Les Forces armées maliennes (FAMa), appuyées par leurs partenaires, poursuivent leurs opérations de surveillance, de contrôle et de sécurisation du territoire national. Deux actions menées les 18 et 19 août 2026 ont permis de cibler plusieurs positions de groupes armés terroristes dans les secteurs de San et de Bandiagara.",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/insecurite/operation-dougoukoloko-les-fama-neutralisent-une-vingtaine-de-terroristes-et-detruisent-plusieurs-equipements-3119326.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0,
+          12.64
+        ]
+      },
+      "properties": {
+        "id": "media_595d772936e1a275",
+        "date": "2026-08-19",
+        "title": "Mali-Russie : Poutine et Assimi Goïta réaffirment leur coordination pour la stabilité au Sahel",
+        "location": "Bamako",
+        "region": "Bamako",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "politique",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "moyenne",
+        "precision": "centre de localité approximatif",
+        "summary": "Le président russe Vladimir Poutine et le président de la Transition malienne, le Général d’Armée Assimi Goïta, ont échangé par téléphone sur la situation sécuritaire au Mali et dans l’ensemble de la région sahélo-saharienne. La conversation, tenue à l’initiative de Bamako, a porté notamment sur la lutte contre le terrorisme et la poursuite de la…",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/politique/mali-russie-poutine-et-assimi-goita-reaffirment-leur-coordination-pour-la-stabilite-au-sahel-3119287.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_2bc4bdc2fb5fd889",
+        "date": "2026-08-17",
+        "title": "Libération de 82 militaires maliens détenus par le FLA/JNIM : La liberté retrouvée des militaires n’a pas de prix",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "Plusieurs acteurs",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "La libération de 82 militaires maliens retenus en otage constitue une nouvelle porte ouverte dans un contexte sécuritaire particulièrement difficile",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/armee/liberation-de-82-militaires-maliens-detenus-par-le-flajnim-la-liberte-retrouvee-des-militaires-na-pas-de-prix-3119244.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_0c18b6f0723da686",
+        "date": "2026-08-16",
+        "title": "Sahel : comment les Émirats arabes unis ont indirectement financé le terrorisme",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Un rapport de l’ONU accable les Émirats arabes unis en mettant en lumière une affaire de paiement de rançon pour la libération d’un otage capturé par les combattants d’Al Qaïda au Mali. Fin 2025, une rançon d’un montant record a été payée aux combattants d’Al Qaïda, indique ce rapport de l’ONU rapporté par Reuters . La somme versée à cette organis…",
+        "source": "Maliweb — Actualités",
+        "source_url": "https://www.maliweb.net/insecurite/sahel-comment-les-emirats-arabes-unis-ont-indirectement-finance-le-terrorisme-3119225.html",
+        "source_system": "Maliweb — Actualités",
+        "language": "fr",
+        "as_of": "2026-08-16"
+      }
+    }
+  ]
 }

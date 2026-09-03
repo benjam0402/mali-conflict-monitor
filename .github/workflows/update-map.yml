@@ -5,39 +5,53 @@ on:
     - cron: '37 6 * * *'
   workflow_dispatch:
 
+concurrency:
+  group: update-mali-conflict-monitor
+  cancel-in-progress: false
+
 jobs:
   update-map:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     permissions:
       contents: write
 
     env:
-      ACLED_USERNAME: ${{ secrets.ACLED_USERNAME }}
-      ACLED_PASSWORD: ${{ secrets.ACLED_PASSWORD }}
-      RELIEFWEB_APPNAME: ${{ secrets.RELIEFWEB_APPNAME }}
-      LOOKBACK_DAYS: '30'
-      MIN_DAYS_DELAY: '1'
+      LOOKBACK_DAYS: '14'
+      RETENTION_DAYS: '45'
+      MIN_DAYS_DELAY: '2'
+      COORD_DECIMALS: '2'
+      MAX_PUBLISHED_EVENTS: '250'
+      PYTHONUNBUFFERED: '1'
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
 
       - name: Run daily update
         run: python tools/update_daily.py
+
+      - name: Validate generated data
+        run: python tools/validate_data.py
 
       - name: Commit updated data
         run: |
           git config user.name "mali-map-bot"
           git config user.email "actions@github.com"
-          git add data/events.geojson data/events.csv data/review_candidates.csv data/source_log.json
-          git commit -m "Update Mali conflict map data" || echo "No changes to commit"
+          git add data/events.geojson data/events.csv data/review_candidates.csv data/source_log.json data/social_watch.json
+          if git diff --cached --quiet; then
+            echo "No data changes to commit"
+            exit 0
+          fi
+          git commit -m "Update public media signals"
+          git pull --rebase origin main
           git push

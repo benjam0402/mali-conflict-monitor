@@ -1,1 +1,1 @@
-requests>=2.32.0
+# Aucun paquet tiers : le collecteur utilise uniquement la bibliothèque standard Python.

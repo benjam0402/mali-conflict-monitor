@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Studio Tamani",
+    "platform": "x",
+    "handle": "StudioTamani",
+    "profile_url": "https://x.com/StudioTamani",
+    "language": "fr",
+    "enabled": true
+  },
+  {
+    "name": "Malijet",
+    "platform": "x",
+    "handle": "Malijetactu",
+    "profile_url": "https://x.com/Malijetactu",
+    "language": "fr",
+    "enabled": true
+  },
+  {
+    "name": "MaliActu",
+    "platform": "x",
+    "handle": "maliactu",
+    "profile_url": "https://x.com/maliactu",
+    "language": "fr",
+    "enabled": true
+  }
+]

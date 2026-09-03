@@ -1,0 +1,113 @@
+[
+  {
+    "name": "GDELT DOC 2.0",
+    "kind": "gdelt",
+    "url": "https://api.gdeltproject.org/api/v2/doc/doc",
+    "tier": "aggregator",
+    "language": "multilingue",
+    "enabled": true
+  },
+  {
+    "name": "Google Actualités — Mali",
+    "kind": "rss",
+    "url": "https://news.google.com/rss/search?q=Mali%20(conflit%20OR%20JNIM%20OR%20GSIM%20OR%20FAMa%20OR%20Azawad%20OR%20attaque)%20when%3A14d&hl=fr&gl=FR&ceid=FR%3Afr",
+    "tier": "aggregator",
+    "language": "fr",
+    "query_matched": true,
+    "enabled": true
+  },
+  {
+    "name": "RFI Afrique",
+    "kind": "rss",
+    "url": "https://www.rfi.fr/fr/afrique/rss",
+    "tier": "editorial",
+    "language": "fr",
+    "enabled": true
+  },
+  {
+    "name": "France 24 Afrique",
+    "kind": "rss",
+    "url": "https://www.france24.com/fr/afrique/rss",
+    "tier": "editorial",
+    "language": "fr",
+    "enabled": true
+  },
+  {
+    "name": "ONU Info Afrique",
+    "kind": "rss",
+    "url": "https://news.un.org/feed/subscribe/fr/news/region/africa/feed/rss.xml",
+    "tier": "editorial",
+    "language": "fr",
+    "enabled": true
+  },
+  {
+    "name": "DW Afrique",
+    "kind": "rss",
+    "url": "https://rss.dw.com/xml/rss-fre-all",
+    "tier": "editorial",
+    "language": "fr",
+    "enabled": true
+  },
+  {
+    "name": "Studio Tamani",
+    "kind": "rss",
+    "url": "https://www.studiotamani.org/feed",
+    "tier": "editorial",
+    "language": "fr",
+    "local": true,
+    "enabled": true
+  },
+  {
+    "name": "Journal du Mali",
+    "kind": "rss",
+    "url": "https://www.journaldumali.com/feed/",
+    "tier": "editorial",
+    "language": "fr",
+    "local": true,
+    "enabled": true
+  },
+  {
+    "name": "Le Monde Afrique",
+    "kind": "rss",
+    "url": "https://www.lemonde.fr/afrique/rss_full.xml",
+    "tier": "editorial",
+    "language": "fr",
+    "enabled": true
+  },
+  {
+    "name": "Maliweb — Actualités",
+    "kind": "rss",
+    "url": "https://www.maliweb.net/rss/latest-posts",
+    "tier": "editorial",
+    "language": "fr",
+    "local": true,
+    "enabled": true
+  },
+  {
+    "name": "Malijet",
+    "kind": "rss",
+    "url": "https://malijet.com/rss",
+    "tier": "editorial",
+    "language": "fr",
+    "local": true,
+    "enabled": true
+  },
+  {
+    "name": "MaliActu",
+    "kind": "rss",
+    "url": "https://maliactu.net/feed/",
+    "tier": "editorial",
+    "language": "fr",
+    "local": true,
+    "enabled": true
+  },
+  {
+    "name": "Bamada",
+    "kind": "rss",
+    "url": "https://bamada.net/feed/",
+    "tier": "editorial",
+    "language": "fr",
+    "local": true,
+    "enabled": true
+  }
+]
