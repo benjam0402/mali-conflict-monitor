@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Carte analytique de signaux médiatiques publics sur le conflit au Mali." />
+  <meta name="description" content="Tableau de situation open source consacré aux signaux médiatiques du conflit au Mali." />
   <meta
     http-equiv="Content-Security-Policy"
-    content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: blob: https://unpkg.com https://*.tile.openstreetmap.org; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; upgrade-insecure-requests"
+    content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: blob: https://unpkg.com; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; upgrade-insecure-requests"
   />
 
-  <title>Mali Conflict Monitor</title>
+  <title>Mali Conflict Monitor — Situation Room</title>
 
   <link rel="preconnect" href="https://unpkg.com">
 
@@ -24,111 +24,162 @@
 </head>
 
 <body>
+  <div class="ambient-grid" aria-hidden="true"></div>
+
   <div class="app-shell">
+    <aside class="sidebar" aria-label="Briefing, filtres et signaux">
+      <header class="sidebar-header">
+        <div class="brand-row">
+          <div class="monogram" aria-hidden="true">
+            <span>MC</span>
+            <small>01</small>
+          </div>
 
-    <aside class="sidebar" aria-label="Informations et filtres">
-      <div class="brand">OSINT · MALI</div>
+          <div class="brand-copy">
+            <strong>Sahel Intelligence</strong>
+            <span>Open source monitor</span>
+          </div>
 
-      <h1>Mali Conflict Monitor</h1>
+          <div class="system-state" title="Interface opérationnelle">
+            <i aria-hidden="true"></i>
+            LIVE
+          </div>
+        </div>
 
-      <p class="subtitle">
-        Carte analytique non opérationnelle, alimentée par des médias et flux publics.
-        Chaque article reste un signal à vérifier et les zones sont approximatives.
-      </p>
+        <div class="title-block">
+          <p class="eyebrow">République du Mali · Vue nationale</p>
+          <h1>Mali <span>Conflict Monitor</span></h1>
+          <p class="subtitle">
+            Tableau de situation alimenté par des médias et flux publics. Chaque élément reste un signal à recouper.
+          </p>
+        </div>
 
-      <section class="panel status-panel">
-        <h2>Situation résumée</h2>
-        <div id="statusCards" class="status-cards"></div>
+        <div class="update-strip">
+          <span class="update-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 7v5l3 2M21 12a9 9 0 1 1-2.64-6.36" /></svg>
+          </span>
+          <div>
+            <span>Dernière synchronisation</span>
+            <strong id="lastUpdated" role="status" aria-live="polite">chargement...</strong>
+          </div>
+        </div>
+      </header>
+
+      <section class="control-panel" aria-labelledby="filters-title">
+        <div class="section-heading">
+          <div>
+            <span>01 / FILTRES</span>
+            <h2 id="filters-title">Affiner la situation</h2>
+          </div>
+          <button id="resetBtn" class="reset-button" type="button" title="Réinitialiser les filtres">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v6h6M20 20v-6h-6M5.1 15a8 8 0 0 0 13.15 2.4L20 14M4 10l1.75-3.4A8 8 0 0 1 18.9 9" /></svg>
+            Réinitialiser
+          </button>
+        </div>
+
+        <div class="search-field">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <label class="sr-only" for="searchInput">Rechercher dans les signaux</label>
+          <input id="searchInput" type="search" placeholder="Localité, acteur, source…" />
+          <kbd>⌘ K</kbd>
+        </div>
+
+        <div class="filter-grid">
+          <label class="select-field" for="layerFilter">
+            <span>Couche</span>
+            <select id="layerFilter">
+              <option value="all">Toutes les couches</option>
+              <option value="zone">Zones d'influence</option>
+              <option value="point">Positions générales</option>
+              <option value="event">Signaux récents</option>
+            </select>
+          </label>
+
+          <label class="select-field" for="actorFilter">
+            <span>Acteur / statut</span>
+            <select id="actorFilter">
+              <option value="all">Tous les acteurs</option>
+              <option value="FAMa / État malien">FAMa / État malien</option>
+              <option value="FLA / Azawad">FLA / Azawad</option>
+              <option value="JNIM / GSIM">JNIM / GSIM</option>
+              <option value="État islamique au Sahel">État islamique au Sahel</option>
+              <option value="Plusieurs acteurs">Plusieurs acteurs</option>
+              <option value="Contesté">Contesté</option>
+              <option value="À vérifier">À vérifier</option>
+            </select>
+          </label>
+        </div>
       </section>
 
-      <section class="panel social-panel">
-        <h2>Veille X publique</h2>
+      <details class="social-panel">
+        <summary>
+          <div>
+            <span>02 / SOCIAL WATCH</span>
+            <strong>Sources locales sur X</strong>
+          </div>
+          <span class="summary-action">
+            Watchlist
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4" /></svg>
+          </span>
+        </summary>
         <p class="panel-note">
-          Comptes de médias locaux à consulter. L'ingestion automatique n'est activée que lorsqu'un flux RSS public est disponible.
+          Comptes publics à consulter. L'ingestion automatique reste limitée aux flux RSS publics disponibles.
         </p>
         <div id="socialTargets" class="social-targets" aria-label="Comptes X publics suivis"></div>
-      </section>
+      </details>
 
-      <section class="panel">
-        <h2>Filtres</h2>
-
-        <label for="layerFilter">Afficher</label>
-        <select id="layerFilter">
-          <option value="all">Tout</option>
-          <option value="zone">Zones d'influence</option>
-          <option value="point">Villes / positions générales</option>
-          <option value="event">Événements récents</option>
-        </select>
-
-        <label for="actorFilter">Acteur / statut</label>
-        <select id="actorFilter">
-          <option value="all">Tous</option>
-          <option value="FAMa / État malien">FAMa / État malien</option>
-          <option value="FLA / Azawad">FLA / Azawad</option>
-          <option value="JNIM / GSIM">JNIM / GSIM</option>
-          <option value="État islamique au Sahel">État islamique au Sahel</option>
-          <option value="Plusieurs acteurs">Plusieurs acteurs</option>
-          <option value="Contesté">Contesté</option>
-          <option value="À vérifier">À vérifier</option>
-        </select>
-
-        <label for="searchInput">Recherche</label>
-        <input
-          id="searchInput"
-          type="search"
-          placeholder="Kidal, Gao, JNIM, FLA..."
-        />
-
-        <button id="resetBtn" type="button">Réinitialiser</button>
-      </section>
-
-      <section class="panel legend">
-        <h2>Légende</h2>
-
-        <div>
-          <span class="dot gov"></span>
-          FAMa / État malien
-        </div>
-
-        <div>
-          <span class="dot fla"></span>
-          FLA / Azawad
-        </div>
-
-        <div>
-          <span class="dot jnim"></span>
-          JNIM / GSIM
-        </div>
-
-        <div>
-          <span class="dot contested"></span>
-          Zone contestée / revendication
-        </div>
-
-        <div>
-          <span class="dot event"></span>
-          Signal médiatique à vérifier
-        </div>
-      </section>
-
-      <section class="panel">
-        <h2>Éléments affichés</h2>
-        <div id="itemCount" class="item-count" role="status" aria-live="polite">Chargement...</div>
+      <section class="feed-section" aria-labelledby="feed-title">
+        <header class="feed-header">
+          <div>
+            <span>03 / SIGNAL FEED</span>
+            <h2 id="feed-title">Derniers éléments</h2>
+          </div>
+          <div id="itemCount" class="item-count" role="status" aria-live="polite">Chargement...</div>
+        </header>
         <div id="itemList" class="item-list" aria-label="Liste des éléments affichés"></div>
       </section>
+
+      <footer class="sidebar-footer">
+        <span>OSINT / DIFFUSION OUVERTE</span>
+        <span>Signal ≠ confirmation</span>
+      </footer>
     </aside>
 
-    <main class="map-wrap">
-      <div class="topbar">
-        <strong>Dernière mise à jour :</strong>
-        <span id="lastUpdated" role="status" aria-live="polite">chargement...</span>
-        <span class="sep">•</span>
-        <span>Médias publics · vérification requise</span>
+    <main class="map-stage">
+      <div id="map" role="region" aria-label="Carte des zones de référence et des signaux médiatiques au Mali"></div>
+
+      <div class="map-top-layout">
+        <section class="map-brief glass-panel" aria-label="Contexte de la carte">
+          <div class="map-brief-index">M01</div>
+          <div>
+            <span class="map-kicker"><i aria-hidden="true"></i> Situation overview</span>
+            <h2>Théâtre national</h2>
+            <p>Signaux publics · fenêtre glissante de 45 jours</p>
+          </div>
+        </section>
+
+        <section id="statusCards" class="status-cards" aria-label="Indicateurs de situation"></section>
       </div>
 
-      <div id="map" role="region" aria-label="Carte des zones de référence et des signaux médiatiques au Mali"></div>
-    </main>
+      <aside class="map-legend glass-panel" aria-label="Légende cartographique">
+        <div class="legend-title">
+          <span>Légende active</span>
+          <i aria-hidden="true"></i>
+        </div>
+        <div class="legend-grid">
+          <span><i class="legend-mark gov"></i>État malien</span>
+          <span><i class="legend-mark fla"></i>FLA / Azawad</span>
+          <span><i class="legend-mark jnim"></i>JNIM / GSIM</span>
+          <span><i class="legend-mark contested"></i>Contesté</span>
+          <span><i class="legend-mark event"></i>Signal à vérifier</span>
+        </div>
+      </aside>
 
+      <div class="map-disclaimer glass-panel">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.3 3.7 2.4 17.4A2 2 0 0 0 4.1 20h15.8a2 2 0 0 0 1.7-2.6L13.7 3.7a2 2 0 0 0-3.4 0Z" /></svg>
+        <span><strong>Lecture prudente</strong> — positions approximatives, sources ouvertes, recoupement requis.</span>
+      </div>
+    </main>
   </div>
 
   <script
@@ -136,7 +187,6 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin="">
   </script>
-
   <script src="script.js"></script>
   <noscript>JavaScript est nécessaire pour afficher la carte et les signaux médiatiques.</noscript>
 </body>

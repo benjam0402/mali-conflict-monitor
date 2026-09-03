@@ -91,6 +91,20 @@ def validate_events(payload: dict[str, Any]) -> None:
             walk_coordinates(geometry.get("coordinates"), context)
 
 
+def validate_map_context(payload: dict[str, Any]) -> None:
+    for index, feature in enumerate(payload["features"], start=1):
+        context = f"data/map_context.geojson feature {index}"
+        if not isinstance(feature, dict) or feature.get("type") != "Feature":
+            raise ValueError(f"{context} : Feature attendue")
+        properties = feature.get("properties")
+        if not isinstance(properties, dict) or not properties.get("name"):
+            raise ValueError(f"{context} : nom de pays absent")
+        geometry = feature.get("geometry")
+        if not isinstance(geometry, dict) or geometry.get("type") not in {"Polygon", "MultiPolygon"}:
+            raise ValueError(f"{context} : Polygon ou MultiPolygon attendu")
+        walk_coordinates(geometry.get("coordinates"), context)
+
+
 def validate_source_log() -> dict[str, Any]:
     log = load_json(DATA_DIR / "source_log.json")
     if not isinstance(log, dict) or int(log.get("successful_sources", 0)) < 1:
@@ -134,6 +148,8 @@ def validate_social_watch() -> dict[str, Any]:
 
 def main() -> None:
     validate_collection(DATA_DIR / "situation.geojson", require_features=True)
+    map_context = validate_collection(DATA_DIR / "map_context.geojson", require_features=True)
+    validate_map_context(map_context)
     events = validate_collection(DATA_DIR / "events.geojson", require_features=True)
     validate_events(events)
     log = validate_source_log()

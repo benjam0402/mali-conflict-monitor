@@ -3,32 +3,37 @@ const SOURCE_FILES = [
   { id: 'events', url: 'data/events.geojson', label: 'signaux médiatiques' }
 ];
 const SOCIAL_WATCH_FILE = 'data/social_watch.json';
+const MAP_CONTEXT_FILE = 'data/map_context.geojson';
 
 const colors = {
   'FAMa / État malien': '#3b82f6',
-  'FLA / Azawad': '#8b5cf6',
-  'JNIM / GSIM': '#ef4444',
-  'État islamique au Sahel': '#dc2626',
-  'Plusieurs acteurs': '#f97316',
-  'Contesté': '#f97316',
-  'À vérifier': '#94a3b8',
-  'Événement récent': '#94a3b8'
+  'FLA / Azawad': '#9a75d4',
+  'JNIM / GSIM': '#d95c52',
+  'État islamique au Sahel': '#c8463c',
+  'Plusieurs acteurs': '#df8c44',
+  'Contesté': '#df8c44',
+  'À vérifier': '#d7aa5d',
+  'Événement récent': '#d7aa5d',
+  'humanitaire': '#48c8b5',
+  'politique': '#7f91a2',
+  'sécurité': '#d95c52'
 };
 
 const map = L.map('map', {
-  zoomControl: true,
-  preferCanvas: true
+  zoomControl: false,
+  preferCanvas: false
 }).setView([16.8, -2.3], 6);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 18,
-  attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
+L.control.zoom({ position: 'bottomright' }).addTo(map);
+L.control.scale({ position: 'bottomright', imperial: false, maxWidth: 110 }).addTo(map);
+map.attributionControl.setPrefix(false);
+map.attributionControl.addAttribution('Map context: Natural Earth');
 
 let allFeatures = [];
 let renderedLayers = [];
 let datasetMetadata = {};
 let socialWatch = { metadata: {}, targets: [] };
+let contextLayer = null;
 
 const itemList = document.getElementById('itemList');
 const itemCount = document.getElementById('itemCount');
@@ -81,7 +86,9 @@ function formatDate(value, includeTime = false) {
 }
 
 function featureColor(props = {}) {
-  if (props.layer === 'event') return colors['Événement récent'];
+  if (props.layer === 'event') {
+    return colors[props.actor] || colors[props.category] || colors['Événement récent'];
+  }
   return colors[props.actor] || colors[props.status] || '#94a3b8';
 }
 
@@ -89,11 +96,12 @@ function markerFor(feature, latlng) {
   const props = feature.properties || {};
   const color = featureColor(props);
   return L.circleMarker(latlng, {
-    radius: props.layer === 'event' ? 7 : 9,
+    radius: props.layer === 'event' ? 6.5 : 8.5,
     color,
-    weight: 2,
+    weight: props.layer === 'event' ? 1.5 : 2,
     fillColor: color,
-    fillOpacity: props.layer === 'event' ? 0.72 : 0.9
+    fillOpacity: props.layer === 'event' ? 0.78 : 0.92,
+    className: props.layer === 'event' ? 'map-signal-marker' : 'map-reference-marker'
   });
 }
 
@@ -105,8 +113,9 @@ function styleFeature(feature) {
     weight: 2,
     opacity: 0.9,
     fillColor: color,
-    fillOpacity: props.layer === 'zone' ? 0.2 : 0.12,
-    dashArray: props.status === 'Contesté' || String(props.confidence || '').startsWith('faible') ? '7,7' : null
+    fillOpacity: props.layer === 'zone' ? 0.13 : 0.16,
+    dashArray: props.status === 'Contesté' || String(props.confidence || '').startsWith('faible') ? '5,7' : null,
+    className: props.layer === 'zone' ? 'map-zone-shape' : 'map-reference-shape'
   };
 }
 
@@ -122,6 +131,7 @@ function popupHtml(props = {}) {
     : '';
 
   return `
+    <div class="popup-kicker">${escapeHtml(props.layer_label || 'Open source signal')}</div>
     <div class="popup-title">${escapeHtml(props.title || 'Sans titre')}</div>
     <div class="popup-badges">${tags}</div>
     <div class="popup-meta">Date : ${escapeHtml(formatDate(props.as_of || props.date))}</div>
@@ -172,14 +182,30 @@ function render() {
       pointToLayer: markerFor,
       style: styleFeature,
       onEachFeature: (currentFeature, currentLayer) => {
-        currentLayer.bindPopup(popupHtml(currentFeature.properties || {}));
+        const props = currentFeature.properties || {};
+        currentLayer.bindPopup(popupHtml(props), { maxWidth: 340, closeButton: true });
+        currentLayer.bindTooltip(escapeHtml(props.title || 'Signal public'), {
+          direction: 'top',
+          className: 'map-tooltip',
+          offset: [0, -6],
+          opacity: 1
+        });
+        currentLayer.on('mouseover', () => {
+          if (currentLayer.setStyle) {
+            currentLayer.setStyle({ weight: 3, fillOpacity: props.layer === 'zone' ? 0.2 : 1 });
+            currentLayer.bringToFront?.();
+          }
+        });
+        currentLayer.on('mouseout', () => {
+          if (currentLayer.setStyle) currentLayer.setStyle(styleFeature(currentFeature));
+        });
       }
     }).addTo(map);
     renderedLayers.push(layer);
   });
 
   renderList(visible);
-  itemCount.textContent = `${visible.length} élément(s), dont ${mapped.length} sur la carte`;
+  itemCount.textContent = `${visible.length} affichés · ${mapped.length} cartographiés`;
 }
 
 function renderList(features) {
@@ -195,10 +221,19 @@ function renderList(features) {
       const props = feature.properties || {};
       const item = document.createElement('article');
       item.className = 'item';
+      item.style.setProperty('--item-accent', featureColor(props));
+      const location = props.location || props.region || '';
       item.innerHTML = `
+        <div class="item-overline">
+          <span class="item-source">${escapeHtml(props.source || props.layer_label || 'Source publique')}</span>
+          <time datetime="${escapeHtml(featureDate(feature))}">${escapeHtml(formatDate(featureDate(feature)))}</time>
+        </div>
         <div class="item-title">${escapeHtml(props.title || 'Sans titre')}</div>
-        <div class="item-meta">${escapeHtml(props.actor || props.status || '')} · ${escapeHtml(props.layer_label || '')}</div>
-        <div class="item-meta">${escapeHtml(formatDate(featureDate(feature)))} · ${escapeHtml(props.source || '')}</div>
+        <div class="item-tags">
+          ${props.actor || props.status ? `<span class="item-tag">${escapeHtml(props.actor || props.status)}</span>` : ''}
+          ${location ? `<span class="item-tag">${escapeHtml(location)}</span>` : ''}
+          ${props.category ? `<span class="item-tag">${escapeHtml(props.category)}</span>` : ''}
+        </div>
       `;
 
       const actions = document.createElement('div');
@@ -207,7 +242,7 @@ function renderList(features) {
         const zoomButton = document.createElement('button');
         zoomButton.type = 'button';
         zoomButton.className = 'item-action';
-        zoomButton.textContent = 'Voir sur la carte';
+        zoomButton.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.2 7-12a7 7 0 1 0-14 0c0 6.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.2"/></svg>Localiser';
         zoomButton.addEventListener('click', () => zoomToFeature(feature));
         actions.appendChild(zoomButton);
       }
@@ -219,7 +254,7 @@ function renderList(features) {
         sourceLink.href = sourceUrl;
         sourceLink.target = '_blank';
         sourceLink.rel = 'noopener noreferrer';
-        sourceLink.textContent = 'Source';
+        sourceLink.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>Ouvrir la source';
         actions.appendChild(sourceLink);
       }
 
@@ -247,38 +282,49 @@ function populateActorFilter(features) {
 
 function renderStatusCards(features, metadata, watch) {
   const zones = features.filter(feature => feature.properties?.layer === 'zone').length;
-  const signals = features.filter(feature => feature.properties?.layer === 'event').length;
-  const mappedSignals = features.filter(feature => feature.properties?.layer === 'event' && feature.geometry).length;
+  const mediaSignals = features.filter(feature => feature.properties?.source_system);
+  const signals = mediaSignals.length;
+  const mappedSignals = mediaSignals.filter(feature => feature.geometry).length;
   const sourceSummary = metadata?.source_summary || {};
   const successfulSources = sourceSummary.successful_sources ?? '—';
   const localSources = sourceSummary.local_media_sources ?? '—';
   const socialTargetCount = watch?.metadata?.target_count ?? 0;
   const activeSocialFeeds = watch?.metadata?.active_feed_count ?? 0;
+  const mappedRatio = signals ? Math.round((mappedSignals / signals) * 100) : 0;
 
   const cards = [
     {
-      title: 'Couverture',
-      body: `${zones} zone(s) de référence et ${signals} signal(aux) médiatique(s), dont ${mappedSignals} cartographié(s).`
+      label: 'Signaux actifs',
+      value: signals,
+      meta: `Dernier · ${formatDate(metadata?.latest_signal_date)}`,
+      tone: 'sand'
     },
     {
-      title: 'Collecte ouverte',
-      body: `${successfulSources} source(s) publique(s) accessible(s), dont ${localSources} média(s) local(aux) ciblé(s). Dernier signal : ${formatDate(metadata?.latest_signal_date)}.`
+      label: 'Cartographiés',
+      value: mappedSignals,
+      meta: `${mappedRatio}% des signaux · ${zones} zones`,
+      tone: 'red'
     },
     {
-      title: 'Veille sociale',
-      body: `${socialTargetCount} compte(s) X public(s) dans la watchlist ; ${activeSocialFeeds} flux social(aux) automatisé(s).`
+      label: 'Sources en ligne',
+      value: successfulSources,
+      meta: `${localSources} médias locaux`,
+      tone: 'teal'
     },
     {
-      title: 'Prudence',
-      body: 'Un article est un signal à recouper, pas une confirmation. Les positions indiquent seulement une localité citée.'
+      label: 'Social watch',
+      value: socialTargetCount,
+      meta: `${activeSocialFeeds} flux automatique(s)`,
+      tone: 'purple'
     }
   ];
 
   statusCards.innerHTML = cards.map(card => `
-    <div class="status-card">
-      <strong>${escapeHtml(card.title)}</strong>
-      <span>${escapeHtml(card.body)}</span>
-    </div>
+    <article class="status-card tone-${escapeHtml(card.tone)}">
+      <span class="status-card-label">${escapeHtml(card.label)}</span>
+      <strong class="status-card-value">${escapeHtml(card.value)}</strong>
+      <span class="status-card-meta">${escapeHtml(card.meta)}</span>
+    </article>
   `).join('');
 }
 
@@ -312,11 +358,32 @@ function renderSocialTargets(watch) {
       link.href = profileUrl;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-      link.textContent = 'Ouvrir le profil public';
+      link.textContent = 'Consulter ↗';
       item.appendChild(link);
     }
     socialTargets.appendChild(item);
   });
+}
+
+function renderMapContext(data) {
+  if (contextLayer) map.removeLayer(contextLayer);
+
+  const countries = L.geoJSON(data, {
+    interactive: false,
+    style: feature => {
+      const focus = Boolean(feature.properties?.focus);
+      return {
+        color: focus ? '#d2a95f' : '#52656b',
+        weight: focus ? 1.8 : 1.05,
+        opacity: focus ? 0.9 : 0.78,
+        fillColor: focus ? '#5b4724' : '#122027',
+        fillOpacity: focus ? 0.44 : 0.86
+      };
+    }
+  });
+
+  contextLayer = countries.addTo(map);
+  countries.bringToBack();
 }
 
 async function loadDataset(source) {
@@ -329,6 +396,16 @@ async function loadDataset(source) {
   return { ...source, data };
 }
 
+async function loadMapContext() {
+  const response = await fetch(MAP_CONTEXT_FILE, { cache: 'force-cache' });
+  if (!response.ok) throw new Error(`contexte cartographique indisponible (${response.status})`);
+  const data = await response.json();
+  if (data?.type !== 'FeatureCollection' || !Array.isArray(data.features)) {
+    throw new Error('contexte cartographique invalide');
+  }
+  return data;
+}
+
 async function loadSocialWatch() {
   const response = await fetch(SOCIAL_WATCH_FILE, { cache: 'no-store' });
   if (!response.ok) throw new Error(`watchlist sociale indisponible (${response.status})`);
@@ -338,11 +415,15 @@ async function loadSocialWatch() {
 }
 
 async function init() {
-  const [results, loadedSocialWatch] = await Promise.all([
+  const [results, loadedSocialWatch, loadedMapContext] = await Promise.all([
     Promise.allSettled(SOURCE_FILES.map(loadDataset)),
     loadSocialWatch().catch(error => {
       console.error(error);
       return { metadata: {}, targets: [] };
+    }),
+    loadMapContext().catch(error => {
+      console.error(error);
+      return null;
     })
   ]);
   socialWatch = loadedSocialWatch;
@@ -378,7 +459,8 @@ async function init() {
 
   const geolocatedFeatures = allFeatures.filter(feature => feature.geometry);
   const bounds = L.geoJSON({ type: 'FeatureCollection', features: geolocatedFeatures }).getBounds();
-  if (bounds.isValid()) map.fitBounds(bounds.pad(0.15));
+  if (bounds.isValid()) map.fitBounds(bounds.pad(0.15), { animate: false });
+  if (loadedMapContext) renderMapContext(loadedMapContext);
 }
 
 layerFilter.addEventListener('change', render);
@@ -390,6 +472,19 @@ resetBtn.addEventListener('click', () => {
   actorFilter.value = 'all';
   searchInput.value = '';
   render();
+});
+
+document.addEventListener('keydown', event => {
+  if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+    event.preventDefault();
+    searchInput.focus();
+    searchInput.select();
+  }
+  if (event.key === 'Escape' && document.activeElement === searchInput) {
+    searchInput.value = '';
+    searchInput.blur();
+    render();
+  }
 });
 
 init().catch(error => {

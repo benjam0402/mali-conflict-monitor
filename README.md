@@ -4,6 +4,7 @@ Mini-site Leaflet statique qui combine :
 
 - une situation de référence, dessinée et vérifiée manuellement ;
 - des signaux récents issus de médias et flux publics ;
+- un fond cartographique vectoriel local, stable même sans service de tuiles externe ;
 - une file CSV permettant de revoir tout ce qui a été collecté ou filtré.
 
 Le projet n'utilise plus ACLED, ne demande aucun compte et ne contient aucun secret. Un article est présenté comme un **signal médiatique à vérifier**, jamais comme une confirmation automatique.
@@ -97,6 +98,7 @@ Aucun secret GitHub n'est requis. Si toutes les sources échouent ou si aucune d
 ## Fichiers importants
 
 - `data/situation.geojson` : zones et positions de référence revues manuellement ;
+- `data/map_context.geojson` : frontières régionales issues de Natural Earth (domaine public) ;
 - `data/events.geojson` : signaux médiatiques lus par le frontend ;
 - `data/review_candidates.csv` : articles publiés, filtrés ou encore sous délai ;
 - `data/source_log.json` : santé et compteurs de chaque collecte ;
