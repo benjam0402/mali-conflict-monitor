@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-04T00:00:00+00:00",
+    "generated_at": "2026-09-04T11:42:14+00:00",
     "target_count": 7,
     "active_feed_count": 7,
     "warning": "Les profils X sont suivis via leur indexation publique dans des flux RSS ouverts. Cette méthode sans jeton reste partielle ; chaque signal est filtré, retardé et doit être recoupé."

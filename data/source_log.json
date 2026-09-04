@@ -1,24 +1,30 @@
 {
-  "window_start": "2026-07-20",
-  "publication_cutoff": "2026-09-01",
+  "window_start": "2026-07-21",
+  "publication_cutoff": "2026-09-02",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
-  "coord_decimals": 2,
-  "sources_configured": 13,
-  "sources_attempted": 13,
-  "successful_sources": 12,
+  "coord_decimals": 3,
+  "sources_configured": 29,
+  "sources_attempted": 29,
+  "successful_sources": 28,
   "failed_sources": 1,
-  "local_media_sources": 6,
-  "social_targets": 3,
-  "social_feeds_active": 0,
+  "local_media_sources": 11,
+  "social_targets": 7,
+  "social_feeds_active": 7,
+  "countries_monitored": [
+    "Mali",
+    "Niger",
+    "Burkina Faso",
+    "Mauritanie",
+    "Tchad"
+  ],
   "source_results": [
     {
       "name": "GDELT DOC 2.0",
       "kind": "gdelt",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 1 essais : HTTP Error 429: Too Many Requests"
+      "status": "ok",
+      "articles": 250
     },
     {
       "name": "Google Actualités — Mali",
@@ -27,10 +33,34 @@
       "articles": 61
     },
     {
+      "name": "Google Actualités — Niger",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 100
+    },
+    {
+      "name": "Google Actualités — Burkina Faso",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 62
+    },
+    {
+      "name": "Google Actualités — Mauritanie",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 57
+    },
+    {
+      "name": "Google Actualités — Tchad",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 14
+    },
+    {
       "name": "RFI Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 23
+      "articles": 24
     },
     {
       "name": "France 24 Afrique",
@@ -41,17 +71,48 @@
     {
       "name": "ONU Info Afrique",
       "kind": "rss",
-      "status": "ok",
-      "articles": 30
+      "status": "error",
+      "articles": 0,
+      "error": "not well-formed (invalid token): line 1, column 0"
     },
     {
       "name": "DW Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 10
+      "articles": 9
     },
     {
       "name": "Studio Tamani",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 10
+    },
+    {
+      "name": "Studio Kalangou",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 10
+    },
+    {
+      "name": "Burkina 24",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 6
+    },
+    {
+      "name": "LeFaso.net",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 76
+    },
+    {
+      "name": "Sahara Médias",
+      "kind": "rss",
+      "status": "ok",
+      "articles": 10
+    },
+    {
+      "name": "Tchadinfos",
       "kind": "rss",
       "status": "ok",
       "articles": 10
@@ -91,15 +152,57 @@
       "kind": "rss",
       "status": "ok",
       "articles": 44
+    },
+    {
+      "name": "X indexé — @StudioTamani",
+      "kind": "social_rss",
+      "status": "ok",
+      "articles": 5
+    },
+    {
+      "name": "X indexé — @Malijetactu",
+      "kind": "social_rss",
+      "status": "ok",
+      "articles": 10
+    },
+    {
+      "name": "X indexé — @maliactu",
+      "kind": "social_rss",
+      "status": "ok",
+      "articles": 0
+    },
+    {
+      "name": "X indexé — @actuniger",
+      "kind": "social_rss",
+      "status": "ok",
+      "articles": 17
+    },
+    {
+      "name": "X indexé — @burkina24",
+      "kind": "social_rss",
+      "status": "ok",
+      "articles": 33
+    },
+    {
+      "name": "X indexé — @ONUMauritanie",
+      "kind": "social_rss",
+      "status": "ok",
+      "articles": 0
+    },
+    {
+      "name": "X indexé — @tchadinfos",
+      "kind": "social_rss",
+      "status": "ok",
+      "articles": 23
     }
   ],
-  "articles_fetched": 803,
-  "unique_articles": 787,
-  "fresh_signals": 46,
-  "retained_signals": 48,
+  "articles_fetched": 1456,
+  "unique_articles": 1335,
+  "fresh_signals": 215,
+  "retained_signals": 220,
   "manual_events": 0,
-  "published_events": 48,
-  "mapped_events": 18,
-  "generated_at_utc": "2026-09-03T21:01:14+00:00",
-  "duration_seconds": 75.07
+  "published_events": 220,
+  "mapped_events": 101,
+  "generated_at_utc": "2026-09-04T11:42:14+00:00",
+  "duration_seconds": 53.63
 }
