@@ -4,6 +4,8 @@
     "platform": "x",
     "handle": "StudioTamani",
     "profile_url": "https://x.com/StudioTamani",
+    "search_rss_url": "https://news.google.com/rss/search?q=site%3Ax.com%2FStudioTamani%20(Mali%20OR%20Bamako%20OR%20Gao)%20(attaque%20OR%20conflit%20OR%20securite)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
+    "country": "Mali",
     "language": "fr",
     "enabled": true
   },
@@ -12,6 +14,8 @@
     "platform": "x",
     "handle": "Malijetactu",
     "profile_url": "https://x.com/Malijetactu",
+    "search_rss_url": "https://news.google.com/rss/search?q=site%3Ax.com%2FMalijetactu%20(Mali%20OR%20Bamako)%20(attaque%20OR%20conflit%20OR%20securite)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
+    "country": "Mali",
     "language": "fr",
     "enabled": true
   },
@@ -20,6 +24,48 @@
     "platform": "x",
     "handle": "maliactu",
     "profile_url": "https://x.com/maliactu",
+    "search_rss_url": "https://news.google.com/rss/search?q=site%3Ax.com%2Fmaliactu%20(Mali%20OR%20Bamako)%20(attaque%20OR%20conflit%20OR%20securite)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
+    "country": "Mali",
+    "language": "fr",
+    "enabled": true
+  },
+  {
+    "name": "ActuNiger",
+    "platform": "x",
+    "handle": "actuniger",
+    "profile_url": "https://x.com/actuniger",
+    "search_rss_url": "https://news.google.com/rss/search?q=site%3Ax.com%2Factuniger%20(Niger%20OR%20Niamey%20OR%20Tillaberi)%20(attaque%20OR%20conflit%20OR%20securite)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
+    "country": "Niger",
+    "language": "fr",
+    "enabled": true
+  },
+  {
+    "name": "Burkina 24",
+    "platform": "x",
+    "handle": "burkina24",
+    "profile_url": "https://x.com/burkina24",
+    "search_rss_url": "https://news.google.com/rss/search?q=site%3Ax.com%2Fburkina24%20(Burkina%20OR%20Ouagadougou)%20(attaque%20OR%20conflit%20OR%20securite)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
+    "country": "Burkina Faso",
+    "language": "fr",
+    "enabled": true
+  },
+  {
+    "name": "ONU Mauritanie",
+    "platform": "x",
+    "handle": "ONUMauritanie",
+    "profile_url": "https://x.com/ONUMauritanie",
+    "search_rss_url": "https://news.google.com/rss/search?q=site%3Ax.com%2FONUMauritanie%20(Mauritanie%20OR%20Nouakchott)%20(conflit%20OR%20frontiere%20OR%20securite)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
+    "country": "Mauritanie",
+    "language": "fr",
+    "enabled": true
+  },
+  {
+    "name": "Tchadinfos",
+    "platform": "x",
+    "handle": "tchadinfos",
+    "profile_url": "https://x.com/tchadinfos",
+    "search_rss_url": "https://news.google.com/rss/search?q=site%3Ax.com%2Ftchadinfos%20(Tchad%20OR%20N%27Djamena%20OR%20Lac%20Tchad)%20(attaque%20OR%20conflit%20OR%20securite)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
+    "country": "Tchad",
     "language": "fr",
     "enabled": true
   }

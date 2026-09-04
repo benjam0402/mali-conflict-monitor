@@ -27,14 +27,15 @@ EVENTS_CSV = DATA_DIR / "events.csv"
 MANUAL_EVENTS_GEOJSON = DATA_DIR / "manual_events.geojson"
 REVIEW_CANDIDATES_CSV = DATA_DIR / "review_candidates.csv"
 SOURCE_LOG = DATA_DIR / "source_log.json"
-MALI_PLACES_CSV = ROOT / "tools" / "mali_places.csv"
+SAHEL_PLACES_CSV = ROOT / "tools" / "sahel_places.csv"
 PUBLIC_SOURCES_JSON = ROOT / "tools" / "public_sources.json"
 SOCIAL_TARGETS_JSON = ROOT / "tools" / "social_targets.json"
 SOCIAL_WATCH_JSON = DATA_DIR / "social_watch.json"
 
 GDELT_QUERY = (
-    'Mali (JNIM OR GSIM OR FAMa OR FLA OR Azawad OR jihadist OR insurgent '
-    'OR attack OR attaque OR clash OR affrontement OR violence OR blockade OR blocus)'
+    '(Mali OR Niger OR "Burkina Faso" OR Mauritania OR Mauritanie OR Chad OR Tchad) '
+    '(JNIM OR GSIM OR FAMa OR FDS OR VDP OR insurgent OR attack OR attaque OR clash '
+    'OR affrontement OR violence OR blockade OR blocus)'
 )
 
 EVENT_FIELDS = [
@@ -43,6 +44,7 @@ EVENT_FIELDS = [
     "title",
     "location",
     "region",
+    "country",
     "latitude",
     "longitude",
     "layer",
@@ -67,6 +69,7 @@ CANDIDATE_FIELDS = [
     "domain",
     "language",
     "matched_place",
+    "country",
     "latitude",
     "longitude",
     "category",
@@ -90,16 +93,14 @@ TRACKING_QUERY_KEYS = {
     "utm_term",
 }
 
-MALI_TERMS = {
-    "mali",
-    "malien",
-    "malienne",
-    "bamako",
-    "azawad",
-    "fama",
-    "jnim",
-    "gsim",
+COUNTRY_TERMS = {
+    "Mali": {"mali", "malien", "malienne", "bamako", "azawad", "fama"},
+    "Niger": {"niger", "nigerien", "nigerienne", "niamey"},
+    "Burkina Faso": {"burkina", "burkina faso", "burkinabe", "ouagadougou", "fds", "vdp"},
+    "Mauritanie": {"mauritanie", "mauritania", "mauritanien", "mauritanienne", "nouakchott"},
+    "Tchad": {"tchad", "chad", "tchadien", "tchadienne", "n djamena", "ndjamena"},
 }
+SAHEL_TERMS = set().union(*COUNTRY_TERMS.values())
 
 CONFLICT_TERMS = {
     "attaque",
@@ -190,12 +191,18 @@ ACTOR_PATTERNS = [
     ({"fama", "armee malienne", "malian army", "forces armees maliennes"}, "FAMa / État malien"),
     ({"fla", "front de liberation de l azawad", "azawad liberation front"}, "FLA / Azawad"),
     ({"etat islamique au sahel", "islamic state sahel", "issp", "eigs"}, "État islamique au Sahel"),
+    ({"forces armees nigeriennes", "armee nigerienne", "fan niger"}, "Forces nigériennes"),
+    ({"forces de defense et de securite", "volontaires pour la defense de la patrie", "vdp"}, "FDS / VDP — Burkina Faso"),
+    ({"armee mauritanienne", "forces armees mauritaniennes"}, "Forces mauritaniennes"),
+    ({"armee tchadienne", "forces armees tchadiennes"}, "Forces tchadiennes"),
 ]
 
 TRUSTED_SOURCE_TERMS = {
     "associated press",
     "bamada",
     "bbc",
+    "burkina 24",
+    "burkina24",
     "deutsche welle",
     "dw",
     "france 24",
@@ -206,11 +213,14 @@ TRUSTED_SOURCE_TERMS = {
     "onu info",
     "reuters",
     "rfi",
+    "sahara medias",
     "studio tamani",
+    "studio kalangou",
+    "tchadinfos",
 }
 
 MAX_RESPONSE_BYTES = 6_000_000
-MALI_BOUNDS = {"min_lon": -12.5, "max_lon": 4.8, "min_lat": 9.8, "max_lat": 25.5}
+SAHEL_BOUNDS = {"min_lon": -18.5, "max_lon": 25.5, "min_lat": 7.0, "max_lat": 28.5}
 SOCIAL_HANDLE_PATTERN = re.compile(r"^[A-Za-z0-9_]{1,30}$")
 
 
@@ -221,6 +231,8 @@ class Place:
     latitude: float
     longitude: float
     normalized_name: str
+    country: str = "Mali"
+    normalized_aliases: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -234,6 +246,7 @@ class Article:
     language: str
     tier: str
     query_matched: bool = False
+    country_hint: str = ""
 
 
 def env_bool(name: str, default: bool = True) -> bool:
@@ -312,10 +325,10 @@ def round_coord(value: Any, decimals: int) -> Optional[float]:
     return round(coordinate, decimals)
 
 
-def is_mali_coordinate(latitude: float, longitude: float) -> bool:
+def is_sahel_coordinate(latitude: float, longitude: float) -> bool:
     return (
-        MALI_BOUNDS["min_lat"] <= latitude <= MALI_BOUNDS["max_lat"]
-        and MALI_BOUNDS["min_lon"] <= longitude <= MALI_BOUNDS["max_lon"]
+        SAHEL_BOUNDS["min_lat"] <= latitude <= SAHEL_BOUNDS["max_lat"]
+        and SAHEL_BOUNDS["min_lon"] <= longitude <= SAHEL_BOUNDS["max_lon"]
     )
 
 
@@ -372,20 +385,28 @@ def atomic_write_text(path: Path, content: str) -> None:
 
 def load_places() -> list[Place]:
     places: list[Place] = []
-    with MALI_PLACES_CSV.open("r", encoding="utf-8-sig", newline="") as handle:
+    with SAHEL_PLACES_CSV.open("r", encoding="utf-8-sig", newline="") as handle:
         for row in csv.DictReader(handle):
             try:
                 latitude = float(row["latitude"])
                 longitude = float(row["longitude"])
                 name = row["name"].strip()
-                if name and is_mali_coordinate(latitude, longitude):
+                country = (row.get("country") or "").strip()
+                aliases = tuple(
+                    normalized
+                    for alias in str(row.get("aliases") or "").split("|")
+                    if (normalized := normalize_text(alias)) and len(normalized) >= 4
+                )
+                if name and country in COUNTRY_TERMS and is_sahel_coordinate(latitude, longitude):
                     places.append(
                         Place(
                             name=name,
-                            region=(row.get("region") or "Mali").strip(),
+                            region=(row.get("region") or country).strip(),
                             latitude=latitude,
                             longitude=longitude,
                             normalized_name=normalize_text(name),
+                            country=country,
+                            normalized_aliases=aliases,
                         )
                     )
             except (KeyError, TypeError, ValueError):
@@ -433,31 +454,38 @@ def normalize_social_targets(
 
         profile_url = canonical_url(item.get("profile_url")) or f"https://x.com/{handle}"
         rss_url = canonical_url(item.get("rss_url"))
+        discovery_method = "Flux RSS direct"
         if not rss_url and template:
             try:
                 rss_url = canonical_url(template.format(handle=handle))
             except (KeyError, ValueError):
                 rss_url = ""
+        if not rss_url:
+            rss_url = canonical_url(item.get("search_rss_url"))
+            discovery_method = "Index public de X"
 
         target = {
             "name": name,
             "platform": "X",
             "handle": handle,
             "profile_url": profile_url,
+            "country": safe_text(item.get("country") or "Sahel", 40),
             "feed_active": bool(rss_url),
+            "discovery_method": discovery_method if rss_url else "Veille directe",
         }
         targets.append(target)
         if rss_url:
             sources.append(
                 {
-                    "name": f"X public — @{handle}",
+                    "name": f"X indexé — @{handle}" if discovery_method == "Index public de X" else f"X public — @{handle}",
                     "kind": "social_rss",
                     "url": rss_url,
                     "tier": "social",
                     "language": safe_text(item.get("language") or "fr", 40),
                     "publisher": name,
                     "handle": handle,
-                    "query_matched": False,
+                    "country": target["country"],
+                    "query_matched": discovery_method == "Index public de X",
                 }
             )
     return targets, sources
@@ -475,7 +503,7 @@ def fetch_bytes(url: str, accept: str, attempts: int = 3) -> bytes:
             url,
             headers={
                 "Accept": accept,
-                "User-Agent": "MaliConflictMonitor/2.0 (+https://github.com/benjam0402/mali-conflict-monitor)",
+                "User-Agent": "SahelConflictMonitor/3.0 (+https://github.com/benjam0402/mali-conflict-monitor)",
             },
         )
         try:
@@ -491,12 +519,28 @@ def fetch_bytes(url: str, accept: str, attempts: int = 3) -> bytes:
     raise RuntimeError(f"Échec HTTP après {attempts} essais : {last_error}")
 
 
-def match_place(text: str, places: list[Place]) -> Optional[Place]:
+def identify_country(text: str, place: Optional[Place] = None, country_hint: str = "") -> str:
+    if place:
+        return place.country
+    if country_hint in COUNTRY_TERMS:
+        return country_hint
+    normalized = normalize_text(text)
+    for country, terms in COUNTRY_TERMS.items():
+        if contains_any(normalized, terms):
+            return country
+    return ""
+
+
+def match_place(text: str, places: list[Place], country_hint: str = "") -> Optional[Place]:
     haystack = f" {normalize_text(text)} "
-    for place in places:
-        pattern = r"(?<![a-z0-9])" + re.escape(place.normalized_name) + r"(?![a-z0-9])"
-        if re.search(pattern, haystack):
-            return place
+    inferred_country = identify_country(text, country_hint=country_hint)
+    candidates = [place for place in places if not inferred_country or place.country == inferred_country]
+    for place in candidates:
+        names = (place.normalized_name, *place.normalized_aliases)
+        for name in names:
+            pattern = r"(?<![a-z0-9])" + re.escape(name) + r"(?![a-z0-9])"
+            if re.search(pattern, haystack):
+                return place
     return None
 
 
@@ -529,7 +573,7 @@ def identify_actor(text: str) -> str:
 def relevance_score(article: Article, place: Optional[Place]) -> int:
     normalized = normalize_text(f"{article.title} {article.summary}")
     score = 0
-    if contains_any(normalized, MALI_TERMS) or place:
+    if contains_any(normalized, SAHEL_TERMS) or place or article.country_hint in COUNTRY_TERMS:
         score += 2
     if contains_any(normalized, CONFLICT_TERMS):
         score += 2
@@ -546,16 +590,20 @@ def relevance_score(article: Article, place: Optional[Place]) -> int:
 
 def is_publishable(article: Article, place: Optional[Place], score: int, threshold: int) -> bool:
     normalized = normalize_text(f"{article.title} {article.summary}")
-    mentions_mali = contains_any(normalized, MALI_TERMS) or place is not None
+    mentions_sahel_country = (
+        contains_any(normalized, SAHEL_TERMS)
+        or place is not None
+        or article.country_hint in COUNTRY_TERMS
+    )
     mentions_conflict = contains_any(normalized, HARD_CONFLICT_TERMS)
     if article.tier == "social":
-        return score >= max(threshold, 5) and mentions_mali and mentions_conflict
-    return score >= threshold and (article.query_matched or (mentions_mali and mentions_conflict))
+        return score >= max(threshold, 5) and mentions_sahel_country and mentions_conflict
+    return score >= threshold and (article.query_matched or (mentions_sahel_country and mentions_conflict))
 
 
 def fetch_gdelt(source: dict[str, Any], lookback_days: int) -> list[Article]:
     params = {
-        "query": GDELT_QUERY,
+        "query": safe_text(source.get("query") or GDELT_QUERY, 600),
         "mode": "ArtList",
         "format": "json",
         "maxrecords": str(env_int("GDELT_MAX_RECORDS", 250, 10, 250)),
@@ -595,6 +643,7 @@ def fetch_gdelt(source: dict[str, Any], lookback_days: int) -> list[Article]:
                 language=safe_text(item.get("language") or source.get("language"), 40),
                 tier=str(source.get("tier") or "aggregator"),
                 query_matched=True,
+                country_hint=safe_text(source.get("country"), 40),
             )
         )
     return articles
@@ -650,12 +699,14 @@ def fetch_rss(source: dict[str, Any]) -> list[Article]:
                 language=safe_text(source.get("language"), 40),
                 tier=str(source.get("tier") or "editorial"),
                 query_matched=bool(source.get("query_matched", False)),
+                country_hint=safe_text(source.get("country"), 40),
             )
         )
     return articles
 
 
 def candidate_row(article: Article, place: Optional[Place], score: int, status: str, decimals: int) -> dict[str, Any]:
+    country = identify_country(f"{article.title} {article.summary}", place, article.country_hint)
     return {
         "date": article.published,
         "title": article.title,
@@ -664,6 +715,7 @@ def candidate_row(article: Article, place: Optional[Place], score: int, status: 
         "domain": urlparse(article.url).netloc,
         "language": article.language,
         "matched_place": place.name if place else "",
+        "country": country,
         "latitude": round(place.latitude, decimals) if place else "",
         "longitude": round(place.longitude, decimals) if place else "",
         "category": classify_article(f"{article.title} {article.summary}"),
@@ -676,14 +728,19 @@ def candidate_row(article: Article, place: Optional[Place], score: int, status: 
 
 def article_to_event(article: Article, place: Optional[Place], score: int, decimals: int) -> dict[str, Any]:
     event_date = article.published or today_utc().isoformat()
+    country = (
+        identify_country(f"{article.title} {article.summary}", place, article.country_hint)
+        or "Sahel — pays à confirmer"
+    )
     actor = identify_actor(f"{article.title} {article.summary}")
     category = classify_article(f"{article.title} {article.summary}")
     return {
         "id": stable_hash(canonical_url(article.url), prefix="media"),
         "date": event_date,
         "title": article.title,
-        "location": place.name if place else "Mali — lieu à confirmer",
-        "region": place.region if place else "Mali",
+        "location": place.name if place else f"{country} — lieu à confirmer",
+        "region": place.region if place else country,
+        "country": country,
         "latitude": round(place.latitude, decimals) if place else "",
         "longitude": round(place.longitude, decimals) if place else "",
         "layer": "event",
@@ -709,7 +766,7 @@ def event_to_feature(event: dict[str, Any]) -> dict[str, Any]:
     latitude = round_coord(event.get("latitude"), 6)
     longitude = round_coord(event.get("longitude"), 6)
     geometry: Optional[dict[str, Any]] = None
-    if latitude is not None and longitude is not None and is_mali_coordinate(latitude, longitude):
+    if latitude is not None and longitude is not None and is_sahel_coordinate(latitude, longitude):
         geometry = {"type": "Point", "coordinates": [longitude, latitude]}
     properties = {field: event.get(field, "") for field in EVENT_FIELDS if field not in {"latitude", "longitude"}}
     properties["as_of"] = properties.get("date", "")
@@ -736,6 +793,7 @@ def feature_to_event(feature: dict[str, Any]) -> Optional[dict[str, Any]]:
     properties.setdefault("source_url", properties.get("url", ""))
     properties.setdefault("source_system", "manual")
     properties.setdefault("language", "fr")
+    properties.setdefault("country", "Mali")
     properties["id"] = safe_text(properties.get("id"), 120) or stable_hash(
         properties.get("date"), properties.get("title"), properties.get("source_url"), prefix="manual"
     )
@@ -814,8 +872,8 @@ def write_social_watch(targets: list[dict[str, Any]], generated_at: str) -> None
             "target_count": len(targets),
             "active_feed_count": sum(1 for target in targets if target.get("feed_active")),
             "warning": (
-                "Les profils X sont une liste de veille publique. Un post social n'est collecté automatiquement "
-                "que si un flux RSS public est configuré, puis il reste soumis au filtrage et au recoupement."
+                "Les profils X sont suivis via leur indexation publique dans des flux RSS ouverts. "
+                "Cette méthode sans jeton reste partielle ; chaque signal est filtré, retardé et doit être recoupé."
             ),
         },
         "targets": targets,
@@ -829,7 +887,7 @@ def write_events_geojson(events: list[dict[str, Any]], log: dict[str, Any]) -> N
     payload = {
         "type": "FeatureCollection",
         "metadata": {
-            "title": "Mali Conflict Monitor — signaux médiatiques publics",
+            "title": "Sahel Conflict Monitor — signaux médiatiques et sociaux publics",
             "last_updated": log["generated_at_utc"],
             "generated_at": log["generated_at_utc"],
             "latest_signal_date": max(dated_events, default=""),
@@ -850,7 +908,7 @@ def main() -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     lookback_days = env_int("LOOKBACK_DAYS", 14, 2, 90)
     min_days_delay = env_int("MIN_DAYS_DELAY", 2, 1, 30)
-    coord_decimals = env_int("COORD_DECIMALS", 2, 1, 3)
+    coord_decimals = env_int("COORD_DECIMALS", 3, 1, 3)
     retention_days = env_int("RETENTION_DAYS", 45, lookback_days, 180)
     max_published_events = env_int("MAX_PUBLISHED_EVENTS", 250, 10, 1000)
     relevance_threshold = env_int("RELEVANCE_THRESHOLD", 4, 2, 8)
@@ -901,7 +959,7 @@ def main() -> None:
     candidates: list[dict[str, Any]] = []
     fresh_events: list[dict[str, Any]] = []
     for article in sorted(unique_articles.values(), key=lambda item: item.published, reverse=True):
-        place = match_place(f"{article.title} {article.summary}", places)
+        place = match_place(f"{article.title} {article.summary}", places, article.country_hint)
         score = relevance_score(article, place)
         article_date = parse_iso_date(article.published)
         if not article_date:
@@ -943,6 +1001,7 @@ def main() -> None:
         "local_media_sources": sum(1 for source in sources if source.get("local")),
         "social_targets": len(social_targets),
         "social_feeds_active": len(social_sources),
+        "countries_monitored": list(COUNTRY_TERMS),
         "source_results": source_results,
         "articles_fetched": len(articles),
         "unique_articles": len(unique_articles),

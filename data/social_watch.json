@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generated_at": "2026-09-03T21:01:14+00:00",
-    "target_count": 3,
-    "active_feed_count": 0,
-    "warning": "Les profils X sont une liste de veille publique. Un post social n'est collecté automatiquement que si un flux RSS public est configuré, puis il reste soumis au filtrage et au recoupement."
+    "generated_at": "2026-09-04T00:00:00+00:00",
+    "target_count": 7,
+    "active_feed_count": 7,
+    "warning": "Les profils X sont suivis via leur indexation publique dans des flux RSS ouverts. Cette méthode sans jeton reste partielle ; chaque signal est filtré, retardé et doit être recoupé."
   },
   "targets": [
     {
@@ -11,21 +11,63 @@
       "platform": "X",
       "handle": "StudioTamani",
       "profile_url": "https://x.com/StudioTamani",
-      "feed_active": false
+      "country": "Mali",
+      "feed_active": true,
+      "discovery_method": "Index public de X"
     },
     {
       "name": "Malijet",
       "platform": "X",
       "handle": "Malijetactu",
       "profile_url": "https://x.com/Malijetactu",
-      "feed_active": false
+      "country": "Mali",
+      "feed_active": true,
+      "discovery_method": "Index public de X"
     },
     {
       "name": "MaliActu",
       "platform": "X",
       "handle": "maliactu",
       "profile_url": "https://x.com/maliactu",
-      "feed_active": false
+      "country": "Mali",
+      "feed_active": true,
+      "discovery_method": "Index public de X"
+    },
+    {
+      "name": "ActuNiger",
+      "platform": "X",
+      "handle": "actuniger",
+      "profile_url": "https://x.com/actuniger",
+      "country": "Niger",
+      "feed_active": true,
+      "discovery_method": "Index public de X"
+    },
+    {
+      "name": "Burkina 24",
+      "platform": "X",
+      "handle": "burkina24",
+      "profile_url": "https://x.com/burkina24",
+      "country": "Burkina Faso",
+      "feed_active": true,
+      "discovery_method": "Index public de X"
+    },
+    {
+      "name": "ONU Mauritanie",
+      "platform": "X",
+      "handle": "ONUMauritanie",
+      "profile_url": "https://x.com/ONUMauritanie",
+      "country": "Mauritanie",
+      "feed_active": true,
+      "discovery_method": "Index public de X"
+    },
+    {
+      "name": "Tchadinfos",
+      "platform": "X",
+      "handle": "tchadinfos",
+      "profile_url": "https://x.com/tchadinfos",
+      "country": "Tchad",
+      "feed_active": true,
+      "discovery_method": "Index public de X"
     }
   ]
 }

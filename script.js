@@ -4,6 +4,22 @@ const SOURCE_FILES = [
 ];
 const SOCIAL_WATCH_FILE = 'data/social_watch.json';
 const MAP_CONTEXT_FILE = 'data/map_context.geojson';
+const MONITORED_COUNTRIES = ['Mali', 'Niger', 'Burkina Faso', 'Mauritanie', 'Tchad'];
+const SAHEL_BOUNDS = [[7.2, -18.2], [25.2, 24.8]];
+const COUNTRY_BOUNDS = {
+  'Mali': [[10.0, -12.3], [25.1, 4.4]],
+  'Niger': [[11.4, 0.1], [23.6, 16.1]],
+  'Burkina Faso': [[9.3, -5.7], [15.2, 2.5]],
+  'Mauritanie': [[14.5, -17.2], [27.4, -4.8]],
+  'Tchad': [[7.3, 13.4], [23.6, 24.1]]
+};
+const countryColors = {
+  'Mali': '#d7aa5d',
+  'Niger': '#48c8b5',
+  'Burkina Faso': '#d88456',
+  'Mauritanie': '#7d95d6',
+  'Tchad': '#a982cc'
+};
 
 const colors = {
   'FAMa / État malien': '#3b82f6',
@@ -28,17 +44,20 @@ L.control.zoom({ position: 'bottomright' }).addTo(map);
 L.control.scale({ position: 'bottomright', imperial: false, maxWidth: 110 }).addTo(map);
 map.attributionControl.setPrefix(false);
 map.attributionControl.addAttribution('Map context: Natural Earth');
+map.attributionControl.addAttribution('Localités: <a href="https://www.geonames.org/" target="_blank" rel="noopener">GeoNames</a>');
 
 let allFeatures = [];
 let renderedLayers = [];
 let datasetMetadata = {};
 let socialWatch = { metadata: {}, targets: [] };
 let contextLayer = null;
+let mapContextData = null;
 
 const itemList = document.getElementById('itemList');
 const itemCount = document.getElementById('itemCount');
 const layerFilter = document.getElementById('layerFilter');
 const actorFilter = document.getElementById('actorFilter');
+const countryFilter = document.getElementById('countryFilter');
 const searchInput = document.getElementById('searchInput');
 const resetBtn = document.getElementById('resetBtn');
 const lastUpdated = document.getElementById('lastUpdated');
@@ -75,6 +94,18 @@ function featureDate(feature) {
   return props.as_of || props.date || '';
 }
 
+function featureCountry(feature) {
+  const props = feature?.properties || {};
+  if (MONITORED_COUNTRIES.includes(props.country)) return props.country;
+  const text = normalizeText([props.region, props.location, props.title, props.summary].join(' '));
+  return MONITORED_COUNTRIES.find(country => text.includes(normalizeText(country))) || (props.layer !== 'event' ? 'Mali' : '');
+}
+
+function focusSelectedCountry(animate = true) {
+  const bounds = COUNTRY_BOUNDS[countryFilter.value] || SAHEL_BOUNDS;
+  map.fitBounds(bounds, { animate, padding: [20, 20] });
+}
+
 function formatDate(value, includeTime = false) {
   if (!value) return 'non précisée';
   const date = new Date(value);
@@ -95,13 +126,17 @@ function featureColor(props = {}) {
 function markerFor(feature, latlng) {
   const props = feature.properties || {};
   const color = featureColor(props);
+  const isSocial = props.layer === 'event' && (
+    String(props.source_system || '').startsWith('X ') || String(props.layer_label || '').includes('réseau social')
+  );
   return L.circleMarker(latlng, {
-    radius: props.layer === 'event' ? 6.5 : 8.5,
+    radius: isSocial ? 7.5 : props.layer === 'event' ? 6.5 : 8.5,
     color,
-    weight: props.layer === 'event' ? 1.5 : 2,
+    weight: isSocial ? 2.2 : props.layer === 'event' ? 1.5 : 2,
     fillColor: color,
     fillOpacity: props.layer === 'event' ? 0.78 : 0.92,
-    className: props.layer === 'event' ? 'map-signal-marker' : 'map-reference-marker'
+    dashArray: isSocial ? '2 3' : null,
+    className: isSocial ? 'map-signal-marker map-social-marker' : props.layer === 'event' ? 'map-signal-marker' : 'map-reference-marker'
   });
 }
 
@@ -119,8 +154,142 @@ function styleFeature(feature) {
   };
 }
 
+function smoothClosedRing(coordinates, iterations = 2) {
+  if (!Array.isArray(coordinates) || coordinates.length < 4) return coordinates;
+  const first = coordinates[0];
+  const last = coordinates[coordinates.length - 1];
+  const isClosed = first[0] === last[0] && first[1] === last[1];
+  let points = (isClosed ? coordinates.slice(0, -1) : coordinates).map(point => [...point]);
+  if (points.length < 3) return coordinates;
+
+  for (let iteration = 0; iteration < iterations; iteration += 1) {
+    const rounded = [];
+    points.forEach((point, index) => {
+      const next = points[(index + 1) % points.length];
+      rounded.push([
+        point[0] * 0.75 + next[0] * 0.25,
+        point[1] * 0.75 + next[1] * 0.25
+      ]);
+      rounded.push([
+        point[0] * 0.25 + next[0] * 0.75,
+        point[1] * 0.25 + next[1] * 0.75
+      ]);
+    });
+    points = rounded;
+  }
+  return [...points, [...points[0]]];
+}
+
+function smoothZoneFeature(feature) {
+  if (feature?.properties?.layer !== 'zone' || !feature.geometry) return feature;
+  const geometry = feature.geometry;
+  let coordinates = geometry.coordinates;
+  if (geometry.type === 'Polygon') {
+    coordinates = coordinates.map(ring => smoothClosedRing(ring));
+  } else if (geometry.type === 'MultiPolygon') {
+    coordinates = coordinates.map(polygon => polygon.map(ring => smoothClosedRing(ring)));
+  }
+  return { ...feature, geometry: { ...geometry, coordinates } };
+}
+
+function cross(origin, pointA, pointB) {
+  return (pointA[0] - origin[0]) * (pointB[1] - origin[1])
+    - (pointA[1] - origin[1]) * (pointB[0] - origin[0]);
+}
+
+function convexHull(points) {
+  const unique = [...new Map(points.map(point => [`${point[0]},${point[1]}`, point])).values()]
+    .sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  if (unique.length < 3) return [];
+  const lower = [];
+  unique.forEach(point => {
+    while (lower.length >= 2 && cross(lower[lower.length - 2], lower[lower.length - 1], point) <= 0) lower.pop();
+    lower.push(point);
+  });
+  const upper = [];
+  unique.slice().reverse().forEach(point => {
+    while (upper.length >= 2 && cross(upper[upper.length - 2], upper[upper.length - 1], point) <= 0) upper.pop();
+    upper.push(point);
+  });
+  return [...lower.slice(0, -1), ...upper.slice(0, -1)];
+}
+
+function distanceKm(pointA, pointB) {
+  const meanLatitude = ((pointA[1] + pointB[1]) / 2) * Math.PI / 180;
+  const longitudeDistance = (pointA[0] - pointB[0]) * Math.cos(meanLatitude);
+  const latitudeDistance = pointA[1] - pointB[1];
+  return Math.hypot(longitudeDistance, latitudeDistance) * 111;
+}
+
+function geographicClusters(points, thresholdKm = 420) {
+  const remaining = points.map(point => [...point]);
+  const clusters = [];
+  while (remaining.length) {
+    const cluster = [remaining.pop()];
+    for (let index = 0; index < cluster.length; index += 1) {
+      for (let candidateIndex = remaining.length - 1; candidateIndex >= 0; candidateIndex -= 1) {
+        if (distanceKm(cluster[index], remaining[candidateIndex]) <= thresholdKm) {
+          cluster.push(remaining.splice(candidateIndex, 1)[0]);
+        }
+      }
+    }
+    clusters.push(cluster);
+  }
+  return clusters;
+}
+
+function roundedEnvelope(points) {
+  const hull = convexHull(points);
+  if (hull.length < 3) return [];
+  const center = hull.reduce((result, point) => [result[0] + point[0], result[1] + point[1]], [0, 0])
+    .map(value => value / hull.length);
+  const expanded = hull.map(point => {
+    const dx = point[0] - center[0];
+    const dy = point[1] - center[1];
+    const distance = Math.hypot(dx, dy) || 1;
+    const padding = 0.22;
+    return [point[0] + dx / distance * padding, point[1] + dy / distance * padding];
+  });
+  return smoothClosedRing([...expanded, expanded[0]], 2);
+}
+
+function renderSignalEnvelopes(features) {
+  const byCountry = new Map();
+  features.forEach(feature => {
+    if (
+      feature?.properties?.layer !== 'event'
+      || !feature?.properties?.source_system
+      || feature?.geometry?.type !== 'Point'
+    ) return;
+    const country = featureCountry(feature);
+    if (!country) return;
+    const coordinates = feature.geometry.coordinates;
+    if (!byCountry.has(country)) byCountry.set(country, []);
+    byCountry.get(country).push(coordinates);
+  });
+
+  byCountry.forEach((points, country) => {
+    geographicClusters(points).forEach(cluster => {
+      const ring = roundedEnvelope(cluster);
+      if (!ring.length) return;
+      const layer = L.polygon(ring.map(([longitude, latitude]) => [latitude, longitude]), {
+        className: 'signal-envelope',
+        color: countryColors[country] || '#48c8b5',
+        fillColor: countryColors[country] || '#48c8b5',
+        weight: 1.4,
+        opacity: 0.65,
+        fillOpacity: 0.055,
+        dashArray: '3 11',
+        interactive: false,
+        smoothFactor: 0.7
+      }).addTo(map);
+      renderedLayers.push(layer);
+    });
+  });
+}
+
 function popupHtml(props = {}) {
-  const tags = [props.layer_label, props.actor, props.status, props.confidence, props.precision]
+  const tags = [props.country, props.layer_label, props.actor, props.status, props.confidence, props.precision]
     .filter(Boolean)
     .map(tag => `<span class="badge">${escapeHtml(tag)}</span>`)
     .join('');
@@ -143,10 +312,12 @@ function popupHtml(props = {}) {
 
 function passesFilters(feature) {
   const props = feature.properties || {};
+  const country = countryFilter.value;
   const layer = layerFilter.value;
   const actor = actorFilter.value;
   const query = normalizeText(searchInput.value.trim());
 
+  if (country !== 'all' && featureCountry(feature) !== country) return false;
   if (layer !== 'all' && props.layer !== layer) return false;
   if (actor !== 'all' && props.actor !== actor && props.status !== actor) return false;
 
@@ -156,6 +327,7 @@ function passesFilters(feature) {
       props.summary,
       props.actor,
       props.status,
+      props.country,
       props.region,
       props.location,
       props.category,
@@ -177,8 +349,11 @@ function render() {
   const visible = allFeatures.filter(passesFilters);
   const mapped = visible.filter(feature => feature.geometry);
 
+  renderSignalEnvelopes(mapped);
+
   mapped.forEach(feature => {
-    const layer = L.geoJSON(feature, {
+    const displayFeature = smoothZoneFeature(feature);
+    const layer = L.geoJSON(displayFeature, {
       pointToLayer: markerFor,
       style: styleFeature,
       onEachFeature: (currentFeature, currentLayer) => {
@@ -203,6 +378,11 @@ function render() {
     }).addTo(map);
     renderedLayers.push(layer);
   });
+
+  if (contextLayer) {
+    contextLayer.setStyle(contextCountryStyle);
+    contextLayer.bringToBack();
+  }
 
   renderList(visible);
   itemCount.textContent = `${visible.length} affichés · ${mapped.length} cartographiés`;
@@ -230,6 +410,7 @@ function renderList(features) {
         </div>
         <div class="item-title">${escapeHtml(props.title || 'Sans titre')}</div>
         <div class="item-tags">
+          ${featureCountry(feature) ? `<span class="item-tag item-country">${escapeHtml(featureCountry(feature))}</span>` : ''}
           ${props.actor || props.status ? `<span class="item-tag">${escapeHtml(props.actor || props.status)}</span>` : ''}
           ${location ? `<span class="item-tag">${escapeHtml(location)}</span>` : ''}
           ${props.category ? `<span class="item-tag">${escapeHtml(props.category)}</span>` : ''}
@@ -306,15 +487,15 @@ function renderStatusCards(features, metadata, watch) {
       tone: 'red'
     },
     {
-      label: 'Sources en ligne',
-      value: successfulSources,
-      meta: `${localSources} médias locaux`,
+      label: 'Pays suivis',
+      value: MONITORED_COUNTRIES.length,
+      meta: `${successfulSources} sources · ${localSources} locales`,
       tone: 'teal'
     },
     {
-      label: 'Social watch',
+      label: 'X indexé',
       value: socialTargetCount,
-      meta: `${activeSocialFeeds} flux automatique(s)`,
+      meta: `${activeSocialFeeds} veille(s) automatique(s)`,
       tone: 'purple'
     }
   ];
@@ -345,12 +526,12 @@ function renderSocialTargets(watch) {
     const name = document.createElement('strong');
     name.textContent = target.name || `@${target.handle}`;
     const handle = document.createElement('span');
-    handle.textContent = `@${target.handle || 'inconnu'}`;
+    handle.textContent = `${target.country || 'Sahel'} · @${target.handle || 'inconnu'}`;
     identity.append(name, handle);
 
     const status = document.createElement('span');
     status.className = `social-feed-status ${target.feed_active ? 'is-active' : ''}`;
-    status.textContent = target.feed_active ? 'RSS actif' : 'veille directe';
+    status.textContent = target.feed_active ? (target.discovery_method || 'Flux public actif') : 'veille directe';
 
     item.append(identity, status);
     if (profileUrl) {
@@ -365,20 +546,37 @@ function renderSocialTargets(watch) {
   });
 }
 
+function contextCountryStyle(feature) {
+  const name = feature.properties?.name;
+  const monitored = Boolean(feature.properties?.monitored);
+  const selected = countryFilter.value === name;
+  const faded = countryFilter.value !== 'all' && monitored && !selected;
+  const color = countryColors[name] || '#52656b';
+  return {
+    color: selected ? '#f0d398' : monitored ? color : '#43545a',
+    weight: selected ? 2.3 : monitored ? 1.45 : 0.85,
+    opacity: faded ? 0.38 : monitored ? 0.86 : 0.58,
+    fillColor: monitored ? color : '#111c21',
+    fillOpacity: selected ? 0.23 : faded ? 0.045 : monitored ? 0.105 : 0.68,
+    className: monitored ? 'monitored-country' : 'context-country'
+  };
+}
+
 function renderMapContext(data) {
   if (contextLayer) map.removeLayer(contextLayer);
 
   const countries = L.geoJSON(data, {
-    interactive: false,
-    style: feature => {
-      const focus = Boolean(feature.properties?.focus);
-      return {
-        color: focus ? '#d2a95f' : '#52656b',
-        weight: focus ? 1.8 : 1.05,
-        opacity: focus ? 0.9 : 0.78,
-        fillColor: focus ? '#5b4724' : '#122027',
-        fillOpacity: focus ? 0.44 : 0.86
-      };
+    interactive: true,
+    style: contextCountryStyle,
+    onEachFeature: (feature, layer) => {
+      const name = feature.properties?.name || '';
+      if (!feature.properties?.monitored) return;
+      layer.bindTooltip(name, { sticky: true, className: 'country-tooltip', opacity: 1 });
+      layer.on('click', () => {
+        countryFilter.value = name;
+        render();
+        focusSelectedCountry();
+      });
     }
   });
 
@@ -427,6 +625,7 @@ async function init() {
     })
   ]);
   socialWatch = loadedSocialWatch;
+  mapContextData = loadedMapContext;
   renderSocialTargets(socialWatch);
   const loaded = results.filter(result => result.status === 'fulfilled').map(result => result.value);
   const errors = results.filter(result => result.status === 'rejected').map(result => result.reason?.message || 'source inconnue');
@@ -455,23 +654,26 @@ async function init() {
 
   populateActorFilter(allFeatures);
   renderStatusCards(allFeatures, eventMetadata, socialWatch);
+  if (mapContextData) renderMapContext(mapContextData);
   render();
-
-  const geolocatedFeatures = allFeatures.filter(feature => feature.geometry);
-  const bounds = L.geoJSON({ type: 'FeatureCollection', features: geolocatedFeatures }).getBounds();
-  if (bounds.isValid()) map.fitBounds(bounds.pad(0.15), { animate: false });
-  if (loadedMapContext) renderMapContext(loadedMapContext);
+  focusSelectedCountry(false);
 }
 
+countryFilter.addEventListener('change', () => {
+  render();
+  focusSelectedCountry();
+});
 layerFilter.addEventListener('change', render);
 actorFilter.addEventListener('change', render);
 searchInput.addEventListener('input', render);
 
 resetBtn.addEventListener('click', () => {
+  countryFilter.value = 'all';
   layerFilter.value = 'all';
   actorFilter.value = 'all';
   searchInput.value = '';
   render();
+  focusSelectedCountry();
 });
 
 document.addEventListener('keydown', event => {

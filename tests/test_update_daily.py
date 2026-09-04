@@ -17,6 +17,14 @@ class UpdateDailyTests(unittest.TestCase):
         self.places = [
             updater.Place("Sévaré", "Mopti", 14.53, -4.10, updater.normalize_text("Sévaré")),
             updater.Place("Bamako", "Bamako", 12.64, -8.00, updater.normalize_text("Bamako")),
+            updater.Place(
+                "Tillabéri",
+                "Tillabéri",
+                14.21,
+                1.45,
+                updater.normalize_text("Tillabéri"),
+                country="Niger",
+            ),
         ]
 
     def test_normalize_text_removes_accents(self) -> None:
@@ -134,6 +142,26 @@ class UpdateDailyTests(unittest.TestCase):
         score = updater.relevance_score(article, None)
         self.assertFalse(updater.is_publishable(article, None, score, 4))
 
+    def test_country_hint_geolocates_a_public_x_signal(self) -> None:
+        article = updater.Article(
+            title="Attaque signalée près de Tillaberi",
+            url="https://x.com/actuniger/status/1",
+            source="ActuNiger",
+            source_system="X indexé — @actuniger",
+            published="2026-08-30",
+            summary="Des affrontements sont rapportés dans la région.",
+            language="fr",
+            tier="social",
+            query_matched=True,
+            country_hint="Niger",
+        )
+        place = updater.match_place(article.title, self.places, article.country_hint)
+        score = updater.relevance_score(article, place)
+        event = updater.article_to_event(article, place, score, 3)
+        self.assertTrue(updater.is_publishable(article, place, score, 4))
+        self.assertEqual(event["country"], "Niger")
+        self.assertEqual(event["location"], "Tillabéri")
+
     def test_social_target_can_use_a_public_rss_template(self) -> None:
         targets, sources = updater.normalize_social_targets(
             [
@@ -150,6 +178,24 @@ class UpdateDailyTests(unittest.TestCase):
         self.assertTrue(targets[0]["feed_active"])
         self.assertEqual(sources[0]["kind"], "social_rss")
         self.assertEqual(sources[0]["url"], "https://rss.example.org/x/Media_Test.xml")
+
+    def test_social_target_can_use_public_search_index_without_token(self) -> None:
+        targets, sources = updater.normalize_social_targets(
+            [
+                {
+                    "name": "Média Niger",
+                    "platform": "x",
+                    "handle": "MediaNiger",
+                    "profile_url": "https://x.com/MediaNiger",
+                    "search_rss_url": "https://news.google.com/rss/search?q=site%3Ax.com%2FMediaNiger",
+                    "country": "Niger",
+                }
+            ]
+        )
+        self.assertTrue(targets[0]["feed_active"])
+        self.assertEqual(targets[0]["discovery_method"], "Index public de X")
+        self.assertEqual(sources[0]["country"], "Niger")
+        self.assertTrue(sources[0]["query_matched"])
 
     def test_rss_helpers_support_atom_links(self) -> None:
         entry = ET.fromstring(

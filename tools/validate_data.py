@@ -10,9 +10,11 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
+MONITORED_COUNTRIES = {"Mali", "Niger", "Burkina Faso", "Mauritanie", "Tchad"}
 
 REQUIRED_EVENT_PROPERTIES = {
     "id",
+    "country",
     "title",
     "layer",
     "layer_label",
@@ -83,6 +85,8 @@ def validate_events(payload: dict[str, Any]) -> None:
         seen_ids.add(event_id)
         if properties.get("layer") != "event":
             raise ValueError(f"{context} : layer doit valoir event")
+        if properties.get("country") not in MONITORED_COUNTRIES and properties.get("country") != "Sahel — pays à confirmer":
+            raise ValueError(f"{context} : pays non pris en charge")
         validate_url(properties.get("source_url"), context)
         geometry = feature.get("geometry")
         if geometry is not None:
@@ -92,6 +96,7 @@ def validate_events(payload: dict[str, Any]) -> None:
 
 
 def validate_map_context(payload: dict[str, Any]) -> None:
+    monitored: set[str] = set()
     for index, feature in enumerate(payload["features"], start=1):
         context = f"data/map_context.geojson feature {index}"
         if not isinstance(feature, dict) or feature.get("type") != "Feature":
@@ -99,10 +104,14 @@ def validate_map_context(payload: dict[str, Any]) -> None:
         properties = feature.get("properties")
         if not isinstance(properties, dict) or not properties.get("name"):
             raise ValueError(f"{context} : nom de pays absent")
+        if properties.get("monitored"):
+            monitored.add(str(properties["name"]))
         geometry = feature.get("geometry")
         if not isinstance(geometry, dict) or geometry.get("type") not in {"Polygon", "MultiPolygon"}:
             raise ValueError(f"{context} : Polygon ou MultiPolygon attendu")
         walk_coordinates(geometry.get("coordinates"), context)
+    if monitored != MONITORED_COUNTRIES:
+        raise ValueError("data/map_context.geojson : couverture des cinq pays incomplète")
 
 
 def validate_source_log() -> dict[str, Any]:
@@ -141,6 +150,8 @@ def validate_social_watch() -> dict[str, Any]:
         validate_url(target.get("profile_url"), context)
         if not isinstance(target.get("feed_active"), bool):
             raise ValueError(f"{context} : feed_active doit être booléen")
+        if target.get("country") not in MONITORED_COUNTRIES:
+            raise ValueError(f"{context} : pays absent ou non pris en charge")
     if int(metadata.get("target_count", -1)) != len(targets):
         raise ValueError("data/social_watch.json : compteur de cibles incohérent")
     return payload

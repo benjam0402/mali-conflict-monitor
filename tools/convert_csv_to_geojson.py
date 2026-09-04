@@ -81,7 +81,7 @@ def main() -> None:
     payload = {
         "type": "FeatureCollection",
         "metadata": {
-            "title": "Mali Conflict Monitor — signaux médiatiques publics",
+            "title": "Sahel Conflict Monitor — signaux médiatiques et sociaux publics",
             "last_updated": generated_at,
             "generated_at": generated_at,
             "event_count": len(features),

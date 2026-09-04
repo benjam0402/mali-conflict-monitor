@@ -399,6 +399,10 @@ h1 span {
   display: block;
 }
 
+.country-field {
+  grid-column: 1 / -1;
+}
+
 .select-field > span {
   display: block;
   margin-bottom: 5px;
@@ -483,7 +487,7 @@ h1 span {
 
 .social-targets {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 7px;
   padding: 0 26px 15px;
 }
@@ -529,7 +533,24 @@ h1 span {
 }
 
 .social-feed-status {
-  display: none !important;
+  display: inline-flex !important;
+  width: fit-content;
+  max-width: 100%;
+  align-items: center;
+  border: 1px solid rgba(124, 146, 153, 0.22);
+  border-radius: 999px;
+  padding: 3px 6px;
+  background: rgba(124, 146, 153, 0.06);
+  color: var(--muted-2) !important;
+  font-size: 0.49rem !important;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.social-feed-status.is-active {
+  border-color: rgba(72, 200, 181, 0.3);
+  background: rgba(72, 200, 181, 0.08);
+  color: var(--teal) !important;
 }
 
 /* Signal feed */
@@ -734,7 +755,25 @@ button.item-action:hover,
 }
 
 .map-zone-shape {
-  filter: drop-shadow(0 0 8px rgba(215, 170, 93, 0.08));
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 11px rgba(215, 170, 93, 0.13));
+  transition: fill-opacity 180ms ease, stroke-width 180ms ease, filter 180ms ease;
+}
+
+.signal-envelope {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 9px currentColor);
+  animation: envelope-flow 8s linear infinite;
+  pointer-events: none;
+}
+
+.monitored-country,
+.context-country {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: fill-opacity 180ms ease, stroke-opacity 180ms ease, stroke-width 180ms ease;
 }
 
 .glass-panel {
@@ -927,6 +966,22 @@ button.item-action:hover,
 .legend-mark.jnim { color: var(--red); }
 .legend-mark.contested { color: var(--orange); }
 .legend-mark.event { color: var(--grey); }
+.legend-mark.reference {
+  border-radius: 3px;
+  color: var(--orange);
+  background: color-mix(in srgb, var(--orange) 22%, transparent);
+  box-shadow: none;
+}
+.legend-mark.envelope {
+  width: 17px;
+  flex-basis: 17px;
+  border: 0;
+  border-top: 1px dashed var(--teal);
+  border-radius: 0;
+  color: var(--teal);
+  background: transparent;
+  box-shadow: 0 0 7px rgba(72, 200, 181, 0.45);
+}
 
 .map-disclaimer {
   position: absolute;
@@ -1016,6 +1071,11 @@ button.item-action:hover,
   filter: drop-shadow(0 0 7px rgba(77, 143, 216, 0.75));
 }
 
+.map-social-marker {
+  filter: drop-shadow(0 0 9px rgba(72, 200, 181, 0.9));
+  animation: social-marker-pulse 2.8s ease-in-out infinite;
+}
+
 .map-signal-marker:hover,
 .map-reference-marker:hover {
   filter: drop-shadow(0 0 11px var(--marker-color, rgba(241, 200, 120, 1)));
@@ -1032,6 +1092,19 @@ button.item-action:hover,
   color: var(--text);
   font-size: 0.66rem;
   backdrop-filter: blur(12px);
+}
+
+.leaflet-tooltip.country-tooltip {
+  border: 1px solid rgba(215, 170, 93, 0.22);
+  border-radius: 999px;
+  padding: 5px 9px;
+  background: rgba(7, 12, 16, 0.9);
+  box-shadow: 0 9px 24px rgba(0, 0, 0, 0.28);
+  color: var(--sand-bright);
+  font-family: var(--mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .leaflet-tooltip-top.map-tooltip::before {
@@ -1154,6 +1227,15 @@ summary:focus-visible {
 @keyframes live-pulse {
   0%, 100% { opacity: 0.65; transform: scale(0.85); }
   50% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes envelope-flow {
+  to { stroke-dashoffset: -56; }
+}
+
+@keyframes social-marker-pulse {
+  0%, 100% { stroke-opacity: 0.62; fill-opacity: 0.72; }
+  50% { stroke-opacity: 1; fill-opacity: 0.96; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -13,6 +13,47 @@
     "url": "https://news.google.com/rss/search?q=Mali%20(conflit%20OR%20JNIM%20OR%20GSIM%20OR%20FAMa%20OR%20Azawad%20OR%20attaque)%20when%3A14d&hl=fr&gl=FR&ceid=FR%3Afr",
     "tier": "aggregator",
     "language": "fr",
+    "country": "Mali",
+    "query_matched": true,
+    "enabled": true
+  },
+  {
+    "name": "Google Actualités — Niger",
+    "kind": "rss",
+    "url": "https://news.google.com/rss/search?q=Niger%20(Niamey%20OR%20Tillaberi%20OR%20Diffa%20OR%20attaque%20OR%20JNIM%20OR%20EIGS)%20when%3A14d&hl=fr&gl=FR&ceid=FR%3Afr",
+    "tier": "aggregator",
+    "language": "fr",
+    "country": "Niger",
+    "query_matched": true,
+    "enabled": true
+  },
+  {
+    "name": "Google Actualités — Burkina Faso",
+    "kind": "rss",
+    "url": "https://news.google.com/rss/search?q=%22Burkina%20Faso%22%20(attaque%20OR%20JNIM%20OR%20FDS%20OR%20VDP%20OR%20violence)%20when%3A14d&hl=fr&gl=FR&ceid=FR%3Afr",
+    "tier": "aggregator",
+    "language": "fr",
+    "country": "Burkina Faso",
+    "query_matched": true,
+    "enabled": true
+  },
+  {
+    "name": "Google Actualités — Mauritanie",
+    "kind": "rss",
+    "url": "https://news.google.com/rss/search?q=Mauritanie%20(Nouakchott%20OR%20frontiere%20OR%20attaque%20OR%20securite%20OR%20conflit)%20when%3A14d&hl=fr&gl=FR&ceid=FR%3Afr",
+    "tier": "aggregator",
+    "language": "fr",
+    "country": "Mauritanie",
+    "query_matched": true,
+    "enabled": true
+  },
+  {
+    "name": "Google Actualités — Tchad",
+    "kind": "rss",
+    "url": "https://news.google.com/rss/search?q=Tchad%20(N%27Djamena%20OR%20Lac%20Tchad%20OR%20attaque%20OR%20Boko%20Haram%20OR%20conflit)%20when%3A14d&hl=fr&gl=FR&ceid=FR%3Afr",
+    "tier": "aggregator",
+    "language": "fr",
+    "country": "Tchad",
     "query_matched": true,
     "enabled": true
   },
@@ -54,6 +95,57 @@
     "url": "https://www.studiotamani.org/feed",
     "tier": "editorial",
     "language": "fr",
+    "country": "Mali",
+    "local": true,
+    "enabled": true
+  },
+  {
+    "name": "Studio Kalangou",
+    "kind": "rss",
+    "url": "https://www.studiokalangou.org/feed/",
+    "tier": "editorial",
+    "language": "fr",
+    "country": "Niger",
+    "local": true,
+    "enabled": true
+  },
+  {
+    "name": "Burkina 24",
+    "kind": "rss",
+    "url": "https://burkina24.com/feed/",
+    "tier": "editorial",
+    "language": "fr",
+    "country": "Burkina Faso",
+    "local": true,
+    "enabled": true
+  },
+  {
+    "name": "LeFaso.net",
+    "kind": "rss",
+    "url": "https://lefaso.net/spip.php?page=backend",
+    "tier": "editorial",
+    "language": "fr",
+    "country": "Burkina Faso",
+    "local": true,
+    "enabled": true
+  },
+  {
+    "name": "Sahara Médias",
+    "kind": "rss",
+    "url": "https://fr.saharamedias.net/feed/",
+    "tier": "editorial",
+    "language": "fr",
+    "country": "Mauritanie",
+    "local": true,
+    "enabled": true
+  },
+  {
+    "name": "Tchadinfos",
+    "kind": "rss",
+    "url": "https://tchadinfos.com/feed/",
+    "tier": "editorial",
+    "language": "fr",
+    "country": "Tchad",
     "local": true,
     "enabled": true
   },
@@ -63,6 +155,7 @@
     "url": "https://www.journaldumali.com/feed/",
     "tier": "editorial",
     "language": "fr",
+    "country": "Mali",
     "local": true,
     "enabled": true
   },
@@ -80,6 +173,7 @@
     "url": "https://www.maliweb.net/rss/latest-posts",
     "tier": "editorial",
     "language": "fr",
+    "country": "Mali",
     "local": true,
     "enabled": true
   },
@@ -89,6 +183,7 @@
     "url": "https://malijet.com/rss",
     "tier": "editorial",
     "language": "fr",
+    "country": "Mali",
     "local": true,
     "enabled": true
   },
@@ -98,6 +193,7 @@
     "url": "https://maliactu.net/feed/",
     "tier": "editorial",
     "language": "fr",
+    "country": "Mali",
     "local": true,
     "enabled": true
   },
@@ -107,6 +203,7 @@
     "url": "https://bamada.net/feed/",
     "tier": "editorial",
     "language": "fr",
+    "country": "Mali",
     "local": true,
     "enabled": true
   }

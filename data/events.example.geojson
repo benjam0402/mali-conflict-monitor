@@ -15,6 +15,7 @@
         "title": "EXEMPLE FICTIF — incident à vérifier",
         "location": "Point de test",
         "region": "Mali",
+        "country": "Mali",
         "type": "attaque",
         "actors": "Acteurs à renseigner",
         "reliability": "a-verifier",
