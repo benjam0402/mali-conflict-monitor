@@ -1,14 +1,14 @@
 {
-  "window_start": "2026-08-06",
-  "publication_cutoff": "2026-09-18",
+  "window_start": "2026-08-07",
+  "publication_cutoff": "2026-09-19",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
   "coord_decimals": 3,
   "sources_configured": 29,
   "sources_attempted": 29,
-  "successful_sources": 27,
-  "failed_sources": 2,
+  "successful_sources": 28,
+  "failed_sources": 1,
   "local_media_sources": 11,
   "social_targets": 7,
   "social_feeds_active": 7,
@@ -31,7 +31,7 @@
       "name": "Google Actualités — Mali",
       "kind": "rss",
       "status": "ok",
-      "articles": 91
+      "articles": 99
     },
     {
       "name": "Google Actualités — Niger",
@@ -43,13 +43,13 @@
       "name": "Google Actualités — Burkina Faso",
       "kind": "rss",
       "status": "ok",
-      "articles": 52
+      "articles": 62
     },
     {
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 77
+      "articles": 76
     },
     {
       "name": "Google Actualités — Tchad",
@@ -72,15 +72,14 @@
     {
       "name": "ONU Info Afrique",
       "kind": "rss",
-      "status": "error",
-      "articles": 0,
-      "error": "not well-formed (invalid token): line 1, column 0"
+      "status": "ok",
+      "articles": 30
     },
     {
       "name": "DW Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 12
+      "articles": 11
     },
     {
       "name": "Studio Tamani",
@@ -104,7 +103,7 @@
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 78
+      "articles": 67
     },
     {
       "name": "Sahara Médias",
@@ -164,7 +163,7 @@
       "name": "X indexé — @Malijetactu",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 8
+      "articles": 7
     },
     {
       "name": "X indexé — @maliactu",
@@ -176,7 +175,7 @@
       "name": "X indexé — @actuniger",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 26
+      "articles": 24
     },
     {
       "name": "X indexé — @burkina24",
@@ -197,13 +196,13 @@
       "articles": 13
     }
   ],
-  "articles_fetched": 1223,
-  "unique_articles": 1169,
-  "fresh_signals": 214,
+  "articles_fetched": 1255,
+  "unique_articles": 1204,
+  "fresh_signals": 227,
   "retained_signals": 250,
   "manual_events": 0,
   "published_events": 250,
-  "mapped_events": 105,
-  "generated_at_utc": "2026-09-20T11:46:11+00:00",
-  "duration_seconds": 41.27
+  "mapped_events": 104,
+  "generated_at_utc": "2026-09-21T13:17:22+00:00",
+  "duration_seconds": 41.06
 }
