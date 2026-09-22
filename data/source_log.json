@@ -1,14 +1,14 @@
 {
-  "window_start": "2026-08-07",
-  "publication_cutoff": "2026-09-19",
+  "window_start": "2026-08-08",
+  "publication_cutoff": "2026-09-20",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
   "coord_decimals": 3,
   "sources_configured": 29,
   "sources_attempted": 29,
-  "successful_sources": 28,
-  "failed_sources": 1,
+  "successful_sources": 29,
+  "failed_sources": 0,
   "local_media_sources": 11,
   "social_targets": 7,
   "social_feeds_active": 7,
@@ -23,15 +23,14 @@
     {
       "name": "GDELT DOC 2.0",
       "kind": "gdelt",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 1 essais : HTTP Error 429: Too Many Requests"
+      "status": "ok",
+      "articles": 248
     },
     {
       "name": "Google Actualités — Mali",
       "kind": "rss",
       "status": "ok",
-      "articles": 99
+      "articles": 100
     },
     {
       "name": "Google Actualités — Niger",
@@ -43,13 +42,13 @@
       "name": "Google Actualités — Burkina Faso",
       "kind": "rss",
       "status": "ok",
-      "articles": 62
+      "articles": 56
     },
     {
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 76
+      "articles": 83
     },
     {
       "name": "Google Actualités — Tchad",
@@ -79,7 +78,7 @@
       "name": "DW Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 11
+      "articles": 9
     },
     {
       "name": "Studio Tamani",
@@ -103,7 +102,7 @@
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 67
+      "articles": 63
     },
     {
       "name": "Sahara Médias",
@@ -181,7 +180,7 @@
       "name": "X indexé — @burkina24",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 37
+      "articles": 35
     },
     {
       "name": "X indexé — @ONUMauritanie",
@@ -193,16 +192,16 @@
       "name": "X indexé — @tchadinfos",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 13
+      "articles": 14
     }
   ],
-  "articles_fetched": 1255,
-  "unique_articles": 1204,
-  "fresh_signals": 227,
+  "articles_fetched": 1498,
+  "unique_articles": 1413,
+  "fresh_signals": 231,
   "retained_signals": 250,
   "manual_events": 0,
   "published_events": 250,
-  "mapped_events": 104,
-  "generated_at_utc": "2026-09-21T13:17:22+00:00",
-  "duration_seconds": 41.06
+  "mapped_events": 114,
+  "generated_at_utc": "2026-09-22T12:00:50+00:00",
+  "duration_seconds": 55.59
 }
