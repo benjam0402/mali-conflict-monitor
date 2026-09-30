@@ -1,14 +1,14 @@
 {
-  "window_start": "2026-08-10",
-  "publication_cutoff": "2026-09-22",
+  "window_start": "2026-08-16",
+  "publication_cutoff": "2026-09-28",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
   "coord_decimals": 3,
   "sources_configured": 29,
   "sources_attempted": 29,
-  "successful_sources": 16,
-  "failed_sources": 13,
+  "successful_sources": 26,
+  "failed_sources": 3,
   "local_media_sources": 11,
   "social_targets": 7,
   "social_feeds_active": 7,
@@ -23,49 +23,45 @@
     {
       "name": "GDELT DOC 2.0",
       "kind": "gdelt",
-      "status": "ok",
-      "articles": 246
+      "status": "error",
+      "articles": 0,
+      "error": "Échec HTTP après 1 essais : HTTP Error 429: Too Many Requests"
     },
     {
       "name": "Google Actualités — Mali",
       "kind": "rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : HTTP Error 503: Service Unavailable"
+      "status": "ok",
+      "articles": 92
     },
     {
       "name": "Google Actualités — Niger",
       "kind": "rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : HTTP Error 503: Service Unavailable"
+      "status": "ok",
+      "articles": 100
     },
     {
       "name": "Google Actualités — Burkina Faso",
       "kind": "rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : HTTP Error 503: Service Unavailable"
+      "status": "ok",
+      "articles": 62
     },
     {
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : HTTP Error 503: Service Unavailable"
+      "status": "ok",
+      "articles": 94
     },
     {
       "name": "Google Actualités — Tchad",
       "kind": "rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : HTTP Error 503: Service Unavailable"
+      "status": "ok",
+      "articles": 14
     },
     {
       "name": "RFI Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 23
+      "articles": 24
     },
     {
       "name": "France 24 Afrique",
@@ -84,7 +80,7 @@
       "name": "DW Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 13
+      "articles": 12
     },
     {
       "name": "Studio Tamani",
@@ -108,7 +104,7 @@
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 93
+      "articles": 98
     },
     {
       "name": "Sahara Médias",
@@ -137,8 +133,9 @@
     {
       "name": "Maliweb — Actualités",
       "kind": "rss",
-      "status": "ok",
-      "articles": 500
+      "status": "error",
+      "articles": 0,
+      "error": "Échec HTTP après 3 essais : HTTP Error 404: Not Found"
     },
     {
       "name": "Malijet",
@@ -161,60 +158,53 @@
     {
       "name": "X indexé — @StudioTamani",
       "kind": "social_rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : HTTP Error 503: Service Unavailable"
+      "status": "ok",
+      "articles": 2
     },
     {
       "name": "X indexé — @Malijetactu",
       "kind": "social_rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : HTTP Error 503: Service Unavailable"
+      "status": "ok",
+      "articles": 4
     },
     {
       "name": "X indexé — @maliactu",
       "kind": "social_rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : HTTP Error 503: Service Unavailable"
+      "status": "ok",
+      "articles": 0
     },
     {
       "name": "X indexé — @actuniger",
       "kind": "social_rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : HTTP Error 503: Service Unavailable"
+      "status": "ok",
+      "articles": 13
     },
     {
       "name": "X indexé — @burkina24",
       "kind": "social_rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : HTTP Error 503: Service Unavailable"
+      "status": "ok",
+      "articles": 35
     },
     {
       "name": "X indexé — @ONUMauritanie",
       "kind": "social_rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : HTTP Error 503: Service Unavailable"
+      "status": "ok",
+      "articles": 0
     },
     {
       "name": "X indexé — @tchadinfos",
       "kind": "social_rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : HTTP Error 503: Service Unavailable"
+      "status": "ok",
+      "articles": 11
     }
   ],
-  "articles_fetched": 1061,
-  "unique_articles": 994,
-  "fresh_signals": 65,
-  "retained_signals": 161,
+  "articles_fetched": 747,
+  "unique_articles": 707,
+  "fresh_signals": 201,
+  "retained_signals": 250,
   "manual_events": 0,
-  "published_events": 161,
-  "mapped_events": 36,
-  "generated_at_utc": "2026-09-24T12:09:11+00:00",
-  "duration_seconds": 364.32
+  "published_events": 250,
+  "mapped_events": 133,
+  "generated_at_utc": "2026-09-30T12:58:01+00:00",
+  "duration_seconds": 35.23
 }
