@@ -1,6 +1,6 @@
 {
-  "window_start": "2026-08-16",
-  "publication_cutoff": "2026-09-28",
+  "window_start": "2026-08-17",
+  "publication_cutoff": "2026-09-29",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
@@ -31,7 +31,7 @@
       "name": "Google Actualités — Mali",
       "kind": "rss",
       "status": "ok",
-      "articles": 92
+      "articles": 91
     },
     {
       "name": "Google Actualités — Niger",
@@ -49,19 +49,19 @@
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 94
+      "articles": 91
     },
     {
       "name": "Google Actualités — Tchad",
       "kind": "rss",
       "status": "ok",
-      "articles": 14
+      "articles": 13
     },
     {
       "name": "RFI Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 24
+      "articles": 23
     },
     {
       "name": "France 24 Afrique",
@@ -159,7 +159,7 @@
       "name": "X indexé — @StudioTamani",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 2
+      "articles": 1
     },
     {
       "name": "X indexé — @Malijetactu",
@@ -183,7 +183,7 @@
       "name": "X indexé — @burkina24",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 35
+      "articles": 41
     },
     {
       "name": "X indexé — @ONUMauritanie",
@@ -198,13 +198,13 @@
       "articles": 11
     }
   ],
-  "articles_fetched": 747,
-  "unique_articles": 707,
-  "fresh_signals": 201,
+  "articles_fetched": 746,
+  "unique_articles": 709,
+  "fresh_signals": 193,
   "retained_signals": 250,
   "manual_events": 0,
   "published_events": 250,
-  "mapped_events": 133,
-  "generated_at_utc": "2026-09-30T12:58:01+00:00",
-  "duration_seconds": 35.23
+  "mapped_events": 126,
+  "generated_at_utc": "2026-10-01T13:50:42+00:00",
+  "duration_seconds": 35.73
 }
