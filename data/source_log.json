@@ -1,14 +1,14 @@
 {
-  "window_start": "2026-08-18",
-  "publication_cutoff": "2026-09-30",
+  "window_start": "2026-08-19",
+  "publication_cutoff": "2026-10-01",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
   "coord_decimals": 3,
   "sources_configured": 29,
   "sources_attempted": 29,
-  "successful_sources": 27,
-  "failed_sources": 2,
+  "successful_sources": 26,
+  "failed_sources": 3,
   "local_media_sources": 11,
   "social_targets": 7,
   "social_feeds_active": 7,
@@ -31,7 +31,7 @@
       "name": "Google Actualités — Mali",
       "kind": "rss",
       "status": "ok",
-      "articles": 81
+      "articles": 73
     },
     {
       "name": "Google Actualités — Niger",
@@ -43,19 +43,19 @@
       "name": "Google Actualités — Burkina Faso",
       "kind": "rss",
       "status": "ok",
-      "articles": 63
+      "articles": 66
     },
     {
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 82
+      "articles": 84
     },
     {
       "name": "Google Actualités — Tchad",
       "kind": "rss",
       "status": "ok",
-      "articles": 11
+      "articles": 10
     },
     {
       "name": "RFI Afrique",
@@ -72,8 +72,9 @@
     {
       "name": "ONU Info Afrique",
       "kind": "rss",
-      "status": "ok",
-      "articles": 30
+      "status": "error",
+      "articles": 0,
+      "error": "not well-formed (invalid token): line 1, column 0"
     },
     {
       "name": "DW Afrique",
@@ -103,7 +104,7 @@
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 89
+      "articles": 82
     },
     {
       "name": "Sahara Médias",
@@ -176,13 +177,13 @@
       "name": "X indexé — @actuniger",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 11
+      "articles": 8
     },
     {
       "name": "X indexé — @burkina24",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 37
+      "articles": 33
     },
     {
       "name": "X indexé — @ONUMauritanie",
@@ -197,13 +198,13 @@
       "articles": 8
     }
   ],
-  "articles_fetched": 737,
-  "unique_articles": 703,
-  "fresh_signals": 183,
+  "articles_fetched": 689,
+  "unique_articles": 659,
+  "fresh_signals": 176,
   "retained_signals": 250,
   "manual_events": 0,
   "published_events": 250,
-  "mapped_events": 122,
-  "generated_at_utc": "2026-10-02T13:06:46+00:00",
-  "duration_seconds": 42.47
+  "mapped_events": 115,
+  "generated_at_utc": "2026-10-03T11:58:44+00:00",
+  "duration_seconds": 41.62
 }
