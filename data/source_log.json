@@ -1,6 +1,6 @@
 {
-  "window_start": "2026-08-20",
-  "publication_cutoff": "2026-10-02",
+  "window_start": "2026-08-21",
+  "publication_cutoff": "2026-10-03",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
@@ -31,7 +31,7 @@
       "name": "Google Actualités — Mali",
       "kind": "rss",
       "status": "ok",
-      "articles": 68
+      "articles": 64
     },
     {
       "name": "Google Actualités — Niger",
@@ -43,19 +43,19 @@
       "name": "Google Actualités — Burkina Faso",
       "kind": "rss",
       "status": "ok",
-      "articles": 66
+      "articles": 67
     },
     {
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 77
+      "articles": 78
     },
     {
       "name": "Google Actualités — Tchad",
       "kind": "rss",
       "status": "ok",
-      "articles": 11
+      "articles": 12
     },
     {
       "name": "RFI Afrique",
@@ -104,7 +104,7 @@
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 62
+      "articles": 54
     },
     {
       "name": "Sahara Médias",
@@ -177,13 +177,13 @@
       "name": "X indexé — @actuniger",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 8
+      "articles": 7
     },
     {
       "name": "X indexé — @burkina24",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 31
+      "articles": 30
     },
     {
       "name": "X indexé — @ONUMauritanie",
@@ -195,16 +195,16 @@
       "name": "X indexé — @tchadinfos",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 9
+      "articles": 10
     }
   ],
-  "articles_fetched": 657,
-  "unique_articles": 625,
-  "fresh_signals": 178,
+  "articles_fetched": 647,
+  "unique_articles": 610,
+  "fresh_signals": 169,
   "retained_signals": 250,
   "manual_events": 0,
   "published_events": 250,
-  "mapped_events": 117,
-  "generated_at_utc": "2026-10-04T12:49:32+00:00",
-  "duration_seconds": 40.68
+  "mapped_events": 120,
+  "generated_at_utc": "2026-10-05T15:13:19+00:00",
+  "duration_seconds": 40.25
 }
