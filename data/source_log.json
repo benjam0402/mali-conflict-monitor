@@ -1,6 +1,6 @@
 {
-  "window_start": "2026-09-13",
-  "publication_cutoff": "2026-10-26",
+  "window_start": "2026-09-15",
+  "publication_cutoff": "2026-10-28",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
@@ -31,13 +31,13 @@
       "name": "Google Actualités — Mali",
       "kind": "rss",
       "status": "ok",
-      "articles": 42
+      "articles": 61
     },
     {
       "name": "Google Actualités — Niger",
       "kind": "rss",
       "status": "ok",
-      "articles": 92
+      "articles": 100
     },
     {
       "name": "Google Actualités — Burkina Faso",
@@ -49,13 +49,13 @@
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 56
+      "articles": 52
     },
     {
       "name": "Google Actualités — Tchad",
       "kind": "rss",
       "status": "ok",
-      "articles": 9
+      "articles": 22
     },
     {
       "name": "RFI Afrique",
@@ -103,7 +103,7 @@
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 80
+      "articles": 97
     },
     {
       "name": "Sahara Médias",
@@ -158,13 +158,13 @@
       "name": "X indexé — @StudioTamani",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 3
+      "articles": 5
     },
     {
       "name": "X indexé — @Malijetactu",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 4
+      "articles": 5
     },
     {
       "name": "X indexé — @maliactu",
@@ -176,13 +176,13 @@
       "name": "X indexé — @actuniger",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 13
+      "articles": 15
     },
     {
       "name": "X indexé — @burkina24",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 14
+      "articles": 19
     },
     {
       "name": "X indexé — @ONUMauritanie",
@@ -194,16 +194,16 @@
       "name": "X indexé — @tchadinfos",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 19
+      "articles": 20
     }
   ],
-  "articles_fetched": 614,
-  "unique_articles": 572,
-  "fresh_signals": 104,
-  "retained_signals": 230,
+  "articles_fetched": 678,
+  "unique_articles": 638,
+  "fresh_signals": 160,
+  "retained_signals": 250,
   "manual_events": 0,
-  "published_events": 230,
-  "mapped_events": 67,
-  "generated_at_utc": "2026-10-28T13:29:13+00:00",
-  "duration_seconds": 39.61
+  "published_events": 250,
+  "mapped_events": 95,
+  "generated_at_utc": "2026-10-30T13:29:13+00:00",
+  "duration_seconds": 46.45
 }
