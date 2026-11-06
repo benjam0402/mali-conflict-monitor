@@ -1,6 +1,6 @@
 {
-  "window_start": "2026-09-21",
-  "publication_cutoff": "2026-11-03",
+  "window_start": "2026-09-22",
+  "publication_cutoff": "2026-11-04",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
@@ -31,13 +31,13 @@
       "name": "Google Actualités — Mali",
       "kind": "rss",
       "status": "ok",
-      "articles": 28
+      "articles": 27
     },
     {
       "name": "Google Actualités — Niger",
       "kind": "rss",
       "status": "ok",
-      "articles": 73
+      "articles": 85
     },
     {
       "name": "Google Actualités — Burkina Faso",
@@ -49,7 +49,7 @@
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 45
+      "articles": 37
     },
     {
       "name": "Google Actualités — Tchad",
@@ -79,7 +79,7 @@
       "name": "DW Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 13
+      "articles": 12
     },
     {
       "name": "Studio Tamani",
@@ -103,7 +103,7 @@
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 114
+      "articles": 119
     },
     {
       "name": "Sahara Médias",
@@ -158,7 +158,7 @@
       "name": "X indexé — @StudioTamani",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 5
+      "articles": 6
     },
     {
       "name": "X indexé — @Malijetactu",
@@ -194,16 +194,16 @@
       "name": "X indexé — @tchadinfos",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 19
+      "articles": 21
     }
   ],
-  "articles_fetched": 626,
-  "unique_articles": 599,
-  "fresh_signals": 98,
-  "retained_signals": 230,
+  "articles_fetched": 636,
+  "unique_articles": 608,
+  "fresh_signals": 109,
+  "retained_signals": 242,
   "manual_events": 0,
-  "published_events": 230,
-  "mapped_events": 93,
-  "generated_at_utc": "2026-11-05T14:55:41+00:00",
-  "duration_seconds": 37.18
+  "published_events": 242,
+  "mapped_events": 104,
+  "generated_at_utc": "2026-11-06T14:34:09+00:00",
+  "duration_seconds": 38.55
 }
