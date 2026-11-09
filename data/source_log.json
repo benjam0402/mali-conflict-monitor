@@ -1,6 +1,6 @@
 {
-  "window_start": "2026-09-22",
-  "publication_cutoff": "2026-11-04",
+  "window_start": "2026-09-25",
+  "publication_cutoff": "2026-11-07",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
@@ -31,31 +31,31 @@
       "name": "Google Actualités — Mali",
       "kind": "rss",
       "status": "ok",
-      "articles": 27
+      "articles": 26
     },
     {
       "name": "Google Actualités — Niger",
       "kind": "rss",
       "status": "ok",
-      "articles": 85
+      "articles": 86
     },
     {
       "name": "Google Actualités — Burkina Faso",
       "kind": "rss",
       "status": "ok",
-      "articles": 28
+      "articles": 27
     },
     {
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 37
+      "articles": 52
     },
     {
       "name": "Google Actualités — Tchad",
       "kind": "rss",
       "status": "ok",
-      "articles": 15
+      "articles": 20
     },
     {
       "name": "RFI Afrique",
@@ -79,7 +79,7 @@
       "name": "DW Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 12
+      "articles": 10
     },
     {
       "name": "Studio Tamani",
@@ -103,7 +103,7 @@
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 119
+      "articles": 66
     },
     {
       "name": "Sahara Médias",
@@ -158,13 +158,13 @@
       "name": "X indexé — @StudioTamani",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 6
+      "articles": 5
     },
     {
       "name": "X indexé — @Malijetactu",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 7
+      "articles": 8
     },
     {
       "name": "X indexé — @maliactu",
@@ -182,7 +182,7 @@
       "name": "X indexé — @burkina24",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 22
+      "articles": 21
     },
     {
       "name": "X indexé — @ONUMauritanie",
@@ -194,16 +194,16 @@
       "name": "X indexé — @tchadinfos",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 21
+      "articles": 19
     }
   ],
-  "articles_fetched": 636,
-  "unique_articles": 608,
-  "fresh_signals": 109,
-  "retained_signals": 242,
+  "articles_fetched": 597,
+  "unique_articles": 574,
+  "fresh_signals": 145,
+  "retained_signals": 250,
   "manual_events": 0,
-  "published_events": 242,
-  "mapped_events": 104,
-  "generated_at_utc": "2026-11-06T14:34:09+00:00",
-  "duration_seconds": 38.55
+  "published_events": 250,
+  "mapped_events": 128,
+  "generated_at_utc": "2026-11-09T16:48:45+00:00",
+  "duration_seconds": 40.71
 }
