@@ -2,22 +2,22 @@
   "type": "FeatureCollection",
   "metadata": {
     "title": "Sahel Conflict Monitor — signaux médiatiques et sociaux publics",
-    "last_updated": "2026-11-10T15:11:40+00:00",
-    "generated_at": "2026-11-10T15:11:40+00:00",
-    "latest_signal_date": "2026-11-08",
-    "event_count": 236,
-    "mapped_event_count": 115,
+    "last_updated": "2026-11-11T14:41:08+00:00",
+    "generated_at": "2026-11-11T14:41:08+00:00",
+    "latest_signal_date": "2026-11-09",
+    "event_count": 232,
+    "mapped_event_count": 110,
     "source_summary": {
-      "window_start": "2026-09-26",
-      "publication_cutoff": "2026-11-08",
+      "window_start": "2026-09-27",
+      "publication_cutoff": "2026-11-09",
       "lookback_days": 14,
       "retention_days": 45,
       "min_days_delay": 2,
       "coord_decimals": 3,
       "sources_configured": 29,
       "sources_attempted": 29,
-      "successful_sources": 25,
-      "failed_sources": 4,
+      "successful_sources": 26,
+      "failed_sources": 3,
       "local_media_sources": 11,
       "social_targets": 7,
       "social_feeds_active": 7,
@@ -40,13 +40,13 @@
           "name": "Google Actualités — Mali",
           "kind": "rss",
           "status": "ok",
-          "articles": 26
+          "articles": 27
         },
         {
           "name": "Google Actualités — Niger",
           "kind": "rss",
           "status": "ok",
-          "articles": 76
+          "articles": 64
         },
         {
           "name": "Google Actualités — Burkina Faso",
@@ -58,13 +58,13 @@
           "name": "Google Actualités — Mauritanie",
           "kind": "rss",
           "status": "ok",
-          "articles": 51
+          "articles": 56
         },
         {
           "name": "Google Actualités — Tchad",
           "kind": "rss",
           "status": "ok",
-          "articles": 21
+          "articles": 22
         },
         {
           "name": "RFI Afrique",
@@ -89,7 +89,7 @@
           "name": "DW Afrique",
           "kind": "rss",
           "status": "ok",
-          "articles": 9
+          "articles": 12
         },
         {
           "name": "Studio Tamani",
@@ -106,15 +106,14 @@
         {
           "name": "Burkina 24",
           "kind": "rss",
-          "status": "error",
-          "articles": 0,
-          "error": "Échec HTTP après 3 essais : The read operation timed out"
+          "status": "ok",
+          "articles": 6
         },
         {
           "name": "LeFaso.net",
           "kind": "rss",
           "status": "ok",
-          "articles": 71
+          "articles": 92
         },
         {
           "name": "Sahara Médias",
@@ -181,7 +180,7 @@
           "name": "X indexé — @maliactu",
           "kind": "social_rss",
           "status": "ok",
-          "articles": 0
+          "articles": 1
         },
         {
           "name": "X indexé — @actuniger",
@@ -205,22 +204,370 @@
           "name": "X indexé — @tchadinfos",
           "kind": "social_rss",
           "status": "ok",
-          "articles": 19
+          "articles": 15
         }
       ],
-      "articles_fetched": 555,
-      "unique_articles": 531,
-      "fresh_signals": 115,
-      "retained_signals": 236,
+      "articles_fetched": 577,
+      "unique_articles": 552,
+      "fresh_signals": 107,
+      "retained_signals": 232,
       "manual_events": 0,
-      "published_events": 236,
-      "mapped_events": 115,
-      "generated_at_utc": "2026-11-10T15:11:40+00:00",
-      "duration_seconds": 175.27
+      "published_events": 232,
+      "mapped_events": 110,
+      "generated_at_utc": "2026-11-11T14:41:08+00:00",
+      "duration_seconds": 50.58
     },
     "warning": "Ces points sont des signaux issus de médias publics, pas des faits indépendamment confirmés. Les coordonnées représentent au mieux le centre approximatif d'une localité citée."
   },
   "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.594,
+          15.231
+        ]
+      },
+      "properties": {
+        "id": "media_070690fb12c81b86",
+        "date": "2026-11-09",
+        "title": "Opération Dougoukoloko : trois terroristes neutralisés près de Nampala, plusieurs frappes à Tessalit, Nioro et Tonka",
+        "location": "Nioro",
+        "region": "Kayes",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Les Forces armées maliennes (FAMa), appuyées par leurs partenaires, poursuivent leurs opérations de sécurisation du territoire dans le cadre de l’opération Dougoukoloko. L'état-major des armées a dressé un bilan des opérations effectuées au cours des 48 dernières heures.",
+        "source": "Malijet",
+        "source_url": "https://malijet.com/actualte_dans_les_regions_du_mali/312750-operation-dougoukoloko-trois-terroristes-neutralises-pres.html",
+        "source_system": "Malijet",
+        "language": "fr",
+        "as_of": "2026-11-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_09322be19d9f8fb9",
+        "date": "2026-11-09",
+        "title": "Niamey : la Chambre Nationale des Notaires du Niger (CNNN) ouvre ses portes au public",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Niamey : la Chambre Nationale des Notaires du Niger (CNNN) ouvre ses portes au public Agence Nigérienne de Presse",
+        "source": "Agence Nigérienne de Presse",
+        "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcVZEMVk0eF9KMTFVMmM1UmVGMWpHdzN4bl9qY19fV3VXRWFKSHNnOEM5dURIcUd3b1VtX3lXdHZkZGx2dmlFejFhNU56dGhxaGdZU2lsVW42UkJCdHdGN2o3d3JPMkRXd3ZmbFFuMXZHR3didl9teU1VeXpFWnl5TUJyeHBsRXByWnBraGFoZHhtaXJMMUttbEViNXZsdw?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_994f59bfdc0531c6",
+        "date": "2026-11-09",
+        "title": "Niamey : Le Premier ministre reçoit le Chargé d’affaires de la Délégation de l’Union européenne au Niger",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Niamey : Le Premier ministre reçoit le Chargé d’affaires de la Délégation de l’Union européenne au Niger Agence Nigérienne de Presse",
+        "source": "Agence Nigérienne de Presse",
+        "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcEVrZTM1bVRjQ3k4ZjFOVF9Ib19pT2lORE5NT1BzLTlNRTA0WXZRampUaVRBY0NMdHRzMUZlSk1CNHdrbU91b0dOb0ZSeEFIdkpNZnpEaHF5bFRWRUFQaGhKWHgtaE53WnhfM0pPMjN2a3hibDdBd3BhS2U1aUdLV0lqc3k1TWpqT0JUc0ZueHBlNjc2bDVGVkVhNHdGUWxHN1prRTRBU3Fqc3dKZFlHRjNzaXF2MDg?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.979,
+          18.086
+        ]
+      },
+      "properties": {
+        "id": "media_f20f3ca62c99f73f",
+        "date": "2026-11-09",
+        "title": "Nasser Bourita à Nouakchott, le Maroc et la Mauritanie intensifient leur concertation",
+        "location": "Nouakchott",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Nasser Bourita à Nouakchott, le Maroc et la Mauritanie intensifient leur concertation Maroc Diplomatique",
+        "source": "Maroc Diplomatique",
+        "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQemk2Z3VqMUpEYmE0elkzcjV2UUxEVVBRNW8zY1Q2SDZPeHU3OG5XVmMxZjhzajlxMzM3ZXF2a2RQYjJZVFJPME9ya2FRb2RnWTgyWXNLMHdDSjFPc3BORElJQW45TXM0SmJZaFY2Y24xU2JwZWYtRUdnTThLRFZoTGNXa3VGMXZKelEyVDNET2t2VnkyX3ZSTWNoTW0wUm53dUZxZ3NBNkJxWVBUWU4ybll5QjFTdUk?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
+        "language": "fr",
+        "as_of": "2026-11-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.396,
+          15.92
+        ]
+      },
+      "properties": {
+        "id": "media_42cbff3fa9e62969",
+        "date": "2026-11-09",
+        "title": "Ménaka et Kidal : Plusieurs regroupements terroristes neutralisés par les FAMa",
+        "location": "Ménaka",
+        "region": "Ménaka",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Ménaka et Kidal : Plusieurs regroupements terroristes neutralisés par les FAMa Maliweb",
+        "source": "Maliweb",
+        "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbkhJLThCU3NJUFNSaUpHanRDcXN4ZWgxS0ZNN2R0R3RBcWQxbG1oVXYyTDlEcHV2Xzd3d0ZMYVRDWmNtX1RhTlN0QjItTUpLWl9wTEJCSnhpYlRzNy01OHZXN1hZVmlSOFdxQmctcHJQWjhzU0ZCSDFlanRRUlAxRk5ULUFiTUNUZUFkbkw0SklNWWVqcHJ5LU42amdmNmFTX1UtVUtBZWVUV2diVXZsNkYtRkpKQQ?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.396,
+          15.92
+        ]
+      },
+      "properties": {
+        "id": "media_d4facbcf3c3dec93",
+        "date": "2026-11-09",
+        "title": "Mali : Les FAMa étendent l’opération Dougoukoloko aux secteurs de Ménaka et Kidal avec des frappes ciblées",
+        "location": "Ménaka",
+        "region": "Ménaka",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Mali : Les FAMa étendent l’opération Dougoukoloko aux secteurs de Ménaka et Kidal avec des frappes ciblées Mali Actu",
+        "source": "Mali Actu",
+        "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVUkzNWt6My01dWVNQXE2U1NRU2szMTJLMXMyVTZSNzBXTlRBRzBGeDdpTmlaZnNIYjFzVHVlTXVhQ0NsdVlpb1c1emVCMkxuQk1oVjRHck9hVXN4TWpWeDNaeWVpVFRodTFUemF1Y3BrTHJNbW9jaGp6M0U5WGc3amRJSGxOQVBzUUFKSGN5ejdod08tdndidjhGSGZBOGhCTWJ0OHFMZlpEejEwWURFakYtcUwyZHV4dHpCeDBWWjhocDTSAcsBQVVfeXFMUDhWUmFwc2xOdUpvTkFJVDhWYmxuQWNmUGtPejhDeWZyWUJxMXdtbm05ZUd1eE41T1laY2tKbjBhdEJvRFNGNEVkam55VnJ4ZV9XcG16eFlBVnJ2TXNaMTVDYkZOV0V0RURDTUhCNlcwT25KekxPOFRoeTFKN2p1MjBONjhvQzM5UHhBMnJidEdtaVM0TzJUSUlQc1lXVFRNNk9vYWNUSmpfbmNQVVpoQUp6OG1UdTU2eVY1cklaWTdTR0RwUFdId3UyUEU?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_6da487a6ffeb7445",
+        "date": "2026-11-09",
+        "title": "Lyon : Un colosse arrive en attaque !",
+        "location": "Burkina Faso — lieu à confirmer",
+        "region": "Burkina Faso",
+        "country": "Burkina Faso",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Lyon : Un colosse arrive en attaque ! Sport.fr",
+        "source": "Sport.fr",
+        "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPM2I3Y1owOW5ZS0JmRm9OZGYzSFB6RW1tVWwzZWp5a0xtOWoycHEtNWhXWjc1cEpoRzBnM3c5cDdGdFFFQnJIMmJ5UGpXaURfRGYyVnRXakRuQ2dqbzJTcExvUUdUVGQtbTBTMFoxUWFxb1pvWjIzVHBnQWxqVnJKZ1pB?oc=5",
+        "source_system": "Google Actualités — Burkina Faso",
+        "language": "fr",
+        "as_of": "2026-11-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.979,
+          18.086
+        ]
+      },
+      "properties": {
+        "id": "media_aea614c138c9c0c7",
+        "date": "2026-11-09",
+        "title": "Dossier saharien : Visite éclair de N. Bourita à Nouakchott",
+        "location": "Nouakchott",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Dossier saharien : Visite éclair de N. Bourita à Nouakchott Perspectives Med",
+        "source": "Perspectives Med",
+        "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUFdha0V4b2RwNDAzT0VaTnRlTy1UR3VXUUFxVjI1OXVlaVdFZXV4MjFPcEViajh2Z2lQcWtibzhvTU5UMTNQWTRwdWJIeTAtYWk1dzZNT3lLdk1PVkJXZllSYWtaQnFwWTdHUTlOZ3RaOFl4S0lSQmxqRk1pTVh3ajMwTDcxZUgyMUljakRR?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
+        "language": "fr",
+        "as_of": "2026-11-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_ac3c0556398c1c97",
+        "date": "2026-11-09",
+        "title": "Candidature AES CAN 2032 : une mission d’inspection de la CAF à Niamey pour évaluer les capacités du Niger",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Candidature AES CAN 2032 : une mission d’inspection de la CAF à Niamey pour évaluer les capacités du Niger Actu Niger",
+        "source": "Actu Niger",
+        "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQX1ozUUI5cXZiY01yaEVDNzFIbEVRTE9Yd3g1bDFUUWlOSUNSdW9kOEJhSl9JOWRvZFZMSUhoYU9Od2ZfUXlFS0hBUlZpQ1ltaExDeG1fNjlrRlJOaW9jUnVORDcwWURlSWdHZmpqWnJoWlFzQmVoRGFKQVNRdnVRNkxpeUpTYzZCdEd1US1WbVB1VGpKRjByZkxwY2tidDN0OVZTRmN5MkZnSEY0ZWljUXFSTnltcnJXUnBROWlZUDZYVmQxRXlwN0EzZHlRWkMtdkEwSDJqdw?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_df2c9271af66faea",
+        "date": "2026-11-09",
+        "title": "Burkina Faso: «Plusieurs morts» dans l'attaque d'un hôtel et d'un café",
+        "location": "Burkina Faso — lieu à confirmer",
+        "region": "Burkina Faso",
+        "country": "Burkina Faso",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Burkina Faso: «Plusieurs morts» dans l'attaque d'un hôtel et d'un café Camer.be",
+        "source": "Camer.be",
+        "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNV25VUmtRUXAxbGpMZmlsblRrTzcxZl9xaXg4bkZKaW8xc3Q1ZFRtRG11MHR1TjNhZlFWel8zMTRfeFUxQnBuSkVOS0dCVzNCQ0FkN25hUFhHSGNWX3ZIb24zZ292cl9IMWd6b29sMW5SeTQ4dEZhUXo4VmNJRzBSQjdWT0pyNkRnb0FodENVbG1OQUVpb1BPSjhpdEZ2WnY0WWFucDlSWVFxOHFsVlRyNEhuTGJFTUFNTnkw?oc=5",
+        "source_system": "Google Actualités — Burkina Faso",
+        "language": "fr",
+        "as_of": "2026-11-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_dab37dba0d3a2751",
+        "date": "2026-11-09",
+        "title": "Arabie saoudite: l'oléoduc Est-Ouest visé par une attaque",
+        "location": "Burkina Faso — lieu à confirmer",
+        "region": "Burkina Faso",
+        "country": "Burkina Faso",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Arabie saoudite: l'oléoduc Est-Ouest visé par une attaque Prix du baril",
+        "source": "Prix du baril",
+        "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTDRaaDZsaTFzSnVycmdFRlVNaWdsOUQyUkxQRUdJRmN0REhyZmpxaW9mOThNZVJnOFE0QjR4ZTVPVjlydXVXdG8zYktOUWMtUW84bWZSREsxTGlCU05rb3ZBVll1ZXJQa1pKT05JYlRsTngxT081SlBmbWVuSGhNS1VGU3ROSzNLUGhHcmVnZi1XRVZoXzQ3NkR5X2VycElYOHRpcWZqYw?oc=5",
+        "source_system": "Google Actualités — Burkina Faso",
+        "language": "fr",
+        "as_of": "2026-11-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_ba4f3169b8c2bce3",
+        "date": "2026-11-09",
+        "title": "#PhotoDeLaSemaine Un binôme, deux combattants, une même mission : protéger la Patrie. Ce maître et son chien de l'Unité Cynophile du Bataillon du Génie Militaire forment une paire complementaire au service de la sécurité. 📷: Digital Art Graphic Source : - X",
+        "location": "Burkina Faso — lieu à confirmer",
+        "region": "Burkina Faso",
+        "country": "Burkina Faso",
+        "layer": "event",
+        "layer_label": "Signal réseau social",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal réseau social — recoupement requis",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "#PhotoDeLaSemaine Un binôme, deux combattants, une même mission : protéger la Patrie. Ce maître et son chien de l'Unité Cynophile du Bataillon du Génie Militaire forment une paire complementaire au service de la sécurité. 📷: Digital Art Graphic Source : X",
+        "source": "Burkina 24",
+        "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9IY3Z4OV84RjZnZ0toV3pLc1piUGhVY0E1YTQ0dThVclRMd3BtbEl5czZpLUlFZGVCN3NkZVJKYjdYTTRjemR3OFJVWXFxQkdlUURsNnJEZVJ1NFlDb21j?oc=5",
+        "source_system": "X indexé — @burkina24",
+        "language": "fr",
+        "as_of": "2026-11-09"
+      }
+    },
     {
       "type": "Feature",
       "geometry": {
@@ -262,7 +609,7 @@
         ]
       },
       "properties": {
-        "id": "media_2116c393ec8ce975",
+        "id": "media_8d24286b32a8c9f3",
         "date": "2026-11-08",
         "title": "Opération Dougoukoloko : les FAMa frappent plusieurs positions terroristes à Ménaka et Kidal",
         "location": "Ménaka",
@@ -275,10 +622,41 @@
         "status": "Signal médiatique — vérification requise",
         "confidence": "faible",
         "precision": "centre de localité approximatif",
-        "summary": "Les Forces armées maliennes (FAMa) ont mené plusieurs frappes contre des positions de groupes armés terroristes dans les régions de Ménaka et de Kidal, les 6 et 7 novembre 2026, dans le cadre de l’opération Dougoukoloko.",
-        "source": "Malijet",
-        "source_url": "https://malijet.com/actualte_dans_les_regions_du_mali/312728-operation-dougoukoloko-les-fama-frappent-plusieurs-positio-1.html",
-        "source_system": "Malijet",
+        "summary": "Opération Dougoukoloko : les FAMa frappent plusieurs positions terroristes à Ménaka et Kidal https://malijet.com/",
+        "source": "https://malijet.com/",
+        "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTFJFM0ZIVklGUGxEekVHWDd1Vzk3ZUwyMm9EeG1GYUNodEJiRDNwRk9pVzFXelYycDRSSTFVRzkwZm5DaEVjdVlpT2p0aW5CbnU0ZUpwN2JBc3owUGhXckE2UUhMTm9CQUVXSWc4Z09NM3ZGRzlWM1V5dVE3Q19wLUY4RW05UmpEVkVva2ZwTVllbTRIQkZoU2U3Mkc1eTBYTE9YWVJLRFhMZmQ4QmpBZE1jc093WENQYWUwSnYwYk9HNVlV?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-08"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_6fbb5462017f236d",
+        "date": "2026-11-08",
+        "title": "Niger : Kalla Moutari maintenu en détention par la junte à Niamey",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Niger : Kalla Moutari maintenu en détention par la junte à Niamey Africtelegraph",
+        "source": "Africtelegraph",
+        "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVzZqNGN4Vjh3OHhwYUJJRDA1RUwtVHhyeWlVR0FEN3RMamhnXzlma09GS0VCeU1VdXJjeWZzYThiUGd4N1VXcnpBNEJMQ3VYVllYQU1YclZWNGl3OFd1RmRTMTFPT3BkeGFXRXJDX05JOGwwVUZrSWswVEJ2MFJaUTRlS0oxZjRhVmwycnpNbG93ODdnV3hzcElHZ3U?oc=5",
+        "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-08"
       }
@@ -543,16 +921,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.11,
-          13.514
+          1.454,
+          14.207
         ]
       },
       "properties": {
-        "id": "media_842158d80d9977c5",
+        "id": "media_92284d8caae7067f",
         "date": "2026-11-07",
-        "title": "Niger–Türkiye : Niamey et Konya officiellement jumelées",
-        "location": "Niamey",
-        "region": "Niamey",
+        "title": "Météo à Boulongou, Tillabéri heure par heure",
+        "location": "Tillabéri",
+        "region": "Tillabéri Region",
         "country": "Niger",
         "layer": "event",
         "layer_label": "Signal médiatique",
@@ -561,10 +939,35 @@
         "status": "Signal médiatique — vérification requise",
         "confidence": "faible",
         "precision": "centre de localité approximatif",
-        "summary": "Niger–Türkiye : Niamey et Konya officiellement jumelées Nigerdiaspora",
-        "source": "Nigerdiaspora",
-        "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWW1NVnFRWU5SRnNkeV9UV0NlNjEwSGdPYVNmcUZxNDl2MnQxVDFnWGhhbUxIaXJ4aGNzRllZQ0w0bkVCVDZSTzNvZ0JacWRTcDNzLUtGbXBxX2FlUTREbGNUemtnUTFBRFhfWTRWRXdTcDNYclJNWUE1THl4bF9EZzVtR1RMemdCTUNIdUtWM3NYSml6?oc=5",
+        "summary": "Météo à Boulongou, Tillabéri heure par heure SpaceRef",
+        "source": "SpaceRef",
+        "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qZnEtNEtkV2Q4OG9mUElURlk1RkxZRGZYNWV0WGdiQk5vSEtFaENrOFdBZVdzTVd0T0V1RjRSOTVENGNMVXd4bW15RXU0Qm12SDdjN3pWc2lMRHM?oc=5",
         "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-07"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_60efca9f0a8a9de0",
+        "date": "2026-11-07",
+        "title": "Mauritanie : une délégation militaire marocaine en visite exploratoire au Collège de défense du G5 Sahel",
+        "location": "Mauritanie — lieu à confirmer",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mauritanie : une délégation militaire marocaine en visite exploratoire au Collège de défense du G5 Sahel Atlasinfo",
+        "source": "Atlasinfo",
+        "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQLWpMZXU4ZWEzQWp2aUhzay1NdGdYOWF4WFBxcFd5eHB1LUJxX0RmYjBjX3RNc3E4bmxOWFFSendhR1VCSjZyYTlrZF9OYUh4OUVTeFo1SVlPeWhaOXZYODZndVVwRUtDcEdjaFV5WjdmNWJSRDdsT3RaeG1ZaElrb2NCQXRuS3pyeEw1TmJGVVhZOXdlX3NTRkpaekh4TEtfcFAxR05GdUttTlRwNnA4T1dSSi1aQWJpWmY0dGFlaDQ?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
         "language": "fr",
         "as_of": "2026-11-07"
       }
@@ -652,37 +1055,6 @@
         "source": "برلمان.كوم",
         "source_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQU2FZN0FYSEFaV2tFa0s1U2Vac05RSGFoRFNuMlJCZThtWVZySzFGVF9vYVE3S3pIWkc1MWNXZDJ1X1c4RmMwTl9nUjg0SmhuanZsaE1pb3ctNUpJWHJZWHNDSHZwT3pDUUVmZTd0NG1hSmVMSlFpdVpxMkJOaWdINjNqdWZ6NXc4aklZbkhnaWVwY3czN1lwc0RUVDhLUElIckNHbW8weWh1MjJqaFh1SmIwdXRjSGFVSUVPNHROMlB6OV9iQkFrTklzTUpkY2cyY0xzTExPdGcxMEhEM1hxa1E3NVppdw?oc=5",
         "source_system": "Google Actualités — Mauritanie",
-        "language": "fr",
-        "as_of": "2026-11-07"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.409,
-          18.443
-        ]
-      },
-      "properties": {
-        "id": "media_344e1a0913fe1f1a",
-        "date": "2026-11-07",
-        "title": "GOONGA TAN : Kidal : du retour des FAMa à la rivalité Alger-Abou Dhabi, le Sahel entre-t-il dans une nouvelle séquence ?",
-        "location": "Kidal",
-        "region": "Kidal",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "GOONGA TAN : Kidal : du retour des FAMa à la rivalité Alger-Abou Dhabi, le Sahel entre-t-il dans une nouvelle séquence ? maliweb",
-        "source": "maliweb",
-        "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZGZCaXJ4NG4xcWRIOG9HcHYyMlhCXy1PTEIzZzUtdlJmWTdFMUsxT2JHRnlnVEd0YWhiSTVaaUZuWEVPYmxfQXpfNVdCYmlROWpGM3NpdkR3cXNoQXFuR2FUM05GX2xTLW1yclFlT2VKbzJSWWd1aUc5cDRkdTJGOXktZUNPZUh6ME45NUFMSk5LcFF6UlI3RHRSR1dJYmZod3pVejNpRGgyWGJwMGRuN1FtVnFBT2tLU1Z2X3lRNXRnU21PMFE?oc=5",
-        "source_system": "Google Actualités — Mali",
         "language": "fr",
         "as_of": "2026-11-07"
       }
@@ -871,68 +1243,6 @@
         ]
       },
       "properties": {
-        "id": "media_3c5d352d88e8190a",
-        "date": "2026-11-06",
-        "title": "Pourquoi l’axe Niamey-Alger dérange tant !",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Pourquoi l’axe Niamey-Alger dérange tant ! Le Sahel.org",
-        "source": "Le Sahel.org",
-        "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1LVXc5ZW1tRkszbTh0ZWFVa3oxbktOUTVyOXVXek1iWmJ5cDcwQkRWTTljQ0Q5eUlSLVZUSzRZUEluM1dReS1aQ0g1bVBHdDFvVGhWamF4TXVVYmlwVmtDSDhuLWUyZjBRTGVyVHBDTUtfUQ?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-06"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -15.979,
-          18.086
-        ]
-      },
-      "properties": {
-        "id": "media_f9b6512597441e51",
-        "date": "2026-11-06",
-        "title": "Nouakchott: trois communes se mobilisent pour une ville propre",
-        "location": "Nouakchott",
-        "region": "Mauritanie",
-        "country": "Mauritanie",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Nouakchott: trois communes se mobilisent pour une ville propre Le360 Afrique",
-        "source": "Le360 Afrique",
-        "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbk1xX0FfYU1ObDdZX2xIUU5waHEyX2NfZXJMaFBDYzNZZ25uNTN0OXZZb210NG9WYnBteG9NU0JCU0x5bWdaR0c4TDktMVZlbkJVQmMwU3ZSMTB6OURkTEJBcTNZWWQ1dGxZQmFNejNTYzZnQk9XSGpvU3FBeHZjVVJWNTMwLTJabG1rSEE1X1gtYld1MzIwOWRmZ0N4Q3piSk45Tk9FRk5RMXVSVjlYUnRLbUR6Q3V2YUE?oc=5",
-        "source_system": "Google Actualités — Mauritanie",
-        "language": "fr",
-        "as_of": "2026-11-06"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
         "id": "media_2d4f68b3f61d6c59",
         "date": "2026-11-06",
         "title": "Niger-Mali : Niamey et Bamako s’engagent à consolider la Confédération AES et à lutter contre toutes les formes de terrorisme",
@@ -964,37 +1274,6 @@
         ]
       },
       "properties": {
-        "id": "media_c73fb6b871fcd040",
-        "date": "2026-11-06",
-        "title": "Niger : l’Algérie envoie Ahmed Attaf à Niamey avec une lettre de Tebboune au Général Tiani",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Niger : l’Algérie envoie Ahmed Attaf à Niamey avec une lettre de Tebboune au Général Tiani Nigerdiaspora",
-        "source": "Nigerdiaspora",
-        "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaGV2UnlvSmVsbnd0eDdZZkVSbE1xaTRiVjhGazk0d2U0RWlRdTc0YmE5SFBENm03YTlkV09zUnJDOTEzdjZEMDA5bkVvYjRhZGpiNERlN3FyZWlGLWlIWkdYS0VaLUIzekZtdGtMYVZxbUxVd1F1S0h3SmQwT014emlqRHF5T0h4dXlCQzY1QW8tQlFWUGVONFRma2g5a2tLbDZaOHJzZWJ0NmsxLXQ5TWlIMGY1ZWZoMnNQdXprbVY?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-06"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
         "id": "media_b547b138e4050e4e",
         "date": "2026-11-06",
         "title": "Niger : le ministre sénégalais de l’Intégration africaine et des Affaires étrangères reçu à Niamey",
@@ -1011,37 +1290,6 @@
         "summary": "Niger : le ministre sénégalais de l’Intégration africaine et des Affaires étrangères reçu à Niamey Seneweb",
         "source": "Seneweb",
         "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdzMtRDdERU5yWDFOX09ZNDJ1NF9pVWFicVQ1QjBtNnUxcWZQbEZFU0Fqc1RmazNwUElLVnJicmUtaUVBa09tS3Ftb05UaUNMQ1NtTFpzZ2NFcDMtWEN5S0pJN2xkSlZtS0hjNnBYU25iWnkxYUJGX0tWUVEyMjFXRWN5b0VzLTNaSHNQVlVWRDRVYUhOaklCcmJOR2J2eTZLVTZ0VUF1MjFzVm1qU2lrZGY2U2l1OVhvb2c2VHQzZzBKb2tUZy13S1U0cjBFeWVXTDcwU2dQLVNHTmVkMXpJUloxT0xzUzA?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-06"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_c9277128773be54c",
-        "date": "2026-11-06",
-        "title": "Niamey : Assimi Goïta accueilli par Abdourahamane Tiani le 5 novembre 2026",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Niamey : Assimi Goïta accueilli par Abdourahamane Tiani le 5 novembre 2026 MaliActu",
-        "source": "MaliActu",
-        "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPWi0zRmtsY3F4NEgzOC1zdDJUMVA5RzFfUEVCbHJ1cnc2d3NUTnRYZlRfUkdpSk5OU3hDSUlfZkxXUVB5bjltU04xV0ZaR3lUenJmT3ZHV0RqeUVKelEtbmJmeDNKdFk1bjlyemhCOXNuTmE2REI2N3luNmNFaHNjcWpJOVFIV2FoSUJfOERPcUJxQ3VTUFlDdmNGWWpZNGhKWGNibnlZeDVLM1VRWWdqLXVQRWJXWHBISU9nRjJn0gG-AUFVX3lxTE9aLTNGa2xjcXg0SDM4LXN0MlQxUDlHMV9QRUJscnVydzZ3c1ROdFhmVF9SR2lKTk5TeENJSV9mTFdRUHluOW1TTjFXRlpHeVR6cmZPdkdXRGp5RUp6US1uYmZ4M0p0WTVuOXJ6aEI5c25OYTZEQjY3eW42Y0Voc2Nxakk5UUhXYWhJQl84RE9xQnFDdVNQWUN2Y0ZZalk0aEpYY2JueVl4NUszVVFZZ2otdVBFYldYcEhJT2dGMmc?oc=5",
         "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-06"
@@ -1104,37 +1352,6 @@
         "summary": "Mali-Niger : Assimi Goïta accueilli à Niamey par Abdourahamane Tiani le 5 novembre 2026 Mali Actu",
         "source": "Mali Actu",
         "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1wNm1BWW52WF9aeW1XWVZCU2wyNHFUZUJfaGhzbzMtRFFmUmlYelphOHNqM1J4R0VmSHVMZFpsZXVyS1pXem56Tkl0NmpRZnJRanVEOEZuNWNCWnpJaFZYNnpIOEtTTmxibnA0RUdOTGpZb29TWFJn0gF_QVVfeXFMUG81ZThxTWVpdUNQeXVjU2drOXFKYVp2a1d4NUVxSnJpaXZWbDQ5RFF4OVZzWHFWS3JVZ0wxc1p2eEZ2UHlBaWFXcE56V3ZHUGRCZTVQanlvWnJxZ09rRjY4YnNMdWxkWC16emdCYi1LcDVON2g0ci1SSHUyM05kcw?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-06"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_bf9431e2401bda13",
-        "date": "2026-11-06",
-        "title": "Mali-Niger : Assimi Goïta accueilli à Niamey par Abdourahamane Tiani avec les honneurs militaires",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Mali-Niger : Assimi Goïta accueilli à Niamey par Abdourahamane Tiani avec les honneurs militaires Mali Actu",
-        "source": "Mali Actu",
-        "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUTdqS3htZHRLOWtBdThlTXluODNmVFYyMGF4bERlZFY0cTk0cVpmcGdFN3dxS2htamNDcEhZUG5FcEF3Nk1EcFJVcEpyUm9zSzQ5SG1ROERzYW5NM2ZHWkthaTZTY0ZZY0RKbGJkOVFrMC1nb1NzRzg1dFh6Tk9UdEZSbFE2TFlMY1RnOHF4c9IBlwFBVV95cUxOT0txQ0lrLTB6STF6cjdvbkJ2UmxQaEpFOW5oU1k4cjQwLW9Jck1vcXlsUVpmV19UWGxpOWFFdExWdF9JNEFHemVfT1FOM3I5eWNZRGcyclVWaEpFNHpPQWpiS195cXhxSjVSY0swdFdvOGxSSERnY0tvQWtfRXpuZWVkSy0zRjZKYVBCcG43RWxOamlQV05v?oc=5",
         "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-06"
@@ -1419,37 +1636,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_d0566010bee5417c",
-        "date": "2026-11-06",
-        "title": "Assimi Goïta accueilli avec les honneurs à Niamey par Abdourahamane Tiani",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Assimi Goïta accueilli avec les honneurs à Niamey par Abdourahamane Tiani Actu Cameroun",
-        "source": "Actu Cameroun",
-        "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUlJaX3ExU3JYTkVFeXFXdEk0UFcwaFVkRkhuRGQwOXd6NVBQQjR2ZDNyOEtaU2NzZFR6U29FZGhjYTNrQkV5dGdMUXZ2dndqeVdydFlhN1FsU3lKRzZhU0NxV3ZKNGxjV3lzb2RnX1dmQ3VQUkgwRTM0Z25xWDBtd0pCZTl6ejk2QjNMSl9wZTY2VFRWV3hvSkNadkQ3dlV5ZEk4UC05QUc4dkliNW1N?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-06"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -15.979,
           18.086
         ]
@@ -1543,99 +1729,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.075,
-          14.064
-        ]
-      },
-      "properties": {
-        "id": "media_5db284d03ba29af0",
-        "date": "2026-11-05",
-        "title": "Opération Dougoukoloko : les FAMa frappent des bases terroristes près de Koro, Sandaré et Sofara",
-        "location": "Koro",
-        "region": "Mopti",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Opération Dougoukoloko : les FAMa frappent des bases terroristes près de Koro, Sandaré et Sofara https://malijet.com/",
-        "source": "https://malijet.com/",
-        "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT3Nra2liNEFoTGZRdzF3ZDJ0TW44TmZ4Tk52YWVuTm4xRVFjS0ZWVndIaHgzY3RsTk5ta1dvUmxGeHQ4QklyblVCX0lnY0tOeFNQZE1aS0hYNXFZTEVsVlR5RmFrOEdBbzdfYkVtb0pTYTVYQ2Q3LUpESHd4ZFplWHU1YjhyNDlDSEt5MHBQZXZIY0dRSHA1VGw2eURxY1ljWVdJelN5bmhSSV9sVWtBOG1WY0NRdE1pLVJHUHNjVkx4QQ?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-05"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -15.979,
-          18.086
-        ]
-      },
-      "properties": {
-        "id": "media_580d8c84d373931c",
-        "date": "2026-11-05",
-        "title": "Nouakchott : Ghazouani clôt la phase 1 du programme d’urgence et lance une phase 2 de 115 milliards d’anciennes ouguiyas",
-        "location": "Nouakchott",
-        "region": "Mauritanie",
-        "country": "Mauritanie",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Nouakchott : Ghazouani clôt la phase 1 du programme d’urgence et lance une phase 2 de 115 milliards d’anciennes ouguiyas Points Chauds Online",
-        "source": "Points Chauds Online",
-        "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdTlwRFd1LVF4SURpQnlJSGxpdWtZdFJLZ1ExUmQ3Y1VUMldoeDVkX1NhRnZiVFJWTkphZVp6cV8tLWt5U2U3LVhid1lQWmN1MjgyRlFFUEgxOHMxMmN0WjA3UHJyN2JqNWhOa29IdjRjSE5mSVJCTWdqbzBWSTZmSnRRSHl1aktia0JtSVRhbmJEcTloZ1VaajdLZWFEdUNXYU5Pc1kzQXdnelF2Z1hTNkIyR1hTTnBDSEdSU0dmeFRkYnlYRzdMTmxTVGRPT3I2T0o4SkxzbHNNVFk?oc=5",
-        "source_system": "Google Actualités — Mauritanie",
-        "language": "fr",
-        "as_of": "2026-11-05"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_f8f9b818529d3b0e",
-        "date": "2026-11-05",
-        "title": "Niger-Tchad : en pleine tension entre Niamey et N'Djamena, l’Algérien Tebboune médiateur entre les présidents Tiani et Mahamat Idriss Déby",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Niger-Tchad : en pleine tension entre Niamey et N'Djamena, l’Algérien Tebboune médiateur entre les présidents Tiani et Mahamat Idriss Déby ActuNiger",
-        "source": "ActuNiger",
-        "source_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPRDdEZzdqcGN5dkF2ZXV5Y1ZGdER3c29ZOFNMUS1VMDd4bFJkVUpUUEFXenc2dHNZUldjWkpqS2hkSVc2MEpxeDNmRFZPTnZURy1tMnhJRUtQRjRZZWFYQTRFVllXZlVCSjFQNW9EbFlwaC1iZFhCM1h3U0h4QTRrVHBJcmxEdkNYSmpHOEVHVDNGS3FWNTd6N1ktU2k1M09KMkdlMVc4M0s0aENReEk5QWl2bVd3QjNXNE9BN3FueE9kZ2l2dm40SDU4N1lMYndJbFpxNnFlbHkteGRaRUtuTUQtOWlLUWxRbEphczM3eVF3ZGRhNVpPR0tZcTBQVzJNeWp4Z3Fn?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-05"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.11,
           13.514
         ]
@@ -1657,37 +1750,6 @@
         "summary": "Niger-Mali : le président Goïta accueilli par le général Tiani à Niamey ActuNiger",
         "source": "ActuNiger",
         "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVUpQcTdrblZwZnZsUkxnbm1oVEFVaHpSOURoenFydWdUTmY5cVZQcXNWSTE4Um5qdTlpVmg5U3ZNSE9OZjd6Z2pXNG9kbDl4YXJTRFd1RUtpNmFjc3NZMlBhOGRGLWdORVF3RmowU25XRVVIT0dTdmhZZTFSYm1WcG51bXZQTjl5TVpNVHhFWkY2RFhyVEwwSjFyd25vX3o5U2JPX0tUcXFBRWJuai1zag?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-05"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_bb73f6e7047b6819",
-        "date": "2026-11-05",
-        "title": "Niger-Algérie : Ahmed Attaf porte un message de Tebboune à Niamey",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Niger-Algérie : Ahmed Attaf porte un message de Tebboune à Niamey Journal du Niger",
-        "source": "Journal du Niger",
-        "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNc1J6WWtiRXBzemZEaUlKdXdlQVBkUTgzZGc5aXp0UUJHcnpvMkZja2U3dDB4Z0NIbXhkOU85WXFxeXZiY3BGRDlGTnJmQWRKR0MwZFBDVmNoWnlwWHZhZm5CUllSMi1pREh4a1QtNFpHMU5DTUVNUjVVeWR5Z0ZyeFo2ZXZOVy04QkdN?oc=5",
         "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-05"
@@ -1807,62 +1869,6 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_49eb70b3fcb24df3",
-        "date": "2026-11-05",
-        "title": "Coopérative Song-Taaba : Des biscuits pour soutenir les FDS et les VDP au front",
-        "location": "Burkina Faso — lieu à confirmer",
-        "region": "Burkina Faso",
-        "country": "Burkina Faso",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FDS / VDP — Burkina Faso",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "Coopérative Song-Taaba : Des biscuits pour soutenir les FDS et les VDP au front Sidwaya",
-        "source": "Sidwaya",
-        "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOeWdRZkg0VkNRQzZfNnFSbjk3TEpBSXRyanh3SDhLMFVBUlNnZjMyV2tjczI4NDdyR09xbkZSOFFwTGNGclZiLW1LLXdfQzBPZzhENmxvd1FVWTdsSUw5djJLeUJzUnlXWHBpU2VIVWFKSnFjbWc3U1VUN2tEZEJ5TXo0YkdDTlczVVBLNWRXaklPY1NEUDNJNVZadnIzUFkybnJvT1d6eFp5VlExVklQZGdSclo0aHc?oc=5",
-        "source_system": "Google Actualités — Burkina Faso",
-        "language": "fr",
-        "as_of": "2026-11-05"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_b85cdc8787aaaaf2",
-        "date": "2026-11-05",
-        "title": "Ahmed Attaf reçu par le président nigérien Abdourahamane Tiani à Niamey",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Ahmed Attaf reçu par le président nigérien Abdourahamane Tiani à Niamey دزاير تيوب",
-        "source": "دزاير تيوب",
-        "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZXU4RXc3V3hOMFp3YmZLeWVJUy1yQXN1bjNLMkJSZU9yN3lyM0s1cU5kWjF6cWpKa3B5MXhUM3lNeU5xVU1VVUJLWmJibzdUQkRlZV9SaUF1T3VZcFhrQThzN3lhWEdrdDBqblF2cTNTWmRLUy15SExQZXJjVmlKbG1fdWhxWTdvX1lmX3V6TThJbHdLSUJGZkJPT1hJUTJlcmN3?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-05"
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -1918,37 +1924,6 @@
         "summary": "À Benghazi, Niamey se rapproche du camp Haftar pour sécuriser la frontière Niger-Libye RFI",
         "source": "RFI",
         "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQeV9WNmVLQTZ3dHhCVXpaZjdfd2kyVm5rNGFtSTVKbGFnaWVMM0NxdGNBdjJFWjl4dUl1RFdQM1ZjczlzZXNrZ3Rhak5HSVJIRmZ6MmNqY05qekhhcFZTbGFtbTkyMVZzMFgwYVZoRUZEXzY2TTRiLV9FakhaYlM0R3g1NEFoRFE2bEZXc2pUNGtsRTBXQ3JNMlJfTjc0VGZEWFlNam81TmdHRnVkdUROdV9ndy1pNHJ5UEMzZHVuaWNpQ0NnZXlsMG9JZERoNFRrbDhjQUl3?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-04"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_227a2cc80776d28c",
-        "date": "2026-11-04",
-        "title": "Niger-Algérie : Le ministre Ahmed Attaf effectue une visite officielle à Niamey",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Niger-Algérie : Le ministre Ahmed Attaf effectue une visite officielle à Niamey Agence Nigérienne de Presse",
-        "source": "Agence Nigérienne de Presse",
-        "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTnZwZHEzRmtsLWU4b1lkMGRfWmR0X01oejIxOGJPdG5TMzI1cjJMNlpGRm8zOWV0QTVITElZMEtsUGFuNERodXBlSFpjZU5LcGwxTFAwTWdVeXN2aVhIWkpGLVV4djBQS0s0ejdmNFBBaFllT0dKVExmZXZRal9VNUlhLTlEWk5qR196OGRaeG5DVHkxY2UzRA?oc=5",
         "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-04"
@@ -2118,68 +2093,6 @@
         "source": "RFI",
         "source_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNM1JPZWYtQS1GRnk5Qm92WnZBSDhNcm1FQzBmdmtPclpTcHBsMWtWT2QtV01feF92LU1BUDhSaEdwU2gxUTllOGpDUHFPNlNoRWNITWpqT1V0T0hpYl9icDI3aFJKVGxCcDlEMUtPaUpGV0RNN3RCUVBhTUtVN1Z1c0ItSEtqM3I5TTRkZXdsVmhrWWhIUnZnTzNkeDdmcUc5X0RLWFR5NUNUQ1JqZ2ZpS0VoR3NlSEkwUkJ4LUs0S2g2enplYTlMWFNtYTBoV3otbkotV0I0dEV3aTFGamRPZFh6Zw?oc=5",
         "source_system": "Google Actualités — Burkina Faso",
-        "language": "fr",
-        "as_of": "2026-11-04"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_2559e4a607432f04",
-        "date": "2026-11-04",
-        "title": "Attaf s’entretient avec son homologue nigérien à Niamey",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Attaf s’entretient avec son homologue nigérien à Niamey L'Algérie Aujourd'hui",
-        "source": "L'Algérie Aujourd'hui",
-        "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMEZzVnhrc2hTTkVkZWZocG9sQk5aUzFXZno0T2NRWHkxbUhaaU9MR29ETTY1ODdLclpIQWV5TE80clV5NzlnT1pNV3FtdUNnY1E4SDVRNmZFeUUzNjZqQVUyVGpTZUVjdG1TbkNxQzdzV2ROWF9tdHFEcUg3QTlPdmVxZXlWU2VYMFRPUnpB?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-04"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_b7e3aacdc43460f8",
-        "date": "2026-11-04",
-        "title": "Attaf arrive à Niamey pour une visite officielle",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Attaf arrive à Niamey pour une visite officielle وكالة الأنباء الجزائرية",
-        "source": "وكالة الأنباء الجزائرية",
-        "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSHRfeEdfVGtqRUJtcm82cEVHeXdiR1hRcG5MVFNnRWc4U0JHcGo2TW9jMm4zZkRTdzZTZUJxal9rdlJxbzRMT0lYWk1DUXU2YUFJRWRkeUdvTWdYTDhVNDluMFhKaXFVd0tWa3doZG1JMENDRE4zdGp1NU83Q1Zyd2trOVNlS0VxdWdjUnl0Z08zZ3hSU09GQlRSeDRpb1U4ejZ6VUxXZmVZUXM?oc=5",
-        "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-04"
       }
@@ -2942,6 +2855,130 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          1.454,
+          14.207
+        ]
+      },
+      "properties": {
+        "id": "media_52589dcc1829a2cf",
+        "date": "2026-10-30",
+        "title": "Météo à Jakouta, Tillabéri heure par heure",
+        "location": "Tillabéri",
+        "region": "Tillabéri Region",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Météo à Jakouta, Tillabéri heure par heure SpaceRef",
+        "source": "SpaceRef",
+        "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE53dnNobzVqb2pHRndleFZ2S2pRbVRyaEFnUnYySmZSU0wxaVpmZmh3cUV0VzgySTBxM3h3VHN6VFdwY3J2NlZ0QVdDQ2JtVVpNZ3U1UHp5MA?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-10-30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_e9bee9a082fec212",
+        "date": "2026-10-30",
+        "title": "Météo à Goungou, Niamey heure par heure",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Météo à Goungou, Niamey heure par heure SpaceRef",
+        "source": "SpaceRef",
+        "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1VRVFuZDdrS05GOE1xYzBBajB3RWdpWVVHSDdVa2xsMWIyUnFqZUxzUC1lRUQzTGRmLWVSWjZUb2NqeEVlME9maVVEdzMwMWp2aEY0a0ZiQ1JENjN1a25WNg?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-10-30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.454,
+          14.207
+        ]
+      },
+      "properties": {
+        "id": "media_5e22b94ceef8a8b9",
+        "date": "2026-10-30",
+        "title": "Météo à Garobogol, Tillabéri heure par heure",
+        "location": "Tillabéri",
+        "region": "Tillabéri Region",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Météo à Garobogol, Tillabéri heure par heure SpaceRef",
+        "source": "SpaceRef",
+        "source_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jWTlHRDdGTmRpMGZiMkt3RVpYSzNkVTlCYy1fUUxPSnF4VWlhZDl3NllKdVc0b3pfQ1A3NkVpelFwQlNJVE1XYjBsc3BRaURSVUZlNV9UWlZ4UQ?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-10-30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.979,
+          18.086
+        ]
+      },
+      "properties": {
+        "id": "media_d47071bbf9bb08b0",
+        "date": "2026-10-30",
+        "title": "Mauritanie : Nouakchott Nord : un comité local installé à Teyarett pour relancer le handball",
+        "location": "Nouakchott",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Mauritanie : Nouakchott Nord : un comité local installé à Teyarett pour relancer le handball Cridem",
+        "source": "Cridem",
+        "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5hV1ZnUTBGeXJhRjhydlBnNTVsY21rZGtvVmxJdGZPa2x5UXF6X0ZYT1oyTDJoMGg4Z1k3bjhZS28yT0ZfbHFETmxhX2pHU0hzV1JFTGhFTXo1TWhkVEpsZw?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
+        "language": "fr",
+        "as_of": "2026-10-30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -15.979,
           18.086
         ]
@@ -3474,143 +3511,6 @@
         "source": "Anadolu Ajansı",
         "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOcGt5RVJwNzkzTWJzSS1WNFlqclNCcUlVQ2o2LWprb1pSNTB1MXNhUFJPMW5BeU9Bc0phN2c5MFJtZlltcl9JLVRTMHRaMG0xRzhwN25saHN5QnNmUFFrNFZlQ00tWGVpcEFBYmxjbDJLWmlqSENmajhSMXhtRnUyb1h2cGdES29FMnRObmJWVk9Ia2Y4UVdxTFZlUGNJT1lnZU4yNVdvZ0ZQeU5hSXcwcEpHTTVIM1pkUW0tRXQ4OU4wRWtOTlVldDh3RTBtZw?oc=5",
         "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-10-28"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -15.979,
-          18.086
-        ]
-      },
-      "properties": {
-        "id": "media_cd547a99c46c2fab",
-        "date": "2026-10-28",
-        "title": "Mauritanie : grève des étudiants à Nouakchott après une hausse du prix du transport universitaire",
-        "location": "Nouakchott",
-        "region": "Mauritanie",
-        "country": "Mauritanie",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Mauritanie : grève des étudiants à Nouakchott après une hausse du prix du transport universitaire Ouragan.cd",
-        "source": "Ouragan.cd",
-        "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM0RTS2VjZnN1YXdoZGd1c3B1MTNzVkVFRG1VZWN6S0FOU2wwdnE5cFRmTjNJdTJPZzJ6V1hiQm9EVF9haEViXzRYUnd2a0RxWFMzSTJ0Wmx6d05IWndmMVktU3NsbllDTzhia0tZaURnaHRqaUExYnhiU1FTTHZ4WDVVQVNkRmlPb3VKSVF1YXg5dGh6Y3g1alZUa0Y0dG5rdkI2RVdVeEJ6UC10SGNZYlp1aWhqcjltdW5FbTdQTQ?oc=5",
-        "source_system": "Google Actualités — Mauritanie",
-        "language": "fr",
-        "as_of": "2026-10-28"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_319ea8ccbae373d4",
-        "date": "2026-10-28",
-        "title": "Mali : «Opération Dougoukoloko», les FAMa ciblent deux positions présumées terroristes",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "Mali : «Opération Dougoukoloko», les FAMa ciblent deux positions présumées terroristes Koaci",
-        "source": "Koaci",
-        "source_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxORXRzbXZWS25IX2F5WFZRdG42TlNGRmxpMTNSTEt4SzBoaFpFM195TGRoYk1pWkNEX3RHWjhUMG5tZGxDRldtSGFRV3p4RXFnZzlWMmNvaXN5QzhGTDB2Wl9laFV2VFA1VVkzREp5eEFlYVRnTTNjZXRiNkFyUDl1cms3SHZJdmhxa3Q0d2pCWF9tV1h6b3pjUUtKXzZJVU5uZTQzMHVzajhFQkZzSjhBRG14cDkxU1JZSHNvczVsS0NxSHFWNXZIU09pSzhabzJnQzBDQ01sQ1ItalpEMU42ajRYNA?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-10-28"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_a110fe4f1ee2ae73",
-        "date": "2026-10-28",
-        "title": "Mali : les FAMa frappent un regroupement présumé terroriste près de Tombouctou",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "Mali : les FAMa frappent un regroupement présumé terroriste près de Tombouctou La Nouvelle Tribune",
-        "source": "La Nouvelle Tribune",
-        "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMG95bDA0bW14blVWNC1Pb2V1SEdISzQ1amxfc0VyNnFzak9CcUVxQUgybnpyaGg3VDNyRWp4WVRSbE1ndERGU2NybFNtY3NHbS1OLUpzdkcwY09ZMWpaWUVtc1RVX2M0b1V6NHVXRHNGekpVUVB6OVhxT3FnNWhfcFl6ZkN5ZEd6aUtvZVF0cmJ6b1ZlWEtjV3NwYzFOSHFHSmJEUGdNVUhLZjlNNDUxMzlaM0JrVjQ?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-10-28"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_7f6be9f2c30bb33d",
-        "date": "2026-10-28",
-        "title": "Mali : les FAMa frappent deux positions terroristes",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "Mali : les FAMa frappent deux positions terroristes APAnews - Agence de Presse Africaine",
-        "source": "APAnews - Agence de Presse Africaine",
-        "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVEJ5cVRBc0ZzM0ZlRmJCTXBTTk9tUlc5Z0NiOGtIazM1N2REM2NpdFBET1k4SktNQ1hYaFo5ODJNXzJ4dWJsbndOd3Vsbmpxd2NxLXNGQTVjbUhKOTVwR3ZZeExndkFEaTh5RVRoYWc3WHdfOERNVXBzQ3UzcUhmay1aQjNWMXI3?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-10-28"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.259,
-          13.44
-        ]
-      },
-      "properties": {
-        "id": "media_c3dad769ff78dd24",
-        "date": "2026-10-28",
-        "title": "Mali : les FAMa ciblent deux regroupements armés à Tombouctou et Ségou",
-        "location": "Ségou",
-        "region": "Ségou",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Mali : les FAMa ciblent deux regroupements armés à Tombouctou et Ségou Mali Actu",
-        "source": "Mali Actu",
-        "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdm1pUXJkS2U3M0ttdVoxWWkwN096SlBHcXhmTVpFQzRNWFdBV29tS3hmQVFscjhQU3pmcno1eHZiOFplMFpyUVdzYzdJSzBKUHIwTWMxSzJKUF94eXZRS0ZyYWhRM3dVQWh6aWpZcnNqQTZ1QmdzLUFhbFN1T25CUmxTZmh1bEJPMnk2Ql9fc2tiWW0y0gGcAUFVX3lxTE1la2NhUWd5N05GSTVLM3pDOHFyTllmU3hxV0g2cFRrdGEtdTVKQTk1UGJLeVZLWWRnMHlBYi1vaUw5RG51UFdXM2ktSVJkcmU5NTBCbGU3Tlk4dDJnYTlHczNleTlaNm8yY3lZeEREcEk0YXAwVnlGX3RGcjFqcF9CdFlTNEVxX3BsY29UcTN6alRGWXlwUy1FTTRmbA?oc=5",
-        "source_system": "Google Actualités — Mali",
         "language": "fr",
         "as_of": "2026-10-28"
       }
@@ -4233,37 +4133,6 @@
         "source": "Africtelegraph",
         "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYWg1TG9Ib1Y0Y2d5OUxpeVhjRW5SeFpJaXZ4bEVac2VLdG9jN1drZXJFdVltV0kwZ1pTZkp5cDVNSm1ZTTl1ZlJxWmU2QkRuUDVuVUxNdTcxVGIyV0U1OVRLbDNpMGR4dDZ6bklqY010RU9CVF9DZS1EMGNoR3R4MWhtaVlXSzlCQ2dLUHBjR182dGg0YTYzeGp6SUw?oc=5",
         "source_system": "Google Actualités — Tchad",
-        "language": "fr",
-        "as_of": "2026-10-27"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
-        "id": "media_409da61a6819115f",
-        "date": "2026-10-27",
-        "title": "Météo à Mangaïzé, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Mangaïzé, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE94QVVROXFoSUJ2ZUpWOHVqYTZDRVAxNFV5Y3g0eGplZmpNRjctRlRmdmdxMVV6ZFpMZndkem5sTkIyRkE2dFZDeFI5RkFWVUIxTUh5UEk2QXh3QkVxRVB1c29wN2FWOEU?oc=5",
-        "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-10-27"
       }

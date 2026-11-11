@@ -1,14 +1,14 @@
 {
-  "window_start": "2026-09-26",
-  "publication_cutoff": "2026-11-08",
+  "window_start": "2026-09-27",
+  "publication_cutoff": "2026-11-09",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
   "coord_decimals": 3,
   "sources_configured": 29,
   "sources_attempted": 29,
-  "successful_sources": 25,
-  "failed_sources": 4,
+  "successful_sources": 26,
+  "failed_sources": 3,
   "local_media_sources": 11,
   "social_targets": 7,
   "social_feeds_active": 7,
@@ -31,13 +31,13 @@
       "name": "Google Actualités — Mali",
       "kind": "rss",
       "status": "ok",
-      "articles": 26
+      "articles": 27
     },
     {
       "name": "Google Actualités — Niger",
       "kind": "rss",
       "status": "ok",
-      "articles": 76
+      "articles": 64
     },
     {
       "name": "Google Actualités — Burkina Faso",
@@ -49,13 +49,13 @@
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 51
+      "articles": 56
     },
     {
       "name": "Google Actualités — Tchad",
       "kind": "rss",
       "status": "ok",
-      "articles": 21
+      "articles": 22
     },
     {
       "name": "RFI Afrique",
@@ -80,7 +80,7 @@
       "name": "DW Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 9
+      "articles": 12
     },
     {
       "name": "Studio Tamani",
@@ -97,15 +97,14 @@
     {
       "name": "Burkina 24",
       "kind": "rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : The read operation timed out"
+      "status": "ok",
+      "articles": 6
     },
     {
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 71
+      "articles": 92
     },
     {
       "name": "Sahara Médias",
@@ -172,7 +171,7 @@
       "name": "X indexé — @maliactu",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 0
+      "articles": 1
     },
     {
       "name": "X indexé — @actuniger",
@@ -196,16 +195,16 @@
       "name": "X indexé — @tchadinfos",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 19
+      "articles": 15
     }
   ],
-  "articles_fetched": 555,
-  "unique_articles": 531,
-  "fresh_signals": 115,
-  "retained_signals": 236,
+  "articles_fetched": 577,
+  "unique_articles": 552,
+  "fresh_signals": 107,
+  "retained_signals": 232,
   "manual_events": 0,
-  "published_events": 236,
-  "mapped_events": 115,
-  "generated_at_utc": "2026-11-10T15:11:40+00:00",
-  "duration_seconds": 175.27
+  "published_events": 232,
+  "mapped_events": 110,
+  "generated_at_utc": "2026-11-11T14:41:08+00:00",
+  "duration_seconds": 50.58
 }
