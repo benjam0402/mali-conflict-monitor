@@ -2,14 +2,14 @@
   "type": "FeatureCollection",
   "metadata": {
     "title": "Sahel Conflict Monitor — signaux médiatiques et sociaux publics",
-    "last_updated": "2026-11-14T13:45:50+00:00",
-    "generated_at": "2026-11-14T13:45:50+00:00",
-    "latest_signal_date": "2026-11-12",
-    "event_count": 230,
-    "mapped_event_count": 102,
+    "last_updated": "2026-11-15T14:15:45+00:00",
+    "generated_at": "2026-11-15T14:15:45+00:00",
+    "latest_signal_date": "2026-11-13",
+    "event_count": 239,
+    "mapped_event_count": 99,
     "source_summary": {
-      "window_start": "2026-09-30",
-      "publication_cutoff": "2026-11-12",
+      "window_start": "2026-10-01",
+      "publication_cutoff": "2026-11-13",
       "lookback_days": 14,
       "retention_days": 45,
       "min_days_delay": 2,
@@ -46,25 +46,25 @@
           "name": "Google Actualités — Niger",
           "kind": "rss",
           "status": "ok",
-          "articles": 51
+          "articles": 54
         },
         {
           "name": "Google Actualités — Burkina Faso",
           "kind": "rss",
           "status": "ok",
-          "articles": 26
+          "articles": 27
         },
         {
           "name": "Google Actualités — Mauritanie",
           "kind": "rss",
           "status": "ok",
-          "articles": 42
+          "articles": 37
         },
         {
           "name": "Google Actualités — Tchad",
           "kind": "rss",
           "status": "ok",
-          "articles": 19
+          "articles": 14
         },
         {
           "name": "RFI Afrique",
@@ -88,7 +88,7 @@
           "name": "DW Afrique",
           "kind": "rss",
           "status": "ok",
-          "articles": 12
+          "articles": 11
         },
         {
           "name": "Studio Tamani",
@@ -112,7 +112,7 @@
           "name": "LeFaso.net",
           "kind": "rss",
           "status": "ok",
-          "articles": 84
+          "articles": 69
         },
         {
           "name": "Sahara Médias",
@@ -173,7 +173,7 @@
           "name": "X indexé — @Malijetactu",
           "kind": "social_rss",
           "status": "ok",
-          "articles": 10
+          "articles": 9
         },
         {
           "name": "X indexé — @maliactu",
@@ -185,13 +185,13 @@
           "name": "X indexé — @actuniger",
           "kind": "social_rss",
           "status": "ok",
-          "articles": 18
+          "articles": 17
         },
         {
           "name": "X indexé — @burkina24",
           "kind": "social_rss",
           "status": "ok",
-          "articles": 19
+          "articles": 20
         },
         {
           "name": "X indexé — @ONUMauritanie",
@@ -206,19 +206,555 @@
           "articles": 14
         }
       ],
-      "articles_fetched": 566,
-      "unique_articles": 535,
-      "fresh_signals": 84,
-      "retained_signals": 230,
+      "articles_fetched": 543,
+      "unique_articles": 516,
+      "fresh_signals": 92,
+      "retained_signals": 239,
       "manual_events": 0,
-      "published_events": 230,
-      "mapped_events": 102,
-      "generated_at_utc": "2026-11-14T13:45:50+00:00",
-      "duration_seconds": 42.19
+      "published_events": 239,
+      "mapped_events": 99,
+      "generated_at_utc": "2026-11-15T14:15:45+00:00",
+      "duration_seconds": 35.44
     },
     "warning": "Ces points sont des signaux issus de médias publics, pas des faits indépendamment confirmés. Les coordonnées représentent au mieux le centre approximatif d'une localité citée."
   },
   "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.534,
+          12.366
+        ]
+      },
+      "properties": {
+        "id": "media_4863361e12ff28b6",
+        "date": "2026-11-13",
+        "title": "‎Burkina : La suppression de pages Facebook faisant l'apologie du terrorisme demandée à Meta ‎",
+        "location": "Ouagadougou",
+        "region": "Centre",
+        "country": "Burkina Faso",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "moyenne",
+        "precision": "centre de localité approximatif",
+        "summary": "‎Au cours du point de presse qu'il a animé ce 13 novembre 2026, le Procureur général près la Cour d'appel de Ouagadougou a indiqué que dans le cadre des procédures ouvertes contre des personnes physiques ou morales, il a été demandé aux autorités judiciaires américaines de saisir la société META, plus précisément Facebook afin que les animateurs d…",
+        "source": "LeFaso.net",
+        "source_url": "https://lefaso.net/spip.php?article150779=",
+        "source_system": "LeFaso.net",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_b0c380e776dabf04",
+        "date": "2026-11-13",
+        "title": "Éducation : La diaspora burkinabè en Côte d’Ivoire offre 3 000 sacs scolaires aux orphelins des FDS et des VDP",
+        "location": "Burkina Faso — lieu à confirmer",
+        "region": "Burkina Faso",
+        "country": "Burkina Faso",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FDS / VDP — Burkina Faso",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Éducation : La diaspora burkinabè en Côte d’Ivoire offre 3 000 sacs scolaires aux orphelins des FDS et des VDP Burkina24.com",
+        "source": "Burkina24.com",
+        "source_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOWXFzSFh6SVhFaW1MMFZYVE05THllclkxMzRiZUhaaU1KUDlUWWJlNDlFV0R2T2NoS1NCQ0VyZ3BreHpJeEJJUm9GV1g0b2lYYkFDNzJEbnB0Uk9hVEhybExyT1VjdE5DRXd2UHplS2JIRTctSnEtaTZaUG9xaXVMRXg0QlI2a0EzbGNDem1PUUo3RFU0MU01emQyUkhDTlhiSGlRRXVjMFdrWDZLNHRIbWhFcWFtbGZnTmpWTkRHcnk5WVZFOWR1d09BaUJYb3l5SktMbzFCX04?oc=5",
+        "source_system": "Google Actualités — Burkina Faso",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.939,
+          8.267
+        ]
+      },
+      "properties": {
+        "id": "media_d8b22142cd4bdd61",
+        "date": "2026-11-13",
+        "title": "Un garçon de 9 ans a été tué par balle et un adolescent de 15 ans grièvement blessé dans une attaque armée survenue le 12 novembre 2026, aux environs de 19 heures, au village de Kouh-Wété, situé à 16 km de Béboto, dans le département de Kouh Ouest - X",
+        "location": "Béboto",
+        "region": "Logone Oriental",
+        "country": "Tchad",
+        "layer": "event",
+        "layer_label": "Signal réseau social",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal réseau social — recoupement requis",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Un garçon de 9 ans a été tué par balle et un adolescent de 15 ans grièvement blessé dans une attaque armée survenue le 12 novembre 2026, aux environs de 19 heures, au village de Kouh-Wété, situé à 16 km de Béboto, dans le département de Kouh Ouest X",
+        "source": "Tchadinfos",
+        "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4ydTVINTNLbGlwRlBPUGwyUEtqWkZlOEp4VWZZYUYzTGI2elZGTFZBd25jSHMzejJKY1Ywc0c4MWVUZ3F1X01waHJkcXQxaEYzVHFzMmJTWlA1SDROS2RwSg?oc=5",
+        "source_system": "X indexé — @tchadinfos",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_47a377fb91f03857",
+        "date": "2026-11-13",
+        "title": "Trump dit privilégier \"plus de patience\" dans le conflit avec l’Iran \"à la demande\" de ses alliés du Golfe",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Trump dit privilégier \"plus de patience\" dans le conflit avec l’Iran \"à la demande\" de ses alliés du Golfe Maliweb",
+        "source": "Maliweb",
+        "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPX0dGRUhadF8zVEs1UVhZT1laUnJCZTNwbnN3SThWU1FwZFFGQklZUEg1Y2xZRUJiRnpDQXI2U2FjQ1dhUElucjU0QUNqQUYtU19ZcWVRcnRUaml6UmFrRkRxSFRFcDFCSFBIcm9nWDNzSU5aMHZBMU5wWDkzQXBrRmJYR1ZiNTlvRFdwWUxJWUFGSnd3N05wd280SEk0ZDB2eEYxSF8tTkVhejVMNlpWZW5jaW10cTNSdWc?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.454,
+          14.207
+        ]
+      },
+      "properties": {
+        "id": "media_f93cc7356fa1da85",
+        "date": "2026-11-13",
+        "title": "Niger: plus de 30 civils tués dans une attaque près de Téra, dans la région de Tillabéri",
+        "location": "Tillabéri",
+        "region": "Tillabéri Region",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Niger: plus de 30 civils tués dans une attaque près de Téra, dans la région de Tillabéri RFI",
+        "source": "RFI",
+        "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTXFBdVZuQnZiMUllR2tPZ1liaWpYWmlSY2twNnoybjZJV3l5MEpGVlNuemxiTUNzalNEYWtzSEJwQVNfTVQxaFVjQmRScUsxYWdiVjhZMHAxTkpscmtuSnhlMTZaZnI0MEtwU2pxYmRkaV9IWWFXcGVHejNHTXBKR1ZCZV9pX2REdVBlRWJkQVJJUG1FY05lOVBVS2ljTk0xNkF1cGtVSnR0cWpDUlVzVGZ0ZUtBdUFhOUxHdVBGNHQ1WUw3ZFpBSnNKZWdyVXJ5QUwxcWtSODk4WkpNdGh4ajROZy0?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_2f57863522b6993b",
+        "date": "2026-11-13",
+        "title": "Niger : plus de 30 civils tués dans une attaque près de Téra",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Niger : plus de 30 civils tués dans une attaque près de Téra Le Matin d'Algérie",
+        "source": "Le Matin d'Algérie",
+        "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNLUc5OXA4UTZNWk50MVEtM0hjVTkwM1dJY01ZUGZYVzdzanVWdDBSUmcwbDFLMnloVVdUcFVwckYtRUZuVEZJSll0VTVKemo1S2JUaTZwZnowQ1c2MnN4VmdJTXFGa2o5Zm5lcExrblNOSTQ2YUNBUHJKSE56eTd3LTdIR0tadGVIMnVYOC15ZU3SAZgBQVVfeXFMTlEya0JCVG9UcG9sc2JvbDhGQ09YdzFhZDVrTFA0MEczbWNKWG5pYnl0dUo2MUxTc0dqMDEtU1llb1VYZVpRYlBXX2Ryd3Zvb2VoSWQ4OE5kQy1SZ3RSVFpERTZEOXpiV3R0c1UxRlVwcmt0YWhiN1lYbHdDTzZNRGFuLUJiQkQ3TGd3WHhQSzdONktmZU1QOUQ?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_361a467ec78c3bce",
+        "date": "2026-11-13",
+        "title": "Niger : le puits Goumeri W-8 s’éteint, Niamey pointe des failles chez l’exploitant",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Niger : le puits Goumeri W-8 s’éteint, Niamey pointe des failles chez l’exploitant Journal du Niger",
+        "source": "Journal du Niger",
+        "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcGhIYmVaMU9seUd2aWlucXFiWlFfZlNQWl9kbExRdm5aVDNCeG1aMHc1QUp1bmN1M2ViTGxITldyTFNVWWY4TjYwdW9mOE5tRWV3NGpidHpwMlFfRWU2SVU1OGpYdEFfblloV0NBcnRsdF9RWElaZnZWN21vR2xhakZiQ1Y?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_2e85166c664deafb",
+        "date": "2026-11-13",
+        "title": "Niger : Au moins 30 civils tués dans une attaque près de la frontière burkinabè",
+        "location": "Niger — lieu à confirmer",
+        "region": "Niger",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Niger : Au moins 30 civils tués dans une attaque près de la frontière burkinabè Koaci",
+        "source": "Koaci",
+        "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQRmJMUUVfM1haNTVxMF9GNjVFR2k3Qmg4NFVzb245dDZ6RWxtLVJtQ2FGek1RQTBXOTEySlU5VWFTNGhmckxHV25qUDl6MXc2alh5X3VSMFZUNk5TVVdldGdWN1o3WktGVlpiTW1nRWp6VlhINHZkU1FBeFNXLTgwM1hPR0k0RFFTNldVQmRCajVLNUw0WU03c0JyNDlkS2s5bzFuUDVMV0U4RlU1MGxrbVU3UnFweU52MDBlakhKcUhCM1JHb1VJTWp6cEkwLTREVWgxWENlTTNYaGFXSmJZ?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_995af2f53b0fbf5c",
+        "date": "2026-11-13",
+        "title": "Logistique des groupes armés au Nord-Mali : comment les FAMa ont asphyxié un réseau de ravitaillement stratégique près de Tombouctou !",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Logistique des groupes armés au Nord-Mali : comment les FAMa ont asphyxié un réseau de ravitaillement stratégique près de Tombouctou ! Mali Actu",
+        "source": "Mali Actu",
+        "source_url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPOFI4NEU1QnhUM2RXeTFySWQtcldjdkd5Uzc2YVJFSV83Wi1ITl9iVDJOTGM2WUR2by13RHFvOXJ1RWdQWnlXMjgwOHEzWklsN01mM1l4cnFnVGxXTTg2dWc5VXhaamctYUl0NkIzSXBKUHNBdmxPRTFIMVJrQWI0alo5QU1CNWNvNGNrZGxlMHdGODNuZ3o0RVUwYUVWTHZPSjBhRlhlZmUtSFJNaVJvSnlYdmx6RDBTZmE0RFk0N2VpQ3JYV2hCTjU4cEVJOWYwYXZSZzZwZ2diOUg3Rnl1d3p2S2M1RmlxeGFYeU9wNNIB7wFBVV95cUxPOFI4NEU1QnhUM2RXeTFySWQtcldjdkd5Uzc2YVJFSV83Wi1ITl9iVDJOTGM2WUR2by13RHFvOXJ1RWdQWnlXMjgwOHEzWklsN01mM1l4cnFnVGxXTTg2dWc5VXhaamctYUl0NkIzSXBKUHNBdmxPRTFIMVJrQWI0alo5QU1CNWNvNGNrZGxlMHdGODNuZ3o0RVUwYUVWTHZPSjBhRlhlZmUtSFJNaVJvSnlYdmx6RDBTZmE0RFk0N2VpQ3JYV2hCTjU4cEVJOWYwYXZSZzZwZ2diOUg3Rnl1d3p2S2M1RmlxeGFYeU9wNA?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_35b72f20111890ea",
+        "date": "2026-11-13",
+        "title": "Le Burkina Faso annonce lancer des mandats d’arrêt contre des journalistes et des activistes en exil pour des faits de « terrorisme »",
+        "location": "Burkina Faso — lieu à confirmer",
+        "region": "Burkina Faso",
+        "country": "Burkina Faso",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Les autorités de la junte d’Afrique de l’Ouest ciblent une vingtaine de personnes, et demandent leur extradition. Un chroniqueur burkinabé de RFI et des anciens ministres de l’ex-président Blaise Compaoré sont notamment visés.",
+        "source": "Le Monde Afrique",
+        "source_url": "https://www.lemonde.fr/international/article/2026/11/13/le-burkina-faso-annonce-lancer-des-mandats-d-arret-contre-des-journalistes-et-des-activistes-en-exil-pour-des-faits-de-terrorisme_6809388_3210.html",
+        "source_system": "Le Monde Afrique",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_b764774f687aeb3c",
+        "date": "2026-11-13",
+        "title": "LUTTE ANTITERRORISTE : LES FAMA FRAPPENT DES BASES ENNEMIES À KADIANA ET BOULKESSI",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "LUTTE ANTITERRORISTE : LES FAMA FRAPPENT DES BASES ENNEMIES À KADIANA ET BOULKESSI Mali 24",
+        "source": "Mali 24",
+        "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUG0waHdGQnlwbEF3WjItaEt0aG9CS25Henh1OWhxN05RUTl5VjdITXVxQUR5c0twVms4RTlDYUplYWdJMXNpdEM0OHZvRWpVemJLLUlIWkhPMk1iejVwODJIWk5GcUFYWG9RcVFzVUZzMldOd0lxdWZnNW1xNTZPUjFaZUJ5MVd5cEswMkFDa01fZnlTTXFlMFpaRXFTV28yR2NZ?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_6161ae39c02b5185",
+        "date": "2026-11-13",
+        "title": "Kadianna et Boulkessi : les FAMa frappent plusieurs positions de groupes armés terroristes",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Kadianna et Boulkessi : les FAMa frappent plusieurs positions de groupes armés terroristes Maliweb",
+        "source": "Maliweb",
+        "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSk1QRU1rekxEM2JtMGhTYlBSU3ltLWdramdEbVFMeWJIR3RINkVtZTBwOGtyYmIweFVJOEhjZWppTXgyUkVRRHNveVVOWndSaUJINXlvalI3bHdaQW5vcmtISzhINEJaTjVrajVwMFFrU0FOd1hDZTc1dGVjb0p3aHg3cDBuN3EtQWE3MEJjNVNSMGxvMjRoTFpsVFlwM01Hcm5aemVpMV9RUkVEQW9Z?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_47021a1009846e80",
+        "date": "2026-11-13",
+        "title": "Kadiana et Boulkessi : l’armée annonce des frappes contre des bases terroristes",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Selon un communiqué de l’État-major général des armées, les Forces armées maliennes (FAMa) ont mené plusieurs frappes aériennes le mercredi 11 novembre 2026, avec l’appui de leurs partenaires. Ces actions font partie de l’opération Dougoukoloko, qui vise à surveiller et sécuriser le territoire natio...",
+        "source": "Malijet",
+        "source_url": "https://malijet.com/actualte_dans_les_regions_du_mali/312820-kadiana-et-boulkessi-larmee-annonce-des-frappes-contre-de.html",
+        "source_system": "Malijet",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_49fac255c6f6dfe1",
+        "date": "2026-11-13",
+        "title": "IN MEMORIA : Moussa François ZOUNGRANA",
+        "location": "Burkina Faso — lieu à confirmer",
+        "region": "Burkina Faso",
+        "country": "Burkina Faso",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Le temps passe mais ton souvenir demeure. Dix Huit (18) ans que tu nous as quitté… Moussa François ZOUNGRANA Ingénieur Statisticien - Economiste 15 novembre 2008 - 15 novembre 2026 « J'ai combattu le bon combat, j'ai achevé la course, j'ai gardé la foi » 2 Timothée 4 :7 La famille demande à tous ceux qui l'ont connu et aimé d'avoir une pensée pour…",
+        "source": "LeFaso.net",
+        "source_url": "https://lefaso.net/spip.php?article150679=",
+        "source_system": "LeFaso.net",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_be21e721289a4dcd",
+        "date": "2026-11-13",
+        "title": "Guinée : dix morts dans des affrontements autour de l’orpaillage illégal près de Siguiri",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "De violents affrontements ont fait au moins dix morts et treize blessés le mercredi 11 novembre 2026 à Balato, dans la préfecture de Kintinian, région de Siguiri. Le gouvernement guinéen l’a annoncé dans un communiqué publié le lendemain par le ministère de l’Administration du territoire et de la Dé...",
+        "source": "Malijet",
+        "source_url": "https://malijet.com/actualite-sur-afrique/312821-guinee-dix-morts-dans-des-affrontements-autour-de-lorpail.html",
+        "source_system": "Malijet",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_73294e6701066366",
+        "date": "2026-11-13",
+        "title": "Burkina/Terrorisme : quatorze personnes visées par un mandat d’arrêt et une demande d’extradition",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Quatorze personnes poursuivies pour des faits de terrorisme font l’objet d’un mandat d’arrêt et d’une demande d’extradition, a informé vendredi le pôle antiterroriste du TGI Ouaga 2.",
+        "source": "Malijet",
+        "source_url": "https://malijet.com/actualite-sur-afrique/312824-burkinaterrorisme-quatorze-personnes-visees-par-un-mandat.html",
+        "source_system": "Malijet",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_904b048700c9223d",
+        "date": "2026-11-13",
+        "title": "Burkina Faso : 45 personnes physiques et morales visées par des procédures judiciaires liées au terrorisme",
+        "location": "Burkina Faso — lieu à confirmer",
+        "region": "Burkina Faso",
+        "country": "Burkina Faso",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Le parquet du pôle antiterroriste a ouvert six procédures judiciaires contre 45 personnes physiques et morales pour diverses infractions liées au terrorisme et à des atteintes à l'ordre public. Parmi les personnes concernées figurent plusieurs personnalités, dont Paul Henri Sandaogo Damiba, François Compaoré et l'activiste ivoirien Camille Makosso…",
+        "source": "LeFaso.net",
+        "source_url": "https://lefaso.net/spip.php?article150762=",
+        "source_system": "LeFaso.net",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_2616ff408d089d46",
+        "date": "2026-11-13",
+        "title": "Burkina Faso : 10 000 paires de chaussettes et 30 motos offertes aux VDP",
+        "location": "Burkina Faso — lieu à confirmer",
+        "region": "Burkina Faso",
+        "country": "Burkina Faso",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FDS / VDP — Burkina Faso",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Burkina Faso : 10 000 paires de chaussettes et 30 motos offertes aux VDP Burkina24.com",
+        "source": "Burkina24.com",
+        "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSUQ3S3VEdHk2YXNTaVJrMHhlenFBTW5TVW5veTNEMmtaUmNhY3lHTmZoc3Q5Xy16R0RiNzhUZTRmVFo5bW5uNzQ0d2s1Y3MzaWJwUTZCbDZYZ0tRS2REbWNkaEpoaS1MUmpYOTlOeFQzWUpnZDBjaVVROFhCa0ExNTE1blFFOC1yN1hSaHBUR251OUZZcEV5WHh0b3pBSHlDU3Qzb0lkOA?oc=5",
+        "source_system": "Google Actualités — Burkina Faso",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.534,
+          12.366
+        ]
+      },
+      "properties": {
+        "id": "media_62941e9ee764fe35",
+        "date": "2026-11-13",
+        "title": "Burkina : Une instruction judiciaire ouverte contre plusieurs personnes dont Camille Makosso, Paul Henri Sandaogo Damiba, François Compaoré et Henry Sebgo ‎",
+        "location": "Ouagadougou",
+        "region": "Centre",
+        "country": "Burkina Faso",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "moyenne",
+        "precision": "centre de localité approximatif",
+        "summary": "‎Au cours de sa sortie médiatique du 13 novembre 2026, le Procureur général près la Cour d'appel de Ouagadougou a indiqué qu'une instruction judiciaire est en cours contre plusieurs personnes physiques et morales pour faits de terrorisme. Paul Henri Sandaogo Damiba est poursuivi pour complicité d'association de malfaiteurs terroristes, complicité…",
+        "source": "LeFaso.net",
+        "source_url": "https://lefaso.net/spip.php?article150761=",
+        "source_system": "LeFaso.net",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_a04c9309e67f0715",
+        "date": "2026-11-13",
+        "title": "Bras de fer avec Bruxelles : Niamey défend son alliance militaire avec Alger",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Bras de fer avec Bruxelles : Niamey défend son alliance militaire avec Alger Le Matin d'Algérie",
+        "source": "Le Matin d'Algérie",
+        "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaXVub1B0WXA4VGpPMnVTZW5pYmlIT3ZoSVZzaTdNbTVWV011MjI1a3Rqa0hHSC1sVE1MNFZ5WkFEZTdJUk80VnVNWTIwNVFjMnd1QUljbi11US1jZXNfZVVFZUJoTjFGalVodGR6eEZYcXdGVGYtZEJqdUVnWlprLThuQUcwb2xKTzE5YzhwakI1eWwtUF91UlpVWVNxa1lLZDMwT3pR0gGuAUFVX3lxTE93TzRIejBhVUktRU5LcWxzTHpSaDc0Vi0yR0NQcHFWTEM4VjRMR3J3bjdSaUc0d0lBREZaZVVPZklvSlk5OV81TFJmVlpSbnAwN2RFRjk3U1NaeC15TFphTS02U0V3QmhWaGdkT1pKTllBUmt6NEVDNFdCV0dOcVdUbHN6TEEzWVRmdjN5Vl9zeldKYzFZVmVwRE5uUXZ6Mm5Xbk9oSEhpUTdZS3JYdw?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
     {
       "type": "Feature",
       "geometry": null,
@@ -239,6 +775,31 @@
         "summary": "NORD DU MALI : LES FAMA INTERCEPTENT 2 000 RADIOS ET DU MATÉRIEL ROULANT DESTINÉS AUX TERRORISTES Mali 24",
         "source": "Mali 24",
         "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSDM4UmhhZGFxX0ZONm01M25jQmZkMnRVTFNUTk1uU0x0Y0NxTGp3ak5MdzUxVUFQZnRfM2ZRSVNoakxVZzlkekZfMnRwQkdObHB0UUp5eFpBc3QySUJhLVJta0RuaVlnVGg5QXJIZnZJblNJeWJhVHJsQmswdjFETUtidFpEZGJ2YnRIbktZcmFwV1NiRUtvR0t0WFBOYWVLUjM3SmMwdVA1T0dtZ3F2U3lqRU1WS2c?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_1421182d0073159c",
+        "date": "2026-11-12",
+        "title": "Mali: Les FAMA ont intercepté 2 000 radios portatives destinés à des groupes armés au nord",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali: Les FAMA ont intercepté 2 000 radios portatives destinés à des groupes armés au nord AbidjanTV.net",
+        "source": "AbidjanTV.net",
+        "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMjU3dmZQMER5NXZTMVdPcEM0S3h5eE1kUUM1REZveEs2dkVMLXpJZjhfVjNGd0RLalhCSzZtb3NtNG9nc25DTkFJZFBfcVNodTRBd1Z0by14NHJfS19aM2FEX2FURGRSU2VieG90UnctTnYwMWRKWnI2ejBYUVY5OVB4WDBzQUw5REJ0MnJVYXlWek4zT0tYVFAwLUxnS242aHZnUEp2c0VLdnB2b2l2YUQzLVdsaG52OEFWTktHUQ?oc=5",
         "source_system": "Google Actualités — Mali",
         "language": "fr",
         "as_of": "2026-11-12"
@@ -433,37 +994,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_c4ba32df74111775",
-        "date": "2026-11-11",
-        "title": "Sahel / Algérie / UE : Rétropédalage de Bruxelles après les vives protestations de Niamey et d’Alger",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Sahel / Algérie / UE : Rétropédalage de Bruxelles après les vives protestations de Niamey et d’Alger Mali Actu",
-        "source": "Mali Actu",
-        "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUGNQcGd5V3NzQ0tkd0NRczctWFhOR2xnX0xkb3ZLbi1YakprYUs1cVhOS2JQVkgxZFZSSTByX09oLUJTQkpkNm5kTG1qWU4ybGdlM3N1MlVyM29rZlAteUwzV0NYa1E5OFZvR2traE00M2ZpME80cG02bTRfOHJ2amlaLS1KN0RrZm5jb3d5dDRmcjQtTmpTdHNYTVFBaHplQnFMQVEzeGpndEVsdjZlQUItbm9FZ9IBvgFBVV95cUxNSTdac0xmRW5NbF9LUVJhRkhOdUhpLUFlcERjSzBwem8zZy1RSVpOOTlnZkJyM3NTNkZEa1E5bzM3NEJrbVdabEtYLTF5TzlydXcwZ1JYY1pwY1NkZ1J1TVVUbFNYVnZ6Ujl1Q19XZ1l1MGE0U01fcktFN0tKc1FXcUhMQVlzRFI3Ukp2TXctWWQ2SEFSa3ZuMGRpT2JVdXBtbUNWb0VFYndGWjBSa1BfYXU0QjlsWEVfMjZRSG5B?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-11"
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": null,
       "properties": {
         "id": "media_13411e046dc2afc1",
@@ -638,37 +1168,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -17.038,
-          20.942
-        ]
-      },
-      "properties": {
-        "id": "media_3db9ef0435555ada",
-        "date": "2026-11-11",
-        "title": "Mauritanie : Début du déploiement du réseau 5G à Nouakchott et à Nouadhibou",
-        "location": "Nouadhibou",
-        "region": "Dakhlet Nouadhibou",
-        "country": "Mauritanie",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Mauritanie : Début du déploiement du réseau 5G à Nouakchott et à Nouadhibou Afrique7",
-        "source": "Afrique7",
-        "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPU245VmxFd3VoZ1lUWXdseUFTWFREQlpNWkY4STQ2M2xMT3ZkM2d2VWc5UUZ4VHZPR3cyVVFtWmlLVmxjazZxMk9hU1pzaUVZSlNCVmRMZDlsYmhpSHQxOUdSb0VWRlNfcnhIQlo5RmdlS3dEeGxXcXNnM2FDQW5JTVZpd2RScXJsT0lOMkl4Q1RGcTh6eEZ3NFZ5UTZwYlJ0cE1jQ29TZHpZeHVldjZMaWpwVkhlTE5KU0E?oc=5",
-        "source_system": "Google Actualités — Mauritanie",
-        "language": "fr",
-        "as_of": "2026-11-11"
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": null,
       "properties": {
         "id": "media_2b0607f4583c2f43",
@@ -718,37 +1217,6 @@
         "summary": "Mali: l'armée malienne exécute et mutile cinq personnes dans le cercle de Kati, près de Bamako RFI",
         "source": "RFI",
         "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTF96dF9UZXU2VVl2dVEwTFdQMC04NGZ1eWhwZS0yTGc2OWoxLV9DbTRPUW9iekh0X3ZqV1ZSOU9uN29ybGF5S2JPeUJlMjNTVzBCWUxrUkdTdms5WW1QbGlxU0NjRUM0bVlEZm9WVkhGQWVGWWYwM19WOHB5VXpzU25XRmhoYy1YSlhjYVRCWTdpUEV2WDdMQ2Q4Vk9rWUNsYWFhNlpPdnlEQnQxblRhZ1dTbWFDcWl2SVBzTHlReXNrT09lQjc4T3hvbG5BUE5QVGZrUzhRSldYazNKYVNR?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-11"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -7.975,
-          12.609
-        ]
-      },
-      "properties": {
-        "id": "media_c6e77fff2924b1f4",
-        "date": "2026-11-11",
-        "title": "Mali : le chef d'AFRICOM reçu par Assimi Goïta à Bamako, malgré l'alliance sécuritaire avec Moscou",
-        "location": "Bamako",
-        "region": "Bamako",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Mali : le chef d'AFRICOM reçu par Assimi Goïta à Bamako, malgré l'alliance sécuritaire avec Moscou La Nouvelle Tribune",
-        "source": "La Nouvelle Tribune",
-        "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZ09OWWNieEJYa1hnSVVrYU5WWG9nNTRZUk5NMFV3d1ByN0hhOWVtUjctRDQwazZNMmJUT1RCN1k1VUh6MjFSX1RETmFha3NKaWtHbWd1UXJ1YXYxa0otWHZUOF9ydlFlY05NT2h2NUNaX1RPQUVtSUM4eU5PRDZOTEs5RXdGa3A2YlVBQWVvb21UZ1FyUGd2Y21IS3Vyal85bEktX3NkbHBPM3IyTmJoa0dSdFEwN2lKVkRwRzlENU5xUzJKcXRqX2wtbHd6UQ?oc=5",
         "source_system": "Google Actualités — Mali",
         "language": "fr",
         "as_of": "2026-11-11"
@@ -944,7 +1412,7 @@
         ]
       },
       "properties": {
-        "id": "media_534d113907dd436c",
+        "id": "media_7297d6240d48b116",
         "date": "2026-11-10",
         "title": "Niger : les autorités convoquent un haut responsable de l’Union européenne à Niamey",
         "location": "Niamey",
@@ -957,9 +1425,9 @@
         "status": "Signal médiatique — vérification requise",
         "confidence": "faible",
         "precision": "centre de localité approximatif",
-        "summary": "Niger : les autorités convoquent un haut responsable de l’Union européenne à Niamey Maliweb",
-        "source": "Maliweb",
-        "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSnVKQVJFT2RCUVl5bnpfbHQ5bzV3aG5iTUpsRk03UlBpeFI0dDNxU0pZd3BkOWpvYWZ5VXlhN1U2THhDUDRNYWpYVW81U240aExQcGFIbFdicm9oWDFHem04YU1XWHpURE95aUpDSC1hYlE0TVdZd1E4MHpXTVVLZy1lNEROb3U0ZXAzcFdfMU0xaWRFMGFoR2hycnFoNnBFY3o5R2x1YW92dktzUW5Kdg?oc=5",
+        "summary": "Niger : les autorités convoquent un haut responsable de l’Union européenne à Niamey maliweb",
+        "source": "maliweb",
+        "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZTZWek9GZVo0cTRRZ2h6Q2REcE9KdHlZZkRSYUxXSE83S1AwVWhLNFNGSTNac0Qwb3Rjcy1PdlM0eF9aWlhrZnRXUzJxU0pHNmJjbjBYRE9EWVFIMV8xa1RFSmFURjVRWTV0NHdFQmxITmZnOHVLUVF5Rm9IRGpzQWM3bWEtWE5KNEFpQ1N4LUVzR0lmY2VpT2l0bk13RnVRMmhBdXhqNXpZNVJzQmZlWGt6ZzF4d29zVGdZ?oc=5",
         "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-10"
@@ -1006,9 +1474,9 @@
         ]
       },
       "properties": {
-        "id": "media_43432942c59cbfb3",
+        "id": "media_21f759977e5d886a",
         "date": "2026-11-10",
-        "title": "Niamey: Bamako adresse ses condoléances au président Tiani",
+        "title": "Militaires algériens au Niger : ce que l’UE a vraiment dit et la réponse de Niamey",
         "location": "Niamey",
         "region": "Niamey",
         "country": "Niger",
@@ -1019,40 +1487,9 @@
         "status": "Signal médiatique — vérification requise",
         "confidence": "faible",
         "precision": "centre de localité approximatif",
-        "summary": "Niamey: Bamako adresse ses condoléances au président Tiani Journal du Niger",
-        "source": "Journal du Niger",
-        "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeVlSU3RnMkpibGJRS2NUUEN5eDA1aFptbjNDZnh1QmRzY181bE4yeVlROTZFcmw4VHN6RnhENnRlNG9haURwTVZuWWxuQjZGQ3JqeFF2cWJ2TTJ2aVBZQmlzMVdZOHVSTEJQQVZWTnpPaGYwZDRGN0stRFFpU3FrWU92dkd6elVSOTFqX0xjOVdqYmM?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-10"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_ea29124c61b3ca4e",
-        "date": "2026-11-10",
-        "title": "Mali-Niger : Décès du père de Tiani, Assimi Goïta dépêche une délégation à Niamey",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Mali-Niger : Décès du père de Tiani, Assimi Goïta dépêche une délégation à Niamey Koaci",
-        "source": "Koaci",
-        "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxORjZKQng3Ykhxci1QTzF3aWhwTjRqQTdpNjVjTEh1bzk5Rjg1Ny1ubm5yNGJJZU1qTXVYanlRaWpJbk0xOGlOY3BWUXpQQXRrTFpVRkVmcURyMElObl9oNWtULTV5ZTJ0Mlp2dFRFOHJfMmNfTGtGWnEtb2ZfTTJzcDVzSktYejFSTkN6MjhhZ0tSNFg3VzBTcDhEbG5xcmthdjNzRjRRS2pQVG10VGRfTGQ4M2l5RFJQZ2h4a2NYVUk2NVRXaVhvSjIteDlHWUVJOTVNZDR5WXJBRDNMRXV3?oc=5",
+        "summary": "Militaires algériens au Niger : ce que l’UE a vraiment dit et la réponse de Niamey Nigerdiaspora",
+        "source": "Nigerdiaspora",
+        "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPd2ZPcnRqR1RIYkpfLUI4dTdFRXZKRHd1aG5IRjBCY1k4N0p4RjBnTWJpa1FjV19ZWk9GVGlhVEQzdjlNcV9sbE9XMDNGZ203emprY0g4MUZGSE85aENEcDdha09oaHhVdjNJNjE4UUxwVEtlUi01a3poX3RiNmNKY3B3T1U3bjBpMzMxZG95YTBIbnFPNjl4MGFXXzc2VjRxdFNoRk55c0U2RzY5VU1wclZsVUdGdw?oc=5",
         "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-10"
@@ -1192,37 +1629,6 @@
         ]
       },
       "properties": {
-        "id": "media_803a9adc26da4c61",
-        "date": "2026-11-09",
-        "title": "Niger : 23 militaires tués, Niamey décrète un deuil de trois jours",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Niger : 23 militaires tués, Niamey décrète un deuil de trois jours Africtelegraph",
-        "source": "Africtelegraph",
-        "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPXzk1QXQ0ZFYzRC02bWhmUXE0aTZBUXhWRXd6N3p0dkJQMFdPaV9JbEpjZ09WNDgyd1dYeFJ5S2pfZjRTMU1GZ01BalFjUmZFVVFxN0dvaGwyTVhqa2FWUkRBUTBPb3N4SEpYOTRYOWNjdnExOVdfU0txVTdwdXFxWDlYckNMMnlXbUpJTlJjdURKWXhrbVVOeUxTV0E?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-09"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
         "id": "media_994f59bfdc0531c6",
         "date": "2026-11-09",
         "title": "Niamey : Le Premier ministre reçoit le Chargé d’affaires de la Délégation de l’Union européenne au Niger",
@@ -1327,37 +1733,6 @@
         "source": "Sport.fr",
         "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPM2I3Y1owOW5ZS0JmRm9OZGYzSFB6RW1tVWwzZWp5a0xtOWoycHEtNWhXWjc1cEpoRzBnM3c5cDdGdFFFQnJIMmJ5UGpXaURfRGYyVnRXakRuQ2dqbzJTcExvUUdUVGQtbTBTMFoxUWFxb1pvWjIzVHBnQWxqVnJKZ1pB?oc=5",
         "source_system": "Google Actualités — Burkina Faso",
-        "language": "fr",
-        "as_of": "2026-11-09"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -15.979,
-          18.086
-        ]
-      },
-      "properties": {
-        "id": "media_aea614c138c9c0c7",
-        "date": "2026-11-09",
-        "title": "Dossier saharien : Visite éclair de N. Bourita à Nouakchott",
-        "location": "Nouakchott",
-        "region": "Mauritanie",
-        "country": "Mauritanie",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Dossier saharien : Visite éclair de N. Bourita à Nouakchott Perspectives Med",
-        "source": "Perspectives Med",
-        "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUFdha0V4b2RwNDAzT0VaTnRlTy1UR3VXUUFxVjI1OXVlaVdFZXV4MjFPcEViajh2Z2lQcWtibzhvTU5UMTNQWTRwdWJIeTAtYWk1dzZNT3lLdk1PVkJXZllSYWtaQnFwWTdHUTlOZ3RaOFl4S0lSQmxqRk1pTVh3ajMwTDcxZUgyMUljakRR?oc=5",
-        "source_system": "Google Actualités — Mauritanie",
         "language": "fr",
         "as_of": "2026-11-09"
       }
@@ -1503,7 +1878,7 @@
         ]
       },
       "properties": {
-        "id": "media_80eefe0d3946cde5",
+        "id": "media_b1fd7f287603bea8",
         "date": "2026-11-08",
         "title": "Braquages de banques à Nouakchott : deux fugitifs mauritaniens traqués et arrêtés par Interpol aux Maristes (EXCLUSIVITÉ DAKARPOSTE)",
         "location": "Nouakchott",
@@ -1518,7 +1893,7 @@
         "precision": "centre de localité approximatif",
         "summary": "Braquages de banques à Nouakchott : deux fugitifs mauritaniens traqués et arrêtés par Interpol aux Maristes (EXCLUSIVITÉ DAKARPOSTE) Cridem",
         "source": "Cridem",
-        "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE94Mldndm5tSjNydU1ZN0l2amk0emFmaEtpLTY0REMtbHZ0cU5yeEN4dHBMVXk5bnBTMTdjVmMxdzNEdnYtVTFWNFVITW9adkZrZEtITkt0Zw?oc=5",
+        "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5FU2g3S0dRQUpDdFFwNE5PVWtRRFE3NHNoN25VMmV5MVBzVmNfUGJiMTJuNF9WSmQ3aTJQTEJpemJjVloyMzdXandUV2N2M3RyOHZ4MERMVnl5OHM?oc=5",
         "source_system": "Google Actualités — Mauritanie",
         "language": "fr",
         "as_of": "2026-11-08"
@@ -1750,37 +2125,6 @@
         "source": "LeFaso.net",
         "source_url": "https://lefaso.net/spip.php?article150605=",
         "source_system": "LeFaso.net",
-        "language": "fr",
-        "as_of": "2026-11-07"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -15.979,
-          18.086
-        ]
-      },
-      "properties": {
-        "id": "media_35da64abb68f3c46",
-        "date": "2026-11-07",
-        "title": "Bourita débarque discrètement à Nouakchott : le Maroc prépare-t-il une offensive contre le Polisario ?",
-        "location": "Nouakchott",
-        "region": "Mauritanie",
-        "country": "Mauritanie",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Bourita débarque discrètement à Nouakchott : le Maroc prépare-t-il une offensive contre le Polisario ? Maghreb Online",
-        "source": "Maghreb Online",
-        "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObjNyMlpSRTIyNTJuOEpyYjZXaTVuajRldmFZdTNmajlVTW5ubm9lX2daQU5UVGlqX1JZX25zZjdHSkt2M2RJb2kwdnZQU0J4bjgwaFJEaVhvY1N2RGFjc1ZPZXhyMDdabHJxMUtZd0dsc0JrbDE3U2NfeFlBc09GQXp4QlVIbTNIdUQ2Uzh0WEVtUTFwUTFpVXE2U2x6MXhXOEdn?oc=5",
-        "source_system": "Google Actualités — Mauritanie",
         "language": "fr",
         "as_of": "2026-11-07"
       }
@@ -2092,37 +2436,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_bb73f6e7047b6819",
-        "date": "2026-11-05",
-        "title": "Niger-Algérie : Ahmed Attaf porte un message de Tebboune à Niamey",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Niger-Algérie : Ahmed Attaf porte un message de Tebboune à Niamey Journal du Niger",
-        "source": "Journal du Niger",
-        "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNc1J6WWtiRXBzemZEaUlKdXdlQVBkUTgzZGc5aXp0UUJHcnpvMkZja2U3dDB4Z0NIbXhkOU85WXFxeXZiY3BGRDlGTnJmQWRKR0MwZFBDVmNoWnlwWHZhZm5CUllSMi1pREh4a1QtNFpHMU5DTUVNUjVVeWR5Z0ZyeFo2ZXZOVy04QkdN?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-05"
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": null,
       "properties": {
         "id": "media_8132bcee0df44500",
@@ -2173,6 +2486,37 @@
         "source": "Koaci",
         "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNUWtRNF9FbGRKZkZFWWFTVDNON0RlWlRoX05nMWRVOFNGeTMycFhmWUxMNWhGSnY2QVJTZHcwbVNad2JVSDUxM3VfVmotYlRXQ0ZuWEhTd0lqYVV0WUplTlpZSlAzdmYwdFI1TVJtQW5sZXN4eERTNV9lOGI4ald6UlZlWEZ2QVlvbk42d2p2Wm5ZdEFEekdpM1V5RG5Xb1V1b2t3VXZReUMtZFZKNHRZN29ZWmdkWV9WVi1HbTNKN2ZXNFZBSnBEWkpqbnk4U1ZnaG5NTQ?oc=5",
         "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_20783a347494dbe9",
+        "date": "2026-11-05",
+        "title": "Le chef de la diplomatie algérienne à Niamey après N'Djamena",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "politique",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Le chef de la diplomatie algérienne à Niamey après N'Djamena RFI",
+        "source": "RFI",
+        "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUXN0STFhREFJQnlxZ1JQRUQ1eHpuMDNzOWRNT1hFQjRUby1wZExpZ2dOUm9IRGFkTU9PS0pDUUNLbVpXZVM0aWV4ajVXMGhCUDV6b3loM2Y4WE1kT2pxcWlPSlZHQ1BDWWl5c3N1dnB6TktybWswUnF3bjdMVWQ4NGNEamNmZ2xhVGxWR08xVGNadHZFeXJSdmNaZ2Y5cEYtenVVY0k0T1k2SzVOdkxVMmhPZ2E?oc=5",
+        "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-05"
       }
@@ -2620,37 +2964,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -5.987,
-          14.251
-        ]
-      },
-      "properties": {
-        "id": "media_83475b267c1d9b18",
-        "date": "2026-11-03",
-        "title": "Mali : Poursuite de l’opération « Dougoukoloko » dans la zone de Niono et ses environs",
-        "location": "Niono",
-        "region": "Ségou",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Mali : Poursuite de l’opération « Dougoukoloko » dans la zone de Niono et ses environs Mali Actu",
-        "source": "Mali Actu",
-        "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNd1M4ckZqcGxlOWs0SE5aSEd4VjJkVDhPS3NtVUNYOGpXNTNZMm1Rb0xBbGg2VU1TRlFpWWk3RjlJcXBJZ2NFRVNGakVKN29RdVZVZC1yd2NfeVhLZmVxbTV0dU5lS1lETkZ3NUNhTGhiazRaSHJ4UmxqYlJCX2FnOTV5bnNsOGtmXzBNU2pmdlJEOHZWb0RIZHdKY2pzaUZBTFY40gGrAUFVX3lxTFB1Vkszc2pKd1dMLVk3YVpyQnBST3duc1JZTWRmOUhybkZRSWtLTEJ6cl9hWUR6bUt6eHdPejhZWERteUpuYlZFTDZveUhqSGVISjN0WGhMV3pBTjVHdjVhbTdvcjgxNXFybUZONS0yNjlaY0cxZ2M4MHh3aEZKM1JyMk84LXB6SlRMSmFoejZXZmlJOUpmemdQNFdvRnVSekNVYmhNNEl4VWxTbw?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-03"
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": null,
       "properties": {
         "id": "media_24d9bb66b21f6e00",
@@ -2928,87 +3241,6 @@
         "source_system": "Google Actualités — Tchad",
         "language": "fr",
         "as_of": "2026-11-02"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          15.044,
-          12.107
-        ]
-      },
-      "properties": {
-        "id": "media_09b138e9b4f0f1b0",
-        "date": "2026-11-01",
-        "title": "Tchad : huit ans de blocage foncier et tensions autour d'un centre de santé à N'Djamena",
-        "location": "N'Djamena",
-        "region": "N’Djaména",
-        "country": "Tchad",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Tchad : huit ans de blocage foncier et tensions autour d'un centre de santé à N'Djamena Alwihda Info",
-        "source": "Alwihda Info",
-        "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObHRlYzl4VjVfRDQwS0t2UU15OUp4UklydXZvU29zeEFQc2ZYN2pFTTR6Z0taVEw1NTZEZTJwWEl3clBvQVVsVWlNQ0pSOTFrZVdtdmptQnJibWJGX1hheHV0Mlh4X01XUnh5aC1oQVhLa3p1OEtWZEZuMDlLdGgybE05Z2djZ2x2WThiTUJWTGF0YmdEVTZYWlhFRkNYa3lMV09iTjVQLTIwUG8tY3NsZ2Jn?oc=5",
-        "source_system": "Google Actualités — Tchad",
-        "language": "fr",
-        "as_of": "2026-11-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_12f1e09b39219db5",
-        "date": "2026-11-01",
-        "title": "Mali : Les FAMa intensifient l’opération « Dougoukoloko » et neutralisent des cellules mobiles",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "Mali : Les FAMa intensifient l’opération « Dougoukoloko » et neutralisent des cellules mobiles Mali Actu",
-        "source": "Mali Actu",
-        "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNnR3NVpqZXQyaDExMTE5UGlFWHY2c1lzdFA1SlZGVS1LOGJKcDM4eWFLcHc5cDdVT2lVTm16QmM1Wk1ITW5WTkdmbmhGYXRaSGtxTGNqRmJYLTA3YTdQeGVPbW0ydEpubWRDWC1HeUJzaC11S1d3Vkw4QVlKRlhyVENXY3NoSV82Q3ROMEt1RlVpQ1NuWW5GcXA5WWdpY1lvZGRNMzB0ZHM0WDI2UlHSAbYBQVVfeXFMTl9zcXdlTWRkVHppVmxxOVpvTGNjZFhfbFZ3Uk5sWW5KUnNuZUNfTV9EUk5WOGxjWjFaWGhkRldFMDY3WjdGaDdyRElDMnV3LWxpQm9LTDltODBOMUdiTGJQX3UyMVQ3RDdleEZmX096cTloQWlqVlhTV1kzOHlteWxnNV9xRzJ5S3dUMjRGN0tEamgzVWFkdkkwVWJ4bkkwa3JjSzRSdU9mLW1tVjFVd25kR2QteFE?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_83d2a15a8e6ebc59",
-        "date": "2026-11-01",
-        "title": "Le déploiement de milliers de soldats salvadoriens en Haïti, sans doute plus qu'une opération de sauvetage",
-        "location": "Tchad — lieu à confirmer",
-        "region": "Tchad",
-        "country": "Tchad",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "sécurité",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "Le déploiement de milliers de soldats salvadoriens en Haïti, sans doute plus qu'une opération de sauvetage franceguyane.fr",
-        "source": "franceguyane.fr",
-        "source_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQOTgzTDYtRVR0T2l4UW44b3NPSmpYMXJqalhhalREMTJOdUN3Ui1KdlFma25wdmd2RVJITkpxRFpCV3VxZVZmNnVKcFF4ZjVpbUZyLWxpRl93bnFaamRqV3ZPVzRMZDZSZG5fWnR3LXhEUTlMbGFuZnRDNmV2MFJWc1U0U0Fwa1ZWY29vMElHWDdEWUtScW43emFZWWlUQWtxV1pxMlVLQVdKczlmQVVqMkhpSGFQa0tKWUlBVF9SY3BwQkhCRWY3ZG9yNjJnTHlMRTBxOHdBZnBrdzE5aEZwRm1VMUJ0Q3JoZEQ3X1BGdUJodjFaaGxiNFVPQUt1ME1O?oc=5",
-        "source_system": "Google Actualités — Tchad",
-        "language": "fr",
-        "as_of": "2026-11-01"
       }
     },
     {
@@ -6554,31 +6786,6 @@
         "source_system": "Google Actualités — Burkina Faso",
         "language": "fr",
         "as_of": "2026-10-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_dcd5825a174e3a9f",
-        "date": "2026-09-30",
-        "title": "Où va le Burkina Faso 4 ans après le coup d'État d'Ibrahim Traoré ?",
-        "location": "Burkina Faso — lieu à confirmer",
-        "region": "Burkina Faso",
-        "country": "Burkina Faso",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "politique",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "🇧🇫 Quatre ans après son arrivée au pouvoir par un putsch, Ibrahim Traoré dirige toujours le Burkina Faso. Face à l’insécurité et à la restriction de l’espace politique, une question demeure : quand prendra fin la transition ?",
-        "source": "France 24 Afrique",
-        "source_url": "https://www.france24.com/fr/vid%C3%A9o/20260930-o%C3%B9-va-le-burkina-faso-4-ans-apr%C3%A8s-le-coup-d-%C3%A9tat-d-ibrahim-traor%C3%A9",
-        "source_system": "France 24 Afrique",
-        "language": "fr",
-        "as_of": "2026-09-30"
       }
     }
   ]
