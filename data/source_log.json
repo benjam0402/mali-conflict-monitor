@@ -1,14 +1,14 @@
 {
-  "window_start": "2026-10-02",
-  "publication_cutoff": "2026-11-14",
+  "window_start": "2026-10-03",
+  "publication_cutoff": "2026-11-15",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
   "coord_decimals": 3,
   "sources_configured": 29,
   "sources_attempted": 29,
-  "successful_sources": 27,
-  "failed_sources": 2,
+  "successful_sources": 26,
+  "failed_sources": 3,
   "local_media_sources": 11,
   "social_targets": 7,
   "social_feeds_active": 7,
@@ -31,13 +31,13 @@
       "name": "Google Actualités — Mali",
       "kind": "rss",
       "status": "ok",
-      "articles": 24
+      "articles": 25
     },
     {
       "name": "Google Actualités — Niger",
       "kind": "rss",
       "status": "ok",
-      "articles": 52
+      "articles": 56
     },
     {
       "name": "Google Actualités — Burkina Faso",
@@ -49,13 +49,13 @@
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 42
+      "articles": 48
     },
     {
       "name": "Google Actualités — Tchad",
       "kind": "rss",
       "status": "ok",
-      "articles": 13
+      "articles": 12
     },
     {
       "name": "RFI Afrique",
@@ -79,7 +79,7 @@
       "name": "DW Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 11
+      "articles": 8
     },
     {
       "name": "Studio Tamani",
@@ -103,7 +103,7 @@
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 63
+      "articles": 67
     },
     {
       "name": "Sahara Médias",
@@ -151,8 +151,9 @@
     {
       "name": "Bamada",
       "kind": "rss",
-      "status": "ok",
-      "articles": 15
+      "status": "error",
+      "articles": 0,
+      "error": "Échec HTTP après 3 essais : HTTP Error 526:"
     },
     {
       "name": "X indexé — @StudioTamani",
@@ -164,7 +165,7 @@
       "name": "X indexé — @Malijetactu",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 8
+      "articles": 9
     },
     {
       "name": "X indexé — @maliactu",
@@ -182,7 +183,7 @@
       "name": "X indexé — @burkina24",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 20
+      "articles": 18
     },
     {
       "name": "X indexé — @ONUMauritanie",
@@ -197,13 +198,13 @@
       "articles": 13
     }
   ],
-  "articles_fetched": 539,
-  "unique_articles": 510,
-  "fresh_signals": 90,
-  "retained_signals": 237,
+  "articles_fetched": 534,
+  "unique_articles": 511,
+  "fresh_signals": 83,
+  "retained_signals": 236,
   "manual_events": 0,
-  "published_events": 237,
-  "mapped_events": 101,
-  "generated_at_utc": "2026-11-16T16:21:18+00:00",
-  "duration_seconds": 39.63
+  "published_events": 236,
+  "mapped_events": 103,
+  "generated_at_utc": "2026-11-17T16:25:57+00:00",
+  "duration_seconds": 46.58
 }
