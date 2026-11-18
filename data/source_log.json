@@ -1,14 +1,14 @@
 {
-  "window_start": "2026-10-03",
-  "publication_cutoff": "2026-11-15",
+  "window_start": "2026-10-04",
+  "publication_cutoff": "2026-11-16",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
   "coord_decimals": 3,
   "sources_configured": 29,
   "sources_attempted": 29,
-  "successful_sources": 26,
-  "failed_sources": 3,
+  "successful_sources": 28,
+  "failed_sources": 1,
   "local_media_sources": 11,
   "social_targets": 7,
   "social_feeds_active": 7,
@@ -23,45 +23,44 @@
     {
       "name": "GDELT DOC 2.0",
       "kind": "gdelt",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 1 essais : HTTP Error 429: Too Many Requests"
+      "status": "ok",
+      "articles": 110
     },
     {
       "name": "Google Actualités — Mali",
       "kind": "rss",
       "status": "ok",
-      "articles": 25
+      "articles": 28
     },
     {
       "name": "Google Actualités — Niger",
       "kind": "rss",
       "status": "ok",
-      "articles": 56
+      "articles": 54
     },
     {
       "name": "Google Actualités — Burkina Faso",
       "kind": "rss",
       "status": "ok",
-      "articles": 29
+      "articles": 25
     },
     {
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 48
+      "articles": 47
     },
     {
       "name": "Google Actualités — Tchad",
       "kind": "rss",
       "status": "ok",
-      "articles": 12
+      "articles": 9
     },
     {
       "name": "RFI Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 24
+      "articles": 25
     },
     {
       "name": "France 24 Afrique",
@@ -79,7 +78,7 @@
       "name": "DW Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 8
+      "articles": 11
     },
     {
       "name": "Studio Tamani",
@@ -103,7 +102,7 @@
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 67
+      "articles": 81
     },
     {
       "name": "Sahara Médias",
@@ -151,9 +150,8 @@
     {
       "name": "Bamada",
       "kind": "rss",
-      "status": "error",
-      "articles": 0,
-      "error": "Échec HTTP après 3 essais : HTTP Error 526:"
+      "status": "ok",
+      "articles": 15
     },
     {
       "name": "X indexé — @StudioTamani",
@@ -165,7 +163,7 @@
       "name": "X indexé — @Malijetactu",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 9
+      "articles": 6
     },
     {
       "name": "X indexé — @maliactu",
@@ -177,7 +175,7 @@
       "name": "X indexé — @actuniger",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 17
+      "articles": 16
     },
     {
       "name": "X indexé — @burkina24",
@@ -195,16 +193,16 @@
       "name": "X indexé — @tchadinfos",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 13
+      "articles": 10
     }
   ],
-  "articles_fetched": 534,
-  "unique_articles": 511,
-  "fresh_signals": 83,
-  "retained_signals": 236,
+  "articles_fetched": 663,
+  "unique_articles": 622,
+  "fresh_signals": 75,
+  "retained_signals": 233,
   "manual_events": 0,
-  "published_events": 236,
-  "mapped_events": 103,
-  "generated_at_utc": "2026-11-17T16:25:57+00:00",
-  "duration_seconds": 46.58
+  "published_events": 233,
+  "mapped_events": 98,
+  "generated_at_utc": "2026-11-18T15:56:19+00:00",
+  "duration_seconds": 49.94
 }
