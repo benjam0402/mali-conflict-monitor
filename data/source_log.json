@@ -1,14 +1,14 @@
 {
-  "window_start": "2026-10-04",
-  "publication_cutoff": "2026-11-16",
+  "window_start": "2026-10-05",
+  "publication_cutoff": "2026-11-17",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
   "coord_decimals": 3,
   "sources_configured": 29,
   "sources_attempted": 29,
-  "successful_sources": 28,
-  "failed_sources": 1,
+  "successful_sources": 27,
+  "failed_sources": 2,
   "local_media_sources": 11,
   "social_targets": 7,
   "social_feeds_active": 7,
@@ -23,8 +23,9 @@
     {
       "name": "GDELT DOC 2.0",
       "kind": "gdelt",
-      "status": "ok",
-      "articles": 110
+      "status": "error",
+      "articles": 0,
+      "error": "Échec HTTP après 1 essais : HTTP Error 429: Too Many Requests"
     },
     {
       "name": "Google Actualités — Mali",
@@ -36,19 +37,19 @@
       "name": "Google Actualités — Niger",
       "kind": "rss",
       "status": "ok",
-      "articles": 54
+      "articles": 62
     },
     {
       "name": "Google Actualités — Burkina Faso",
       "kind": "rss",
       "status": "ok",
-      "articles": 25
+      "articles": 27
     },
     {
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 47
+      "articles": 52
     },
     {
       "name": "Google Actualités — Tchad",
@@ -60,7 +61,7 @@
       "name": "RFI Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 25
+      "articles": 24
     },
     {
       "name": "France 24 Afrique",
@@ -72,13 +73,13 @@
       "name": "ONU Info Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 30
+      "articles": 0
     },
     {
       "name": "DW Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 11
+      "articles": 10
     },
     {
       "name": "Studio Tamani",
@@ -102,7 +103,7 @@
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 81
+      "articles": 78
     },
     {
       "name": "Sahara Médias",
@@ -157,7 +158,7 @@
       "name": "X indexé — @StudioTamani",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 6
+      "articles": 5
     },
     {
       "name": "X indexé — @Malijetactu",
@@ -175,7 +176,7 @@
       "name": "X indexé — @actuniger",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 16
+      "articles": 15
     },
     {
       "name": "X indexé — @burkina24",
@@ -193,16 +194,16 @@
       "name": "X indexé — @tchadinfos",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 10
+      "articles": 9
     }
   ],
-  "articles_fetched": 663,
-  "unique_articles": 622,
-  "fresh_signals": 75,
-  "retained_signals": 233,
+  "articles_fetched": 530,
+  "unique_articles": 510,
+  "fresh_signals": 85,
+  "retained_signals": 245,
   "manual_events": 0,
-  "published_events": 233,
-  "mapped_events": 98,
-  "generated_at_utc": "2026-11-18T15:56:19+00:00",
-  "duration_seconds": 49.94
+  "published_events": 245,
+  "mapped_events": 102,
+  "generated_at_utc": "2026-11-19T16:00:55+00:00",
+  "duration_seconds": 49.03
 }
