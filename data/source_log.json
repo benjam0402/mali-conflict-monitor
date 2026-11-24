@@ -1,14 +1,14 @@
 {
-  "window_start": "2026-10-09",
-  "publication_cutoff": "2026-11-21",
+  "window_start": "2026-10-10",
+  "publication_cutoff": "2026-11-22",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
   "coord_decimals": 3,
   "sources_configured": 29,
   "sources_attempted": 29,
-  "successful_sources": 27,
-  "failed_sources": 2,
+  "successful_sources": 26,
+  "failed_sources": 3,
   "local_media_sources": 11,
   "social_targets": 7,
   "social_feeds_active": 7,
@@ -31,37 +31,37 @@
       "name": "Google Actualités — Mali",
       "kind": "rss",
       "status": "ok",
-      "articles": 39
+      "articles": 41
     },
     {
       "name": "Google Actualités — Niger",
       "kind": "rss",
       "status": "ok",
-      "articles": 51
+      "articles": 100
     },
     {
       "name": "Google Actualités — Burkina Faso",
       "kind": "rss",
       "status": "ok",
-      "articles": 27
+      "articles": 29
     },
     {
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 54
+      "articles": 100
     },
     {
       "name": "Google Actualités — Tchad",
       "kind": "rss",
       "status": "ok",
-      "articles": 11
+      "articles": 13
     },
     {
       "name": "RFI Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 24
+      "articles": 23
     },
     {
       "name": "France 24 Afrique",
@@ -72,14 +72,15 @@
     {
       "name": "ONU Info Afrique",
       "kind": "rss",
-      "status": "ok",
-      "articles": 30
+      "status": "error",
+      "articles": 0,
+      "error": "not well-formed (invalid token): line 1, column 0"
     },
     {
       "name": "DW Afrique",
       "kind": "rss",
       "status": "ok",
-      "articles": 9
+      "articles": 8
     },
     {
       "name": "Studio Tamani",
@@ -103,7 +104,7 @@
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 62
+      "articles": 65
     },
     {
       "name": "Sahara Médias",
@@ -158,13 +159,13 @@
       "name": "X indexé — @StudioTamani",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 4
+      "articles": 3
     },
     {
       "name": "X indexé — @Malijetactu",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 5
+      "articles": 6
     },
     {
       "name": "X indexé — @maliactu",
@@ -182,7 +183,7 @@
       "name": "X indexé — @burkina24",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 19
+      "articles": 22
     },
     {
       "name": "X indexé — @ONUMauritanie",
@@ -194,16 +195,16 @@
       "name": "X indexé — @tchadinfos",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 11
+      "articles": 10
     }
   ],
-  "articles_fetched": 542,
-  "unique_articles": 522,
-  "fresh_signals": 94,
+  "articles_fetched": 616,
+  "unique_articles": 583,
+  "fresh_signals": 143,
   "retained_signals": 250,
   "manual_events": 0,
   "published_events": 250,
-  "mapped_events": 106,
-  "generated_at_utc": "2026-11-23T18:42:27+00:00",
-  "duration_seconds": 39.48
+  "mapped_events": 129,
+  "generated_at_utc": "2026-11-24T18:14:26+00:00",
+  "duration_seconds": 38.31
 }
