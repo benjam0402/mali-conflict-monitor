@@ -2,14 +2,14 @@
   "type": "FeatureCollection",
   "metadata": {
     "title": "Sahel Conflict Monitor — signaux médiatiques et sociaux publics",
-    "last_updated": "2026-11-25T17:35:03+00:00",
-    "generated_at": "2026-11-25T17:35:03+00:00",
-    "latest_signal_date": "2026-11-23",
-    "event_count": 250,
-    "mapped_event_count": 123,
+    "last_updated": "2026-11-26T17:16:14+00:00",
+    "generated_at": "2026-11-26T17:16:14+00:00",
+    "latest_signal_date": "2026-11-24",
+    "event_count": 240,
+    "mapped_event_count": 112,
     "source_summary": {
-      "window_start": "2026-10-11",
-      "publication_cutoff": "2026-11-23",
+      "window_start": "2026-10-12",
+      "publication_cutoff": "2026-11-24",
       "lookback_days": 14,
       "retention_days": 45,
       "min_days_delay": 2,
@@ -40,31 +40,31 @@
           "name": "Google Actualités — Mali",
           "kind": "rss",
           "status": "ok",
-          "articles": 78
+          "articles": 39
         },
         {
           "name": "Google Actualités — Niger",
           "kind": "rss",
           "status": "ok",
-          "articles": 100
+          "articles": 87
         },
         {
           "name": "Google Actualités — Burkina Faso",
           "kind": "rss",
           "status": "ok",
-          "articles": 30
+          "articles": 28
         },
         {
           "name": "Google Actualités — Mauritanie",
           "kind": "rss",
           "status": "ok",
-          "articles": 54
+          "articles": 99
         },
         {
           "name": "Google Actualités — Tchad",
           "kind": "rss",
           "status": "ok",
-          "articles": 15
+          "articles": 28
         },
         {
           "name": "RFI Afrique",
@@ -89,7 +89,7 @@
           "name": "DW Afrique",
           "kind": "rss",
           "status": "ok",
-          "articles": 12
+          "articles": 11
         },
         {
           "name": "Studio Tamani",
@@ -113,7 +113,7 @@
           "name": "LeFaso.net",
           "kind": "rss",
           "status": "ok",
-          "articles": 86
+          "articles": 98
         },
         {
           "name": "Sahara Médias",
@@ -168,13 +168,13 @@
           "name": "X indexé — @StudioTamani",
           "kind": "social_rss",
           "status": "ok",
-          "articles": 4
+          "articles": 6
         },
         {
           "name": "X indexé — @Malijetactu",
           "kind": "social_rss",
           "status": "ok",
-          "articles": 6
+          "articles": 8
         },
         {
           "name": "X indexé — @maliactu",
@@ -186,13 +186,13 @@
           "name": "X indexé — @actuniger",
           "kind": "social_rss",
           "status": "ok",
-          "articles": 10
+          "articles": 7
         },
         {
           "name": "X indexé — @burkina24",
           "kind": "social_rss",
           "status": "ok",
-          "articles": 20
+          "articles": 22
         },
         {
           "name": "X indexé — @ONUMauritanie",
@@ -204,22 +204,762 @@
           "name": "X indexé — @tchadinfos",
           "kind": "social_rss",
           "status": "ok",
-          "articles": 10
+          "articles": 9
         }
       ],
-      "articles_fetched": 635,
-      "unique_articles": 597,
-      "fresh_signals": 141,
-      "retained_signals": 250,
+      "articles_fetched": 652,
+      "unique_articles": 606,
+      "fresh_signals": 106,
+      "retained_signals": 240,
       "manual_events": 0,
-      "published_events": 250,
-      "mapped_events": 123,
-      "generated_at_utc": "2026-11-25T17:35:03+00:00",
-      "duration_seconds": 37.89
+      "published_events": 240,
+      "mapped_events": 112,
+      "generated_at_utc": "2026-11-26T17:16:14+00:00",
+      "duration_seconds": 38.27
     },
     "warning": "Ces points sont des signaux issus de médias publics, pas des faits indépendamment confirmés. Les coordonnées représentent au mieux le centre approximatif d'une localité citée."
   },
   "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_9a6cd36205616581",
+        "date": "2026-11-24",
+        "title": "Tchad-Niger : Niamey accusé de « déporter » des Arabes nigériens vers le Tchad en violation du droit international",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Tchad-Niger : Niamey accusé de « déporter » des Arabes nigériens vers le Tchad en violation du droit international Anadolu Ajansı",
+        "source": "Anadolu Ajansı",
+        "source_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPUlRWNE03bEV5S0dndXd5bnJZUF90b1duYVdhcUpNYUt3QWFNSmRvOU1FUkZVSUM0dE5JdmxuZ3cxTW5NNndBWXIwSW9MTmx6cklLa2FRUHhucFFxck54Q1NnTDhJc2lpS0Z1cDB4NEd3XzEwMDZMTTBQUlF3UzRiYTZET2xSR0RSbEs2TzZHRWxjRjBGYldSdVY5cGFWSW1QUkxMR3VRaG1QVXBucW0yR3Q2WkZDeFJ1UzJvZVBIZ0dLVnU3N2ZTNnE3bllvMzBVUHJmejVWcGJBUjRKOFNyN3dGMUVDVlczWklESllJTDlKUQ?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_a16ea5e14a437635",
+        "date": "2026-11-24",
+        "title": "Rezig et Kourtel accompagnent le Premier ministre nigérien dans une visite au pavillon des produits algériens à Niamey",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Rezig et Kourtel accompagnent le Premier ministre nigérien dans une visite au pavillon des produits algériens à Niamey وكالة الأنباء الجزائرية",
+        "source": "وكالة الأنباء الجزائرية",
+        "source_url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOQ3l5YUhmQW01Tm1hX1M1ZVlpNVZVdE1TdkVmbEhkUnZyc3k5b05ndE1WVmlOY2ZDc2VCWDl0d2NRb1BBVGtJOU1VUmlKMFJzaF9ER1ZFWHQ3aWhOampINEp3cmd5SXNoLVQ5aE51UTFraGZSUVFPUl82U3ZaTkMzVlFCek5aYXhJYU9fcVJWTUtpRnhqaE1HeE5ELVdXanh1RGlhbVRGWl9jVmJqYUxVTWJCMVlFMER2dkk3S3h0dF9rYVJnMWMxbUl1WHkxTDNHaG11RkFqYi1mQTNkQ0dxRmRSZHZuNjBfSUNod2NtaTNaT0Fmc09FUVdabVBwLWhCX09yWmhuVjlpUQ?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_c2afafa02d3025d8",
+        "date": "2026-11-24",
+        "title": "Ouverture à Niamey de la 1ère édition du Forum International Investir au Niger",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Ouverture à Niamey de la 1ère édition du Forum International Investir au Niger Agence Nigérienne de Presse",
+        "source": "Agence Nigérienne de Presse",
+        "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOHdxWWxHU2NRc1VKMGFIVXhvSGdOOF9ZYVliTV9ZWl9yekV6VkNuVXVLV0Z3RDg2cnJ4d0JZVFhRRUd3TnQ5VWh3b1F0bGdNRjZJMm1IWmRJUDRKS19NRGtINS00eFRmb2h2QV9yd1RKR0luRGdkb3dUeW5yWHZoa0JNX01YXzRBMlA5Sm1sbE85bkN3eWxGcl9HVXVVMEU1U1E?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_bbb15e4b3ac7d9b1",
+        "date": "2026-11-24",
+        "title": "Opération Dougoukoloko : 34 terroristes neutralisés et plus de 90 motos détruites en quatre jours",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Les Forces armées maliennes (FAMa), appuyées par leurs partenaires, ont mené, entre le 20 et le 23 novembre 2026, une série de frappes contre la logistique des groupes terroristes, dans le cadre de l'opération Dougoukoloko. Bilan annoncé par l'État-major général des armées : 34 terroristes neutralis...",
+        "source": "Malijet",
+        "source_url": "https://malijet.com/actualte_dans_les_regions_du_mali/312962-operation-dougoukoloko-34-terroristes-neutralises-et-plus.html",
+        "source_system": "Malijet",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_8e660eb75a3ddf33",
+        "date": "2026-11-24",
+        "title": "Nigéria : près de 60 morts dans des attaques de représailles tribales dans le centre ouest du pays",
+        "location": "Mauritanie — lieu à confirmer",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Le bilan des attaques de représailles qui ont visé des membres de l’ethnie peule dans le centre-ouest du Nigeria ce week-end s’élève désormais à plus de 60 morts, a déclaré lundi à l’AFP une association d’éleveurs. Ces attaques ont été menées en représailles à une attaque meurtrière perpétrée par des hommes armés connus localement sous [...]",
+        "source": "Sahara Médias",
+        "source_url": "https://fr.saharamedias.net/nigeria-pres-de-60-morts-dans-des-attaques-de-represailles-tribales-dans-le-centre-ouest-du-pays/",
+        "source_system": "Sahara Médias",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_1d00276f7f25237e",
+        "date": "2026-11-24",
+        "title": "Niger: Niamey hosts first International Investment Forum",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Niger: Niamey hosts first International Investment Forum Africa News Agency",
+        "source": "Africa News Agency",
+        "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPckcyMnVXQXFQNXlYTEFSVHNKajZOZVBIdXJqcGNHQ1ltQTVqQ185eDJCeTJUOWNENmowR0NRd2UtN21DdUhIaGdrWElzM0VpWENCTG50ZGlMbXd0NkhnZHdNcUNIMlU3NnBqMk9QdnlULXhOaGZZMHVMT3ppV3VBRndXMklNWm1fWS1Xc3dkd3U?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.27,
+          13.983
+        ]
+      },
+      "properties": {
+        "id": "media_fc3fd2b76027bbba",
+        "date": "2026-11-24",
+        "title": "Niger : à Gouré, les autorités annulent des reconnaissances administratives de la communauté Mohamid",
+        "location": "Gouré",
+        "region": "Zinder Region",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Niger : à Gouré, les autorités annulent des reconnaissances administratives de la communauté Mohamid Journal du Niger",
+        "source": "Journal du Niger",
+        "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNVEdDSWZ0Z2ZUSGkyUHhyS0tUZDJQSUVnS1IySGhETGZ6cWo3NG55UTJjM2dCWFlVTXBSa2x5ejhwUWhSRWVjcUJ4Y3FucDdrUVFYTndxLVJINkthYlIyNWluZHg3bVRzYU5TaXZSSm9KREdsUUtmZlFhejczWnJtcWtqMTV5YVBUcE9CYkJfZm9oWm8?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_ff5712b3a1937c02",
+        "date": "2026-11-24",
+        "title": "Niger : Élisabeth Shérif inspecte un jardin d’enfants à Niamey",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Niger : Élisabeth Shérif inspecte un jardin d’enfants à Niamey Journal du Niger",
+        "source": "Journal du Niger",
+        "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVUpGX3B2bEJhd3NyVEtoQW5oSVJNcXlBT0xzaDF3bFNOaDZDUkZUS3VEUjR0Q2FrbHo4RHI0RXFfWG1aRjNYSy00aWtJdlUta25KdUFVaUdIbXZYX04yRGU4dDFKVU9jMERxbi14VkhnVVdtRHA3QXkzRkJmbUFSMFRRYUNsMzNsZ0FIZm1kRnlFNzd0ZjJOQUtyTTlLd3Jl?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_f3c3190e7d956aad",
+        "date": "2026-11-24",
+        "title": "Niger : Niamey accueille le premier Forum international Investir au Niger",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Niger : Niamey accueille le premier Forum international Investir au Niger Africa News Agency",
+        "source": "Africa News Agency",
+        "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU1RNVFF0TEYxcF9iM1d5Z1lEdGpNUkJGVl9naGFCc1hMdE84Z2ZOWjRsVV8tMDROUVBPcWhKTkt5OE94eGNVcS1QOEZBanpxNVRJLTU2b1E4WVRZWVloeFRsTnI2X0FSS1ZYcVlJVXAxdzEyd1pmVmZhaThKWjY2aldiQWV0NGJMc3pJTlBCSzhxMHY0c2NyWVVXSHJIVEZ1Q0ZNN253?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_df1a7c0811a108df",
+        "date": "2026-11-24",
+        "title": "Militaires libérés au Mali : raid spectaculaire des Fama et d’Africa Corps ou opération menée sans combat ?",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Militaires libérés au Mali : raid spectaculaire des Fama et d’Africa Corps ou opération menée sans combat ? Jeune Afrique",
+        "source": "Jeune Afrique",
+        "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNSndBYm9lNG9aVXhZWjJyTkNkZi1JYVVMYUItWlhQZzVmU0YzMjRtd3BKbmNqX281akF5Y3NaUmo5OVNRcWJHRDFzQlBybVQ0dU5rc25mRmZQMFBRbG1hUW9HaUV1SlVfaXo0ZHRIWlByTzRKSGJSTXpqTlpvWmNLYWw4UnpqX2dqRUJES1FtRE5MNlpxNHBfUkVlWWtmcnRuMGdEM29YTGloMU1kazByaFZaa0NzVkVtRkNmRExGSElBdW5KcENTSXZDYkFHVUh3TktheEJoVEFOQW1LS1ZvR185aGE?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_4d6cd0c3492ab4f7",
+        "date": "2026-11-24",
+        "title": "Mayaƙan JNIM sun kashe mutane 30 a hare-haren da suka kai gabashin Mali",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "JNIM / GSIM",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mayaƙan JNIM sun kashe mutane 30 a hare-haren da suka kai gabashin Mali RFI",
+        "source": "RFI",
+        "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQ0IwVXp5OVpnX2xpbnd3V1V4TEJhRGwwMUN0TG1qMC1IVkIwSTBzMUVoVWtfZVFIaFUzU0xmZjkzOXRTdUx6b2U2LWdsUXNRb0xzMkJLbUZGYkE1d2sydFVCb0w5dWRrUXBLeENINUZ4TTByM1lqRThiSjV2NDduM1l1R3dGWE5iVUJMWE41TzhuWVZZVkh0YVdRTU1heWFHUXlVZWprSHc1Z1ZKQm44ajRHWmo?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_5d5bac4aa04c1409",
+        "date": "2026-11-24",
+        "title": "Mali – FAMa : 24 militaires libérés des mains de l’ennemi après une opération aéroportée, le général Oumar Diarra salue leur résilience",
+        "location": "Mali — lieu à confirmer",
+        "region": "Mali",
+        "country": "Mali",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "FAMa / État malien",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Mali – FAMa : 24 militaires libérés des mains de l’ennemi après une opération aéroportée, le général Oumar Diarra salue leur résilience Bamada.net",
+        "source": "Bamada.net",
+        "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOY1NOaU9UZUJ4dm5XbWdoaU44RWczRkVuNVVEb2Q1UFJISkhqSl9hazVfbF94YWtPZGZxT21DTm1sQktCSm1CTFlxMllGUU9IOFNCcVNVWVo0RERsclRqNmlCMGxhYnlqWGFiTTdMMVdlY2NscEYyYTRKU25VNFplQVNnbldpdHhPcjl1VHZuelZ1eVUwWDBoOFVGTEhmNktHLWRoTTlfaF9raXIzYW01Qm83d0pfdW9wVGt1UXRmaGdneUZaSU9Sc0l2dnBGRkZWS1YwUFRrRlFrOXJ1SGxVS2h3?oc=5",
+        "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_334f4cc473972aaa",
+        "date": "2026-11-24",
+        "title": "Mali : l’armée annonce une série d’opérations contre les groupes armés ayant permis de mettre hors d’état de nuire plusieurs assaillants",
+        "location": "Mauritanie — lieu à confirmer",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "L’armée malienne a annoncé avoir mené une série d’opérations militaires et de sécurité dans quatre régions du pays, qui ont abouti à la mort de plusieurs assaillants et à la destruction de véhicules et de motos, ainsi qu’à des frappes contre des sites que des groupes armés, selon elle, utilisent pour héberger leurs combattants et [...]",
+        "source": "Sahara Médias",
+        "source_url": "https://fr.saharamedias.net/mali-larmee-annonce-une-serie-doperations-contre-les-groupes-armes-ayant-permis-de-mettre-hors-detat-de-nuire-plusieurs-assaillants/",
+        "source_system": "Sahara Médias",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_bae607169f8624e0",
+        "date": "2026-11-24",
+        "title": "Le Cameroun forme une nouvelle unité d’élite pour lutter contre le terrorisme dans la région du lac Tchad",
+        "location": "Tchad — lieu à confirmer",
+        "region": "Tchad",
+        "country": "Tchad",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Le Cameroun forme une nouvelle unité d’élite pour lutter contre le terrorisme dans la région du lac Tchad Africa Defense Forum",
+        "source": "Africa Defense Forum",
+        "source_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPV0U3TUk4QUtNTS1XQjV2cHA1QjVuWklLWWV3dmZjNHhhTWRqaS1zbWRneGpvOE4yLWc0LU9IeDFSeVBMVDRyZ1c2UzdSMEhlcWpOdW13NzZfYUJ6ZHkwTVpuV2xpZVJQa3JGMWpGWXpySGxDdjVlTDd6NGRqSDVwWHdKWUUzMFV3TjQ4WVdRdkItTUg1bzdPREdIVUNGNTF6eGlVUEtWLUV6QzNONmp6WV9ZMDlqNzFHRi1UcTh4RTFxaklUVElXbGtvemxCYUZITlh2MUJzZmw?oc=5",
+        "source_system": "Google Actualités — Tchad",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_aac0c8841213a09e",
+        "date": "2026-11-24",
+        "title": "La délégation algérienne participant au Forum international Investir au Niger reçue à Niamey par le président Tiani",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "La délégation algérienne participant au Forum international Investir au Niger reçue à Niamey par le président Tiani الإذاعة الجزائرية |",
+        "source": "الإذاعة الجزائرية |",
+        "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1IOHhCWjhmRm01dWY0YXkzbVhEeWYtNTZNWHJQRXZwLWhEdFVRWU9qZl80cTE2OGFxdUtBZmczWmUyS05zZWdRdzdNbHFQd0dQRjMtOA?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_3cc325a69e9f3c36",
+        "date": "2026-11-24",
+        "title": "Journée internationale pour l'élimination de la violence à l'égard des femmes : Monsieur X ou l'art de prêcher l'émancipation et de pratiquer la domination",
+        "location": "Burkina Faso — lieu à confirmer",
+        "region": "Burkina Faso",
+        "country": "Burkina Faso",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "En public, il défend les femmes. En privé, il les brime. Portrait de monsieur X. À l'occasion du 25 novembre, Journée internationale pour l'élimination de la violence à l'égard des femmes. Monsieur X est un homme respectable. Du moins, en apparence. Dans les cérémonies officielles et les rencontres professionnelles, il ne manque jamais une occasio…",
+        "source": "LeFaso.net",
+        "source_url": "https://lefaso.net/spip.php?article151000=",
+        "source_system": "LeFaso.net",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_d8a3bf018b3f4fa8",
+        "date": "2026-11-24",
+        "title": "Il a rencontré plusieurs hauts responsables du Niger : Intense activité pour Kamel Moula à Niamey",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Il a rencontré plusieurs hauts responsables du Niger : Intense activité pour Kamel Moula à Niamey El Moudjahid",
+        "source": "El Moudjahid",
+        "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQc0hUa3NiYmtjbDZjakdOQ2FzT0Vsd0NmUHQyOHpfRXE2R0RQR28yNFlGNnJsM2NWelFHeXA1Qi1CcjQ4emRpbEo1VUlpWEhJVFM0N1BjQ1NjRlNnemYyQkhMME1HS05MQ3YxcThBWGZCV2FSTGk4NWs3ZUg2QlI2b2RrR2txZHowUDNiWHBGWW5ESC1FUlFtRHVsQndfYkVxczJmRjNWZU5FeGdhZF83LWx5NmsxbDZsRlpQdWhMN3FIdHhjQmVHN2FwT1RLazUzTjFORWF6WVVKdw?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.27,
+          13.983
+        ]
+      },
+      "properties": {
+        "id": "media_9a31bd4735733c0d",
+        "date": "2026-11-24",
+        "title": "Gouré : des ONG interpellent l’État sur la question Mohamid",
+        "location": "Gouré",
+        "region": "Zinder Region",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Gouré : des ONG interpellent l’État sur la question Mohamid Journal du Niger",
+        "source": "Journal du Niger",
+        "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbmxkcjNjZGlPNDNPZ19TaHF6VWZMYXFERk1yNUlRc2NEbEZTeXpqTjB3cXRWUkx3ajlJT185eXRpLVFnY1lTZmZiZDc2YnhkWnNVMVVRUTExX18tNmNJYlJHdEltODR6Y1pzSk1LY2xGSl9UckwwQjlVYnpwdG9iMFIzY1dUZmFqU2tyV1UyOXc?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_6b850bf5a70dd78d",
+        "date": "2026-11-24",
+        "title": "F2IN 2026 : l'Algérie déploie 17 mastodontes de l'export à Niamey",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "F2IN 2026 : l'Algérie déploie 17 mastodontes de l'export à Niamey Just-InfoDZ",
+        "source": "Just-InfoDZ",
+        "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQX3hISGxpWU5ITmxfNnh5aW5wc2dOQzNxM1VyYWtMSHJpWkNOYWdwRXl4SngwVkNIOUUySV9QUHg1WUVXOHQ3TGpocmVQdHdOTld3MzlsZFBlbW9iMzNhb2tyWHExUFJPMEkxZ1FxR0pxQXlmUWpIaEVyczVEcFNyUA?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_0d556023d3bba55f",
+        "date": "2026-11-24",
+        "title": "Coopération intraafricaine : deux ministres et des membres du CREA à Niamey",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Coopération intraafricaine : deux ministres et des membres du CREA à Niamey La patrie news",
+        "source": "La patrie news",
+        "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbGNJRWNhcC1Oei1lMjM3NXVUVF91ZmNSSk9fWW9uNzBzZnhLMXFpQWw5blNhQmdLeFdxNDEyVmVTamJqTHNNM3hnZE8tWmcxLS1SdG9Zalo1dTZzNWNwM2d6WnZla3Z3U1dlYzdkOXV6UVlnNjRkWE81Vl93aHJaLVhVOG1WV2xVV2hyVDMtazR0VDVxSkRWMW1GdEo3NW8?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.979,
+          18.086
+        ]
+      },
+      "properties": {
+        "id": "media_2967a5bb3e0edb56",
+        "date": "2026-11-24",
+        "title": "Concours coranique de Nouakchott : le Mali remporte huit distinctions",
+        "location": "Nouakchott",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Concours coranique de Nouakchott : le Mali remporte huit distinctions خبرگزاری بین المللی قرآن",
+        "source": "خبرگزاری بین المللی قرآن",
+        "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPYXdkazRoT1A2dnFMR1daWEZ4X2EwQkVVLXkxdmRaNXV6elRkclhsWTdpMUJBSExwTnNxT0duVUthOU5WNU5YQlpBQjJRR1ZDem9nMzI1MDlCaTRXY0Q5Q1VRYkpDQlVXemVxT2hMUTJqYzQwZkFMWms3SGdPRjdRVldGOG9HenRTR0NfQi1JcjE1SVlkYXE4T3dhSThuNVN1?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_72e9a9872dfda234",
+        "date": "2026-11-24",
+        "title": "Bassin du lac Tchad : l’Allemagne met en lumière les liens entre climat, paix et sécurité",
+        "location": "Tchad — lieu à confirmer",
+        "region": "Tchad",
+        "country": "Tchad",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Bassin du lac Tchad : l’Allemagne met en lumière les liens entre climat, paix et sécurité Tchadinfos",
+        "source": "Tchadinfos",
+        "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZUM0alJQTkpoQUMwN0hJTl83TXJ6SGxLZjM3Rk1MVUxOblNOeVBCYk9SSjl3Mkl6ZkFCb3NlaUpLMW9JX3JDZXpCV3Z0NWJ4UVVlM3Y0N0tSZ0V2SmJmelY1dEVjaE8wby0yVE1WREJ2QmhwX1dvYVhueWVTd0JQbEVOZUphYWNRUWVmTl9xRDlJMWVMVnpLSXhraXVVbXBYUXNHU3duc3NSekpBVWVfWHk4SHBWRG9NTnQ2dA?oc=5",
+        "source_system": "Google Actualités — Tchad",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_e24301e97966d8c9",
+        "date": "2026-11-24",
+        "title": "Au Niger, 11 militaires tués dans une attaque de Boko Haram dans le sud-est du pays",
+        "location": "Niger — lieu à confirmer",
+        "region": "Niger",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "sécurité",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Au Niger, 11 militaires tués dans une attaque de Boko Haram dans le sud-est du pays Ouest-France",
+        "source": "Ouest-France",
+        "source_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOS1RHS0tkaXhCU3FYWjI2c3lHbWNxWnVwS0tFSVlSMGNOQ2c0MDFORDl3VEVaN01jU3ZTMVg1ak1xMlJGanpiRlVuSFU2Tld4ZVFjZ0w3dHNyRFJRX3JxSHgwV1owRVhOQjFodTlJdGRibHFiVkE3TWNXRndCSHRWdk5qU2w5VG9hSWYtRnNJUldRSjhvTUxQNG5SUTNuZEJ1N1NBSjJCS3NzeFRjQ2pTclJqWl91TGF1VnVYdGV2WUdnNGwzX1U0NXB6Sm9UTkxtOFZtdnpSWjZGZkFMeTNDTGFZNVc1NGs3emdNa0FPNEg?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.979,
+          18.086
+        ]
+      },
+      "properties": {
+        "id": "media_1264e2509bf0f4b7",
+        "date": "2026-11-24",
+        "title": "Après les incendies d’août, Nouakchott confie à EDF un diagnostic de son réseau électrique",
+        "location": "Nouakchott",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Après les incendies d’août, Nouakchott confie à EDF un diagnostic de son réseau électrique Points Chauds Online",
+        "source": "Points Chauds Online",
+        "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYVpMcE9MM2pFM0dMMmIzdjZKb1RHbVh0SGJaalAzLW1RN1cxNmpuazBFbkdLZ1RHTUNsYnlMc0psc1VPalhSbk9vZE1ZVlg3Ym9qaVIxdHU2ckdDWnRZekVHTVFSU0l0LXpTQS1nYkRpTWNpS2dvMUJiR0M3cmNPaGs2dWtTRUpyU2tYdHRSUWxfSEFBeTc4ZGlGdzV6T2tXdDBWY2xnX1VfYXNmV0ZDeHJ5ZEV1QQ?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "media_e899f38da5b2a2e7",
+        "date": "2026-11-24",
+        "title": "Appels sur l'actualité - AES : pourquoi les experts de l'ICG préconisent-ils de négocier maintenant avec le Jnim?",
+        "location": "Burkina Faso — lieu à confirmer",
+        "region": "Burkina Faso",
+        "country": "Burkina Faso",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "JNIM / GSIM",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "non géolocalisé",
+        "summary": "Appels sur l'actualité - AES : pourquoi les experts de l'ICG préconisent-ils de négocier maintenant avec le Jnim? RFI",
+        "source": "RFI",
+        "source_url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNb2hETzFkUlhLSzNtcHJTZ3FtZG50cGZhN2hyVEhZaTFCVTJQTkhjRjBMZ09aSmxKY2VneUw4Yk1Eek9YaFdaS0QtTTlDd2I4WC0tTGxfVUhjRXZ3NXZ1elZNNFVYbDRGX3g4SmVWaDdWcUNzOVVhSXFqVDNJd3pTamM5aC12UnBPTDVONG1UaGdKLXVmVTAzdGhEV04tb1luVVl4NmpyWG5PelhFb2RxR3pSeVFJV0R3N0xBMXA0VDFKZzllVDF5MWFWVWpydHlJUWtaOGVBTExPTnYyVlFLZEUyVnUteHRoTEZWRTlpMVQ2ZVdyYUE?oc=5",
+        "source_system": "Google Actualités — Burkina Faso",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.991,
+          16.973
+        ]
+      },
+      "properties": {
+        "id": "media_4f1c2f4edfa98df2",
+        "date": "2026-11-24",
+        "title": "Agadez : lancement des Comités Locaux de l’Eau et de Gestion des Plaintes",
+        "location": "Agadez",
+        "region": "Agadez",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Agadez : lancement des Comités Locaux de l’Eau et de Gestion des Plaintes Journal du Niger",
+        "source": "Journal du Niger",
+        "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNa0w0MDhia2EyYWc4TWxxWmNmOERDNHItemJNNGZKcmNQVXRTamFqXzFacmt3dl9Dc1ZENEZCX0dSdXhtcU9fdU0wNWF1S2E5bUJKNWpJM1oxY0I1Yy05UkFLWDExbUtHOV9QQ3NMcm5jNUI2MWJRMlBuVFFXVXVNaFpZTU5XZWRzb3lubXhFbl9jcEN4dml6Tw?oc=5",
+        "source_system": "Google Actualités — Niger",
+        "language": "fr",
+        "as_of": "2026-11-24"
+      }
+    },
     {
       "type": "Feature",
       "geometry": {
@@ -303,37 +1043,6 @@
         "source": "Malijet",
         "source_url": "https://malijet.com/actualte_dans_les_regions_du_mali/312945-operation-dougoukoloko-larmee-annonce-des-frappes-dans-qu.html",
         "source_system": "Malijet",
-        "language": "fr",
-        "as_of": "2026-11-23"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_3ee76ce292e7495e",
-        "date": "2026-11-23",
-        "title": "Niger-Algérie : 500 jeunes Nigériens formés en Algérie rentrent à Niamey",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Niger-Algérie : 500 jeunes Nigériens formés en Algérie rentrent à Niamey Nigerdiaspora",
-        "source": "Nigerdiaspora",
-        "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeWpUb2dMQ0dOckJnR19hNWJBX3V4QUFHMkJWTG15cUUwRGFjYWRoWGoxOXBxTk8xbDByNlZwc2F2UC1Rc3gwenVBMkxldkdZOTJkUzB0dXp1anR4dlRBQjdKdlJKSnFzQlk3Sk1YVmxseWk1bkhlcUFGUU5tVnpOTzV4VWMxM3BadEN2WnZiWFZGQU9HX2wzR0xreUR0b3BGQ3daOC1NaW1nUQ?oc=5",
-        "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-23"
       }
@@ -464,31 +1173,6 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_b8c0488a69a86433",
-        "date": "2026-11-23",
-        "title": "Libération d’une trentaine de militaires : Le coup d’audace des FAMa",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "Libération d’une trentaine de militaires : Le coup d’audace des FAMa Maliweb",
-        "source": "Maliweb",
-        "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbVA3d2xneUdQZ3R6a3I1eVJHeVpLbldXMVNOTmdIanVNVlZNYnVqclY4SDZCdUhiX2R1dHpFRVhyVmFGNHQ3UklsZVc1eGxGWEx4V2hfc0dURTB3cmZ6UFNNU2VEZGpNZG9zVHlpc2FobFZRS2k3c1VVTjBlblFqOU5nSW1XWlJfWGV3YlFpS2JzdlJpV1hSWXFnSkFBRzc4WlZpQjlIbjlScVkzVmRsQi1R?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-23"
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -539,6 +1223,37 @@
         "source": "France 24",
         "source_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNTmVlVWN0NEp4NWp4RTlISEY5OTk3SFhlSzdMUmdfbC1TcE1IbFA1d2VvOGt5cjdKdVhBWmlsa2lZQ3N4TlBrbVFVQ2VIdVgyblh0WDlVY3l5eFR6RHV6TEZGSWNaWGg2MkxkNEV4WnlJaDRGblJ0MUZ1cUZqbXpaS01ZUGFBQzdLQTZoVi1uWEJlYV9nWnJoeVhjU1N4UmZQaEV4VzNHVGtSUklFeE9wX1R6eDdhZW14bm1NX3d1dXBBOGZhVlVZTkttZzFfVGJXRndqYnF2Y01TeVVycVlsdkx3SUFsaVkyM05wVmdhVDRsUnM?oc=5",
         "source_system": "Google Actualités — Burkina Faso",
+        "language": "fr",
+        "as_of": "2026-11-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11,
+          13.514
+        ]
+      },
+      "properties": {
+        "id": "media_8de21d25958fd62c",
+        "date": "2026-11-23",
+        "title": "F2IN 2026 au Niger : l’assaut économique de l’Algérie vers l’Afrique via Niamey",
+        "location": "Niamey",
+        "region": "Niamey",
+        "country": "Niger",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "F2IN 2026 au Niger : l’assaut économique de l’Algérie vers l’Afrique via Niamey Just-InfoDZ",
+        "source": "Just-InfoDZ",
+        "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1HREMyV0RLT2NYUC1BZU5PenhFSlIxckdmdWJRQnpQeHlVTzNkR3VCMjVaUjJCNW42WGVrdk9hZEE3RE1ieEUtVkxiTDFCYmRTb1A5U0lPdVVHa0RKWHMzbGEwM3ROUQ?oc=5",
+        "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-23"
       }
@@ -601,6 +1316,37 @@
         "source": "Tchadinfos",
         "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5HWnQxTjVqeFRhTzVheFJOd0VJZmw4OHRfZFNvcEhjaGcweWV4dWZvOXhsbERkc0Znb2RhQWRmSWFLeTBkR1JLOXo3LVZaUFBXTGVXT1c3SVZNMDRiMVhVRQ?oc=5",
         "source_system": "X indexé — @tchadinfos",
+        "language": "fr",
+        "as_of": "2026-11-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.979,
+          18.086
+        ]
+      },
+      "properties": {
+        "id": "media_d734706419678729",
+        "date": "2026-11-23",
+        "title": "Coupe de la Confédération.AS Douanes – CRB (ce soir à 18h) : Le CRB à Nouakchott pour un résultat positif",
+        "location": "Nouakchott",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Coupe de la Confédération.AS Douanes – CRB (ce soir à 18h) : Le CRB à Nouakchott pour un résultat positif El Watan",
+        "source": "El Watan",
+        "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYS1DT0pwLUw1TVNyZlM5SFdsMkYtRnBWVldDV0VWLVgtdnJBMTB5eHBRNnlibV9FcnhBX3d3X1NmdTR6ZDYxbUxEeGhPRVR6VW1XWGpweTNiSi1XbXc4TXo2bDRveW96SXlUdHdBZjNoMVM0Z2dFUU8yNFR6Yy13U2JxMzNHb1BkWVpxeExyazVOaTZqdjJLSTk5TS14Z1FaSlpQUnRDZDBiTHdnbnl1cnFjOVZ6aFh2aHZz?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
         "language": "fr",
         "as_of": "2026-11-23"
       }
@@ -1045,6 +1791,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -15.805,
+          16.514
+        ]
+      },
+      "properties": {
+        "id": "media_2258af67357cf5f9",
+        "date": "2026-11-21",
+        "title": "Rosso : Trois mineures interceptées à la frontière alors qu’elles tentaient de rejoindre la Mauritanie",
+        "location": "Rosso",
+        "region": "Trarza",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Rosso : Trois mineures interceptées à la frontière alors qu’elles tentaient de rejoindre la Mauritanie Xibaaru",
+        "source": "Xibaaru",
+        "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbl9ORy1jMDB4aFNzdlc2dEwzYlZKcHZaU0NSMTBjVFN3LUkxVGJvcmEzU2dTQ0xVWnQ0NzUyOEluclJEY3plaUNwOGpmeUVHRDhsbzlOYVRua1JBT0VaZFM4OEdUdmNyOWVibC1hWmJLeTYtaXNsclVrRzlZN3FneG10cGNBemJnZHcxaERtTHdieUVuODZoTTVxYm9MaGdPYVpIeFFpTWRUMExyTGJFZVdERWVhR1NEa2gzT2tQbUY?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
+        "language": "fr",
+        "as_of": "2026-11-21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.409,
           18.443
         ]
@@ -1067,68 +1844,6 @@
         "source": "Malijet",
         "source_url": "https://malijet.com/actualte_dans_les_regions_du_mali/312920-operation-dougoukoloko-larmee-annonce-des-frappes-pres-de.html",
         "source_system": "Malijet",
-        "language": "fr",
-        "as_of": "2026-11-21"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_9d8fc61577ac37ed",
-        "date": "2026-11-21",
-        "title": "Niger : la première édition du Championnat national de Kokowa s’achève à Niamey",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Niger : la première édition du Championnat national de Kokowa s’achève à Niamey Journal du Niger",
-        "source": "Journal du Niger",
-        "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOc2xQUVJ3ekxOS2hrUkl0MTBKbzlyejYzMUhqUE5PckRZQ09QYXhqelNURXl0OTlIdmptMFV6VlFXcUE2N3BNMWw1ZVVYSWY4ZXExUE4waXNXMWdiNjBlQlVnQUJkdHlodzJRa1FPVV9SM0Y4TjM4Z3BGOXctRTJQY3k3bjN1Ulo3V09LMjN1VGJzbFFQbGdKN2N3?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-21"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
-        "id": "media_40f5bab5ba8b6fb1",
-        "date": "2026-11-21",
-        "title": "Météo à Tiétiéguimè, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Tiétiéguimè, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5YNExPRVhHc2RMa21qQUYtT05fV2Jadmh6UTN5WTg3c1Rfazc0VklsTW5HRHc5NUNHUUwtdHg1RnltdWdzS2psdkhHcFlLQ3Fmcm1BbW9Ia2F2RFZxRlU2T1JqWUtzYTlQX1pVR0tGa3RDQQ?oc=5",
-        "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-21"
       }
@@ -1299,143 +2014,6 @@
       "type": "Feature",
       "geometry": null,
       "properties": {
-        "id": "media_b60063b780b47887",
-        "date": "2026-11-21",
-        "title": "Grâce à une opération des FAMA au Mali : 24 militaires libérés",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "Grâce à une opération des FAMA au Mali : 24 militaires libérés La patrie news",
-        "source": "La patrie news",
-        "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMUQ1SzRmNjdYQlB3Y19jMUdoVk50QnVHOWtZX0k5d0doZ2ZMM3lBSFpZT2llbnNnTXFidy04bDB2NWF5em5KMThvYlVGVHNORDktQXZNNExUNTlHMS0tRXJEQ2pMNWpGeFdaOVdzWHUtaE5rR2V0dGc0QmdMS1JqeFNDeXF2WE84Z1pNbGln?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-21"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.409,
-          18.443
-        ]
-      },
-      "properties": {
-        "id": "media_dde17a3606da0bfb",
-        "date": "2026-11-21",
-        "title": "FAMa: libération d’une vingtaine de militaires près de Kidal",
-        "location": "Kidal",
-        "region": "Kidal",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "FAMa: libération d’une vingtaine de militaires près de Kidal Mali Actu",
-        "source": "Mali Actu",
-        "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTWJGaTVQUkpYcG5Ka0tsaGctTDVDLVh1QUY4dElIM1FUbzdOTjVJWjBhMWhQR0lkNnE5cnJybHVOTU10dndZcGpoRmxOQU1lZV9PdG0tVlNBeHdocVZqV19jUWw2SlRoejVGU1BvNHJMZUVVVUEtUFFkSjhKV3NQd1FHd2tQZWPSAY8BQVVfeXFMTzdnNWhpNmx6X2g5VzJXVUF1X2ZiYWFuZXZKdTFvcXVHM1lsUEVHQzYySmdQZlU1Y0dqQTR0aUwyaXlvSUFUQm1lMVRzdHNxUEdCbV9wVnRUdHgzN3VzUjM3RVBNYzhkTlVQbFhlYXJ5ZjJET19HdGJ1RHFoSllaN0diaWF4QTQzWXh0ZDc0aU0?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-21"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.31,
-          13.699
-        ]
-      },
-      "properties": {
-        "id": "media_ad441bbebc4c6ded",
-        "date": "2026-11-21",
-        "title": "Dallol Bosso : 1 000 forages solaires pour la saison sèche",
-        "location": "Bosso",
-        "region": "Diffa",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Dallol Bosso : 1 000 forages solaires pour la saison sèche Journal du Niger",
-        "source": "Journal du Niger",
-        "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNlNoRHJYVnRSc0lpTXNraG1zRExmT0RCUDQ5d0FQMUVLdkVsQ0dHaGl2VVFDWHVMajlteG4wM0lHTWtkUG5GQ0NQNkZZTExEdlktSGJKaXdwdkRZRmE2MS1OS2ZoRGVBdExyckIxeGZaUTJlY2dJanpxVDRudzY2OUJRbmtQRmhVTTZZbDJ4MWZzMl9aN2J1Mk93?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-21"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_eb672d1efddb01ac",
-        "date": "2026-11-21",
-        "title": "Au Niger, les dessous du retour militaire de l’Algérie",
-        "location": "Niger — lieu à confirmer",
-        "region": "Niger",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "sécurité",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "Au Niger, les dessous du retour militaire de l’Algérie Mondafrique",
-        "source": "Mondafrique",
-        "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcmpSWXFiTHNwc0FiRzVsaTBEdlZJZV9ScnZpOEFNbnJnX3BrS2E1VVljamY1ckpCVE0wV3ZQTlVKOFZqM0EweFp4OGFURlVmdzZyOWE2RzF2RE1BUnhpU0ZxZ1dWdGhNWUZmM0NlY2UxZmtEdWRBSk04dWxMajZOTjFqcUEyOVNxWUo2dUxiYjZXdw?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-21"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_848ca9d46ffd88b1",
-        "date": "2026-11-20",
-        "title": "sécurisation du territoire national : Les FAMa veillent au grain",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "sécurisation du territoire national : Les FAMa veillent au grain Mali 24",
-        "source": "Mali 24",
-        "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOeGFIS0M0NWhqZVlTVzFURFF0SUV6TzI5ak8tTEFEMG14QXhQZGNHTlA2ckdYdTJwamVYSi1TcUdjZmlYQ3ZlUXNVQ1lHamlRWlF1cWNjVmxQSnU2bGstejdZRTdHaVF5clVFR2pCd3I1ZUExSGVVU3lsTEVBWEJZTksxc3ZydmVScy1n?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-20"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
         "id": "media_1cf0abaafb642d76",
         "date": "2026-11-20",
         "title": "Ukraine : au moins neuf morts après une attaque massive de drones et de missiles russes",
@@ -1509,130 +2087,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.611,
-          13.315
-        ]
-      },
-      "properties": {
-        "id": "media_2b5932c5604dcf79",
-        "date": "2026-11-20",
-        "title": "Météo à Lanom, Diffa heure par heure",
-        "location": "Diffa",
-        "region": "Diffa",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Lanom, Diffa heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE84MDM0SmtVV3VwTHQ3U2RMR2hSc3NzTDJCTVQ4U2FWeXBqR0RkcUhoMjJxeUtVcFgtaEllWXVSa3pSMFNyajV3Q29USUtUNUZ5OHdUOQ?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-20"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
-        "id": "media_4ee0e4701651dc00",
-        "date": "2026-11-20",
-        "title": "Météo à Golbégui, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Golbégui, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1RY3owZkxWWXRaM1hfTjE3V2pRSTNLSnRUOWdLSzJVbnJoSnJEY1QzRzdxZE1SR1VJakxMT1l2NW9JQXRZTDZBazJGWVNLR2k1T19EVUd4bFZpX1FwYkVn?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-20"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
-        "id": "media_eb856c79abbc6b24",
-        "date": "2026-11-20",
-        "title": "Météo à Bèïna, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Bèïna, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5WMlRwb0pUMHRtcnFyNUVXUFNMWnBXaVpwTzlNdXMwRXprRTRyeF9PMjlLZ2dyUWpORmZLUmhzQUlQb1hwdFJRV3dVT1dmQkNlUXVaVXNYcVBCRktidmhZSjJ3?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-20"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
-        "id": "media_cd6c0102aa4c4e7a",
-        "date": "2026-11-20",
-        "title": "Météo à Boki, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Boki, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB6LWlmVk9EdFoxclZzZHNQUjIySE5CWndwRFRNMEtRRW9LVnF4M1h5a2MwR1ZtZzVPblRFRkh4NmRVWUwzRnpRLUFtU0xvQ1VqSXFF?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-20"
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": null,
       "properties": {
         "id": "media_81de2b7b838624b0",
@@ -1663,9 +2117,9 @@
         "id": "media_c8aca68fa63a1d03",
         "date": "2026-11-20",
         "title": "La bataille pour les villes : contrer la menace du Jnim sur les centres urbains du Sahel",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
+        "location": "Niger — lieu à confirmer",
+        "region": "Niger",
+        "country": "Niger",
         "layer": "event",
         "layer_label": "Signal médiatique",
         "category": "autre",
@@ -1676,7 +2130,7 @@
         "summary": "La bataille pour les villes : contrer la menace du Jnim sur les centres urbains du Sahel International Crisis Group",
         "source": "International Crisis Group",
         "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQ1dWSzIyc05kbTN6UzY5MTNSc09ia3BjMFFKYmp5aG43RjRXTzcyd3lLWUl3OHhyY0NXVl8wTjBnLVRHOWNHQ2h5NnJtMkl0VzZDTTNjSktyN1ctaHZKSXdMcDJfcVE2NHd6aFFjaC15Z2l3eHNKR2FIZVBGZG94SGUyeVVxV19nREVHU19teTg5RVhTTmVPbVBsS3hrNDNFcklkTndQMC1pVHZoMldCR0ctNm1jUm8?oc=5",
-        "source_system": "Google Actualités — Mali",
+        "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-20"
       }
@@ -1747,37 +2201,6 @@
         ]
       },
       "properties": {
-        "id": "media_be9c1093bd1e49fe",
-        "date": "2026-11-20",
-        "title": "GAZODUC TRANSSAHARIEN : Alger et Niamey accélèrent les études techniques du projet du tronçon nigérien",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "GAZODUC TRANSSAHARIEN : Alger et Niamey accélèrent les études techniques du projet du tronçon nigérien Le Courrier d'Algérie",
-        "source": "Le Courrier d'Algérie",
-        "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeFdLUzE1Rjc2RjJyUzhHQUc2UHR0Q2FFUDRiV3UxeUdJcGlMQmZkVk04OEQtYUlvUG5iVmZwWjNXbXhieGdWZVA1RmdSbEJJbmhQcUJqQ3hoYTdwODBhY3JhbG0yQ0VXNVF2VXJHVkFwWEpacWtzQmZzcUJHQ0VBaVZZSXQtSzlBTnV0eHItVkpfMG85aUtPV05BdTI3NTgwckdmQWJ5NVF3Y3VBcE5pSzZ6bXpGRkFVUC1XbnRKUU9OcUFNZkJnbmRQR2IzQQ?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-20"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
         "id": "media_7e2bc2326b5410f8",
         "date": "2026-11-19",
         "title": "Une délégation algérienne examine à Niamey l'accélération du processus de réalisation du projet",
@@ -1803,7 +2226,7 @@
       "type": "Feature",
       "geometry": null,
       "properties": {
-        "id": "media_79ee206a349a8222",
+        "id": "media_4d52534683ee551d",
         "date": "2026-11-19",
         "title": "Sécurité frontalière : la Mauritanie ordonne l’évacuation des sites d’orpaillage sous 14 jours",
         "location": "Mauritanie — lieu à confirmer",
@@ -1816,9 +2239,9 @@
         "status": "Signal médiatique — vérification requise",
         "confidence": "faible",
         "precision": "non géolocalisé",
-        "summary": "Sécurité frontalière : la Mauritanie ordonne l’évacuation des sites d’orpaillage sous 14 jours Linformation.ma",
-        "source": "Linformation.ma",
-        "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZzFsMEJFUy1VdjNTZVpSaENoV1BCcm9pMGxYblNEcDJWUzktSS1QRU9mQlBuTkdFV2duSnY0dndqc1BmelBNTlF3TmM4LUFNb2oxTFRRS19XUHZMRmZwelNQNHVmVmQ4WVE1SDU5YmUtWHVjZC1vd29BM0Fzd0lvNkMzX0pKNTZZamhVUzE3XzVkSHJJVnZGSFRRQkpIRHNiNWQ3eFVqNTUtMDRhUzNEeE13Y3FPUEdteHNiVXlfZ2xXZ1FON3NUYmxUdi1Gdw?oc=5",
+        "summary": "Sécurité frontalière : la Mauritanie ordonne l’évacuation des sites d’orpaillage sous 14 jours Maroc Diplomatique",
+        "source": "Maroc Diplomatique",
+        "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQmFFNFo2NG1raW96RUFOaEdka3NqajE4cU11aVZpeldwRzIyZkZuVC1wY05fcnM0M25HbHZLN0RQWnpsTjMwazd6Nnp5ZWN5M3JUUVZFNV81cmVLM0VnX0RjbGVLWUtCWXJZdVhvV19jbGNxYnU3Z05tcHlVM0puMG8tLVF6VGxvX000R1JXMW5ydkZYeGU5b1l1eFpUT3FyelRaLTFNdmdveGQ2WnBxTkI3NGZrS3hmYUVsQm5XWQ?oc=5",
         "source_system": "Google Actualités — Mauritanie",
         "language": "fr",
         "as_of": "2026-11-19"
@@ -1885,99 +2308,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.611,
-          13.315
-        ]
-      },
-      "properties": {
-        "id": "media_d24444840dc3e301",
-        "date": "2026-11-19",
-        "title": "Météo à Nakin Tawingo, Diffa heure par heure",
-        "location": "Diffa",
-        "region": "Diffa",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Nakin Tawingo, Diffa heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5hUlhaelRKbGstamdFTDJPT2piYV9aOGJLMXhjak1YQ3VNSC1jREJKbW82WWVfR0NtblVkWG9kekpTZDBtQkxELTR6anU3dHdpQTJSaDVYaHRlRVFyVGdF?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-19"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
-        "id": "media_507fe15cc49e25be",
-        "date": "2026-11-19",
-        "title": "Météo à Dangayen, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Dangayen, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBvQ3k3WHNjUmtxS0cwbkhhY3QtZVBhc1ZfRU1BY2NVZU44ZHpRV0pkOUxhajB0VkZFN2ltOV9MZHdYd2ZNeEd5UGpkM3IwMklCb0NwQjFOTWw?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-19"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
-        "id": "media_1fb0dee08a1e6d2b",
-        "date": "2026-11-19",
-        "title": "Météo à Boulaba, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Boulaba, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5zZmVtaWxSdkpaYW9mLVlIUk1MRWtPWEhFQW9lYzRNYkpBMkU5TkVLaHViaUxjT1BKRzhBcUlmTG12ZGN3NGpvM2EyNHlWNEItYUNjSkQtcw?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-19"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           1.454,
           14.207
         ]
@@ -2014,37 +2344,6 @@
         ]
       },
       "properties": {
-        "id": "media_eca100a0af9aab6e",
-        "date": "2026-11-19",
-        "title": "Mali: The Malian Armed Forces (FAMA) free 24 soldiers held by terrorists in Kidal",
-        "location": "Kidal",
-        "region": "Kidal",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "sécurité",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Mali: The Malian Armed Forces (FAMA) free 24 soldiers held by terrorists in Kidal Seneweb",
-        "source": "Seneweb",
-        "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOM051SDFJX191eW5UVERMN3VtbXNhdWd4azBCdDQ0QUJuWHYtNzcwT25Uc2RvekxPUW45UExLNGRCUkM2OHNiaFRJLXNaV1pnVG9lZWtEZ2VnOTFVOE52YVd6ZDQtLTlVS1pMMHNOWTF0d251QnlxNllTRktONmxsS0U4TjVrYnFEXzlFUlRVdXpSQmh2SGI4aWR3T2xJTjh4T0pyWVRxdTNGbnZIblRGU0V4YWNHOEhNeW9fbTF1bTNwZw?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-19"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.409,
-          18.443
-        ]
-      },
-      "properties": {
         "id": "media_b6a99b9ff71795dd",
         "date": "2026-11-19",
         "title": "Mali : vingt-quatre militaires otages libérés par les FAMa près de Kidal",
@@ -2061,68 +2360,6 @@
         "summary": "Mali : vingt-quatre militaires otages libérés par les FAMa près de Kidal Alwihda Info",
         "source": "Alwihda Info",
         "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcmpPZFVMRTh3dVk5cDJPc0oyOVNTSnItYmFuN0ttdHp5WVc1eW9WNzg3TnRyX2tnRWtXZVBaWFNKeDljU2hnZDRjU3FzRlhVUW94OVo1UzdhZS1yTmJsc2dpblRreGlGQkxlQzV1ejdRWHlzb192NHZmaHB1Q2JPV0lNLUh2MHZpT1lUa0FoSFZCWGNSX3BCT3lTQUJJYTNx?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-19"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.409,
-          18.443
-        ]
-      },
-      "properties": {
-        "id": "media_99ec1ca5fbf2a8a0",
-        "date": "2026-11-19",
-        "title": "Mali : Les FAMA libèrent 24 soldats aux mains des terroristes à Kidal",
-        "location": "Kidal",
-        "region": "Kidal",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "sécurité",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Mali : Les FAMA libèrent 24 soldats aux mains des terroristes à Kidal Seneweb",
-        "source": "Seneweb",
-        "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVFdWLVNoeUlBYk9XZm5QR0hSVTJ2Z2U1clloaGUydWlYbjBiRS1SUjVJVUxOWVRiX1hTWGlLYmhHU2V3ZTFhTE5UbFlGd0hhbmduOVZIQ3NDa1JwSXJGM3lOZXUyNEczYTFrNW1uendUbnRTdkJESWhGWUZTYVZTQUZpbXNORlpKd0Rnd0ZUSWYyNVRuMUV1UEQ5YnNpbDJNLVVVNldPUGVFZ24weHVGd0FadHhreXNCYW0tWThUUkZFdw?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-19"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.409,
-          18.443
-        ]
-      },
-      "properties": {
-        "id": "media_d865b54211109122",
-        "date": "2026-11-19",
-        "title": "Mali : 24 militaires des FAMa libérés près de Kidal à l’issue d’une opération militaire coordonnée",
-        "location": "Kidal",
-        "region": "Kidal",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "sécurité",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Mali : 24 militaires des FAMa libérés près de Kidal à l’issue d’une opération militaire coordonnée Mali Actu",
-        "source": "Mali Actu",
-        "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdFN0NmtjVURRb1lrMmdGV3UxcjE4OE1HbEVnYkNUTmE5U1ZfZTR3SU9rNm1Ca2k5N2FtS2NzT0lkV3BxeU5LZ1FOR3RPakNZRW5VUlpNYVpDRzF6b1BGYXY5WEVNZ2dGSEJBenZCTUNvVjBOTUtMSTM0UUhWN09HLTJIb3I2NzNITkJMdjRvOFNVcWVZdW5OUktTOTFoU1ZyX2VfR3o1S1pWdDdwUWVBOFdsWjllMWfSAb8BQVVfeXFMTmNJS0Y2cXc3QlZta01NZlVYaFEzeVV1ekhUNnlGVkFtdHNSTVUyR215QmdfMHo2dFV5SVpnYldGNTc2dWZKRkxIanBTSGtRSFZZR29PY2VMQUUwVnVKY2VNZWxVWk5ZN09KNmowVFh0TWIzaEh6QmJjZklueEo5SkpLNVBSVF9wd1JqUHpQVlk4cjlFUWRLblpyVGp5bFJxLWY5cDBlWE0yaGZvbVNLUkRjalBKMFM5d0tFUzBVY3c?oc=5",
         "source_system": "Google Actualités — Mali",
         "language": "fr",
         "as_of": "2026-11-19"
@@ -2176,40 +2413,9 @@
         "status": "Signal médiatique — vérification requise",
         "confidence": "faible",
         "precision": "non géolocalisé",
-        "summary": "Les Mahamid dos au mur : le Niger les accuse de complicité de terrorisme et menace de les expulser Deutsche Welle",
-        "source": "Deutsche Welle",
+        "summary": "Les Mahamid dos au mur : le Niger les accuse de complicité de terrorisme et menace de les expulser DW.com",
+        "source": "DW.com",
         "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1YTlhFZ3huUzZORFkzT2F3U2RNbUhLbzNBRHF0VHlaeG9mN1RZY0RSR3dKQkozdEU0SkVaX0YxR0tabXVlQ21FWjFCVm5TOC1KZS1QZU9YTmt4NHQtNlQzRjA3TmxqMHZD0gFoQVVfeXFMTzRlZ09YNDF0bTVhZzVWb2FmNjlQQjNwWjYxYjQzVXZKcHN6cXA5ckJraGtxa05ydnA2el9BazhIbXI0TGU2dnotOV81ZXh6emVrWkRuNm1aaEVDQkhUWFFuaUtjamxLVTM?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-19"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_eddaf4d1faf12fd5",
-        "date": "2026-11-19",
-        "title": "Le Niger et l'Algérie tiennent des discussions à Niamey pour accélérer la construction du gazoduc transsaharien.",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Le Niger et l'Algérie tiennent des discussions à Niamey pour accélérer la construction du gazoduc transsaharien. Agenzia Nova",
-        "source": "Agenzia Nova",
-        "source_url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQbjJIQXhRNHBSZ1FNMDBsenphS0ZSTDY4M0FMQ21HX1JqLXloMkhvVjJWU3ZESGZBXzNNM1RwWEp4eE84WVdQbXBodlJ3NXE2MTg0Q29DQ2VHUjBlVzRiTkZQT01WdF9ydGVJWUFHQUJVZmh4MVZnTTZTVTQ3VmY2YS1QRnVBS0lCUjBSYzBYaVNZR2ZDQW1HZlk2WDMtUnZ6UUx0aW9QZGJRUm5odFpEQTZLaFRtN0Z2dUpiQThaU1poSGhqMVdOQjZ0bWhJVDhnUndYc3NZSzNuLUNCek43V3Z4dy15bXVtQWROSUV5WVp5RkJTY2c1Rg?oc=5",
         "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-19"
@@ -2245,30 +2451,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.454,
-          14.207
+          -13.046,
+          20.519
         ]
       },
       "properties": {
-        "id": "media_6256e1f25d07545b",
-        "date": "2026-11-18",
-        "title": "Yimɓe 120 mbaraama e njannguuji baɗɗi hakkunde 5 e 12 lewru ndu to diiwe Dosso e Tillabéri",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
+        "id": "media_f1a847db8510903e",
+        "date": "2026-11-19",
+        "title": "Coopération militaire : officiers marocains à Atar, officiers mauritaniens à Kénitra, la même semaine",
+        "location": "Atar",
+        "region": "Adrar",
+        "country": "Mauritanie",
         "layer": "event",
         "layer_label": "Signal médiatique",
-        "category": "autre",
+        "category": "sécurité",
         "actor": "À vérifier",
         "status": "Signal médiatique — vérification requise",
         "confidence": "faible",
         "precision": "centre de localité approximatif",
-        "summary": "Yimɓe 120 mbaraama e njannguuji baɗɗi hakkunde 5 e 12 lewru ndu to diiwe Dosso e Tillabéri RFI",
-        "source": "RFI",
-        "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdXZQTzdQZUc2ekxWMkIweUpqLUpMWE0tQjd2d0R6aDhmQW9uUEdsNEJoV1dJUzZ5SXc5Mk1yNGlmRnliX0tmOGtqbXB4YWlqNmVyWXBVZG15WkVMMHZiQ2IyMkc1dGpWVnloNmIydzhlakEyUHR4c1NRTFFYWEFkRnVmUlptSzA5U0lfbURYd3RWWjFUbE9wVGI2alBwWTFmd1FyYnJsVWR6ODE4TGpVZG9EMC1Wc0FKc1FqMGhBMllNdWRmMlpIVDJKUTNlYmVwSldic0d2Tlp4UXpZVFlKTQ?oc=5",
-        "source_system": "Google Actualités — Niger",
+        "summary": "Coopération militaire : officiers marocains à Atar, officiers mauritaniens à Kénitra, la même semaine Points Chauds Online",
+        "source": "Points Chauds Online",
+        "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWXZMMFNhb0tGM2d2WlVzeVlxZGt5Wl8tckRNY1NwS2ljT1NPQ0ZxSjktWXJjSTZLRkxpNjNLazlVTGxfQXkzaDRDSU4yejNvYnNzLVkwbzBxcDBhcXJrdFlMMUZ0YnA1MnktUjM5SjNfM2dJWkRUQU9KcXVNeDRmTHh3YzdPYU0zMk1vcDVvTmNZSEJvS0dhRjR1MjdVRzdjdHRTVVdHaGpGdms5SVBQeVhtZlFPRTBYUFA0NTFoSXNsdw?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
         "language": "fr",
-        "as_of": "2026-11-18"
+        "as_of": "2026-11-19"
       }
     },
     {
@@ -2357,68 +2563,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -9.594,
-          15.231
-        ]
-      },
-      "properties": {
-        "id": "media_c54eac1f7e0e97b6",
-        "date": "2026-11-18",
-        "title": "Nioro du Sahel : Les efforts des FAMa favorisent la reprise des activités économiques et des transports",
-        "location": "Nioro",
-        "region": "Kayes",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Nioro du Sahel : Les efforts des FAMa favorisent la reprise des activités économiques et des transports Maliweb",
-        "source": "Maliweb",
-        "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNem5uLVhzV3VDX2FyMjBlcGhwYlNSMFdhTk5sNjVBdkptd21ScVk4ZEFLVmNrZDdnVnVZUU1GaTVZT0ZCX1dMZTJRSHJpT3l5elhHeHBiODNfWXdpVFdoRllLUm02RTVMZVYzaFoydjMtaEhUWk1ERmxMdTNGYVJQekt0LUtyNXNhYUxOTTBIZ0dvUW4wOW44QkY3U1JtaDJxeHpINmFvT3Jmc09FcUpSX2tveHNQUngw?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_5ed3d2bf6f65102e",
-        "date": "2026-11-18",
-        "title": "Niger-Maroc : la ville de Niamey veut nouer des partenariats avec des villes marocaines",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Niger-Maroc : la ville de Niamey veut nouer des partenariats avec des villes marocaines Nigerdiaspora",
-        "source": "Nigerdiaspora",
-        "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdE14ZVMyQlgtSmtweFQtUWZzUGxWNFZWN2RQaDR0Sm9RSWpvazZVUEhJQTBMMjJGcW4xTVMtT3VhRDU3anlrRjV1Z1MxYmhJa0tyaWJnaHdpYVFFVFJJWHRRbGN0YmZCeExGbXBiNTN3Ym1kTEdzaGUtSzFranI1bVVSR1FWTEdHTWNxcTJIOHl4dW9MQzZrcnB4djFQdW9Vb0UtN3Q0aU92SHZYV3hWZXBCNWs0dGFtVVE4LTFB?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           1.454,
           14.207
         ]
@@ -2440,37 +2584,6 @@
         "summary": "Niger : deux individus neutralisés et une base logistique démantelée à Tillabéri APAnews - Agence de Presse Africaine",
         "source": "APAnews - Agence de Presse Africaine",
         "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYkxUcW9Zb0JpaW83VjVPeWMtVG1BeTg5d3hqZm5rbGhLY3RLQTJPaEFJMkhQeWFYQUV4Mm9RUk9wcUl0bUd6ajJOWXExY2h5LVE5NEM2WG1kTkd1X2hjTV82bjNJZmhPeEhOZWNIbkFxNGFDU2hXVVc0SzVwbFd1dXgtQkRGdm4zU25ySm5IVzlSLVl1c09fUHN0UUhFTmhMa1ZVYmdlc3JVLUU?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
-        "id": "media_0fbe015c550d8c92",
-        "date": "2026-11-18",
-        "title": "Météo à Watta Koira, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Watta Koira, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9nVFlMVTBBSk1jMDhndU9hYWdGeEFiT2NGdVJHdE41QVA0aFdldDFkR0VYeXJrc3c1N1ZJY3d5a0JvbXhSTU16UmZGMV9VTVcyRk1GdDY3NEJZQWk1?oc=5",
         "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-18"
@@ -2517,68 +2630,6 @@
         ]
       },
       "properties": {
-        "id": "media_9d65bbcb5b9c4de3",
-        "date": "2026-11-18",
-        "title": "Météo à Samtigi, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Samtigi, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1pUEFpbzRTZ2JKQzEteENlNjl0eDFHS0UzUHlLMF9Ma0VrNnZxcFprbHVLWkVlVUdqV0tZUm5odTlZcmZQTGpfRUJwNUl5MVJOVmk4RTJSbw?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
-        "id": "media_24112694077dd586",
-        "date": "2026-11-18",
-        "title": "Météo à Ouissili, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Ouissili, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE15WXBNYW9YSGs5dHB0RzZGSVB2cFhmNmhkcF9zOFNKdUt4UEZOQS1USGxWemlGbzBTa3l3ZXRUWHAyTU9ST2tYek9VN1lPd2EwOFdpckJlZlo?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
         "id": "media_bd795447df867aaf",
         "date": "2026-11-18",
         "title": "Météo à Ngawa, Tillabéri heure par heure",
@@ -2595,37 +2646,6 @@
         "summary": "Météo à Ngawa, Tillabéri heure par heure SpaceRef",
         "source": "SpaceRef",
         "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBM3dmdUhiUmwybWJ0c2o5VHhTWV9hdzVZQkV1Nlg3bXAwV2VhTGNXOW5LVnQtS0Z3aEVQbU9xVlpKNnp0SlU3aEQ1ZDd6TWR5M0hiYw?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.611,
-          13.315
-        ]
-      },
-      "properties": {
-        "id": "media_66d22df6040421d8",
-        "date": "2026-11-18",
-        "title": "Météo à Mamaram, Diffa heure par heure",
-        "location": "Diffa",
-        "region": "Diffa",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Mamaram, Diffa heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1LUUhMTzJHQ2d4VzJGX2lwUGRLQlYxVExleEU1R0pibEhGOUcyWWRWRFZSSlliRk05VEVCbm5kU0xkQktoekVSdDBqQzZUTzZMWFlNOXJJOA?oc=5",
         "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-18"
@@ -2658,130 +2678,6 @@
         "source": "SpaceRef",
         "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9VT2E1VWdjM0lWRHdrd2VTdFp4TEttdlZFc1pwb0pUbmRJV0pVeld0Y01VclBROHpaZ2pDdnUteGVWaU5xWERaVWRYV0xaRXV2STdCblVQbGpQU3Y1NkE?oc=5",
         "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
-        "id": "media_8f7eb0ff476ae46a",
-        "date": "2026-11-18",
-        "title": "Météo à Eskimit, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Eskimit, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5ZN2FmVkhIWmFKU1ZMd2kwRnBFb2s3TERuTlhkbDJFTmMxV2J2MVlfdUM5SnpTUXpWZFFFVXVsXzhsMmhKZVFrd0lkOXpUeHBUZHlEY0NLaw?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
-        "id": "media_4cbf4d69091e959a",
-        "date": "2026-11-18",
-        "title": "Météo à Bolboley, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Bolboley, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1HQkhRLTl6aGF2NHRFbFBRWFNPZEtIRFBxOC1TMEVUTkw3b3FtWDFqdkRkb2djdlB3NW1TVUhDamViQmhHemlJX2hyQzBWWUVxckRCeHZRZEU?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.409,
-          18.443
-        ]
-      },
-      "properties": {
-        "id": "media_722cb0062223eb21",
-        "date": "2026-11-18",
-        "title": "Mali: 24 soldiers freed south of Kidal following airborne operation",
-        "location": "Kidal",
-        "region": "Kidal",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Mali: 24 soldiers freed south of Kidal following airborne operation Bénin Web TV",
-        "source": "Bénin Web TV",
-        "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaGZOT2x3RHFuUElOQXdIX095ZkkxU0c4WnlWQk5lSGd5X0lwNm9QTy03eUc1LU5tV0RkZDFxTzFYdXU1MHV1ZFhqNVlYUzd5QTZnemxrYkpFTURYaV8waVUwcWJqMXNjcnd4b0YwM3hFZE1IV0JvYTN3b1ZoYk9wRzVHTXBjZXVOaXlyb3JrOE9XOHNmRHlZ?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.409,
-          18.443
-        ]
-      },
-      "properties": {
-        "id": "media_c3001ea990ab0fa2",
-        "date": "2026-11-18",
-        "title": "Mali : Les FAMa libèrent 24 militaires détenus par des groupes terroristes dans la région de Kidal",
-        "location": "Kidal",
-        "region": "Kidal",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Mali : Les FAMa libèrent 24 militaires détenus par des groupes terroristes dans la région de Kidal Maliweb",
-        "source": "Maliweb",
-        "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORThCd2NYZ1ZLNlQzOFRIRVVTczFZQnlzTm5XQVBsVlZ6TmFWSkJDUHFJSHRUbF8tY0JKU3NXNkZMTWZ6Nk1WbGpmd3hWSzVIbjhuMVZCNXBQbFA1UHFzWEhFUzBKT1JFbzZobzhNbXNIdGVLT0FyS28wYkR1MUxDYXdlZnlSc0daYURxb3UwM1dYMEUwYW5UZkJDRzhPU3QtZkJmSXVpTnU3dXl6?oc=5",
-        "source_system": "Google Actualités — Mali",
         "language": "fr",
         "as_of": "2026-11-18"
       }
@@ -2838,37 +2734,6 @@
         "source": "برلمان.كوم",
         "source_url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPYVh6WWljTVh6dVplTWpXR1BiMG93ZE5HSTJyeE53bzlrOWh1V3dwQ3pWOGU4Rk85Y1dYRnVMREdNQmJoYUNVUnNKbjhMaXFCZkNMcnRvZmtpVURzb0JsRkRWTjBjODFjMWhyYTJ6NGxONmJBakNiNkNKa3RHTlItWGJiUmg5UWh3VmhvLWpNdHkxNEt2ei1LQzZLa1RGY3hCWnBnS0hQYjNtUGozTE1UdHpZQUlMX2h0Y2pXNGlPblhWa0ZUZlBZSTF4WWJQU082TGxITjBWeGhwQzE4XzBBOEZLXzVFMUp6ckNpVHltWXdTRmFySXlPZVZn?oc=5",
         "source_system": "Google Actualités — Mauritanie",
-        "language": "fr",
-        "as_of": "2026-11-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_b08101a9b1528054",
-        "date": "2026-11-18",
-        "title": "Laisser la bienveillance s’enraciner à travers l’accompagnement : WAPCO Niger fait don de vivres et de produits de première nécessité à deux orphelinats de Niamey",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Laisser la bienveillance s’enraciner à travers l’accompagnement : WAPCO Niger fait don de vivres et de produits de première nécessité à deux orphelinats de Niamey Le Sahel.org",
-        "source": "Le Sahel.org",
-        "source_url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQalFGRUJUNzB2MTB0WWpZYUVDU2QwaDdCQXlOeUZlSThiT2ZELWxlVGY2WkdYRHlUQWc0TExpRUUtaEJCbzFLbW1lRUZyTmtoY0J0UWZ5bmxseTBiLXJNMXRDR1M0cUVTNU1ONTZkVzlpNGM3T0lodzBTZERpRzFFTDRHTldmUmE3TUFEek1Tb0pNZ3l1MEpNMnhCQnN5QUNVOG1PQ2dERWhHdnBzYi00ZTZLR0dLVkFlUnBfT2tGb1dvb2d4ZjZJNWxmM0JxWmFLbHJrOXFvY3NkNkpuRU5wSlM2dGMtdGtjTWF5Y0FORW40TG92Slgxeml0V2RvSkd3NHRKbUpCcDN2UkZsNEwzRg?oc=5",
-        "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-18"
       }
@@ -2965,62 +2830,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_6e8a510e9bf9fc50",
-        "date": "2026-11-18",
-        "title": "Gaz saharien : Niamey et Alger resserrent leurs rangs pour tracer la route",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Gaz saharien : Niamey et Alger resserrent leurs rangs pour tracer la route Journal du Niger",
-        "source": "Journal du Niger",
-        "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE13NEV0NHZ2VVU5THA3dmpCbzhTNkN5RGtQMWg0SHFQb0ZUaGhHaHdjb3hkNjFBQVJiQTlFNVQyX0xUZWwxRWhKeWViMF9BSDNNTU9ad3hQWW9wdUMxVmI2RGUxdkxZaDVITklDNm1BSzFNUXlHcnlvaXdSVzE?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_26bd78aa04a02960",
-        "date": "2026-11-18",
-        "title": "Au Mali, les FAMa portent un coup décisif à la logistique terroriste dans le Nord et le Centre",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "Au Mali, les FAMa portent un coup décisif à la logistique terroriste dans le Nord et le Centre Mali Actu",
-        "source": "Mali Actu",
-        "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWEx3dlJ0WEYyaFk4SU9jVmVsMVRwZkU3ZVhJOTQwOWcyaVNpU3BYQkktWjd1LVNsLWxKU2c2Q3BsUXhwOE54bXNMZ3lrS2pVZnlPSXVlakpiNjBsTEc1SjBpT1JsdGdmZXBHZE0wTmRCeWNia29DWFhmaHFwM3hneG9Dd1Z5SVRvMVBMZHdHV0w4X2t4eUNXenFaV3BKazVpWlViOHRDbXg4dExOTWxjRXVxSGZSQdIBvgFBVV95cUxPdkdZdEdZYlp0UW9qUHNUaVl3amhvb3lib2RxRTN4cDh5UnE3M3RJVk1yaEFlcUJ4MFhKbGg4SnE3Wi1sXzdPVlVIbEF2azRZV1RNUkpZNDc1aG9wbGhBWm5IaGZQWm9sLUx2bWc0MDFtMmJ4YVlEeUlsb2pETWt6RFFTLTF2MHRIaFM5SFAzRE5oVzhhV0JHNDlDZEJEb3NSTmZXLW1YUGh1VjFSUHpnek55YnVzYk53WXhBRlZn?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -15.979,
           18.086
         ]
@@ -3077,6 +2886,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -15.979,
+          18.086
+        ]
+      },
+      "properties": {
+        "id": "media_032f07333ecd91d2",
+        "date": "2026-11-17",
+        "title": "Nouakchott et Rabat vont réviser leur accord commercial de 1986 et bâtir un marché de gros dans la capitale",
+        "location": "Nouakchott",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Nouakchott et Rabat vont réviser leur accord commercial de 1986 et bâtir un marché de gros dans la capitale Points Chauds Online",
+        "source": "Points Chauds Online",
+        "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeFVNMVNubW96Qk9IaXEtRF9iUHBUaDNtZU45M2RrOUdjQ0EyVnMtejV3aFZxajZEUUVwNjUyaEg5ZmFBOXVhUmlBdi1WVTVxalp1RjZteHlPLTJwdEZpQ21aeVpXSGlhWVdEdDlrYUQtV2g4M3lINkJzNk85RFZzMm51bEZBcWRrOWZ2QnNBMTZENTYyVUlxTWExY29EU0Rhem9ETGMxU2gyaVUwMDNqQzhERzY0U2l4Ukwydlh4UmQyT3Q5b3FKZ3g3cGVBTWs?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
+        "language": "fr",
+        "as_of": "2026-11-17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.454,
           14.207
         ]
@@ -3098,37 +2938,6 @@
         "summary": "Météo à Kouré, Tillabéri heure par heure SpaceRef",
         "source": "SpaceRef",
         "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0ydUJGTlZ4UlFWVVQ4NkhEZ1M2SmRQWnN1dUpuVk5KZEktVmVoQXJJcDJwRWZsM2tJaWhsRVg2eFVyTjYycGN3YmdVeDhESDM4SUZhUkpJcjFBSE0?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-17"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
-        "id": "media_c15e8a4569433443",
-        "date": "2026-11-17",
-        "title": "Météo à Barwa, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Barwa, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9QX2ZiejBoMlpyS2oyZzBfNHdWdzFzRzduUVRiRlE1dnhXWGpBVnlQeFZrTl93a08zY2ZVX0VJenUxdF9USmwxeFNTd1U4M3ExM2lpVg?oc=5",
         "source_system": "Google Actualités — Niger",
         "language": "fr",
         "as_of": "2026-11-17"
@@ -3276,17 +3085,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.11,
-          13.514
+          -15.979,
+          18.086
         ]
       },
       "properties": {
-        "id": "media_55a71b2c706060a1",
+        "id": "media_058c7c9ae313f383",
         "date": "2026-11-17",
-        "title": "Coopération douanière: des officiers stagiaires nigérians en immersion à Niamey pour s’imprégner des stratégies de sécurisation des frontières",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
+        "title": "La Mauritanie et le Maroc conviennent de mettre à jour leur accord commercial de 1986 et de créer un marché de gros modèle à Nouakchott",
+        "location": "Nouakchott",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
         "layer": "event",
         "layer_label": "Signal médiatique",
         "category": "autre",
@@ -3294,10 +3103,72 @@
         "status": "Signal médiatique — vérification requise",
         "confidence": "faible",
         "precision": "centre de localité approximatif",
-        "summary": "Coopération douanière: des officiers stagiaires nigérians en immersion à Niamey pour s’imprégner des stratégies de sécurisation des frontières ActuNiger",
-        "source": "ActuNiger",
-        "source_url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxORFRyNFdadS1pdHpma2x0LXdKeWt5Q1g3aG5DWEk0dXJUQjBzMGJ5dGp3bnk3ekVkVkc0aEVablBhcVlIRjQyaUlfX0Y4ZzRJWlFyWkg5ZHMtODFlZXlsaWVDQlFnaFZkVG1hdzgyYUtwdUJ1akNiLWpJaVR0dHViX3UxTTFMbHRWX1RtLXVrSUJUY1FhNXhBNl9WaHNZdkZjTVVHakFzX2lYM3BqcnhaeTRGMXJvVm5HR3JWRVc1MktaaG5MT1g5cUZRRjdBN3pKSFRoNFRoUjVRcnBUSjZUQVVFemNXMXo5S1V5WTVOM3NwakNLNkxuYUc1YzJWVmZxOTYta1lBdzVYREk?oc=5",
-        "source_system": "Google Actualités — Niger",
+        "summary": "La Mauritanie et le Maroc conviennent de mettre à jour leur accord commercial de 1986 et de créer un marché de gros modèle à Nouakchott Cridem",
+        "source": "Cridem",
+        "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBRY3FGalZFQV9kNmJtRkdocjUza2s5aEtQMm9sZ1NOc1NxQ0NOZXVIaFRydXZjQ0tFRFE0ajhlck1OSk5HQ0dfakFnMU1nbVNNTWVpQ2tLNA?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
+        "language": "fr",
+        "as_of": "2026-11-17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.979,
+          18.086
+        ]
+      },
+      "properties": {
+        "id": "media_4eaf472d6d5367ed",
+        "date": "2026-11-17",
+        "title": "Faux titres fonciers à Nouakchott : l’homme d’affaires Ould Agherbatt et quatre coaccusés écroués, l’ex-wali entendu par le parquet",
+        "location": "Nouakchott",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Faux titres fonciers à Nouakchott : l’homme d’affaires Ould Agherbatt et quatre coaccusés écroués, l’ex-wali entendu par le parquet Points Chauds Online",
+        "source": "Points Chauds Online",
+        "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNeFhTWXBHVHI3N2IyNHh4U2RrWHJvYjFGa2VCaVBGa2NxaTF2NDRsRTRtQkdQNmE4TkhjRzhTZGR0c2VZdFRod1RDVlBDaGVRWEJHeUx3dDNXcjI3SF9vSElVeHlZS0RBN2ZwTlc1VjNNcDRsZnN0TG83UGhTUG9UUzFCYUNoSVpMVDdaYkh3ckktZU1KVnVYN3lidHFYWk8tWXR0YnVYNnowdnZ6YXg0YWctRG1nYUplUmprZkxnYW5GX0ozVGZoSm41b1dkU3FMSkxadXpxRU55bWJhSVB0WnEydlNLWDQ?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
+        "language": "fr",
+        "as_of": "2026-11-17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.979,
+          18.086
+        ]
+      },
+      "properties": {
+        "id": "media_6b6848800d5d82c2",
+        "date": "2026-11-17",
+        "title": "Contribution/ Visite secrète de Bourita à Nouakchott : Signification du calendrier et unité de destin entre la Mauritanie et le Sahara occidental",
+        "location": "Nouakchott",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Contribution/ Visite secrète de Bourita à Nouakchott : Signification du calendrier et unité de destin entre la Mauritanie et le Sahara occidental La patrie news",
+        "source": "La patrie news",
+        "source_url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPdHI5TkVPVG42T1VIM0VnZ0FyX3dKS3AtNjdzdmk0R2xLRlN3dkZ5aXpqVTJMVW12a0doT0tNTGJMbHppMVFlREVnTWZtLW5VRURfYUtoQTczOVZ2cGl1eEt2X0xfNUd4ZEFKWVJSU1ZXYmhwaC1oRUlsMWFrQk9CMm5zWmphWkVVUHl4bERGSXdsa005amdYdzB3OEt6MVRIU3hGRjUxbFI3VXhscEQxM2J5WXpSYzFQaGN6MUV5UDMwUS13Y1VERkxmYWtJakktay1CZDc1cHlPUEVSZkpwSEJpR0FrUmNuVFlaZTdHTEJCbk5OY2lEUVd3cw?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
         "language": "fr",
         "as_of": "2026-11-17"
       }
@@ -3429,25 +3300,31 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.805,
+          16.514
+        ]
+      },
       "properties": {
-        "id": "media_cac9cb4de8d49423",
+        "id": "media_f9262020f7ba31c4",
         "date": "2026-11-16",
-        "title": "RENFORCEMENT DES CAPACITÉS OPÉRATIONNELLES DES FAMa : Le Président de la Transition remet de nouveaux aéronefs à l’Armée de l’Air",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
+        "title": "Tentative de départ de trois fillettes vers la Mauritanie : à Rosso, trois mineures interceptées à la frontière et remises à leurs parents – LACTUACHO.COM",
+        "location": "Rosso",
+        "region": "Trarza",
+        "country": "Mauritanie",
         "layer": "event",
         "layer_label": "Signal médiatique",
-        "category": "politique",
-        "actor": "FAMa / État malien",
+        "category": "autre",
+        "actor": "À vérifier",
         "status": "Signal médiatique — vérification requise",
         "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "RENFORCEMENT DES CAPACITÉS OPÉRATIONNELLES DES FAMa : Le Président de la Transition remet de nouveaux aéronefs à l’Armée de l’Air Mali 24",
-        "source": "Mali 24",
-        "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNYURDNXA0T0YyaHp6aDhIUVExWlAzUkNfNnhrN1ZkamxPSWNXNWRDcF9USTlxUkF2dGN1TVFRMGU0VGxpMDJBYXRBLXBXUzkzd2tIMFhveVk0cERvb19qUkJFUWxhUzlYSk44RG1Lb2dzTFdEOERHY1RGMHA5WTAxaUozQ24yV3FkVDQtVGx2emFGd1ZQYmFLR0x3Ulpyai1SRHR3QTRhTEJXLVVnSEdNVnNFVXQxTTJPZXRxbURILU00UXNGZFJhVDJPZFI3Q0hXdzFPYmZfUU9nOU5raG80?oc=5",
-        "source_system": "Google Actualités — Mali",
+        "precision": "centre de localité approximatif",
+        "summary": "Tentative de départ de trois fillettes vers la Mauritanie : à Rosso, trois mineures interceptées à la frontière et remises à leurs parents – LACTUACHO.COM LACTUACHO.COM",
+        "source": "LACTUACHO.COM",
+        "source_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPejYxMWhmS2JwTEs5b0hvU2Y0YTd1ekZ1eUQtYUI5dEt2aXZHWE5aSFYzeFN3Nk83emhiMjEtOUFaa0FhS2tXV09qS0pGUzF1YTJwWk4tTDNTbDZwZ1dyMENmVk5qU0RXSzR6R29xZHA5MHEzU0dNSnNYNExoSVBPX1pKRzVIekJxVkZjT3ZhTVh0R1hGelJtVlkwc2NacVZRLWFselZYdzIzWGs2MWFhQmhZbVBJZ0RNcjB2UXd4d0pxdDVndUNCRU5vazVrQ0hXMkVuTXpNUUh6WEFndHZqbVZmb1V0clpRWDN1b0pDdk1RbFhP?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
         "language": "fr",
         "as_of": "2026-11-16"
       }
@@ -3457,17 +3334,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.11,
-          13.514
+          -15.805,
+          16.514
         ]
       },
       "properties": {
-        "id": "media_65af9070d53c367d",
+        "id": "media_1a0ede198f20bf37",
         "date": "2026-11-16",
-        "title": "Niger : Niamey se prépare à la projection du documentaire « La Découverte du Niger »",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
+        "title": "SÉNÉGAL : TROIS ÉCOLIÈRES FUGUEUSES INTERCEPTÉES À LA FRONTIÈRE DE ROSSO EN PARTANCE POUR LA MAURITANIE",
+        "location": "Rosso",
+        "region": "Trarza",
+        "country": "Mauritanie",
         "layer": "event",
         "layer_label": "Signal médiatique",
         "category": "autre",
@@ -3475,10 +3352,10 @@
         "status": "Signal médiatique — vérification requise",
         "confidence": "faible",
         "precision": "centre de localité approximatif",
-        "summary": "Niger : Niamey se prépare à la projection du documentaire « La Découverte du Niger » Journal du Niger",
-        "source": "Journal du Niger",
-        "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNai1lVGkxcGF5dGo1VEtOYlQtZUQwRTNrYXVUblA4ekFBYkdFanpHa3Vzc1lXdzhCcW52Mks1dTBnZGRZQzR3OXBxZWpxclRuQ21WLWFUUDJtbzlDMllMN3hQdWNKNGN1Rm94LXdnT0Q2MkVnZlpjaXFsSTdGT0o3ZWg4R3R1b0p6emFsNFNNRTBobmt6bFE?oc=5",
-        "source_system": "Google Actualités — Niger",
+        "summary": "SÉNÉGAL : TROIS ÉCOLIÈRES FUGUEUSES INTERCEPTÉES À LA FRONTIÈRE DE ROSSO EN PARTANCE POUR LA MAURITANIE Mali 24",
+        "source": "Mali 24",
+        "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWUp1bmJMNUxnMUZ1ZUFsX2ZUbngtR3ZHcFJCOGtEbEU3VUFlck1LVkd1bnBfMjRpMFNJRVdxUWRNZk1ZOTNJaUJJbVUyNlZRVnpsN2R3cDY2ZHRfeGM5S2QzWkNWbThWU0JFZlEyRUZGNV9CU1plXzB0VE1tUlBjaThSMGVMTFZPYzU1Q1NRVTVQMnNwaklzNzRkMzZVdExDRF8xdEl2YnpHUkNPbFJuWUZFS3hDbHpSQWVTMk5tOA?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
         "language": "fr",
         "as_of": "2026-11-16"
       }
@@ -3503,31 +3380,6 @@
         "summary": "Mali : frappes aériennes des FAMA dans les régions d'Abeïbara et Sévaré Alwihda Info",
         "source": "Alwihda Info",
         "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUE05MmxfSVNJbVIzWWpaZFV5LVA2MUpyeTUwVUExWklIUnJKYzlPVlJXR2VaVkFMR0JpdlVSRUZJZjR2M3VnYlJHdlJpUTV0TEhYSUdnY18waVFUbkRvM1ZCS2QxREtHdTItWTZRNFRvNVl1ZEZONTVlemlQYzZ2UFAyR2lpdm9lNG03ZWVGY3FQLVdWeEJQcFZPM3JqQQ?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-16"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_b55bb20480f32b78",
-        "date": "2026-11-16",
-        "title": "Guinée : une étude alerte sur l'implantation du Jnim près de la frontière malienne",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "JNIM / GSIM",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "Guinée : une étude alerte sur l'implantation du Jnim près de la frontière malienne Leral.net",
-        "source": "Leral.net",
-        "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNV25acElMcTZ4VGN6ZGFYWTFudnl5bWw2Y19RUzBzR2RhMWxXMW83cWp6SWdMeDhzU0NCd0prd3Z4ejZCaUpNcmVnNWlkalROUXNtZ0d1LUd2RUpzTlphbDd2dmFsUGZlNVptMjlEMG5NZ3NqdG9wRkxtOWdZVG9MUFF2RW51bjJaNk5idmlBUFhnOU5MSElPeU56SUcyN01GcW9acktBR2syNUx5OTFvZXk0dmNkZw?oc=5",
         "source_system": "Google Actualités — Mali",
         "language": "fr",
         "as_of": "2026-11-16"
@@ -3562,31 +3414,6 @@
       "type": "Feature",
       "geometry": null,
       "properties": {
-        "id": "media_10985302948eda71",
-        "date": "2026-11-16",
-        "title": "Défense : le Mali renforce son aviation militaire avec sept nouveaux aéronefs",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "sécurité",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "Défense : le Mali renforce son aviation militaire avec sept nouveaux aéronefs Mali Actu",
-        "source": "Mali Actu",
-        "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNd2pFVmhqWjZ4WUNNLXktOWJKMjdVSlZVc01rVkxyTEhRUy16TTh4RkpLNWZ2SHN1bGUzRW02dTRPWXY1UE5jVGdETnRfU2FvaGcxa2VBc2pCM1NnSVRzTmxwUXZVVVEwUEJtU0g3RUlHLXdZQllWVkNoVk53bW96T3A0MExzYk5WUDVxNWhKOXNybmd4d2xDOUVpeGdwQdIBpgFBVV95cUxPbFRONG03LTZNVlZ3cDc5OWxWMFpCaFJFSUQ4Y1QwY1BtVnBKaDJySTZHQTFlaktmOWZDZXMyTW5vWUxCajQwNGdhNTBoVzV5X0Y3UjZTN2JVUEhId1NzUTJibGFsdURyNk9OVnRUUVdqRUxJdTJjMW45WWk2Wk9heXdFUjJsc2pVUk1JY3dQY1hyVDdHOUpiTFVVejlPeWZIdVdYTnFR?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-16"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
         "id": "media_a8bf0d3e638961ef",
         "date": "2026-11-16",
         "title": "Au Tchad, la Suisse paie pour la sécurité des humanitaires sur le terrain",
@@ -3606,68 +3433,6 @@
         "source_system": "Google Actualités — Tchad",
         "language": "fr",
         "as_of": "2026-11-16"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.611,
-          13.315
-        ]
-      },
-      "properties": {
-        "id": "media_48327b7c60695f0b",
-        "date": "2026-11-15",
-        "title": "À Diffa, les réfugiés nigérians à l’épreuve d’un nouvel exil",
-        "location": "Diffa",
-        "region": "Diffa",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "À Diffa, les réfugiés nigérians à l’épreuve d’un nouvel exil Twala",
-        "source": "Twala",
-        "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONGtiQkhob2R1YVo3d1pwajlTcWc4SjcyUmxVejVKVUs1bzFPcm8wZEJwUDBtaG9XcDNRWm1FTjJFVzNTTUxESlJIVnFTbjFZaVM0MXZ6blh0RTQ4ZjJqOW8taVRXUmNyd1d4dnpLYkc0ZV9lRVB3YkRfTkZlcFBacEZfQkdsNGkydjlWUXVmUnB1LXlMellBUmRjZnBpYWc?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-15"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.409,
-          18.443
-        ]
-      },
-      "properties": {
-        "id": "media_094c432c0121f041",
-        "date": "2026-11-15",
-        "title": "Yenchechi, Kidal et Ingouzma : Les FAMa neutralisent des objectifs terroristes",
-        "location": "Kidal",
-        "region": "Kidal",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Yenchechi, Kidal et Ingouzma : Les FAMa neutralisent des objectifs terroristes maliweb",
-        "source": "maliweb",
-        "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdkxFSENvWDY1M3ZudGs0NUhHNGRoS2Utbk9PVDRUZmJQcWxQY1FXT29WV3Q2eG1YYUcxM2l6RVhuNW1FQXlYdUptVFlreVRjdk5BQVMta3VQOHh3SjNHSWV1LVAtUGExVjlQcG5CMFJxZHpqU3lRVnNEYjJSbTV6ZlJVRjBEN2tvVmFRSnRCRk5vM19GVVEwWUJsdnYxZXNJM3VCUGZwSkV2ai1JaGhvMQ?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-15"
       }
     },
     {
@@ -3722,62 +3487,6 @@
         "source": "Sahel Intelligence",
         "source_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNenVnb1lZejdXUm1hdlNUbU4xd1Z6WG83bHhSZkt5ODlRcFpKZUhKLXBXUjdpYkd3Nkt0ZGxFZmJlQzdaLVlxWWVyX3c4X3VreDRxU2VSOUlpbWd2YTctQUtBWTBfbU5VTmJfbnRzSW5Ec3VDTjd3U053X0dJZHEyTm01ODV6QXBudV9mUjlkbTY1cDU5emlnSXR4MDNzQ1dGOEhJeGVRNGpFWFladlZkdXNJUndEVFU0bU5IeUJqS0F5S0xERUE2VmtqbHEtREVNVWpFa0llaXN5Umc3Tlgtb2hnNmJIbmJQcUdScnlzS3FjUQ?oc=5",
         "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-15"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.454,
-          14.207
-        ]
-      },
-      "properties": {
-        "id": "media_6bc5a35e5e4f43b0",
-        "date": "2026-11-15",
-        "title": "Météo à Débiel, Tillabéri heure par heure",
-        "location": "Tillabéri",
-        "region": "Tillabéri Region",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Météo à Débiel, Tillabéri heure par heure SpaceRef",
-        "source": "SpaceRef",
-        "source_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE44bTlOME5XQV9IYmRjaWZuUHp6bTIzMk5yamNkc0N1Q05wNV9pOWdNam1Xa095aDBLOGxOQ2FhVlhNOUVodUI3cHkwdFIteXJIclhHMG9YZEM2djRH?oc=5",
-        "source_system": "Google Actualités — Niger",
-        "language": "fr",
-        "as_of": "2026-11-15"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_1da4c3357faff2c1",
-        "date": "2026-11-15",
-        "title": "FAMA : Émission Défense Citoyenne N°244 sur ORTM1 du 15 Novembre 2026",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "FAMA : Émission Défense Citoyenne N°244 sur ORTM1 du 15 Novembre 2026 Maliweb",
-        "source": "Maliweb",
-        "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOel9PRFVlRkczVDB6OWwxRUhJSTc1cjVpczZfSkVHTmNkdXl2ZTlLQ1pWUkRFU3hSdzdjRlB5VllCVVIzQWJZVHowQ0dnUkQ2MmsxdElqVmVoZmpreWpsZGxvUGdadzY1aE1NdHdXckxkdEVjNUg3Y05YMk1XcVFWOEFGNGQtemt1MGlxN0JjRVhYbVh0VENMNG53MzRxb0xaME9HVmd3aWRCMHN6RGdVWThn?oc=5",
-        "source_system": "Google Actualités — Mali",
         "language": "fr",
         "as_of": "2026-11-15"
       }
@@ -3862,37 +3571,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -15.979,
-          18.086
-        ]
-      },
-      "properties": {
-        "id": "media_ce01d5f683306e3f",
-        "date": "2026-11-14",
-        "title": "Mauritanie : la 17e édition des Rencontres Littéraires de Nouakchott aura lieu du 1er au 8 décembre",
-        "location": "Nouakchott",
-        "region": "Mauritanie",
-        "country": "Mauritanie",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Mauritanie : la 17e édition des Rencontres Littéraires de Nouakchott aura lieu du 1er au 8 décembre Cridem",
-        "source": "Cridem",
-        "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VUUZHTXI5QVVnN2NJeUdvN21TdEkxT1BJRVVaTmxWdU1pOGxlcFBiSVZuNmQzSUxhQzZDa1VCY1ROQW5FMjRldUR2NDFUdnBaa1FZMDNSTQ?oc=5",
-        "source_system": "Google Actualités — Mauritanie",
-        "language": "fr",
-        "as_of": "2026-11-14"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -4.183,
           14.484
         ]
@@ -3940,6 +3618,37 @@
         "source": "Points Chauds Online",
         "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTHpsNGV2c2RhaEFBdlFTQjBnUGxGOVRtMmF2RlhScy1qSjM1TDM5UmxsVmVmSl9SUnBSdW9XWGR3SG9MNmRfTXpNM0VIZ1plNFNQcjcxbEFpTHlxemY5S2ZpaXVKMlF2dU5UcnhuQXlJb3Y1V21kVVVZRXdYN3FELURnRWYzcG51VTZmMG5hbnJVVW9lZWNYejVDSU5DWHRkTDVQX1ZDOEVzc1dTUDM5RVFXaEZjOVFBZ0s4NEhUenJWYVVaVmxqOGpsUzhkaHM?oc=5",
         "source_system": "Google Actualités — Mali",
+        "language": "fr",
+        "as_of": "2026-11-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.038,
+          20.942
+        ]
+      },
+      "properties": {
+        "id": "media_2cc22c29e67ab2b0",
+        "date": "2026-11-14",
+        "title": "Fin de l’accord de pêche : les garde-côtes somment les navires européens de rallier Nouadhibou, Tawassoul exige un débat national",
+        "location": "Nouadhibou",
+        "region": "Dakhlet Nouadhibou",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Fin de l’accord de pêche : les garde-côtes somment les navires européens de rallier Nouadhibou, Tawassoul exige un débat national Points Chauds Online",
+        "source": "Points Chauds Online",
+        "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNZ0N1RjlPTzZqbXNsaGI5ZHFSakZJcTlsNXZuNVA1dklJYWxJVllBUGt4WFdHMzhLMVNuUVdNLXZkbVJhLTF6U2xVY0Z4Sy0ycjh6cFNBeXhfeV9oVEdqM2E3SkFYdXZHdEptek5VT3hDUmRJd2dES3o3aW9BVVdvcGVxUFNTcHZYSmZOV2JhOGMzTzUxbXRvR0xmdnN2ZjlOMUk0UW5CS0lfLXQ0VW5Ca2pTSW9xN01HYTZmNjg2SXptVXJKR28tcTgydWhBcG5naE5mVko0SHhTTHdId2tZaDZXZUExakk?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
         "language": "fr",
         "as_of": "2026-11-14"
       }
@@ -4178,7 +3887,38 @@
         ]
       },
       "properties": {
-        "id": "media_7ce91a4db904434b",
+        "id": "media_dc3bf5a1e0b6530f",
+        "date": "2026-11-13",
+        "title": "Semaine du Maroc à Nouakchott : sept jours pour rapprocher affaires et cultures",
+        "location": "Nouakchott",
+        "region": "Mauritanie",
+        "country": "Mauritanie",
+        "layer": "event",
+        "layer_label": "Signal médiatique",
+        "category": "autre",
+        "actor": "À vérifier",
+        "status": "Signal médiatique — vérification requise",
+        "confidence": "faible",
+        "precision": "centre de localité approximatif",
+        "summary": "Semaine du Maroc à Nouakchott : sept jours pour rapprocher affaires et cultures Infomédiaire",
+        "source": "Infomédiaire",
+        "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9VLTBfNEJKdm5KRkp4V2FpYV9qazdycmlmdzQ2SUNURFJwcFI4UHdOWkJVYUktNlJVNlNERjQ3eFJDTzhaMi1tZlJUcGQ3R3J3a2xhWkZuUXV0TmZBSmVGQWhvdTJkMHg3alpyY1ZfNHhQeWNHZE4w?oc=5",
+        "source_system": "Google Actualités — Mauritanie",
+        "language": "fr",
+        "as_of": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.979,
+          18.086
+        ]
+      },
+      "properties": {
+        "id": "media_e00d1dd76ead84d2",
         "date": "2026-11-13",
         "title": "Nouakchott accueillera la troisième Semaine du Maroc du 16 au 22 novembre",
         "location": "Nouakchott",
@@ -4193,7 +3933,7 @@
         "precision": "centre de localité approximatif",
         "summary": "Nouakchott accueillera la troisième Semaine du Maroc du 16 au 22 novembre Yabiladi.com",
         "source": "Yabiladi.com",
-        "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQTB2ZHl1UUpyX3hHcjh5T0N1dEVXRkFCVTcxUUhoYmFfMzVrTGF0U0E4SzFYUG9nN2E2cE0wWGZKOV9pb3Z4clhLZ2ZhUzc2WFJyRkVnaHZnRTVXNkNRV1R4R1ZFSEJ2TFFSblgxZG44NXdWT0pVUzZXT3BCbkJwWmtKV1JaZlZSRUd1NmYzWW82R3VyZWJFYnVaejhQbHJxTXc?oc=5",
+        "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUUN2OFNXS25XMlFmSTV1WC1XbV81ay1KaUQxLVEtQl9QYS1NWnpNUTJVcUdNcXNRSk4wakZvc0wycGwtU2ZZNXFXNERDbWJ5TlZ3SXZjYkV5T3dVZWRoTDZ1RTQ1TGd2VDd4YktpOHNMSzlxOGxPQjc4anN1OWNTRmNrOWg5dVh5TGJRSFRlMFpUdzc5dmJwWjJDYWpNUQ?oc=5",
         "source_system": "Google Actualités — Mauritanie",
         "language": "fr",
         "as_of": "2026-11-13"
@@ -4237,9 +3977,9 @@
         "id": "media_2f57863522b6993b",
         "date": "2026-11-13",
         "title": "Niger : plus de 30 civils tués dans une attaque près de Téra",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
+        "location": "Burkina Faso — lieu à confirmer",
+        "region": "Burkina Faso",
+        "country": "Burkina Faso",
         "layer": "event",
         "layer_label": "Signal médiatique",
         "category": "sécurité",
@@ -4250,38 +3990,7 @@
         "summary": "Niger : plus de 30 civils tués dans une attaque près de Téra Le Matin d'Algérie",
         "source": "Le Matin d'Algérie",
         "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNLUc5OXA4UTZNWk50MVEtM0hjVTkwM1dJY01ZUGZYVzdzanVWdDBSUmcwbDFLMnloVVdUcFVwckYtRUZuVEZJSll0VTVKemo1S2JUaTZwZnowQ1c2MnN4VmdJTXFGa2o5Zm5lcExrblNOSTQ2YUNBUHJKSE56eTd3LTdIR0tadGVIMnVYOC15ZU3SAZgBQVVfeXFMTlEya0JCVG9UcG9sc2JvbDhGQ09YdzFhZDVrTFA0MEczbWNKWG5pYnl0dUo2MUxTc0dqMDEtU1llb1VYZVpRYlBXX2Ryd3Zvb2VoSWQ4OE5kQy1SZ3RSVFpERTZEOXpiV3R0c1UxRlVwcmt0YWhiN1lYbHdDTzZNRGFuLUJiQkQ3TGd3WHhQSzdONktmZU1QOUQ?oc=5",
-        "source_system": "Google Actualités — Mali",
-        "language": "fr",
-        "as_of": "2026-11-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.11,
-          13.514
-        ]
-      },
-      "properties": {
-        "id": "media_361a467ec78c3bce",
-        "date": "2026-11-13",
-        "title": "Niger : le puits Goumeri W-8 s’éteint, Niamey pointe des failles chez l’exploitant",
-        "location": "Niamey",
-        "region": "Niamey",
-        "country": "Niger",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "À vérifier",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "centre de localité approximatif",
-        "summary": "Niger : le puits Goumeri W-8 s’éteint, Niamey pointe des failles chez l’exploitant Journal du Niger",
-        "source": "Journal du Niger",
-        "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcGhIYmVaMU9seUd2aWlucXFiWlFfZlNQWl9kbExRdm5aVDNCeG1aMHc1QUp1bmN1M2ViTGxITldyTFNVWWY4TjYwdW9mOE5tRWV3NGpidHpwMlFfRWU2SVU1OGpYdEFfblloV0NBcnRsdF9RWElaZnZWN21vR2xhakZiQ1Y?oc=5",
-        "source_system": "Google Actualités — Niger",
+        "source_system": "Google Actualités — Burkina Faso",
         "language": "fr",
         "as_of": "2026-11-13"
       }
@@ -4388,31 +4097,6 @@
         "source": "Le Monde Afrique",
         "source_url": "https://www.lemonde.fr/international/article/2026/11/13/le-burkina-faso-annonce-lancer-des-mandats-d-arret-contre-des-journalistes-et-des-activistes-en-exil-pour-des-faits-de-terrorisme_6809388_3210.html",
         "source_system": "Le Monde Afrique",
-        "language": "fr",
-        "as_of": "2026-11-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "media_b764774f687aeb3c",
-        "date": "2026-11-13",
-        "title": "LUTTE ANTITERRORISTE : LES FAMA FRAPPENT DES BASES ENNEMIES À KADIANA ET BOULKESSI",
-        "location": "Mali — lieu à confirmer",
-        "region": "Mali",
-        "country": "Mali",
-        "layer": "event",
-        "layer_label": "Signal médiatique",
-        "category": "autre",
-        "actor": "FAMa / État malien",
-        "status": "Signal médiatique — vérification requise",
-        "confidence": "faible",
-        "precision": "non géolocalisé",
-        "summary": "LUTTE ANTITERRORISTE : LES FAMA FRAPPENT DES BASES ENNEMIES À KADIANA ET BOULKESSI Mali 24",
-        "source": "Mali 24",
-        "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUG0waHdGQnlwbEF3WjItaEt0aG9CS25Henh1OWhxN05RUTl5VjdITXVxQUR5c0twVms4RTlDYUplYWdJMXNpdEM0OHZvRWpVemJLLUlIWkhPMk1iejVwODJIWk5GcUFYWG9RcVFzVUZzMldOd0lxdWZnNW1xNTZPUjFaZUJ5MVd5cEswMkFDa01fZnlTTXFlMFpaRXFTV28yR2NZ?oc=5",
-        "source_system": "Google Actualités — Mali",
         "language": "fr",
         "as_of": "2026-11-13"
       }
