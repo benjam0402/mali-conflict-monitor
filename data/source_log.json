@@ -1,14 +1,14 @@
 {
-  "window_start": "2026-10-12",
-  "publication_cutoff": "2026-11-24",
+  "window_start": "2026-10-13",
+  "publication_cutoff": "2026-11-25",
   "lookback_days": 14,
   "retention_days": 45,
   "min_days_delay": 2,
   "coord_decimals": 3,
   "sources_configured": 29,
   "sources_attempted": 29,
-  "successful_sources": 26,
-  "failed_sources": 3,
+  "successful_sources": 27,
+  "failed_sources": 2,
   "local_media_sources": 11,
   "social_targets": 7,
   "social_feeds_active": 7,
@@ -31,7 +31,7 @@
       "name": "Google Actualités — Mali",
       "kind": "rss",
       "status": "ok",
-      "articles": 39
+      "articles": 45
     },
     {
       "name": "Google Actualités — Niger",
@@ -49,13 +49,13 @@
       "name": "Google Actualités — Mauritanie",
       "kind": "rss",
       "status": "ok",
-      "articles": 99
+      "articles": 100
     },
     {
       "name": "Google Actualités — Tchad",
       "kind": "rss",
       "status": "ok",
-      "articles": 28
+      "articles": 22
     },
     {
       "name": "RFI Afrique",
@@ -72,9 +72,8 @@
     {
       "name": "ONU Info Afrique",
       "kind": "rss",
-      "status": "error",
-      "articles": 0,
-      "error": "not well-formed (invalid token): line 1, column 0"
+      "status": "ok",
+      "articles": 30
     },
     {
       "name": "DW Afrique",
@@ -104,7 +103,7 @@
       "name": "LeFaso.net",
       "kind": "rss",
       "status": "ok",
-      "articles": 98
+      "articles": 114
     },
     {
       "name": "Sahara Médias",
@@ -165,7 +164,7 @@
       "name": "X indexé — @Malijetactu",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 8
+      "articles": 7
     },
     {
       "name": "X indexé — @maliactu",
@@ -177,13 +176,13 @@
       "name": "X indexé — @actuniger",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 7
+      "articles": 6
     },
     {
       "name": "X indexé — @burkina24",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 22
+      "articles": 17
     },
     {
       "name": "X indexé — @ONUMauritanie",
@@ -195,16 +194,16 @@
       "name": "X indexé — @tchadinfos",
       "kind": "social_rss",
       "status": "ok",
-      "articles": 9
+      "articles": 8
     }
   ],
-  "articles_fetched": 652,
-  "unique_articles": 606,
-  "fresh_signals": 106,
-  "retained_signals": 240,
+  "articles_fetched": 691,
+  "unique_articles": 651,
+  "fresh_signals": 129,
+  "retained_signals": 250,
   "manual_events": 0,
-  "published_events": 240,
-  "mapped_events": 112,
-  "generated_at_utc": "2026-11-26T17:16:14+00:00",
-  "duration_seconds": 38.27
+  "published_events": 250,
+  "mapped_events": 118,
+  "generated_at_utc": "2026-11-27T16:56:49+00:00",
+  "duration_seconds": 33.25
 }
